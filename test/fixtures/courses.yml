@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  subtitle: MyString
+  teacher_id: 1
+  price: 1
+  rating: 1
+  rating_count: 1
+  student_count: 1
+  languages: MyString
+  learning_goals: MyText
+  requirements: MyText
+  description: MyText
+  audience: MyText
+
+two:
+  title: MyString
+  subtitle: MyString
+  teacher_id: 1
+  price: 1
+  rating: 1
+  rating_count: 1
+  student_count: 1
+  languages: MyString
+  learning_goals: MyText
+  requirements: MyText
+  description: MyText
+  audience: MyText
