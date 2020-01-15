@@ -796,8 +796,9 @@ body {
     font-size: 15px;
     line-height: 1.35135;
     border-radius: 2px;
-    padding: 15px;
-    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0.75),#FFF);
+    transform: translateY(-25px);
+    padding: 25px 0 0 15px;
+    background: linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,0.95),#FFF);
     position: absolute;
     width: 100%;
  }

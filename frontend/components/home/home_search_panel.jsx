@@ -26,9 +26,13 @@ class HomeSearchPanel extends React.Component {
     }
 
     getSearchInput(e) {
-        this.setState({
-            searchString: e.target.value
-        })
+        if (e.key === 'Enter') {
+            this.searchClickHandle();
+        } else {
+            this.setState({
+                searchString: e.target.value
+            })
+        }
     }
 
     searchClickHandle() {
@@ -48,7 +52,7 @@ class HomeSearchPanel extends React.Component {
                                 What’s better than a resolution? A plan. Start learning from $9.99. Ends Jan. 9.
                         </div>
                             <label className="search-label">
-                                <input className="home-search-input" type="text" placeholder="What do you want to learn?"  onChange={this.getSearchInput}/>
+                                <input className="home-search-input" type="text" placeholder="What do you want to learn?" onKeyUp={this.getSearchInput}/>
                                 <FontAwesomeIcon icon={faSearch} className="home-search-icon" onClick={this.searchClickHandle}/>
                             </label>
                         </div>

@@ -467,6 +467,14 @@ function (_React$Component) {
         }
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_nav_bar__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         exact: true,
+        path: "/courses/search/",
+        component: _home_home__WEBPACK_IMPORTED_MODULE_8__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+        exact: true,
+        path: "/courses/",
+        component: _home_home__WEBPACK_IMPORTED_MODULE_8__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+        exact: true,
         path: "/courses/search/:searchString",
         component: _search_search_index_container__WEBPACK_IMPORTED_MODULE_9__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
@@ -3550,9 +3558,13 @@ function (_React$Component) {
   _createClass(HomeSearchPanel, [{
     key: "getSearchInput",
     value: function getSearchInput(e) {
-      this.setState({
-        searchString: e.target.value
-      });
+      if (e.key === 'Enter') {
+        this.searchClickHandle();
+      } else {
+        this.setState({
+          searchString: e.target.value
+        });
+      }
     }
   }, {
     key: "searchClickHandle",
@@ -3581,7 +3593,7 @@ function (_React$Component) {
         className: "home-search-input",
         type: "text",
         placeholder: "What do you want to learn?",
-        onChange: this.getSearchInput
+        onKeyUp: this.getSearchInput
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__["FontAwesomeIcon"], {
         icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faSearch"],
         className: "home-search-icon",
@@ -3785,9 +3797,13 @@ function (_React$Component) {
   _createClass(NavBar, [{
     key: "getSearchInput",
     value: function getSearchInput(e) {
-      this.setState({
-        searchString: e.target.value
-      });
+      if (e.key === 'Enter') {
+        this.searchClickHandle();
+      } else {
+        this.setState({
+          searchString: e.target.value
+        });
+      }
     }
   }, {
     key: "searchClickHandle",
@@ -3832,7 +3848,7 @@ function (_React$Component) {
         placeholder: "Search for anything",
         onFocus: this.inputFocus,
         onBlur: this.inputUnFocus,
-        onChange: this.getSearchInput
+        onKeyUp: this.getSearchInput
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__["FontAwesomeIcon"], {
         icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faSearch"],
         className: this.state.iconClassName,

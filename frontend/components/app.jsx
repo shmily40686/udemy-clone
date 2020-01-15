@@ -28,6 +28,8 @@ class App extends React.Component {
             <div style={{position:"absolute" ,top:"0px" , left:"0px" , right:"0px"}}>
                 <NavBarContainer />
                 <Switch>
+                    <Route exact path="/courses/search/" component={Home} />
+                    <Route exact path="/courses/" component={Home} />
                     <Route exact path="/courses/search/:searchString" component={SearchIndexContainer} />
                     <Route exact path="/courses/:courseId" component={CourseFeed} />
                     <Route exact path="/" component={Home} />

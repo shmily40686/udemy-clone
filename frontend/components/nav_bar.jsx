@@ -21,9 +21,13 @@ class NavBar extends React.Component {
     }
 
     getSearchInput(e) {
-        this.setState({
-            searchString: e.target.value
-        })
+        if (e.key === 'Enter') {
+            this.searchClickHandle();
+        } else {
+            this.setState({
+                searchString: e.target.value
+            })
+        }
     }
 
     searchClickHandle() {
@@ -51,7 +55,7 @@ class NavBar extends React.Component {
             <div className="header-box">
                 <img className="udemy-logo" src="https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg" width="110" height="32" onClick={this.backToHome}/>
                 <label className="search-label">
-                    <input className="search-input" type="text" placeholder="Search for anything" onFocus={this.inputFocus} onBlur={this.inputUnFocus}  onChange={this.getSearchInput}/>
+                    <input className="search-input" type="text" placeholder="Search for anything" onFocus={this.inputFocus} onBlur={this.inputUnFocus} onKeyUp={this.getSearchInput}/>
                     <FontAwesomeIcon icon={faSearch} className={this.state.iconClassName} onClick={this.searchClickHandle}/>
                 </label>
                 <GreetingContainer />
