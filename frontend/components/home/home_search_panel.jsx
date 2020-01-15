@@ -1,9 +1,11 @@
 import React from 'react';
+import { withRouter } from "react-router-dom"
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const backImgLinks = ["https://i.udemycdn.com/notices/home_banner/image/65c0d737-9f6d-481e-b921-b1b0dacb165c.jpg",
-                       "https://i.udemycdn.com/notices/home_banner/image/e10582cf-c6d2-4697-a2a2-c69607570bf4.jpg"
+                       "https://i.udemycdn.com/notices/home_banner/image/e10582cf-c6d2-4697-a2a2-c69607570bf4.jpg",
+                       "https://i.udemycdn.com/notices/home_banner/image/048e0cdc-3e71-47dc-ae30-e9ac7a3504b5.jpg"
                       ]
 const backImg = {
     backgroundImage: `url('${backImgLinks[Math.floor(Math.random() * backImgLinks.length)]}')`, 
@@ -15,7 +17,22 @@ const backImg = {
 class HomeSearchPanel extends React.Component {
     constructor(props) {
         super(props)
+        this.state = {
+            searchString : ""
+        }
+        this.getSearchInput = this.getSearchInput.bind(this)
+        this.searchClickHandle = this.searchClickHandle.bind(this)
 
+    }
+
+    getSearchInput(e) {
+        this.setState({
+            searchString: e.target.value
+        })
+    }
+
+    searchClickHandle() {
+        this.props.history.push(`/courses/search/${this.state.searchString}`)
     }
 
     render() {
@@ -31,8 +48,8 @@ class HomeSearchPanel extends React.Component {
                                 What’s better than a resolution? A plan. Start learning from $9.99. Ends Jan. 9.
                         </div>
                             <label className="search-label">
-                                <input className="home-search-input" type="text" placeholder="What do you want to learn?" />
-                                <FontAwesomeIcon icon={faSearch} className="home-search-icon" />
+                                <input className="home-search-input" type="text" placeholder="What do you want to learn?"  onChange={this.getSearchInput}/>
+                                <FontAwesomeIcon icon={faSearch} className="home-search-icon" onClick={this.searchClickHandle}/>
                             </label>
                         </div>
                     </div>
@@ -62,4 +79,4 @@ class HomeSearchPanel extends React.Component {
     }
 }
 
-export default HomeSearchPanel;
+export default withRouter(HomeSearchPanel);

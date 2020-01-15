@@ -6,6 +6,6 @@ class CreateCourseContents < ActiveRecord::Migration[5.2]
       t.string :title, null: false
       t.timestamps
     end
-    add_index :course_contents, :index, unique: true
+    add_index :course_contents, :index
   end
 end

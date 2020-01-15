@@ -19,6 +19,12 @@ class CourseContent extends React.Component {
         this.props.fetchAllVideos(this.props.match.params.courseId, this.props.content.id)
     }
 
+    componentDidUpdate(prevProps) {
+        if (this.props.content.id !== prevProps.content.id) {
+            this.props.fetchAllVideos(this.props.match.params.courseId, this.props.content.id)
+        }
+    }
+
 
     showOrHidden() {
         if(this.state.dropdown) {
@@ -32,6 +38,14 @@ class CourseContent extends React.Component {
         this.setState({
             dropdown: !this.state.dropdown
         })
+    }
+
+    changeDuration(time) {
+        if(time.length < 3) {
+            return "0:" + time
+        } else {
+            return time.slice(0, time.length - 2) + ":" +  time.slice(time.length - 2)
+        }
     }
 
     render() {
@@ -50,7 +64,7 @@ class CourseContent extends React.Component {
                                         <FontAwesomeIcon icon={faPlayCircle} />
                                         <span style={{marginLeft:"11px"}}>{v.title}</span>
                                     </div>
-                                    <div>{v.duration}</div>
+                                    <div>{this.changeDuration(v.duration + "")}</div>
                                 </div>
                             </div>
                         ))

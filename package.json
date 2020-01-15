@@ -12,6 +12,7 @@
     "moment": "^2.24.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-loader-spinner": "^3.1.5",
     "react-redux": "^5.0.5",
     "react-router": "^4.1.2",
     "react-router-dom": "^4.1.2",
@@ -30,7 +31,12 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --mode=development --watch"
+    "start": "webpack --mode=development --watch",
+    "postinstall": "webpack"
+  },
+  "engines": {
+    "node": "10.13.0",
+    "npm": "6.4.1"
   },
   "keywords": [],
   "author": "",

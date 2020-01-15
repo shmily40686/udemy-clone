@@ -84,8 +84,10 @@ class CourseIndex extends React.Component {
         })
 
         return(
-                <div  className="index">
+                <div className="index">
+                <div className="index-header-container">
                     <div className="index-header">Best Seller</div>
+                </div>
                     <div className="courses-box">
                         {this.showLeft("startIndex1")}
                         {displayCourse1}

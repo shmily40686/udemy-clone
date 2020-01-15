@@ -59,7 +59,6 @@ body {
  }
 
  .signupHeaderButton{
-    /* font-weight: 600; */
     font-family: inherit;
     color: #fff;
     background-color: #ec5252;
@@ -78,6 +77,10 @@ body {
     border-radius: 2px;
  }
 
+
+ .signupHeaderButton:hover {
+   background-color: #992337;
+ }
  .signupHeaderButton:focus {
     outline: none;
  }
@@ -291,6 +294,7 @@ body {
     font-size: 15px;
     font-weight: 400;
     background-color: white;
+    z-index: 2; 
  }
 
  .initial {
@@ -442,7 +446,6 @@ body {
     border: none;
     background: -webkit-linear-gradient(-45deg,#6E1A52 0%, #EC5252 100%);
     color: white;
-    width: 100%;
     font-size: 15px;
     justify-content: space-around;
     line-height: 1.43;
@@ -540,10 +543,11 @@ body {
     margin: 100px 0px;
     padding: 0 50px;
     border-top:solid 1px #dedfe0; 
+    flex: 1;
  }
  .courses-box {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     z-index: 2;
  }
 
@@ -551,6 +555,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 216px;
+    min-width: 216px;
     height: 290px;
     border: solid 1px #dedfe0;
     box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
@@ -643,6 +648,7 @@ body {
     margin-bottom: 10px;
     text-decoration: none;
     margin-top: 15px;
+    margin-bottom: 26px;
  }
 
  .index-card-text {
@@ -698,10 +704,9 @@ body {
     justify-content: space-around;
     background-color: #505763;
     background: linear-gradient(#29303B,#29303B,#29303B);
-    padding-top: 75px;
-    padding-bottom: 100px;
+    padding: 100px;
     color: #fff;
-    width: 100%;
+    min-width: 780px;
  }
 
 
@@ -721,19 +726,27 @@ body {
     font-size: 15px;
     font-weight: 600;
     color: #ffffff;
+    padding-bottom: 5px;
  }
 
 .course-feed-text-box {
-   margin: 80px;
+   margin: 80px 80px 0px 80px;
 }
 .description-content{
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 40px;
     width: 100%;
     font-size: 15px;
     line-height: 1.43;
     color: #29303b;
     font-family: inherit;
+    max-height: 98px;
+    overflow: hidden;
+    
+ }
+ .see-more {
+   max-height: none;
  }
 
  .learn-title {
@@ -748,11 +761,13 @@ body {
     background-color: #f9f9f9;
     border: 1px solid #dedfe0;
     padding: 30px 15px;
+    min-width: 300px;
  }
 
  .learn-text {
     font-size: 14px;
     color: #29303b;
+    padding: 8px;
  }
 
  .img-play-box{
@@ -772,6 +787,19 @@ body {
 
  .play-circle-icon:hover {
     opacity: 0.7;
+ }
+
+ .course-see-more {
+    margin: 0px 80px;
+    color: #007791;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.35135;
+    border-radius: 2px;
+    padding: 15px;
+    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0.75),#FFF);
+    position: absolute;
+    width: 100%;
  }
 
 
@@ -809,7 +837,8 @@ body {
     cursor: pointer;
     height: auto;
     margin-top: 3px;
-    padding: 10px 30px 10px 22px;   
+    padding: 10px 30px 10px 22px;
+    min-width: 200px;   
 }
 
 .content-title {
@@ -822,7 +851,7 @@ body {
 }
 
 .title-course {
-   margin: 20px 130px 23px 130px;
+   margin: 80px 130px 23px 130px;
    font-size: 22px;
    font-weight: 600;
    color: #29303b;
@@ -842,8 +871,8 @@ body {
 .review {
    display: flex;
    flex-direction: column;
-   align-items: center;
-   padding: 100px 0;
+   align-items: flex-start;
+   padding: 0px 130px;
 
 }
 
@@ -884,6 +913,7 @@ body {
 
  .review-user-info{
     display: flex;
+    width: 170px;
  }
 
  .review-form {
@@ -903,11 +933,12 @@ body {
     font-size: 15px;
     line-height: 1.35135;
     border-radius: 2px;
-    width: 50%;
+    width: 30%;
+    outline: none;
  }
 
  .review-form:hover {
-        background-color: whitesmoke;
+      background-color: #992337;
  }
 
  .button-box-review {
@@ -933,8 +964,17 @@ body {
  .review-ratting-box {
     padding-bottom: 23px;
     display: flex;
-    width: 25%;
-    justify-content: space-around;
+    justify-content: center;
+ }
+
+ .review-header {
+    padding: 70px 130px 0px 130px;
+    margin-bottom: 22px;
+    margin-top: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.43;
+    color: #29303b;
  }
 
  .back-home-button {
@@ -955,8 +995,12 @@ body {
     line-height: 1.35135;
     border-radius: 2px;
     width: 90%;
+    outline: none;
  }
 
+ .back-home-button:hover {
+    background-color: #992337;
+ }
 
  .content-video-list {
     display: flex;
@@ -977,8 +1021,54 @@ body {
     line-height: 1.35135;
     cursor: pointer;
     margin: 31px 5px 10px 10px;
+    
  }
 
+ .review-form-button:hover {
+    color: black;
+ }
+
+
+ .edit-form {
+    border-top:1px solid #8a92a3;
+    border-bottom:1px solid #8a92a3;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 130px;
+    margin-bottom: 37px;
+ }
+
+ .edit-form-textarea {
+   resize: none;
+   height: 150px;
+   width: 100%;
+   border-radius: 5px;
+   margin-bottom: 15px;
+   font-size: 25px;
+   font-family: initial;
+   outline: none;
+ }
+
+ .edit-form-button {
+   font-family: inherit;
+   color: #fff;
+   background-color: #ec5252;
+   border: 1px solid transparent;
+   display: inline-block;
+   margin: 3px 0px 8px 0px;
+   text-align: center;
+   vertical-align: middle;
+   touch-action: manipulation;
+   cursor: pointer;
+   background-image: none;
+   white-space: nowrap;
+   padding: 8px 11px;
+   font-size: 15px;
+   line-height: 1.35135;
+   border-radius: 2px;
+   width: 100%;
+ }
 
 /* VIDEO/
 /* ----------------------------------------------------------
@@ -1001,6 +1091,7 @@ body {
     background-color: #29303b;
     z-index: 3;
     margin: 110px auto;
+    border-radius: 8px;
  }
 
  .video-title {
@@ -1016,3 +1107,129 @@ body {
  .video-player:focus {
     outline: none;
  }
+
+ .video-close {
+   width: 25px;
+   font-size: 28px;
+ }
+
+
+/* SEARCH/
+/* ----------------------------------------------------------
+---------------------------------------------------------- */ 
+
+.search-box {
+   display: flex;
+   flex-direction: column;
+   margin: 30px 200px;
+
+}
+
+.search-feed {
+   display: flex;
+   width: 100%;
+   height: 165px;
+   border-top: 1px solid #f2f3f5;
+   padding: 16px 0;
+}
+
+.search-feed:hover {
+   background-color: #f7f8fa;
+}
+
+
+.search-img {
+   width: 220px;
+   height: 129px;
+}
+
+.search-box-title {
+   font-size: 15px;
+   color: #29303b;
+   font-weight: 600;
+}
+
+.search-box-audience {
+   font-size: 13px;
+   color: #686f7a;
+}
+
+
+.search-error {
+    width: 100%;
+    height: 600px;
+    background: #f2f3f5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.search-error-text {
+    color: #505763;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33px;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.search-error-icon {
+   font-size: 210px;
+   color: grey;
+}
+
+
+.search-rating-span {
+   font-weight: 700;
+   font-size: 18px;
+   color: #29303b;
+   flex: 1;
+}
+
+.search-rating-count{
+   font-size: 13px;
+   color: #686f7a;
+   padding-top: 5px;
+}
+
+
+.search-header {
+   display: flex;
+   justify-content: space-between;
+   height: 150px;
+   width: 100%;
+   background-color: #f7f8fa;
+   padding: 0px 80px 0px 200px;
+}
+
+.search-header-title {
+   color: #29303b;
+   font-size: 20px;
+   padding-bottom: 10px;
+   padding-right: 100px;
+}
+
+.search-header-inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 800px;
+}
+
+
+.custom-select-select {
+   position: relative;
+   width: 160px;
+   height: 50px;
+   color: #29303b;
+   background-color: #f7f8fa;
+   border-color: #29303b;
+   font-size: 16px;
+   float: right;
+   outline: none;
+}
+
+
+
+

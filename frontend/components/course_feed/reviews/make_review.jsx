@@ -36,7 +36,6 @@ class MakeReview extends React.Component {
     }
 
     handleRatingChange(e) {
-        console.log(e.target.value * 1);
         this.setState({
             rating: e.target.value * 1,
         });

@@ -16,10 +16,11 @@ class ReviewsIndex extends React.Component {
     render() {
         if(this.props.reviews) {
             const reviewDisplay = this.props.reviews.map((review,i) => (
-                <ReviewFeed review={review} key={i} userId={this.props.userId} deleteReview={this.props.deleteReview}/>
+                <ReviewFeed review={review} key={i} userId={this.props.userId} deleteReview={this.props.deleteReview} updateReview={this.props.updateReview}/>
             ))
             return(
                 <div>
+                    <div className="review-header">Reviews</div>
                     <div className="review">{reviewDisplay}</div>
                     < MakeReviewContainer />
                 </div>

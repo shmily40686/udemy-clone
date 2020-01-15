@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2020_01_06_212751) do
     t.string "title", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["index"], name: "index_course_contents_on_index", unique: true
+    t.index ["index"], name: "index_course_contents_on_index"
   end
 
   create_table "courses", force: :cascade do |t|
