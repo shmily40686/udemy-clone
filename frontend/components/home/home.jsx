@@ -6,6 +6,7 @@ import CourseIndexContainer from '../course_index/course_index_container'
 
 
 
+
 class Home extends React.Component {
     constructor(props) {
         super(props)

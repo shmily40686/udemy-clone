@@ -10,7 +10,7 @@ class Course < ApplicationRecord
         foreign_key: :course_id,
         class_name: 'CourseContent'
 
-    has_many :review,
+    has_many :reviews,
         foreign_key: :course_id,
         class_name: 'Review'
         

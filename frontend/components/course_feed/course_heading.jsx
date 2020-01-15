@@ -12,6 +12,7 @@ class CourseHeading extends React.Component {
 
         this.renderRating = this.renderRating.bind(this)
         this.renderPrice = this.renderPrice.bind(this)
+        this.videoOpenHandle = this.videoOpenHandle.bind(this)
     }
     
     componentDidMount() {
@@ -147,6 +148,12 @@ class CourseHeading extends React.Component {
     }
 
 
+    videoOpenHandle() {
+        let courseId = Object.values(this.props.videos)[0][0].course_content_id
+        this.props.showPlayer(0, courseId)
+    }
+
+
     render() {
         console.log(this.props.course)
         return (
@@ -155,14 +162,15 @@ class CourseHeading extends React.Component {
                     <div>
                         <div className="heading_box">
                             <div>
-                                <div style={{ fontSize: "36px", lineHeight: "41px", fontFamily: "inherit" }}>{this.props.course.title}</div>
-                                <div style={{ fontSize: "21px", lineHeight: "27px", fontFamily: "inherit" }}>{this.props.course.subtitle}</div>
+                                <div style={{ fontSize: "36px", lineHeight: "41px", fontFamily: "inherit", paddingBottom:"15px" }}>{this.props.course.title}</div>
+                                <div style={{ fontSize: "21px", lineHeight: "27px", fontFamily: "inherit", paddingBottom: "10px"}}>{this.props.course.subtitle}</div>
                                 <div className="index-card-ratting-feed"><span className="index-rating-span">{this.renderRating()}</span><span className="index-rating-span">{this.props.course.rating}</span><span className="index-rating-span" >({this.props.course.rating_count} ratings)</span><span className="index-rating-span">{this.props.course.student_count} students enrolled</span></div>
-                                <div><FontAwesomeIcon style={{ color: "#fff" }} icon={faComment} />{this.props.course.languages}</div>
+
+                            <div ><span style={{paddingRight:"32px", fontSize:"15px"}}>Create by {this.props.course.teacher}</span><FontAwesomeIcon style={{ color: "#fff" }} icon={faComment} />{this.props.course.languages}</div>
                             </div>
                             <div className="course-feed-img-box">
-                                <div className="img-play-box"> 
-                                    <img src={this.props.course.picture} />
+                                <div className="img-play-box" onClick={this.videoOpenHandle}> 
+                                <img style={{ maxWidth:"335px"}}src={this.props.course.picture} />
                                     <div className="play-circle" > <FontAwesomeIcon icon={faPlayCircle} className="play-circle-icon"/></div>
                                 </div>
                                 <div style={{ textAlign: "center" }}>${this.renderPrice()}</div>

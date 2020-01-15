@@ -1,6 +1,10 @@
 import React from "react"
 import { withRouter } from "react-router-dom"
 
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+
 class Video extends React.Component {
     constructor(props){
         super(props)
@@ -22,7 +26,7 @@ class Video extends React.Component {
                         <div id="video-container">
                             <div className="video-title">
                                 <div>{this.props.video[videoId].title}</div>
-                                <div onClick={() => this.props.hidePlayer(this.props.video[videoId].index, this.props.video[videoId].course_content_id)}>X</div>
+                                <div onClick={() => this.props.hidePlayer(this.props.video[videoId].index, this.props.video[videoId].course_content_id)} className="video-close">< FontAwesomeIcon icon={faTimes}/></div>
                             </div>
                             <video width="100%" height="100%" className="video-player"controls>
                                 {/* <source src={this.props.video[videoId].url} /> */}
