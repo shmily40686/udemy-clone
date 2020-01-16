@@ -1,6 +1,8 @@
 class Api::ReviewsController < ApplicationController
     def index
-        @reviews = Review.where(course_id: params[:course_id]) 
+        @reviews = Review.where(course_id: params[:course_id])
+                         .limit(4)
+                         .offset(params[:offset])
         render :index
     end
 

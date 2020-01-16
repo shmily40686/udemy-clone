@@ -144,46 +144,42 @@ class ReviewFeed extends React.Component {
 
     }
 
-    editReview (){
+    editReview() {
         this.setState({
             edit: !this.state.edit
         })
     }
 
     getBodyText(e) {
-        this.setState({
-            review: {
-                body: e.target.value
-            }
-        })
+        const review = Object.assign({}, this.state.review, { body: e.target.value });
+        this.setState({ review });
     }
 
     editReviewSubmit(id) {
-        let that = this 
+        let that = this
         this.props.updateReview(this.state.review, id)
-        .then(() => {
-            that.setState({
-                edit: !that.state.edit
+            .then(() => {
+                that.setState({
+                    edit: !that.state.edit
+                })
             })
-        })
     }
 
     showButton() {
         if (this.props.review.user_id === this.props.userId) {
-            return( 
+            return (
                 <div className="button-box-review">
                     <button className="review-form-button" onClick={this.editReview}>EDIT</button>
-                    <button className="review-form-button" onClick={() => this.props.deleteReview(this.props.review.id,this.props.review.course_id)}>DELETE</button>
+                    <button className="review-form-button" onClick={() => this.props.deleteReview(this.props.review.id, this.props.review.course_id)}>DELETE</button>
                 </div>
             )
         }
     }
 
     handleRatingChange(e) {
-        this.setState({
-            review: {
-                rating: e.target.value * 1,
-            }
+        const review = Object.assign({}, this.state.review, { rating: e.target.value * 1 });
+        this.setState({ review }, () => {
+            console.log(this.state.review)
         });
     }
 
@@ -215,7 +211,7 @@ class ReviewFeed extends React.Component {
         } else {
             return (
                 <div className="review-feed-container-">
-                    <div className="edit-form">   
+                    <div className="edit-form">
                         <textarea className="edit-form-textarea" onChange={this.getBodyText} defaultValue={this.props.review.body} ></textarea>
                         <div className="review-ratting-box">
                             <input onChange={this.handleRatingChange} type="radio" name="rating" value="1" />1
@@ -224,12 +220,12 @@ class ReviewFeed extends React.Component {
                             <input onChange={this.handleRatingChange} type="radio" name="rating" value="4" />4
                             <input onChange={this.handleRatingChange} type="radio" name="rating" value="5" />5
                         </div>
-                        <button onClick={() => this.editReviewSubmit(this.props.review.id)}  className="edit-form-button">Submit</button>
+                        <button onClick={() => this.editReviewSubmit(this.props.review.id)} className="edit-form-button">Submit</button>
                     </div>
                 </div>
             )
         }
-        
+
     }
 }
 

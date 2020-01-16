@@ -44,6 +44,7 @@ class MakeReview extends React.Component {
     render() {
         return(
            <div className="review-form-box">
+               <div className="make-review-title">Add a Review</div>
                <textarea className="review-textarea"value={this.state.body} onChange={this.getBody} ></textarea>
                <div className="review-ratting-box"> 
                     <input onChange={this.handleRatingChange} type="radio" name="rating" value="1"/>1

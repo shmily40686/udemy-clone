@@ -1,6 +1,6 @@
-export const fetchAllReviews = courseId => (
+export const fetchAllReviews = (courseId, offset = 0) => (
     $.ajax({
-        url:`/api/courses/${courseId}/reviews`
+        url:`/api/courses/${courseId}/reviews?offset=${offset}`
     })
 )
 

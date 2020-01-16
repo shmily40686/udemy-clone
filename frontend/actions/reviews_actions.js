@@ -20,8 +20,8 @@ const removeReview = reviewId => ({
 })
 
 
-export const fetchAllReviews =  courseId => dispatch => (
-    APIUtil.fetchAllReviews(courseId)
+export const fetchAllReviews =  (courseId, offset) => dispatch => (
+    APIUtil.fetchAllReviews(courseId, offset)
         .then(reviews => dispatch(receiveAllReviews(reviews)))
 )
 

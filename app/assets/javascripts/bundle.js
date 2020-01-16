@@ -134,7 +134,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _util_courses_api_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../util/courses_api_util */ "./frontend/util/courses_api_util.js");
 
 var RECEIVE_ALL_COURSES = 'RECEIVE_ALL_COURSES';
-var RECEIVE_COURSE = 'RECEIVE_COURSE';
+var RECEIVE_COURSE = 'RECEIVE_COURSE'; // export const RECEIVE_ALL_COURSES_LIMIT_5 = 'RECEIVE_ALL_COURSES_LIMIT_5'
 
 var receiveAllCourses = function receiveAllCourses(courses) {
   return {
@@ -148,7 +148,11 @@ var receiveCourse = function receiveCourse(course) {
     type: RECEIVE_COURSE,
     course: course
   };
-};
+}; // const receiveAllCoursesLimit5 = courses => ({
+//     type: RECEIVE_ALL_COURSES_LIMIT_5,
+//     courses
+// })
+
 
 var fetchAllCourses = function fetchAllCourses() {
   return function (dispatch) {
@@ -156,7 +160,11 @@ var fetchAllCourses = function fetchAllCourses() {
       return dispatch(receiveAllCourses(courses));
     });
   };
-};
+}; // export const fetchAllCoursesLimit5 = () => dispatch => (
+//     APIUtil.fetchAllCoursesLimit5(offset)
+//         .then(courses => dispatch(fetchAllCoursesLimit5(courses)))
+// )
+
 var fetchCourse = function fetchCourse(courseId) {
   return function (dispatch) {
     return _util_courses_api_util__WEBPACK_IMPORTED_MODULE_0__["fetchCourse"](courseId).then(function (course) {
@@ -210,9 +218,9 @@ var removeReview = function removeReview(reviewId) {
   };
 };
 
-var fetchAllReviews = function fetchAllReviews(courseId) {
+var fetchAllReviews = function fetchAllReviews(courseId, offset) {
   return function (dispatch) {
-    return _util_reviews_api_util__WEBPACK_IMPORTED_MODULE_0__["fetchAllReviews"](courseId).then(function (reviews) {
+    return _util_reviews_api_util__WEBPACK_IMPORTED_MODULE_0__["fetchAllReviews"](courseId, offset).then(function (reviews) {
       return dispatch(receiveAllReviews(reviews));
     });
   };
@@ -1619,7 +1627,9 @@ function (_React$Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "review-form-box"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "make-review-title"
+      }, "Add a Review"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
         className: "review-textarea",
         value: this.state.body,
         onChange: this.getBody
@@ -2125,10 +2135,11 @@ function (_React$Component) {
   }, {
     key: "getBodyText",
     value: function getBodyText(e) {
+      var review = Object.assign({}, this.state.review, {
+        body: e.target.value
+      });
       this.setState({
-        review: {
-          body: e.target.value
-        }
+        review: review
       });
     }
   }, {
@@ -2163,16 +2174,21 @@ function (_React$Component) {
   }, {
     key: "handleRatingChange",
     value: function handleRatingChange(e) {
+      var _this3 = this;
+
+      var review = Object.assign({}, this.state.review, {
+        rating: e.target.value * 1
+      });
       this.setState({
-        review: {
-          rating: e.target.value * 1
-        }
+        review: review
+      }, function () {
+        console.log(_this3.state.review);
       });
     }
   }, {
     key: "render",
     value: function render() {
-      var _this3 = this;
+      var _this4 = this;
 
       var nameArr = this.props.review.username.split(" ");
       var initialName = [];
@@ -2250,7 +2266,7 @@ function (_React$Component) {
           value: "5"
         }), "5"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
           onClick: function onClick() {
-            return _this3.editReviewSubmit(_this3.props.review.id);
+            return _this4.editReviewSubmit(_this4.props.review.id);
           },
           className: "edit-form-button"
         }, "Submit")));
@@ -2289,9 +2305,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
@@ -2308,36 +2324,74 @@ function (_React$Component) {
   _inherits(ReviewsIndex, _React$Component);
 
   function ReviewsIndex(props) {
+    var _this;
+
     _classCallCheck(this, ReviewsIndex);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(ReviewsIndex).call(this, props));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(ReviewsIndex).call(this, props));
+    _this.state = {
+      offset: 0,
+      more: true
+    };
+    _this.fetchMore = _this.fetchMore.bind(_assertThisInitialized(_this));
+    return _this;
   }
 
   _createClass(ReviewsIndex, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      this.props.fetchAllReviews(this.props.match.params.courseId);
+      this.props.fetchAllReviews(this.props.match.params.courseId, this.state.offset);
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps) {
+      if (this.props.match.params.courseId !== prevProps.match.params.courseId) {
+        this.props.fetchAllReviews(this.props.match.params.courseId, this.state.offset);
+      }
+    }
+  }, {
+    key: "fetchMore",
+    value: function fetchMore() {
+      var _this2 = this;
+
+      var that = this;
+      this.setState({
+        offset: this.state.offset + 4
+      }, function () {
+        _this2.props.fetchAllReviews(_this2.props.match.params.courseId, _this2.state.offset).then(function () {
+          if (that.props.reviews % 4 !== 0) {
+            that.setState({
+              more: false
+            });
+          }
+        });
+      });
     }
   }, {
     key: "render",
     value: function render() {
-      var _this = this;
+      var _this3 = this;
 
       if (this.props.reviews) {
         var reviewDisplay = this.props.reviews.map(function (review, i) {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_review_feed__WEBPACK_IMPORTED_MODULE_2__["default"], {
             review: review,
             key: i,
-            userId: _this.props.userId,
-            deleteReview: _this.props.deleteReview,
-            updateReview: _this.props.updateReview
+            userId: _this3.props.userId,
+            deleteReview: _this3.props.deleteReview,
+            updateReview: _this3.props.updateReview
           });
         });
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, this.props.reviews.length !== 0 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "review-header"
-        }, "Reviews"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        }, "Reviews") : null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "review"
-        }, reviewDisplay), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_make_review_container__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+        }, reviewDisplay), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "see-more-b-box"
+        }, this.props.reviews.length !== 0 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          onClick: this.fetchMore,
+          className: this.state.more ? "see-more-review-button" : "no-more-review-button"
+        }, "See more reviews") : null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_make_review_container__WEBPACK_IMPORTED_MODULE_3__["default"], null));
       } else {
         return null;
       }
@@ -2362,22 +2416,26 @@ function (_React$Component) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _actions_reviews_actions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../actions/reviews_actions */ "./frontend/actions/reviews_actions.js");
-/* harmony import */ var _reviews_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./reviews_index */ "./frontend/components/course_feed/reviews/reviews_index.jsx");
+/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/es/index.js");
+/* harmony import */ var _reviews_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./reviews_index */ "./frontend/components/course_feed/reviews/reviews_index.jsx");
 
 
 
 
-var mapStateToProps = function mapStateToProps(state) {
+
+var mapStateToProps = function mapStateToProps(state, ownProps) {
   return {
-    reviews: Object.values(state.reviews),
+    reviews: Object.values(state.reviews).filter(function (review) {
+      return review.course_id == ownProps.match.params.courseId;
+    }),
     userId: state.session.id
   };
 };
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {
-    fetchAllReviews: function fetchAllReviews(courseId) {
-      return dispatch(Object(_actions_reviews_actions__WEBPACK_IMPORTED_MODULE_1__["fetchAllReviews"])(courseId));
+    fetchAllReviews: function fetchAllReviews(courseId, offset) {
+      return dispatch(Object(_actions_reviews_actions__WEBPACK_IMPORTED_MODULE_1__["fetchAllReviews"])(courseId, offset));
     },
     deleteReview: function deleteReview(reviewId, courseId) {
       return dispatch(Object(_actions_reviews_actions__WEBPACK_IMPORTED_MODULE_1__["deleteReview"])(reviewId, courseId));
@@ -2388,7 +2446,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   };
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_0__["connect"])(mapStateToProps, mapDispatchToProps)(_reviews_index__WEBPACK_IMPORTED_MODULE_2__["default"]));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_router__WEBPACK_IMPORTED_MODULE_2__["withRouter"])(Object(react_redux__WEBPACK_IMPORTED_MODULE_0__["connect"])(mapStateToProps, mapDispatchToProps)(_reviews_index__WEBPACK_IMPORTED_MODULE_3__["default"])));
 
 /***/ }),
 
@@ -3585,9 +3643,9 @@ function (_React$Component) {
         className: "notice-streamer__content"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "notice-streamer__headline"
-      }, "Your 2020 Plan"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Learn on your schedule"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "notice-streamer__text"
-      }, "What\u2019s better than a resolution? A plan. Start learning from $9.99. Ends Jan. 9."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+      }, "Study any topic, anytime. Choose from thousands of expert-led courses now."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         className: "search-label"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         className: "home-search-input",
@@ -4359,32 +4417,79 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(SearchIndex).call(this, props));
     _this.state = {
       filterCourses: [],
-      order: "Lowest Ratting"
+      order: "Lowest Ratting",
+      currentPage: 1,
+      coursePerPage: 5
     };
     _this.selectHandle = _this.selectHandle.bind(_assertThisInitialized(_this));
     _this.selectHandle = _this.selectHandle.bind(_assertThisInitialized(_this));
+    _this.filterArr = _this.filterArr.bind(_assertThisInitialized(_this));
+    _this.handleClickPage = _this.handleClickPage.bind(_assertThisInitialized(_this));
+    _this.renderPageNumbers = _this.renderPageNumbers.bind(_assertThisInitialized(_this));
+    _this.showComponent = _this.showComponent.bind(_assertThisInitialized(_this));
     return _this;
   }
 
   _createClass(SearchIndex, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      this.props.fetchAllCourses();
-    }
-  }, {
-    key: "selectHandle",
-    value: function selectHandle(e) {
-      console.log(e.target.value);
-      this.setState({
-        order: e.target.value
+      var _this2 = this;
+
+      this.props.fetchAllCourses().then(function () {
+        _this2.filterArr();
       });
     }
   }, {
-    key: "render",
-    value: function render() {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps) {
+      var _this3 = this;
+
+      if (this.props.match.params.searchString !== prevProps.match.params.searchString) {
+        this.props.fetchAllCourses().then(function () {
+          _this3.filterArr();
+        });
+      }
+    }
+  }, {
+    key: "handleClickPage",
+    value: function handleClickPage(e) {
+      this.setState({
+        currentPage: Number(e.target.innerText)
+      });
+    }
+  }, {
+    key: "renderPageNumbers",
+    value: function renderPageNumbers() {
+      var _this4 = this;
+
+      var pageNumbers = [];
+
+      for (var i = 1; i <= Math.ceil(this.state.filterCourses.length / this.state.coursePerPage); i++) {
+        pageNumbers.push(i);
+      }
+
+      return pageNumbers.map(function (number) {
+        if (number === _this4.state.currentPage) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            onClick: _this4.handleClickPage,
+            key: number,
+            className: "page-number-active"
+          }, number);
+        } else {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            onClick: _this4.handleClickPage,
+            key: number,
+            className: "page-number"
+          }, number);
+        }
+      });
+    }
+  }, {
+    key: "filterArr",
+    value: function filterArr() {
       var searchString = this.props.match.params.searchString;
       var newArr = this.props.courses.filter(function (course) {
-        return course.title.includes(searchString.toUpperCase()) || course.title.includes(searchString.toLowerCase());
+        return course.title.toUpperCase().includes(searchString.toUpperCase());
       });
 
       if (this.state.order === "Lowest Price") {
@@ -4400,19 +4505,50 @@ function (_React$Component) {
           return a.rating - b.rating;
         });
       } else if (this.state.order === "Highest Ratting") {
-        newArr = newArr = newArr.sort(function (a, b) {
+        newArr = newArr.sort(function (a, b) {
           return b.rating - a.rating;
         });
       }
 
-      if (newArr.length !== 0) {
+      this.setState({
+        filterCourses: newArr
+      });
+    }
+  }, {
+    key: "selectHandle",
+    value: function selectHandle(e) {
+      var _this5 = this;
+
+      this.setState({
+        order: e.target.value
+      }, function () {
+        _this5.filterArr();
+      });
+    }
+  }, {
+    key: "showComponent",
+    value: function showComponent() {
+      var indexOfLastCourse = this.state.currentPage * this.state.coursePerPage;
+      var indexOfFirstCourse = indexOfLastCourse - this.state.coursePerPage;
+      var currentCourse = this.state.filterCourses.slice(indexOfFirstCourse, indexOfLastCourse);
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, currentCourse.map(function (course, i) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_search_course_feed__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          course: course,
+          key: i
+        });
+      }));
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      if (this.state.filterCourses.length !== 0) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "search-header"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "search-header-inner"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "search-header-title"
-        }, newArr.length, " results for ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, this.props.match.params.searchString)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        }, this.state.filterCourses.length, " results for ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, this.props.match.params.searchString)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "custom-select"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
           className: "custom-select-select",
@@ -4429,12 +4565,9 @@ function (_React$Component) {
           value: "Highest Ratting"
         }, "Highest Ratting"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "search-box"
-        }, newArr.map(function (course, i) {
-          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_search_course_feed__WEBPACK_IMPORTED_MODULE_2__["default"], {
-            course: course,
-            key: i
-          });
-        })));
+        }, this.showComponent()), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "page-switch"
+        }, this.renderPageNumbers()));
       } else {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "search-error"
@@ -4451,7 +4584,81 @@ function (_React$Component) {
   return SearchIndex;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["withRouter"])(SearchIndex));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["withRouter"])(SearchIndex)); // import React from "react"
+// import { withRouter } from "react-router-dom"
+// import SearchCourseFeed from "./search_course_feed"
+// import { faSearch } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// class SearchIndex extends React.Component {
+//     constructor(props) {
+//         super(props)
+//         this.state = {
+//             filterCourses: [],
+//             order: "Lowest Ratting"
+//         }
+//         this.selectHandle = this.selectHandle.bind(this)
+//         this.selectHandle = this.selectHandle.bind(this)
+//     }
+//     componentDidMount() {
+//         this.props.fetchAllCourses()
+//     }
+//     selectHandle(e) {
+//         console.log(e.target.value)
+//         this.setState({
+//             order: e.target.value
+//         })
+//     }
+//     render() {
+//         let searchString = this.props.match.params.searchString
+//         var newArr = this.props.courses.filter((course) => {
+//             return course.title.toUpperCase().includes(searchString.toUpperCase())
+//         })
+//         if (this.state.order === "Lowest Price") {
+//             newArr = newArr.sort((a, b) => a.price - b.price)
+//         } else if (this.state.order === "Highest Price") {
+//             newArr = newArr.sort((a, b) => b.price - a.price)
+//         } else if (this.state.order === "Lowest Ratting") {
+//             newArr = newArr.sort((a, b) => a.rating - b.rating)
+//         } else if (this.state.order === "Highest Ratting") {
+//             newArr = newArr = newArr.sort((a, b) => b.rating - a.rating)
+//         }
+//         if (newArr.length !== 0) {
+//             return (
+//                 <div>
+//                     <div className="search-header" >
+//                         <div className="search-header-inner">
+//                             <div className="search-header-title">{newArr.length} results for <b>{this.props.match.params.searchString}</b></div>
+//                             <div className="custom-select">
+//                                 <select className="custom-select-select" onChange={this.selectHandle} >
+//                                     <option value="0">Sort By</option>
+//                                     <option value="Lowest Price">Lowest Price</option>
+//                                     <option value="Highest Price">Highest Price</option>
+//                                     <option value="Lowest Ratting">Lowest Ratting</option>
+//                                     <option value="Highest Ratting">Highest Ratting</option>
+//                                 </select>
+//                             </div>
+//                         </div>
+//                     </div>
+//                     <div className="search-box" >
+//                         {
+//                             newArr.map((course, i) => (
+//                                 <SearchCourseFeed course={course} key={i} />
+//                             ))
+//                         }
+//                     </div>
+//                 </div>
+//             )
+//         } else {
+//             return (
+//                 <div className="search-error">
+//                     <div className="search-error-text">Sorry, we couldn't find any results for {this.props.match.params.searchString}</div>
+//                     <FontAwesomeIcon icon={faSearch} className="search-error-icon" />
+//                 </div>
+//             )
+//         }
+//     }
+// }
+// export default withRouter(SearchIndex)
 
 /***/ }),
 
@@ -5038,8 +5245,8 @@ var ReviewReducer = function ReviewReducer() {
 
   switch (action.type) {
     case _actions_reviews_actions__WEBPACK_IMPORTED_MODULE_0__["RECEIVE_ALL_REVIEWS"]:
-      nextState = action.reviews;
-      return nextState;
+      var newState = Object.assign(nextState, action.reviews);
+      return newState;
 
     case _actions_reviews_actions__WEBPACK_IMPORTED_MODULE_0__["RECEIVE_REVIEW"]:
       nextState[action.review.id] = action.review;
@@ -5409,8 +5616,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateReview", function() { return updateReview; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "deleteReview", function() { return deleteReview; });
 var fetchAllReviews = function fetchAllReviews(courseId) {
+  var offset = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
   return $.ajax({
-    url: "/api/courses/".concat(courseId, "/reviews")
+    url: "/api/courses/".concat(courseId, "/reviews?offset=").concat(offset)
   });
 };
 var createReview = function createReview(review, courseId) {

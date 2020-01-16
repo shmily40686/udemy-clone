@@ -820,6 +820,7 @@ body {
    letter-spacing: .3px;
    line-height: 1.33;
    font-size: 14px;
+   min-width: 200px;
 }
 
 .content-hidden {
@@ -839,7 +840,7 @@ body {
     height: auto;
     margin-top: 3px;
     padding: 10px 30px 10px 22px;
-    min-width: 200px;   
+    min-width: 200px;  
 }
 
 .content-title {
@@ -872,14 +873,14 @@ body {
 .review {
    display: flex;
    flex-direction: column;
-   align-items: flex-start;
+   align-items: center;
    padding: 0px 130px;
 
 }
 
 .initial-review {
     background-color: rgb(0, 87, 107);
-    width: 46px;
+    min-width: 46px;
     height: 46px;
     border-radius: 50%;
     border: 1px solid #fff;
@@ -947,6 +948,7 @@ body {
     justify-content: flex-end;
     padding-right: 40px
  }
+
 
  .review-form-box {
     display: flex;
@@ -1129,8 +1131,8 @@ body {
 .search-feed {
    display: flex;
    width: 100%;
-   height: 165px;
-   border-top: 1px solid #f2f3f5;
+   min-height: 165px;
+   border-top: 2px solid #f2f3f5;
    padding: 16px 0;
 }
 
@@ -1229,6 +1231,70 @@ body {
    font-size: 16px;
    float: right;
    outline: none;
+}
+
+.make-review-title {
+   margin: 80px 130px 40px 130px;
+   font-size: 22px;
+   font-weight: 600;
+   color: #29303b;
+}
+
+.see-more-review-button {
+   color: #007791;
+   background-color: #fff;
+   border: 1px solid #007791;
+   font-weight: 600;
+   text-align: center;
+   width: 140px;
+   padding: 11px 12px;
+}
+
+.see-more-review-button:hover {
+   color: black;
+}
+
+.no-more-review-button {
+   display: none;
+}
+
+.see-more-b-box {
+   display: flex;
+   justify-content: center;
+}
+
+.page-switch {
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   margin-top: 100px;
+}
+
+.page-number-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #007791;
+    border-color: #007791;
+    cursor: default;
+    min-width: 32px;
+    min-height: 32px;
+    border-radius: 50%;
+    margin: 0 1px;
+}
+
+.page-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #007791;
+    background-color: white;
+    cursor: pointer;
+    min-width: 32px;
+    min-height: 32px;
+    border-radius: 50%;
+    margin: 0 1px;
 }
 
 

@@ -46,10 +46,10 @@ class HomeSearchPanel extends React.Component {
                     <div className="carousel-fullscreen-sidebar">
                         <div className="notice-streamer__content">
                             <div className="notice-streamer__headline">
-                                Your 2020 Plan
+                                Learn on your schedule
                         </div>
                             <div className="notice-streamer__text">
-                                What’s better than a resolution? A plan. Start learning from $9.99. Ends Jan. 9.
+                                Study any topic, anytime. Choose from thousands of expert-led courses now.
                         </div>
                             <label className="search-label">
                                 <input className="home-search-input" type="text" placeholder="What do you want to learn?" onKeyUp={this.getSearchInput}/>

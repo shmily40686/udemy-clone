@@ -15,7 +15,7 @@ CourseContent.destroy_all
 Review.destroy_all
 Video.destroy_all
 
-u11 = User.create!({
+u918 = User.create!({
     username:"Xiaowen Ling",
     email:"shmily40686@gmail.com",
     password:"09181990"
@@ -67,10 +67,65 @@ u8 = User.create!({
   password: '12345678'
 })
 
+
 u9 = User.create!({
   username: 'Julian Jenkins',
   email: 'jjenkins@gmail.com',
   password: '12345678'
+})
+
+u10 = User.create!({
+  username: 'e VideoTuition',
+  email: 'eVideoTuition@gmail.com',
+  password: '12345678'
+})
+
+u11 = User.create!({
+  username: 'David Ringstrom',
+  email: 'dringstrom@gmail.com',
+  password: '12345678'
+})
+
+u12 = User.create!({
+  username: 'Alan Kirwan',
+  email: 'akirwan@gmail.com',
+  password: '123456478'
+})
+
+u13 = User.create!({
+  username: 'Diane Davis',
+  email: 'ddavis@gmail.com',
+  password: '12345678'
+})
+
+u14 = User.create!({
+  username: 'Joel Young',
+  email: 'jyoung@gmail.com',
+  password: '12345678'
+})
+
+u15 = User.create!({
+  username: 'Ted Taskey',
+  email: 'ttaskey@gmail.com',
+  password: '12345768'
+})
+
+u16 = User.create!({
+  username: 'Team Building',
+  email: 'tbae@gmail.com',
+  password: '12345678'
+})
+
+u17 = User.create!({
+  username: 'Joseph Evans',
+  email: 'jevans@gmail.com',
+  password: '12345768'
+})
+
+u18 = User.create!({
+  username: 'Angela Yu',
+  email: 'ayu@gmail.com',
+  password: '12345768'
 })
 
 # Courses
@@ -195,8 +250,8 @@ c8 = Course.create!(
   subtitle: "Certified: Mindfulness Meditation: Mindfulness & Spirituality : Meditation Techniques & Spirituality of Mindfulness",
   teacher: 'Julian Jenkins',
   teacher_id: u9.id,
-  price:1299,
-  rating:4,
+  price:2299,
+  rating:3,
   rating_count: 165,
   student_count: 1212,
   languages: "English",
@@ -209,168 +264,168 @@ c8 = Course.create!(
 
 
 c9 = Course.create!(
- title: 'chopped dream eaters witch vegetables and eggs:experience...',
- subtitle: 'chopped dream eaters witch vegetables and eggs:your way to a rich taste and a unique sensation,andexperience in cooking.',
- teacher: 'Mustapha elaallali',
- teacher_id: u3.id,
- price: 1044,
- rating: 1,
- rating_count: 1,
- student_count: 1,
- languages: 'English',
- learning_goals: 'Students will be able to acquire a new kind of experience that will increase the level of their technical abilities\nStudents will be able to acquire a new kind of experience that will increase the level of their technical abilities',
- requirements: 'Success\nSelf Development',
- description: 'In this course, we will persent a recipe of the most delicious of the most useful recipes for human health , in a detailed and smooth manner , and at the same time based on the ingredients widely available in the market,but the most good in the recipe is the wonderful final taste , which does not it can never be resisted, and we have also provided some of the most important tips and expertise in the field of cooking , especially our rich recipe.',
- audience: 'The target student is the talented or interested in the field of graphic arts and design',
- picture: 'https://i.udemycdn.com/course/240x135/1456524_4fac_2.jpg',
+  title: "How To Cultivate Mindfulness & Mindfulness Meditation",
+  subtitle: "Certified: Mindfulness Meditation: Mindfulness & Spirituality : Meditation Techniques & Spirituality of Mindfulness",
+  teacher: 'Julian Jenkins',
+  teacher_id: u9.id,
+  price:4299,
+  rating:4,
+  rating_count: 165,
+  student_count: 1212,
+  languages: "English",
+  learning_goals: "✅Mindfulness is a great way to learn how to cope with the stresses and strains of life, this course will give you all the basics you need with a spiritual edge.\n✅Awaken your spirituality - learn to live moment by moment\n✅Understand yourself and connect with your inner feelings\n✅Learn mindful meditation and a number of powerful tools to live a happier healthier life\n✅Connect with natures energy\n✅Develop your spiritual side\n✅Full course support and community access on our Facebook Udemy Group\n✅Understand Mindfulness\n✅Learn meditation\n✅This course is certified and you will receive a personal certificate from my self upon completion and on request",
+  requirements: "An open mind and time",
+  description:"<p>Learn the powerful foundations of <strong>mindfulness and mindfulness meditation</strong> to help with stress management and personal development</p><p>✅Certified: This is a certified course and a personal certificate from myself will be issued at completion on request.</p><p><strong><em>How To Cultivate Mindfulness &amp; Spiritual Meditation&nbsp; </em></strong></p><p>Mindfulness is a powerful tool to help people develop themselves, understand and work with stress, anxiety and life's super highway. We all need to spend some times on ourselves and Mindfulness is a great gift not just to use ourselves but also the course gives you the ability to teach others. This course will give you the foundation to build a stronger connection and relationship with yourself, allowing you to grow psychically and spirituality, but furthermore allowing you to teach others these very powerful tools to cope with everyday life, loss or anxiety or mental issues. As always my courses are un-edited and cut through the complications and the noise of complexity to deliver in a way that will resonate with you.</p><p><strong>Join me on one of the highest rated spiritual courses here is a review from one of my graduates Alicia *****</strong></p><p>'I started training with Julian and suddenly, after 35 years.. everything started to fall into place and make sense! There is no doubt in my mind why I was guided to Julian .... he is truly amazing.. so gifted... so passionate and has this unbelievable gift to make you feel like there is only you and him in the room... it feels like he is directly speaking to you! He works and speaks from the heart! I am so incredibly grateful for Julian and his teaching and guidance! If you are reading this you’ve also been guided to Julian! So take the leap.. I promise, it’s something you wont regret it x'</p><p>#mindfulness #spirituality #mindful #meditation</p>",
+  audience: "This course will help all students form beginners to masters.\nPeople curious about spiritualism\nStudents who want to develop moment to moment living through mindful meditation\nA course for everyone to enjoy x",
+  picture: "https://i.udemycdn.com/course/240x135/2076402_2685_2.jpg"
 )
 c10 = Course.create!(
- title: "Email Marketing Hacks 2020: Build a Huge List of Email IDs",
- subtitle: "Boost your Business with the Power of Email Marketing using Advanced Email Marketing Hacks in 2020.",
- teacher: 'Srinidhi Ranganathan',
- teacher_id: u4.id,
- price: 1099,
- rating: 4,
- rating_count: 1027,
- student_count: 37761,
- languages: "English",
- learning_goals: "Gain hands-on tactics for generating high-quality leads\nLearn actionable and advanced lead generation tactics that they can apply to their business\nCreate a repeatable, sustainable lead generation process.\nGenerate tons of leads to aid in their email campaign",
- requirements:"There is no prerequisite at all.\nLearn this technique from scratch and implement the same to take any business, product or website to the next level.",
- description: "Is email marketing the answer to everything to promote your business to the maximum? The answer is a resounding yes - if you plan to use the right email marketing tips and you market to the correct audience who will buy your product or service.However, there will always be businesses that don't believe in email marketing's strength. This is mainly because, due to their own shortcomings, they do not see any positive results with their email marketing efforts. These business owners sometimes only need a few email marketing tips to increase their email value. Did you know?Email is one of the most successful web-based marketing media. Research have shown that email marketing tends to produce even more revenue than Facebook and Twitter social media empires, which is why you will want all the advice you can get for email marketing.Email marketing is the process of delivering, typically to a group of people, a promotional message via online. Each email sent to a prospective or existing client could be known as email marketing in its broadest sense. Using Email marketing techniques is one of the most cost-effective ways of promoting your product or service, whether it's about creating your brand or selling more. This super mind-blowing course 'Email Marketing Hacks 2020: Build a Huge List of Email IDs' created by Digital Marketing Legend 'Srinidhi Ranganathan' offers all you need to know in order to make the most of this knowledgable and practical course. Learn how to create a strategy for email marketing, model and check successful communications with basic and advanced lead-generation tricks taught here.Get ready to extract tons of email ids in a day using secretive methods in lead-generation in 2020. Ultimate secrets and hacks that no-one will ever tell you. Finally - an actionable course on Advanced Lead-Generation has been launched here on Udemy.In this course, I will teach you on how to gain hands-on tactics for generating high-quality leads at the top of your sales funnel. You’ll learn actionable advanced lead generation tactics that you can apply to your business and almost any type of business to create a repeatable, sustainable lead generation process.There is no prerequisite at all. You can learn this technique from scratch and implement the same to take your business, product or website to the next level.At first, the email marketing strategies we mentioned may seem quite different, but once incorporated, positive results will be seen instantly. To improve your email marketing, try to take a step-by-step approach. It's not going to happen overnight, but if you take the right measures at the right time, it will get easier. Note, only if you take care of the details that make up the big picture, the email marketing strategies will become lucrative. So, are you ready for Lights? Camera? Action?Then, get set and enroll in 'Email Marketing Hacks: Build a Huge List of Email IDs'. There is no time to waste. Get setting rolling and become an email marketing whiz kid in no time.#Emailmarketing #email #marketing #emailmarketing202",
- audience:"Marketing Professionals, freelancers or startup company owners looking at e-mail marketing to promote their products.\nAnyone looking at generating e-mail leads either for their product launch or creating awareness about their products through e-mail marketing.",
- picture: "https://i.udemycdn.com/course/240x135/1286352_69db_2.jpg"
+  title: "Robotium (+Recorder) - Android Mobile Application Automation",
+  subtitle: "Robotium (& Recorder) – Introduction, Benefits & limitations; Eclipse IDE & Android Studio Plugin Demo",
+  teacher: 'e VideoTuition',
+  teacher_id: u10.id,
+  price: 399,
+  rating: 2,
+  rating_count: 5,
+  student_count: 43,
+  languages: "English",
+  learning_goals: "Have In-depth understanding of Robotium Automation Tool\nAutomate Android Mobile Apps Testing using Robotium Automation Tool\nWrite Android automated test in Eclipse\nProvide low cost Android Apps testing solution to your Project or Organization",
+  requirements: "Basics of software testing",
+  description: "Robotium is an Android test automation framework for testing native and hybrid android mobile applications against mobile devices or emulators. It makes easy to write powerful and robust automated tests for Android applications. With the help of Robotium, testers can write function, system and user acceptance test scenarios, spanning multiple Android activities.In this course, I have covered following sub topics :-Android Development Tools (ADT) – Installing Eclipse PluginAndroid Screen Monitor – Mirroring / Projecting Android Mobile Screen On ComputerRobotium (& Recorder) – Introduction, Benefits & limitations;Eclipse IDE & Android Studio Plugin Android Automation Demo.",
+  audience: "Mobile QA, Automation Tester, Software Tester",
+  picture: "https://i.udemycdn.com/course/240x135/616052_9660_5.jpg"
 )
 c11 = Course.create!(
- title: '32 Footwork Dance Moves for Parties and Showing Off',
- subtitle: 'Shuffling, House Dance, Hip Hop, C Walk and Charleston dance moves for parties',
- teacher: 'Brian Bee',
- teacher_id: u5.id,
- price: 1099,
- rating: 4,
- rating_count: 83,
- student_count: 1620,
- languages: 'English',
- learning_goals: '32 footwork based fancy dance moves',
- requirements: 'ability to count beats',
- description: "This course was created for guys that are looking to take their dance skills up a notch; for guys that are looking to jump inside the dance circle at the next party!\nThe dance moves taught in this program are from the dance styles of Hip Hop, House Dancing, Shuffling, Charleston and C-walking. \nEach move is broken down into a step-by-step, easy to follow format so you don't get overwhelmed or confused when learning the dance moves.",
- audience: 'guys that are looking to impress friends and the ladies at the next party',
- picture: "https://i.udemycdn.com/course/240x135/1247064_2f12.jpg"
+  title: "Intro to Excel Macros Part 1",
+  subtitle: "This course explains how Excel's Macro Recorder can automate simple repetitive tasks in your daily work.",
+  teacher: 'David Ringstrom',
+  teacher_id: u11.id,
+  price: 1044,
+  rating: 4,
+  rating_count: 243,
+  student_count: 1314,
+  languages: "English",
+  learning_goals: "Discover what an Excel macro is.\nRecognize how to unhide and hide the Personal Macro Workbook in Excel as needed.\nIdentify actions to take when you make a mistake while recording a macro.",
+  requirements: "No advanced preparation or prerequisites are needed for this course.\nAlthough each course ay be taken individually, this is part 1 of 4.",
+  description: "<p>In this course Excel expert David Ringstrom, CPA, helps you get started with Excel's Macro Recorder. Most users are unaware of the automation possibilities that macros present, and so this course is designed to show you how to automate simple repetitive tasks in your daily work. The course focuses on Excel's Macro Recorder and storing macros in the Personal Macro Workbook for future use. You'll also learn how to create a shortcut on Excel's Quick Access Toolbar for one click access to your most frequently used macros.</p><p>David teaches from Excel 2010 but provides handouts with numbered steps that are specific to Excel 2003, Excel 2007, Excel 2010, Excel 2013, and 2016.</p><p><strong>Topics covered in this Excel macros for beginers course include:</strong></p><ul><li><p>Learn what a macro is in Excel.</p></li><li><p>Use Excel's Macro Recorder to create simple macros without any programming knowledge required.</p></li><li><p>Determine when to use Relative References when using Excel’s Macro recorder.</p></li><li><p>Recover from making mistakes when recording macros.</p></li><li><p>Understand the nuances of Excel’s Personal Macro Workbook and why you may wish to use it.</p></li><li><p>Create an icon on your Quick Access Toolbar so that you can launch frequently used macros with a mouse click or keyboard shortcut.</p></li></ul><p>Although each course ay be taken individually, this is part 1 of 4.</p><p>1.&nbsp;Intro to Excel Macros Part 1</p><p>2.&nbsp;Intro to Excel Macros Part 2</p><p>3.&nbsp;Intro to Excel Macros Part 3</p><p>4.&nbsp;Intro to Excel Macros Part 4</p>",
+  audience: "Anyone interested in Excel's Macro Recorder and storing macros in the Personal Macro Workbook for future use.\nAnyone in the Finance and Accounting Field.",
+  picture: "https://i.udemycdn.com/course/240x135/1231156_5b18_2.jpg"
 )
 c12 = Course.create!(
-  title: "Data Structures and Algorithms - The Complete Masterclass",
-  subtitle: "Crack the code interview by getting mastery in data structures & algorithms & Become a data structures & algorithms Ace",
-  teacher: 'Vinoth Parthasarathy',
-  teacher_id: u6.id,
-  price: 1099,
+  title: "Weight Loss for (2020) ➤Slim Thinking Permanent Weight Loss",
+  subtitle: "Lose Weight and beat cravings learn to change your relationship to Food and feel great without dieting Weight Loss",
+  teacher: 'Alan Kirwan',
+  teacher_id: u12.id,
+  price: 1044,
   rating: 4,
-  rating_count: 890,
-  student_count: 2842,
+  rating_count: 14,
+  student_count: 2684,
   languages: "English",
-  learning_goals: "Understand the coding principles and Understand How to write code in efficient way by help of choosing right data structures and efficient algorithms\nHow to choose right data structures for your need\nUnderstand concept behind Arrays, Linked Lists, Hash tables, Trees, Graph, Stacks, Queues, Sort algorithms and Search algorithms\nUnderstand the fundamentals of the Data structures and Algorithms\nUnderstand popular algorithms, and how to use it when you need.\nLearn everything you need to crack difficult coding interviews.\nReason about applicability and usability of Data Structures",
-  requirements:"A strong work ethic, enthusiasm to learn, and plenty of excitement about the awesome new skill you are going to build.\nNo experience with data structures or computer science needed!",
-  description: "Congratulations!  You've found the most popular, most complete, and most up-to-date resource online for learning Data structures and Algorithms. Are you interested in the field of Data structures? Are you interested to play around complex Algorithms?  Then this course is for you!You need to understand algorithms and data structures because I've seen code written by people who didn't understand Data structures and algorithms; and trust me, you don't want to be that guy. The entire course is based around a single goal: Turning you into a professional programmer & capable of writing code as a professional.Are you scared about the coding interview? Join with me in this Adventure, Crack your coding interview by getting mastery in data structures & algorithms.There are lots of free tutorials and videos on YouTube. Why would you want to take this course? The answer is simple: Quality of teaching. So, from the very beginning to the very end, you'll be confident that you'll be in good hands and watching every minute of the course, unlike the reading many free tutorials and videos, do not waste your precious time. Each section is equipped with a balanced mix of theory and Implementation.It's my goal to make clear about Data structures and Algorithms as much as possible and ensure your success. I want everyone to benefit from my courses, that's why we'll dive deeply into Data structures and Algorithms concepts and why I made sure to also share the knowledge that's helpful to programmersWhy it’s the only course you need to learn Data Structures and Algorithms?This course is everything you need from start to end regardless of your experience.It's an interactive course. Instead of explaining the concepts with Powerpoint slides, I will take you to the classroom again.This course is fun and exciting, but at the same time, we dive deep into Data Structures and Algorithms. Specifically, you will learn :· Understanding the core principles of coding.· Understanding code complexity and how to write code the efficiently and various levels of complexity.· Basics of Data Structures and algorithms· Basic data structures (Arrays, linked list, and Hash Table)· Tree data structures· Graph data structures· Algorithms to apply Graph in product implementation· Searching algorithms· Various Sorting algorithmsSee what your fellow students have to say 'Extremely amazing course to get started with data structures and algorithms. It was filled with so much content! Loved it. 'I really enjoyed the time spent in this course. I learn a lot about data structures and I'll put this knowledge into my work. An in-depth explanation of everything and Real-world examples. Thank you for such a wonderful course.'Excellent course. Highly recommended!. Vinoth did an excellent job breaking down a complex topic into an easy piece. The lectures and the whole course are well ordered, each topic is presented in the right place. Ultimately, it was a good experience for me. Looking forward to your next course/topic.'This is my first course on Udemy and I must say it was totally worth it. I enjoyed every single video on this course. And It has great many examples to teach the basics of Data Structures. Not only the experienced but beginners like me in the Data Structures will find the content to be 5-star. The instructors are really great! Thank you Vinoth for the handwork and teaching us in the great and understandable way! 'What if I have questions?As if this course wasn’t complete enough, I offer full support, answering any questions you have 7 days a week.Enroll now and begin your journey towards the most lucrative, adventurous and exciting career path you can imagine! Or, take this course for a free spin using the preview feature, so you know you’re 100% certain this course is for you.100% MONEY-BACK GUARANTEEThis course comes with a 30-day full money-back guarantee. Take the course, go through the lectures, do the exercises, and if you're not happy, ask for a refund within 30 days. All your money back, no questions asked.See you on the inside (hurry, Data structures, and algorithm class is waiting!)",
-  audience:"Anyone who want to take their programming skills to the next level and learn a future-proof programming\nAnyone who want to become intelligent programmer\nAnyone who is Feeling scared about coding interview\nAnyone who wants to strengthen their problem-solving skills",
-  picture:"https://i.udemycdn.com/course/240x135/2165246_3286_6.jpg"
+  learning_goals: "use this technique to overcome many of their limitations such as fear, anxiety, cravings eg. cigarettes and food\nChange how you feel and respond to any situation in your life\nHelp friends and family feel really good\nReduce stress from your life with a simple technique\nAccess to downloadable mp3 files\ndownloadable pdfs\nEliminate chocolate cravings for effective permanent weight loss\nEliminate specific food cravings for permanent weight loss\nStop comfort eating by eliminating the emotional triggers to comfort eating and permanent weight loss",
+  requirements: "Have an open mind and the intention to engage in all the exercises so that you will enjoy the benefits of using EFT\nHave a quite place you will not be disturbed to complete all the exercises\nPrinter to print downloadable work sheets\nIf no printer is available a pen and paper\nThat permanent weight loss is possible without the need for will power or diets",
+  description: "<p><strong>Weight Loss for (2020)<em> Slim Thinking Permanent weight loss</em></strong></p><p><br><strong><em>5 Star Review</em></strong></p><p><em>Loved this . Very easy to follow , great information and explained well . Thank you ????</em></p><p><strong><em>Jacquie Case</em></strong></p><p><br></p><p><strong>If</strong> you have been dieting with weight loss programs and never been able to maintain the weight loss and look the way you want , then this is the course for you because you will learn a technique that will help you to.</p><p><strong>Eliminate chocolate cravings for speedy weight loss</strong></p><p><strong>Eliminate other specific food cravings for speedy and permanent weight loss</strong></p><p><strong>Eliminate comfort eating for permanent weight loss</strong></p><p>To begin your permanent and easily manageable weight loss I will be teaching you a technique called EFT ( Emotional Freedom Technique) that I will be teaching you in a step by step videos that will help you to eliminate cravings for specific foods that usually sabotage any efforts to remove excess weight and improve results for permanent weight loss. </p><p>I will be guiding you through each exercise to give you an easy to learn and use technique to begin making all the changes you desire. I will be teaching you how to eliminate chocolate cravings so that if you used to use chocolate as your drug of choice to feel good all that craving and calories will give you a speedy weight loss in less than ten minutes.</p><p>To prove this is possible I have added a recording of my work live on radio in Ireland with a radio presenter Gerry Kelly helping him to eliminate his chocolate craving. </p><p>I will also teaching you how to use EFT on any other cravings to reach your goal for permanent weight loss.</p><p>I will then be teaching&nbsp; you how to use the same technique for emotional triggers that have caused you to over eat and sabotaged previous attempts at weight loss that lasts. </p><p>But before you start to make any of those changes I will be guiding you through an exercise that I will have you visualize&nbsp; the way you want to look so that you know what you want from this course before you start to get that permanent weight loss so that after about 21 days you will have began to see positive changes in your body and life style and relationship to food only because you have fully engaged in this course.</p><p>Because I have created this course to simulate the sessions that I have had with successful weight loss clients here in my therapy room in County Cavan Ireland.I will also be helping you to program a new way of thinking with your own private hypnosis sessions again simulated from work with my clients to reprogram your mind to be a slim thinking for permanent manageable weight loss.</p><p><strong>What you will get&nbsp;in this weight loss course</strong></p><ol><li><p><strong><em>Learn how to visualize how you want to look </em></strong></p></li><li><p><strong><em>Learn EFT&nbsp; ( Emotional Freedom Technique )and how to apply it </em></strong></p></li><li><p><strong><em>Eliminate specific food cravings</em></strong></p></li><li><p><strong><em>Beat emotionally triggered eating</em></strong></p></li><li><p><strong><em>learn how to trigger a good feeling any time </em></strong></p></li><li><p><strong><em>Listen to three specially recorded hypnosis sessions </em></strong></p></li><li><p><strong><em>Review your progress with session debriefing </em></strong></p></li><li><p><strong><em>After 21 days notice the results you are having and know you will continue to have because you took this course. </em></strong></p></li></ol><p><strong>Bonus Hypnosis Downloads for Losing Weight </strong></p><p><br></p><p>1. Body Image Hypnosis</p><p>2. Enjoy to Exercise Hypnosis</p><p>3. Gastric Band Hypnosis</p><p>4. Increase Metabolism Rapid Weight Loss</p><p>5. Motivation for Weight loss Hypnosis</p><p>6. Inner goddess hypnosis</p><p>7. Release Excess Weight Hypnosis</p><p>8. Stop Binge Eating Hypnosis</p><p>9. Weight Control Hypnosis</p><p>10. Weight loss Food for Energy Hypnosis</p>",
+  audience: "This course was created for people who really want to make changes to how they feel about food\nThis is not for you if you are not willing to set aside 35 minutes each day and commit to making a positive change to your life\nThis course is created for people who are open to changing there relationship to food\nonly if you are committed to having an effective way to control over eating and have a permanent weight loss way of life",
+  picture: "https://i.udemycdn.com/course/240x135/401608_df52_6.jpg"
 )
 
 c15 = Course.create!(
- title: 'Computer Science 101: Master the Theory Behind Programming',
- subtitle: 'Computer Science 101: Learn Computer Science to become a better Programmer and Software Engineer.',
- teacher: 'Kurt Anderson',
- teacher_id: u1.id,
- price: 1099,
- rating: 4,
- rating_count: 1577,
- student_count: 8550,
- languages: 'English',
- learning_goals: 'Understand the Fundamental Theories of Algorithm Analysis\nBe able to Compare Various Algorithms\nUnderstand When to use Different Data Structures and Algorithms\nUnderstand the Fundamentals of Computer Science theory\nUnderstand the Core Sorting Algorithms',
- requirements: 'A Willingness to Learn New Topics!\nNo Prior Experience or Knowledge is Needed!',
- description: '<p><strong>Master the Theory to Becoming a Good Programmer!&nbsp;</strong></p><p>If youre looking to learn the theory that makes great programmers,&nbsp;youve come to the right place!&nbsp;This course is perfect for anyone interested in learning the fundamentals to Computer Science Theory.&nbsp;</p><p><strong>No Previous Experience Necessary!&nbsp;</strong></p><p>Computer science and technology are often thought of as things only for "analytical minds". I believe however that technology and its theory are for everyone. So I designed this&nbsp;course to&nbsp;teach each topic in a variety of&nbsp;<strong>easy to digest</strong> ways. Through these multiple reinforcing steps, I believe anyone can follow along and succeed!&nbsp;<br></p><p><strong>Why is the Theory of Programming Important?&nbsp;</strong></p><p>Understanding&nbsp;Computer Science theory is what sets apart&nbsp;<strong>Great programmers&nbsp;</strong>from average ones. Programming theory is something that transcends a single programming language. It gives you skills and techniques you can apply to any programming language you touch. Learning the theory behind programming is just as important, if not more important than learning a singular programming language like Java or C++.</p><p>Programming is all about problem solving. Analyzing a problem, and being able to figure out a way that a computer can help with that problem. Computer Science is the practice of this analysis process. It goes over the techniques and knowledge necessary to design efficient and sustainable code.&nbsp;</p><p>So if you want to begin setting yourself apart from the average programmers, this is the course for you!&nbsp;</p><p><strong>Enroll Now and youll Learn:&nbsp;</strong><br></p><ul><li><p>Binary Number System</p></li><li><p>N Notation</p></li><li><p>Big O Notation</p></li><li><p>How to Analyze a Program</p></li><li><p>Arrays and&nbsp;their Advantages</p></li><li><p>Nodes and their Importance</p></li><li><p>Linked&nbsp;Lists and their Advantages and Implementations</p></li><li><p>Stacks implemented with Arrays and Linked&nbsp;Lists</p></li><li><p>Queues Implemented with Arrays and Linked Lists</p></li><li><p>Various Sorting Algorithms and Their Comparisions</p></li><li><p>Trees and Binary Search Trees</p></li><li><p>And Much Much More!&nbsp;</p></li></ul><p><strong>My&nbsp;Guarantee</strong></p><p>I am so confident you will enjoy this course, I offer a 100%&nbsp;30-day money-back guarantee through Udemy.&nbsp;If you are not happy with your purchase, I have no problem with giving your money back!&nbsp;</p><p><strong>Are You Ready to Get Started?&nbsp;</strong></p><p>I will be waiting for you inside the course!&nbsp;</p><p>Remember, this is an online course, so you can take it at your own pace.&nbsp;<em>Are you busy right now?&nbsp;</em>Thats okay. Enroll today, and take the course at your own pace.</p><p>Thanks so much for your interest in this Computer Science 101 Course!&nbsp;</p><p>See you inside!</p><p>Kurt</p><p><br></p>',
- audience: 'Anyone who wants to become a Good Programmer\nAnyone interested in the Computer Science Discipline\nAnyone who wants to learn how to problem solve like a Computer Scientist',
- picture: 'https://i.udemycdn.com/course/240x135/1395136_3f8a_3.jpg'
+  title: "comprehensive anger management",
+  subtitle: "living a peaceful, productive life",
+  price: 19999,
+  rating: 4,
+  rating_count:15,
+  student_count: 45,
+  languages: "English",
+  learning_goals: "anger management",
+  requirements:"no",
+  audience:"anyone struggling with anger issues",
+  picture: "https://i.udemycdn.com/course/240x135/2205272_f40d_2.jpg",
+  description: "<p>Emotional Regulation (Anger Management)</p><p>-&nbsp; Learn how to regulate yourself when your emotions are attempting to hijack your logic</p><p>-&nbsp; Understand your emotions and the neural circuitry of the brain that produces emotions</p><p>-&nbsp; Learn the unique origins of your particular anger and heal the wounds that cause your anger</p><p>-&nbsp; Gain skills to remain calm under stressful situations</p><p>- Learn how to enlist others in your quest for emotional regulation</p><p>- use practical accountability tools to keep you on track with your emotional regulation</p>",
+  teacher: 'Ted Taskey',
+  teacher_id: u15.id,
 )
 c14 = Course.create!(
- title: 'OTTOMAN CUISINE, TURKISH COOKING CLASS',
- subtitle: 'A great variety of mouth watering dishes in Turkish cuisine which is mostly the heritage of Ottoman cuisine.',
- teacher: 'Darma Academy',
- teacher_id: u2.id,
- price: 1044,
- rating: 1,
- rating_count: 1,
- student_count: 2,
- languages: 'English',
- learning_goals: 'Learn to cook Turkish traditional mezes and dishes in a very simple way\nEngaging with one of the richest cuisine in history\nGain the newest kitchen skills\nA new perspectives on every day food',
- requirements: 'Passion for cooking and engaging new cultures. Everybody from all aspects are welcome to this class.',
- description: 'Turkish cuisine one of the worlds great cuisines. It reflects the long history of this land... A great variety of mouth watering dishes in Turkish cuisine which is mostly the heritage of Ottoman cuisine. It is the mixture and refinement of Central Asian, Middle Eastern and Balkan cuisines. Therefore it is impossible to fit Turkish cuisine into a short list.
- Anatolia is blessed with varied climate which allows the country to get almost everything on its land. Turkey is one of the few countries in the world that has been self sustaining, producing all its own food. Turkish cuisine traditionally is NOT spicy, except in the southeast part of the country, where preparations can reflect a hot Middle Eastern(Arabic) food influence. But now in evertwhere you are able to find restaurants that sell that kind of spicy dishes
- Turks have a big diversity of vegetables and of course this reflects on the dishes. One very important detail about vegetable dishes is whether they have meat in them or not.',
- audience: 'Who likes enjoying cooking, food and culture',
- picture: 'https://i.udemycdn.com/course/480x270/2702904_7dd8.jpg'
+  title: "Resolve anger and other strong emotions - Anger Management",
+  subtitle: "Become free from costly reactive anger and use its energy to make positive changes in your life and relationships.",
+  price: 2499,
+  rating: 4,
+  rating_count: 82,
+  student_count: 388,
+  languages: "English",
+  learning_goals: "Understand your anger.\nImprove your relationships.\nExperience more peace.\nGreater self awareness.\nImproved sense of choice and ownership.\nMore empathy and skills to work with angry family, workmates or employees.\nIncreased assertiveness skills.\nPractice basic mindfulness.",
+  requirements: "You will need an appetite to change.\nYou will need to be fed up with anger tripping you up in life.\nA pen, paper, and privacy will help you make the most of this course.",
+  audience: "People sick of their anger.\nIf you want to understand yourself better.\nIf you want to understand others better.\nPeople in relationship with others. Personal or professional.\nThere isn't a focus on grief which can be a source of anger.\nThere isn't a focus on unforgiveness which also can be a source of anger.",
+  picture: "https://i.udemycdn.com/course/240x135/394340_a14e_12.jpg",
+  teacher: 'Joel Young',
+  teacher_id: u14.id,
+  description: "<p><em>'Good job Joel.Would have given it 4.5 stars if possible. Joel knows what he is doing. He hits you hard where it hurts but the result is a better skill set and ways of dealing with anger. He cares about his students and understands their psychological needs. I felt like I was taking a well-rounded course.' -Student</em></p><p><br></p><p>This is a short but in-depth course to enable you to understand what you anger (and other strong emotions) are 'fighting' for.</p><p>I draw on 12 years of counselling practice and training to give you a very practical, and well-rounded approach to your anger that you will find refreshingly easy to apply to your life.</p><p>Intimate interviews give you glances into peoples lives and create a platform for each lesson.</p><p>The language and pace of the course make it accessible and useful for anyone looking to have a more peaceful relationship with themselves or another.</p><ol><li><p>Section 1: De-Shaming anger, feelings, and needs.</p></li><li><p>Section 2: Taking stock of the cost of anger.</p></li><li><p>Section 3: Getting clear about what anger is and is not.</p></li><li><p>Section 4: Practical CBT and Mindfulness approaches.</p></li></ol><p>The course integrates principles from various credible schools of thought. (CBT, NVC, Narrative Therapies, Living Wisdom) so you are a practitioner looking to expand your knowledge of anger you will also find this useful. </p>"
 )
 c13 = Course.create!(
- title: 'chopped dream eaters witch vegetables and eggs:experience...',
- subtitle: 'chopped dream eaters witch vegetables and eggs:your way to a rich taste and a unique sensation,andexperience in cooking.',
- teacher: 'Mustapha elaallali',
- teacher_id: u3.id,
- price: 1044,
- rating: 1,
- rating_count: 1,
- student_count: 1,
- languages: 'English',
- learning_goals: 'Students will be able to acquire a new kind of experience that will increase the level of their technical abilities\nStudents will be able to acquire a new kind of experience that will increase the level of their technical abilities',
- requirements: 'Success\nSelf Development',
- description: 'In this course, we will persent a recipe of the most delicious of the most useful recipes for human health , in a detailed and smooth manner , and at the same time based on the ingredients widely available in the market,but the most good in the recipe is the wonderful final taste , which does not it can never be resisted, and we have also provided some of the most important tips and expertise in the field of cooking , especially our rich recipe.',
- audience: 'The target student is the talented or interested in the field of graphic arts and design',
- picture: 'https://i.udemycdn.com/course/240x135/1456524_4fac_2.jpg',
+  title: "Christian Weight Loss: Weight Loss Strategies for Believers",
+  subtitle: "Use Christ-centered Stress Reduction & Weight Loss Techniques. Improve Your Health from a Christ-centered view.",
+  price: 1999,
+  rating: 4,
+  rating_count: 6,
+  student_count: 30,
+  languages: "English",
+  learning_goals: "Learn strategies to stop the BIOLOGICAL SABOTAGE of chronic stress, live a healthier life, and strengthen your relationship with your Savior.",
+  requirements:"Be eager to learn. No prior health education or scientific background is necessary to understand this course. Hold a willingness to consider a Christ-centered perspective for health and healing.",
+  audience: "Anyone who wants to reduce their stress, manage their weight, and deepen their walk with Christ.",
+  picture: "https://i.udemycdn.com/course/240x135/519242_b59d_2.jpg",
+  teacher: 'Diane Davis',
+  teacher_id: u13.id,
+  description: "<p>Stress in our lives has created a global explosion of obesity and serious health risks. Every new nutritional supplement or slickly packaged mind-body system preys on the hope and despair of thousands of us who have lived through the repeated failures of stress reduction and weight loss programs. We are constantly bombarded by a social media which insists that WE are the God of our own universe and can change our health and bodies by the sheer power of our mind. Christian Believers reject that idea because we have a radically different worldview. Yet we still struggle with our emotional stress and weight problems, with equally painful defeats. Enroll in this course to learn cutting-edge health science research results and complementary and alternative medicine (CAM) practices, coupled with a clear Scriptural connection to God's Plan for our Peace and Safety. You CAN learn how to stop the BIOLOGICAL SABOTAGE of chronic stress, live a healthier life, and strengthen your relationship with our Savior.</p>"
 )
 c16 = Course.create!(
- title: "Email Marketing Hacks 2020: Build a Huge List of Email IDs",
- subtitle: "Boost your Business with the Power of Email Marketing using Advanced Email Marketing Hacks in 2020.",
- teacher: 'Srinidhi Ranganathan',
- teacher_id: u4.id,
- price: 1099,
- rating: 4,
- rating_count: 1027,
- student_count: 37761,
- languages: "English",
- learning_goals: "Gain hands-on tactics for generating high-quality leads\nLearn actionable and advanced lead generation tactics that they can apply to their business\nCreate a repeatable, sustainable lead generation process.\nGenerate tons of leads to aid in their email campaign",
- requirements:"There is no prerequisite at all.\nLearn this technique from scratch and implement the same to take any business, product or website to the next level.",
- description: "Is email marketing the answer to everything to promote your business to the maximum? The answer is a resounding yes - if you plan to use the right email marketing tips and you market to the correct audience who will buy your product or service.However, there will always be businesses that don't believe in email marketing's strength. This is mainly because, due to their own shortcomings, they do not see any positive results with their email marketing efforts. These business owners sometimes only need a few email marketing tips to increase their email value. Did you know?Email is one of the most successful web-based marketing media. Research have shown that email marketing tends to produce even more revenue than Facebook and Twitter social media empires, which is why you will want all the advice you can get for email marketing.Email marketing is the process of delivering, typically to a group of people, a promotional message via online. Each email sent to a prospective or existing client could be known as email marketing in its broadest sense. Using Email marketing techniques is one of the most cost-effective ways of promoting your product or service, whether it's about creating your brand or selling more. This super mind-blowing course 'Email Marketing Hacks 2020: Build a Huge List of Email IDs' created by Digital Marketing Legend 'Srinidhi Ranganathan' offers all you need to know in order to make the most of this knowledgable and practical course. Learn how to create a strategy for email marketing, model and check successful communications with basic and advanced lead-generation tricks taught here.Get ready to extract tons of email ids in a day using secretive methods in lead-generation in 2020. Ultimate secrets and hacks that no-one will ever tell you. Finally - an actionable course on Advanced Lead-Generation has been launched here on Udemy.In this course, I will teach you on how to gain hands-on tactics for generating high-quality leads at the top of your sales funnel. You’ll learn actionable advanced lead generation tactics that you can apply to your business and almost any type of business to create a repeatable, sustainable lead generation process.There is no prerequisite at all. You can learn this technique from scratch and implement the same to take your business, product or website to the next level.At first, the email marketing strategies we mentioned may seem quite different, but once incorporated, positive results will be seen instantly. To improve your email marketing, try to take a step-by-step approach. It's not going to happen overnight, but if you take the right measures at the right time, it will get easier. Note, only if you take care of the details that make up the big picture, the email marketing strategies will become lucrative. So, are you ready for Lights? Camera? Action?Then, get set and enroll in 'Email Marketing Hacks: Build a Huge List of Email IDs'. There is no time to waste. Get setting rolling and become an email marketing whiz kid in no time.#Emailmarketing #email #marketing #emailmarketing202",
- audience:"Marketing Professionals, freelancers or startup company owners looking at e-mail marketing to promote their products.\nAnyone looking at generating e-mail leads either for their product launch or creating awareness about their products through e-mail marketing.",
- picture: "https://i.udemycdn.com/course/240x135/1286352_69db_2.jpg"
+  title: "Anger Management",
+  subtitle: "Everyone experiences Anger. It's how you deal with it, that matters most.",
+  price: 3499,
+  rating: 4,
+  rating_count: 7,
+  student_count: 30,
+  languages: "English",
+  learning_goals: "Understand the Anger Emotion\nKnow Ways of Dealing with Anger\nGain Control of the Anger Emotion\nIdentify the Problem Causing the Anger\nMaking a Plan to Solve the Problem Causing the Anger\nSolving the Problem Causing the Anger\nEffectively Identify Their Personal Anger triggers and What to do When They Get Angry.\nHow to Effectively Deal with Others Who Are Angry",
+  requirements: "A notebook and pen to take notes and a suitable internet connection to stream video",
+  description: "<p>Dealing with the Anger emotion in an unhelpful way can be incredibly destructive. However, since everyone gets angry, it is vital to have effective and constructive approaches to manage it before it gets out of hand causing negative results. The Anger Management course will give you an understanding of the Anger emotion, help teach you how to identify and deal with personal anger triggers and how to effectively deal with others when anger arises.</p>",
+  teacher: 'TBAE Team Building and Events',
+  teacher_id: u16.id,
+  audience: "Anyone wanting to understand the anger emotion and how to deal with it.",
+  picture: "https://i.udemycdn.com/course/240x135/1188252_4329.jpg"
 )
 c17 = Course.create!(
- title: '32 Footwork Dance Moves for Parties and Showing Off',
- subtitle: 'Shuffling, House Dance, Hip Hop, C Walk and Charleston dance moves for parties',
- teacher: 'Brian Bee',
- teacher_id: u5.id,
- price: 1099,
- rating: 4,
- rating_count: 83,
- student_count: 1620,
- languages: 'English',
- learning_goals: '32 footwork based fancy dance moves',
- requirements: 'ability to count beats',
- description: "This course was created for guys that are looking to take their dance skills up a notch; for guys that are looking to jump inside the dance circle at the next party!\nThe dance moves taught in this program are from the dance styles of Hip Hop, House Dancing, Shuffling, Charleston and C-walking. \nEach move is broken down into a step-by-step, easy to follow format so you don't get overwhelmed or confused when learning the dance moves.",
- audience: 'guys that are looking to impress friends and the ladies at the next party',
- picture: "https://i.udemycdn.com/course/240x135/1247064_2f12.jpg"
+  title: "Music Copyright: Protect Your Music",
+  subtitle: "Learn the in's and out's of music copyright and how to legally protect your music.",
+  price: 19999,
+  rating: 4,
+  rating_count: 53,
+  student_count: 1663,
+  languages: "English",
+  learning_goals: "Understand the basics of copyright.\nProtect your music under intellectual property laws.\nRegister your copyrighted music with the government.",
+  requirements: "No prior experience is needed.",
+  description: "<p><strong><em>If you're worried about releasing your music because you don't understand how to properly copyright and protect your work then please continue reading.</em></strong></p><p>We have all heard of the horror stories of musicians who have&nbsp;had their music stolen and were unfortunately&nbsp;not properly acknowledged nor paid. Don't let that be you!</p><p>In this course you will learn the basics of music copyright, the law,&nbsp;and how to register your music with the US Copyright Office!</p><p><strong><em>This information will help</em></strong></p><ul><li>Give you peace of mind</li><li>Protect your music</li><li>Handle your business like a boss</li><li>Get you properly paid or compensated for your work if its stolen&nbsp;</li></ul><p>Check out what current students are saying</p><p><em>'This section of the course was very well explained.'</em> - David Gakin<br></p><p><em>'There's nothing fun about copyrighting your work except for the end result, and Joseph helped me get there as quickly and painlessly as possible. Quick, understandable, and to the point. What more could you need for this type of thing? Thanks, Joseph!</em>' - Faris Monshi</p><p><em>'This isn't the most popular topic but an absolutely necessary one to tackle for all serious music producers and artists. The course gets straight to the point with a no non-sense approach. Everything is explained well and is easily understood. Thanks for this course EvaJ! This course is highly re-commend for anyone who is looking to copyright their musical works. The 'tutorial documents' available on copyright(.)gov seems so complicated compared to Joseph's course. He keeps everything simple and easy to follow. One thing I did notice is you forgot to block out/blur your address in lecture 12, you might want to to something about that.' -</em> Al Laguna</p><p><strong></strong></p><p><strong>Stop worrying about your music and take the necessary steps to properly cover yourself!</strong><br></p><p><strong>Learn Music Copyright Today!</strong></p><p>Enroll Now</p>",
+  teacher: 'Joseph Evans',
+  teacher_id: u17.id,
+  audience: "This course is for anyone looking to protect their music before releasing it to the general public to make a profit.",
+  picture: "https://i.udemycdn.com/course/240x135/652592_448d_16.jpg"
 )
 c18 = Course.create!(
-  title: "Data Structures and Algorithms - The Complete Masterclass",
-  subtitle: "Crack the code interview by getting mastery in data structures & algorithms & Become a data structures & algorithms Ace",
-  teacher: 'Vinoth Parthasarathy',
-  teacher_id: u6.id,
-  price: 1099,
+  description: "<p>Welcome to the <strong>Complete Flutter App Development Bootcamp with Dart </strong>- created in collaboration with the Google Flutter team.</p><p><strong>Now includes a brand new module on Flutter State Management!</strong></p><p>Covering all the fundamental concepts for Flutter development, this is the <strong>most comprehensive</strong> Flutter course available online. </p><p>We built this course over months, perfecting the curriculum together with the Flutter team to teach you Flutter<strong> from scratch</strong> and make you into&nbsp; a <strong>skilled Flutter developer</strong> with a <strong>strong portfolio</strong> of beautiful Flutter apps.</p><p>Our complete Flutter development bootcamp teaches you how to code using <strong>Dart</strong>&nbsp;and&nbsp;build&nbsp;<em>beautiful, fast, native-quality</em>&nbsp;iOS and Android apps. Even if you have&nbsp;<strong>ZERO</strong>&nbsp;programming experience.</p><p>I'll take you step-by-step through engaging and fun video tutorials and teach you everything you need to know to succeed as a Flutter developer.</p><p>The course includes <strong>27+ hours</strong> of HD video tutorials and builds your programming knowledge while making real world apps. e.g. Whatsapp, QuizUp and&nbsp;Yahoo Weather.</p><p>By the end of this course, you will be <strong>fluently</strong> programming in <strong>Dart</strong>&nbsp;and be ready to build your own Flutter apps and become a fully fledged Flutter developer.</p><p>You'll also have a portfolio of over 15 apps that you can show off to any potential employer.</p><p><strong>Sign up today, and look forwards to:</strong></p><ul><li><p>Over 27&nbsp;hours of HD 1080p video content, everything you'll ever need to succeed as a Flutter developer.</p></li><li><p>Building over 15 fully-fledged apps including ones that&nbsp;use Firebase Cloud Firestore, StreamBuilder, ListView, networking, external APIs and much much more. </p></li><li><p>All the knowledge you need to start building any app you want</p></li><li><p>$8000+&nbsp;Flutter development bootcamp&nbsp;course materials and curriculum</p></li></ul><p><strong>From Beginner to Flutter Developer with Just One Course</strong></p><p>We know that you're here because you value your time. If you wanted to watch someone program for hours and hours without explaining what they're doing, you'd be on YouTube.&nbsp;</p><p>By getting this course, you can be rest assured that the course is carefully thought out and edited. There are&nbsp;beautiful animations that explain all the difficult concepts and we're always on hand to answer student questions.</p><p>So by the end of the course, you'll completely understand:</p><ul><li><p>Fundamental Flutter concepts e.g. Stateful vs. Stateless Widgets, Widget tree, state management, animations, themes and much more.</p></li><li><p>Fundamental Dart concepts e.g. lists, maps, enums, loops, futures, streams, mixins, classes, and much more. </p></li><li><p>Concepts of Object Oriented Programming (OOP): The type system, variables, functions and methods, inheritance, classes and protocols.</p></li><li><p>Control Structures: Using If/&shy;Else clauses, Switch statements and logic to control the flow of execution.</p></li><li><p>Data Structures: How to work with collections, such as Lists and Maps.</p></li><li><p>Software Design: How to organise and format code for readability and how to implement the Model &shy;View&shy; Controller (MVC) design pattern.</p></li><li><p>Networking: How to make asynchronous API calls, store and retrieve data from the cloud, and use the JSON format for server communication.</p></li><li><p>Data Storage: How to use Firebase Cloud Firestore to act as a backend for your Flutter apps.</p></li><li><p>Authentication: How to use log in and register users for your Flutter apps.</p></li><li><p>State Management: How to use setState, prop drilling, lifting state up, callbacks and the Provider package to manage app state.</p></li></ul><p><strong>Don’t waste your time</strong></p><p>Don't waste another minute of your precious life on poor quality videos on YouTube. Or instructors who&nbsp;you can't understand. Or teachers who have no real world in-person teaching experience. Your&nbsp;time is precious. Take this course and find out why everybody is raving about it and why over 35,000 students rated my courses <strong>5 stars</strong>!</p><p><strong>Don't waste your money</strong></p><p>Inside this course, you're getting exactly the same course materials and curriculum as our 12 week in-person programming bootcamp. Instead of spending <strong>$8000+ dollars </strong>and taking time off work, save loads of money by getting this course and do it at your own pace!</p><p><strong>Don't just take my word for it, see what my past students had to say about my courses:</strong></p><p>'Angela is literally my favorite teacher. Ever. In the entire universe. She is hilarious and teaches in a lighthearted and fun way that is also very clear to understand. I instantly purchased this course as soon as I saw it was released because I know Angela delivers the highest quality educational content possible. 100% recommend this course (as well as every other course she's created). Thank you Angela for helping me as I make a career pivot into becoming a hybrid UX designer/mobile developer!' - Jacob Pernell</p><p>'Angela is my favorite Udemy professor for coding courses. Her methods for building onto the material so that you're never progressing too fast or too slow make for a really engaging learning experience. She's thorough in her explanations, and uses fun projects to discuss the material. I had started a couple other Flutter courses before finding this one, and I've progressed more in 24hrs than I did in a week with the other courses. Would love an advanced Flutter course from Angela to tackle once I'm done with this one!' - Jerome Llouche</p><p><em>'You will not find a better teacher than Angela. She does a wonderful job of encouraging you to learn swift the right way. I want to encourage everyone thinking about taking this class to get it,&nbsp;as it is the </em><strong><em>BEST programming class</em></strong><em> I've seen on anywhere and I've tried more than a few of them. If you are looking for an excellent swift programming course, stop there here because you have found it. You will learn Swift from the very beginning of programming all the way through making your own apps that you can upload to the App store.' - Ian Hopjins</em></p><p><em>'SO GOOD!!!&nbsp;</em><strong><em>Retention rate is incredible</em></strong><em> because Angela does a great job in explaining and teaching every aspect of what we are doing. Most of the other instructors on Udemy put code on the screen and pretend nothing happened. This course is amazing! 5/5'</em> -&nbsp;Muhammad Ibrahim</p><p><em>'Angela is a </em><strong><em>spectacular</em></strong><em> teacher!'</em> -&nbsp;Marco Zanirato</p><p><em>'This course was terrific. Only after taking a few more courses from others that I</em><strong><em> realized how good this course</em></strong><em> was. This course taught me more than I was expecting, it provided great instructions and a lot of hands-on tasks to drill-in the concept.' -&nbsp;Marc</em></p><p><em>'Best use of your money! I was a complete beginner but </em><strong><em>Angela made me a pro</em></strong><em> in weeks.'</em> -&nbsp;Burak Tunçbilek</p><p><em>'IT IS #1!!!!!!!!! Absolutely Amazing. The best iOS course i have ever taken. Angela explains everything the way it needs to be explained, so everything is easily understood. The concept of </em><strong><em>this course is built to make you learn, not just watch</em></strong><em> and repeat. Angela is highly educated and it is very much noticeable during the entire course. Again, it is fantastic. Thank you. Please create more courses!!!!!'</em> -&nbsp;Eduard Khachian</p><p><strong>Are you trying to choose between all the different Flutter&nbsp;courses on Udemy? Take a look at what students on my course had to say about this:</strong></p><p><em>I have revamped my expectation for what a</em><strong><em> 5 star course </em></strong><em>should be for Udemy. Angela, you're awesome! I already rated the course as 5 stars early on (at about 20% completion), but after completing roughly 70% of the course, I can say this is my favourite Udemy course as of today. Brilliant course Angela!</em> - Alberto L</p><p><em>'I took a lot of courses on Udemy and elsewhere and non of them were as clear and perfectly paced as this one! Angelas approach is really awesome, </em><strong><em>deep and clear</em></strong><em>.' -&nbsp;Žan Fras</em></p><p><em>'I have taken several iOS courses, so far this course had the </em><strong><em>best explanation </em></strong><em>on swift and xcode documentation. The lecturer is kinda humorous sometimes which make this course even more enjoyable.' -&nbsp;Bryan Pukanda</em></p><p><em>'I have taken lots of courses on udemy and elsewhere for self learning and i can tell you with all the honesty this is one course which </em><strong><em>i did not want it to end</em></strong><em>. It is like one of those movies that you wish keeps going. Whatever concepts are covered were covered very beautifully and made learning quite simple. I got so many answers to Why? in this course like how closures work and why they work that way... why delegates work that way. Thank you so much for this course.' - Arun Lakhera</em></p><p><em>'I compare this to another top iOS class on Udemy, but I think that this one beats it. The reason? Angela doesn't show you a plethora of material and then say that we will discuss this later, or say 'just do this. You will see why later.' She goes into the </em><strong><em>reason for doing something</em></strong><em> before doing it.'</em> &nbsp;-&nbsp;Clyde Addison</p><p><br></p><p><strong>REMEMBER… 
+  I'm so confident that you'll love this course that&nbsp;we're offering a FULL money back guarantee for&nbsp;30 days! So it's a complete no-brainer, sign up today with ZERO&nbsp;risk and EVERYTHING to gain.</strong></p><p>So what are you waiting for?&nbsp;Click the buy now button and join the world's best Flutter development course.</p>",
+  teacher: 'Angela Yu',
+  teacher_id: u18.id,
+  title: "The Complete 2020 Flutter Development Bootcamp with Dart",
+  subtitle: "Officially created in collaboration with the Google Flutter team.",
+  price: 19999,
   rating: 4,
-  rating_count: 890,
-  student_count: 2842,
+  rating_count: 7412,
+  student_count: 31563,
   languages: "English",
-  learning_goals: "Understand the coding principles and Understand How to write code in efficient way by help of choosing right data structures and efficient algorithms\nHow to choose right data structures for your need\nUnderstand concept behind Arrays, Linked Lists, Hash tables, Trees, Graph, Stacks, Queues, Sort algorithms and Search algorithms\nUnderstand the fundamentals of the Data structures and Algorithms\nUnderstand popular algorithms, and how to use it when you need.\nLearn everything you need to crack difficult coding interviews.\nReason about applicability and usability of Data Structures",
-  requirements:"A strong work ethic, enthusiasm to learn, and plenty of excitement about the awesome new skill you are going to build.\nNo experience with data structures or computer science needed!",
-  description: "Congratulations!  You've found the most popular, most complete, and most up-to-date resource online for learning Data structures and Algorithms. Are you interested in the field of Data structures? Are you interested to play around complex Algorithms?  Then this course is for you!You need to understand algorithms and data structures because I've seen code written by people who didn't understand Data structures and algorithms; and trust me, you don't want to be that guy. The entire course is based around a single goal: Turning you into a professional programmer & capable of writing code as a professional.Are you scared about the coding interview? Join with me in this Adventure, Crack your coding interview by getting mastery in data structures & algorithms.There are lots of free tutorials and videos on YouTube. Why would you want to take this course? The answer is simple: Quality of teaching. So, from the very beginning to the very end, you'll be confident that you'll be in good hands and watching every minute of the course, unlike the reading many free tutorials and videos, do not waste your precious time. Each section is equipped with a balanced mix of theory and Implementation.It's my goal to make clear about Data structures and Algorithms as much as possible and ensure your success. I want everyone to benefit from my courses, that's why we'll dive deeply into Data structures and Algorithms concepts and why I made sure to also share the knowledge that's helpful to programmersWhy it’s the only course you need to learn Data Structures and Algorithms?This course is everything you need from start to end regardless of your experience.It's an interactive course. Instead of explaining the concepts with Powerpoint slides, I will take you to the classroom again.This course is fun and exciting, but at the same time, we dive deep into Data Structures and Algorithms. Specifically, you will learn :· Understanding the core principles of coding.· Understanding code complexity and how to write code the efficiently and various levels of complexity.· Basics of Data Structures and algorithms· Basic data structures (Arrays, linked list, and Hash Table)· Tree data structures· Graph data structures· Algorithms to apply Graph in product implementation· Searching algorithms· Various Sorting algorithmsSee what your fellow students have to say 'Extremely amazing course to get started with data structures and algorithms. It was filled with so much content! Loved it. 'I really enjoyed the time spent in this course. I learn a lot about data structures and I'll put this knowledge into my work. An in-depth explanation of everything and Real-world examples. Thank you for such a wonderful course.'Excellent course. Highly recommended!. Vinoth did an excellent job breaking down a complex topic into an easy piece. The lectures and the whole course are well ordered, each topic is presented in the right place. Ultimately, it was a good experience for me. Looking forward to your next course/topic.'This is my first course on Udemy and I must say it was totally worth it. I enjoyed every single video on this course. And It has great many examples to teach the basics of Data Structures. Not only the experienced but beginners like me in the Data Structures will find the content to be 5-star. The instructors are really great! Thank you Vinoth for the handwork and teaching us in the great and understandable way! 'What if I have questions?As if this course wasn’t complete enough, I offer full support, answering any questions you have 7 days a week.Enroll now and begin your journey towards the most lucrative, adventurous and exciting career path you can imagine! Or, take this course for a free spin using the preview feature, so you know you’re 100% certain this course is for you.100% MONEY-BACK GUARANTEEThis course comes with a 30-day full money-back guarantee. Take the course, go through the lectures, do the exercises, and if you're not happy, ask for a refund within 30 days. All your money back, no questions asked.See you on the inside (hurry, Data structures, and algorithm class is waiting!)",
-  audience:"Anyone who want to take their programming skills to the next level and learn a future-proof programming\nAnyone who want to become intelligent programmer\nAnyone who is Feeling scared about coding interview\nAnyone who wants to strengthen their problem-solving skills",
-  picture:"https://i.udemycdn.com/course/240x135/2165246_3286_6.jpg"
+  learning_goals: "Build beautiful, fast and native-quality apps with Flutter\nBecome a fully-fledged Flutter developer\nBuild iOS and Android apps with just one codebase\nBuild iOS and Android apps using just one programming language (Dart)\nBuild a portfolio of beautiful Flutter apps to impress any recruiter\nUnderstand all the fundamental concepts of Flutter development\nBecome proficient in one of the fastest growing technologies",
+  requirements: "A Computer that has admin privileges\nHave 10GB of free space on your hard drive.\nAll software we'll be using is free to download and install.\nAlthough you can build iOS apps on a Windows computer with Flutter, if you want to test it, you will need a Mac.",
+  audience: "If you have never programmed before, then take this course to learn Dart and build iOS and Android apps.\nIf you know how to code, but are new to mobile development, then take this course to build apps with just one codebase.\nIf you are a native app developer, then take this course to see how much time you can save building native-quality iOS and Android apps with Flutter.\nIf you've tried Flutter before, then take this course to get a comprehensive curriculum that covers all the important aspects of Flutter development",
+  picture: "https://i.udemycdn.com/course/240x135/2259120_305f_5.jpg"
 )
+
 c19 = Course.create!(
  title: 'Computer Science 101: Master the Theory Behind Programming',
  subtitle: 'Computer Science 101: Learn Computer Science to become a better Programmer and Software Engineer.',
@@ -915,6 +970,288 @@ cc46 = CourseContent.create!({
   title: "Graduate Bonus & How To Get Your Certificate"
 })
 
+cc47 = CourseContent.create!({
+  course_id: c10.id,
+  index: 0,
+  title: "Start Here"
+})
+
+cc48 = CourseContent.create!({
+  course_id: c11.id,
+  index: 0,
+  title: "Getting Started"
+})
+
+cc49 = CourseContent.create!({
+  course_id: c12.id,
+  index: 0,
+  title: "Welcome to the new improved you for permanent weight loss"
+})
+cc50 = CourseContent.create!({
+  course_id: c12.id,
+  index: 1,
+  title: "Learn what EFT is for permanent weight loss"
+})
+cc51 = CourseContent.create!({
+  course_id: c12.id,
+  index: 2,
+  title: "The Mind Body Connection"
+})
+cc52 = CourseContent.create!({
+  course_id: c12.id,
+  index: 3,
+  title: "Your Personal EFT sessions to eliminate cravings for Weight Loss"
+})
+cc53 = CourseContent.create!({
+  course_id: c12.id,
+  index: 4,
+  title: "Mopping up to improve weight loss results with EFT"
+})
+cc54 = CourseContent.create!({
+  course_id: c12.id,
+  index: 5,
+  title: "Advanced Techniques for stubborn changes with EFT for weight loss"
+})
+cc55 = CourseContent.create!({
+  course_id: c12.id,
+  index: 6,
+  title: "Hypnosis your inner power"
+})
+cc56 = CourseContent.create!({
+  course_id: c12.id,
+  index: 7,
+  title: "Your private Hypnosis sessions for weight loss"
+})
+cc57 = CourseContent.create!({
+  course_id: c12.id,
+  index: 8,
+  title: "Session Debriefing for your weight loss Results with EFT"
+})
+cc58 = CourseContent.create!({
+  course_id: c12.id,
+  index: 9,
+  title: "Hypnosis Bonus Downloads"
+})
+
+
+cc59 = CourseContent.create!({
+  course_id: c13.id,
+  index: 0,
+  title: "Welcome To The Health Choice Program from Christain Strategies for Health"
+})
+cc60 = CourseContent.create!({
+  course_id: c13.id,
+  index: 1,
+  title: "Section #2"
+})
+cc61 = CourseContent.create!({
+  course_id: c13.id,
+  index: 2,
+  title: "Section #3"
+})
+cc62 = CourseContent.create!({
+  course_id: c13.id,
+  index: 3,
+  title: "Section #4"
+})
+cc63 = CourseContent.create!({
+  course_id: c13.id,
+  index: 4,
+  title: "Section #5"
+})
+cc64 = CourseContent.create!({
+  course_id: c13.id,
+  index: 5,
+  title: "Bonus Content"
+})
+
+cc65 = CourseContent.create!({
+  course_id: c14.id,
+  index: 0,
+  title: "Introduction to the course and anger"
+})
+cc66 = CourseContent.create!({
+  course_id: c14.id,
+  index: 1,
+  title: "Cost"
+})
+cc67 = CourseContent.create!({
+  course_id: c14.id,
+  index: 2,
+  title: "What is anger, and what causes it?"
+})
+cc68 = CourseContent.create!({
+  course_id: c14.id,
+  index: 3,
+  title: "Reducing anger and choosing less costly strategies. Getting Practical!"
+})
+cc69 = CourseContent.create!({
+  course_id: c14.id,
+  index: 4,
+  title: "Closure"
+})
+
+cc70 = CourseContent.create!({
+  course_id: c15.id,
+  index: 0,
+  title: "Comprehensive Anger Management"
+})
+
+cc71 = CourseContent.create!({
+  course_id: c17.id,
+  index: 0,
+  title: "Start Here"
+})
+cc72 = CourseContent.create!({
+  course_id: c17.id,
+  index: 1,
+  title: "Understanding Anger"
+})
+cc73 = CourseContent.create!({
+  course_id: c17.id,
+  index: 2,
+  title: "How Best to Deal with Anger..The 'Do's' and 'Don'ts'"
+})
+cc74 = CourseContent.create!({
+  course_id: c17.id,
+  index: 3,
+  title: "Gaining Control"
+})
+cc75 = CourseContent.create!({
+  course_id: c17.id,
+  index: 4,
+  title: "Separating the People from the Problem"
+})
+cc76 = CourseContent.create!({
+  course_id: c17.id,
+  index: 5,
+  title: "Working on the Problem"
+})
+cc77 = CourseContent.create!({
+  course_id: c17.id,
+  index: 6,
+  title: "Solving the Problem"
+})
+cc78 = CourseContent.create!({
+  course_id: c17.id,
+  index: 7,
+  title: "Creating a Personal Plan"
+})
+cc79 = CourseContent.create!({
+  course_id: c17.id,
+  index: 8,
+  title: "The Triple \"A\" Approach"
+})
+cc80 = CourseContent.create!({
+  course_id: c17.id,
+  index: 9,
+  title: "How Best to Deal with Angry People"
+})
+cc81 = CourseContent.create!({
+  course_id: c17.id,
+  index: 10,
+  title: "Pulling it All together"
+})
+cc82 = CourseContent.create!({
+  course_id: c17.id,
+  index: 11,
+  title: "Let's Wrap This Up"
+})
+cc83 = CourseContent.create!({
+  course_id: c17.id,
+  index: 0,
+  title: "Getting started"
+})
+cc84 = CourseContent.create!({
+  course_id: c17.id,
+  index: 1,
+  title: "How to Properly Register Your Music With The Copyright Office - Step By Step"
+})
+cc85 = CourseContent.create!({
+  course_id: c18.id,
+  index: 0,
+  title: "Introduction to Cross-Platform Development with Flutter and Dart"
+})
+cc86 = CourseContent.create!({
+  course_id: c18.id,
+  index: 1,
+  title: "Setup and Installation"
+})
+cc87 = CourseContent.create!({
+  course_id: c18.id,
+  index: 2,
+  title: "I Am Rich - How to Create Flutter Apps From Scratch"
+})
+cc88 = CourseContent.create!({
+  course_id: c18.id,
+  index: 3,
+  title: "Running Your App on a Physical Device"
+})
+cc89 = CourseContent.create!({
+  course_id: c18.id,
+  index: 4,
+  title: "I Am Poor - App Challenge"
+})
+cc90 = CourseContent.create!({
+  course_id: c18.id,
+  index: 5,
+  title: "MiCard - How to Build Beautiful UIs with Flutter Widgets"
+})
+cc91 = CourseContent.create!({
+  course_id: c18.id,
+  index: 6,
+  title: "Dicee - Building Apps with State"
+})
+cc92 = CourseContent.create!({
+  course_id: c18.id,
+  index: 7,
+  title: "Boss Level Challenge 1 - Magic 8 Ball"
+})
+cc93 = CourseContent.create!({
+  course_id: c18.id,
+  index: 8,
+  title: "Xylophone - Using Flutter and Dart Packages to Speed Up Development"
+})
+cc94 = CourseContent.create!({
+  course_id: c18.id,
+  index: 9,
+  title: "Quizzler -Modularising & Organising Flutter Code"
+})
+cc95 = CourseContent.create!({
+  course_id: c18.id,
+  index: 10,
+  title: "Boss Level Challenge 2 - Destini"
+})
+cc96 = CourseContent.create!({
+  course_id: c18.id,
+  index: 11,
+  title: "BMI Calculator - Building Flutter UI for Intermediates"
+})
+cc97 = CourseContent.create!({
+  course_id: c18.id,
+  index: 12,
+  title: "Clima - Powering Your Flutter App with Live Web Data"
+})
+cc98 = CourseContent.create!({
+  course_id: c18.id,
+  index: 13,
+  title: "Boss Level Challenge 3 - Bitcoin Ticker"
+})
+cc99 = CourseContent.create!({
+  course_id: c18.id,
+  index: 14,
+  title: "Flash Chat - Flutter x Firebase Cloud Firestore"
+})
+cc100 = CourseContent.create!({
+  course_id: c18.id,
+  index: 15,
+  title: "Flutter State Management"
+})
+cc101 = CourseContent.create!({
+  course_id: c18.id,
+  index: 16,
+  title: "Next Steps"
+})
 # Videos
 Video.create!({
  course_content_id: cc1.id,
@@ -939,8 +1276,7 @@ Video.create!({
  duration: 492,
  index: 2
 })
-Video
-.create!({
+Video.create!({
  course_content_id: cc2.id,
  title: 'Introduction to Time-Complexity',
  url: 'https://a.udemycdn.com/2017-09-19_19-55-51-dc4a4be833a9fd7ebeb86350fabbd5a8/WebHD_720p.mp4?nva=20200112120902&token=0892519c93322293dbe9b',
@@ -2340,6 +2676,1706 @@ Video.create!({
   index: 0
 })
 
+Video.create!({
+  course_content_id: cc47.id,
+  title: "Android Screen Monitor – Projecting Android Mobile Screen On Computer",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 332,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc47.id,
+  title: "Android Development Tools (ADT) – Installing Eclipse Plugin",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 194,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc47.id,
+  title: "Robotium (+Recorder) - Eclipse IDE Plugin - Automation Demo",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 566,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc47.id,
+  title: "Robotium (& Recorder) – Introduction, Benefits & limitations",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 285,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc47.id,
+  title: "Robotium (+Recorder) – Android Studio Plugin - Automation Demo",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 526,
+  index: 4
+})
+
+Video.create!({
+  course_content_id: cc48.id,
+  title: "Introduction and Overview of Macros",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration:612,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc48.id,
+  title: "Automating Center Across Selection",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration:472,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc48.id,
+  title: "Running a Macro, Creating a Shortcut",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration:691,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc48.id,
+  title: "Personal Macro Workbook; Deleting Macros",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration:619,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc48.id,
+  title: "Macro Recorder Shortcut; Contact Info Macro",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration:486,
+  index: 4
+})
+Video.create!({
+  course_content_id: cc48.id,
+  title: "Relative References in Macros; Closing Comments",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration:284,
+  index: 5
+})
+Video.create!({
+  course_content_id: cc48.id,
+  title: "Excel Efficiency : Intro to Macros Part 1",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration:3494,
+  index: 6
+})
+
+Video.create!({
+  course_content_id: cc49.id,
+  title: "Slimming introduction for Permanent Weight loss",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 110,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc49.id,
+  title: "Alan Demonstrating EFT live on Irish radio",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 680,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc49.id,
+  title: "EFT  3 ques",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc49.id,
+  title: "New Image Generator for permanent weight loss",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 681,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc50.id,
+  title: "About EFT ( Emotional Freedom Technique ) and why you should learn how to apply this easy to learn technique What is EFT with a downloadable mp3",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 207,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc50.id,
+  title: "Learn the EFT Tapping points and where they are located The EFT Tapping points",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 256,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc50.id,
+  title: "A quick recap of where all the EFT points are and what meridians and organs they affect Points Recap",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 69,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc50.id,
+  title: "Learn what energy meridians and major organs in the body the EFT points are connected to. EFT Tapping Points and Energy Meridians they are connected to",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 228,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc50.id,
+  title: "Mind body\nMind body  1 que",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 4
+})
+Video.create!({
+  course_content_id: cc51.id,
+  title: "Experience how the mind and body are connected with this guided exercise Proof that mind and body are connected",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 282,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc51.id,
+  title: "What is the setup phrase and why it is such an important part of what you are learning because the right words have the power to heal and you need to feel it to heal it while applying EFT The Setup Phrase",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 87,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc51.id,
+  title: "Just as the setup phrase tunes you into what issue you want to work on the reminder phrase keeps you tuned in The Reminder Phrase",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 32,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc51.id,
+  title: "The breathing exercise will teach you how powerful this simple technique is by having you experience a physical change in your volume of breath your lungs can use just by doing EFT The Breathing Exercise with a downloadable mp3",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 717,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc52.id,
+  title: "In this EFT session I will guide you through the whole exercise to eliminate chocolate cravings so that you can remove the longing for eating chocolate. Eliminate Chocolate cravings with EFT for weight loss",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 887,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc52.id,
+  title: "In this EFT session I will be guiding you through the whole exercise of eliminating specific food cravings and so that you get the most from this exercise make sure it is a specific food craving and not a general one such as ( Specific flavor of Biscuit YES ) (all types of biscuits NO ) Eliminate food cravings with EFT for  weight loss",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 502,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc52.id,
+  title: "In this EFT exercise I will teach you how to eliminate emotional eating from your life Stop Emotional Eating with EFT for weight loss",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 350,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc52.id,
+  title: "Cravings\nCravings  1 que",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc53.id,
+  title: "Mopping up any remaining fragments of emotional charge connected to what you have been using EFT on   \t Mopping up with EFT with a downloadable mp3",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 370,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc53.id,
+  title: "Using color and shape , your visual senses on that remaining feeling while applying EFT Mopping up with EFT using color",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 185,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc53.id,
+  title: "Forgiveness can be a vital part of releasing trapped emotional charge because anger can become like an emotional glue The terrible cost of unforgiveness",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 42,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc53.id,
+  title: "Eliminate anger towards yourself and others because this emotion can become a big road block to changing any negative emotion and by using EFT on that anger that you have agreed to release from your life the changes in your life and towards those close to you will amaze you. Eliminate anger towards yourself and others with EFT",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 353,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc53.id,
+  title: "Anger\nAnger  1 que",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 4
+})
+Video.create!({
+  course_content_id: cc54.id,
+  title: "A list of secret tips that will improve your results with EFT My Secret Tips with downloadable Pdf File",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 85,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc54.id,
+  title: "This Technique may seem very unusual but it is amazingly effective because it helps to connect both sides of the brain so that both conscious and subconscious work together while tapping on one EFT point that can seem to shift the most stubborn issues Advanced EFT Technique",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 271,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc54.id,
+  title: "Learn this advanced technique that I will guide you to access a great feeling you had at one time in your life that you will learn to be able to access this feeling again any time you wish so that you will be able to feel really good when ever you want. Feel good trigger",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 683,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc55.id,
+  title: "All Hypnosis is self hypnosis because you must agree to accept to be hypnotized that is why Hypnosis is called a consent state of mind. You cannot be hypnotised against your will",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 23,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc55.id,
+    title: "In this lecture I will show how thinking what you don't want actually makes you get even more of what you don't want and so by changing to thinking what you do want you will be more likely to achieve what you really want Your subconscious mind always does what you want",
+    url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+    duration: 247,
+    index: 1
+  })
+Video.create!({
+  course_content_id: cc55.id,
+  title: "Imagination\nImagination  1 que",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc55.id,
+  title: "Learn in this exercise how what you think in your mind effects your body Power of your imagination Finger magnets",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 102,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc55.id,
+  title: "This second exercise will continue to prove to you that your thoughts effect your body and also feelings Power of your imagination Hand magnets",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 145,
+  index: 4
+})
+Video.create!({
+  course_content_id: cc55.id,
+  title: "Further exercises that will empower you by understanding that changing your thoughts with the power of your own mind and hypnosis will help you have the life you deserve and desire Power of your imagination Balloon and book",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 161,
+  index: 5
+})
+Video.create!({
+  course_content_id: cc55.id,
+  title: "Learn about the built in mechanism of resistance that stops you consciously making the changes you want in your life. Hypnosis is the key to bypassing this resistance to make the changes you want opposition response",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 123,
+  index: 6
+})
+Video.create!({
+  course_content_id: cc55.id,
+  title: "Learn with this exercise how powerful the words and thoughts you hold in your mind effect your physical body The power of words",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 173,
+  index: 7
+})
+Video.create!({
+  course_content_id: cc56.id,
+  title: "This is you first Hypnosis session that will imprint an image of how you want to look in the future after loosing your excess weight so that your inner mind know exactly the destination you want it to get you to Listen to this recording only for the first seven days making sure you have a quiet place you will not be disturbed I have added a MP3 of this for you to download also so you can bring it with you just in case you have not got access to the internet Week one New body Image Creator Hypnosis session for weight loss",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 1092,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc56.id,
+  title: "Hypnosis\nHypnosis  2 ques",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc56.id,
+  title: "This Hypnosis session will program your mind to continue finding new ways to throw away your excess weight Listen to this recording only for the second week making sure you have a quiet place you will not be disturbed I have added a MP3 of this for you to download also so you can bring it with you just in case you have not got access to the internet Week two Hypnosis Session Throw away excess weight and permanent weight loss",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 1675,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc56.id,
+  title: "This Hypnosis recording is to continue helping you to maintain releasing your excess weight Listen to this recording only for the third week and anytime you feel the need after the 21 days to continue maintaining your weight loss. Again making sure you have a quiet place you will not be disturbed I have added a MP3 of this for you to download also so you can bring it with you just in case you have not got access to the internet Week three Release excess weight Hypnosis session for permanent weight loss",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 1433,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc57.id,
+  title: "This recording will help tune you into the changes and results you have achieved while engaging in the whole program Session Debriefing with downloadable files",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 99,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc58.id,
+  title: "Hypnosis Downloads & Getting the most from Hypnosis",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 373,
+  index: 0
+})
+
+Video.create!({
+  course_content_id: cc59.id,
+  title: "Introduction To Health Choice Program",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 1031,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc59.id,
+  title: "Course & Health Choice Product Testimonials",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 183,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc60.id,
+  title: "In this video, the student gains a quick overview of Section 2 topics, including brain structures, toxic chemical cascades, and a Christian worldview of the science of brain function. Wecome",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 65,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc60.id,
+  title: "Here the student learns about the amazing design of our Autonomic Nervous System and how it impacts on our body to keep us inside (or outside) God's Plan for our Peace & Safety. Brain structures, functions, and neurotransmitters are clearly explained. The Stressed Brain",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 676,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc60.id,
+  title: "In this brief video, the student is introduced to a new health research finding on a powerful feedback mechanism in the Autonomic Nervous System. Our 2nd Brain",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 40,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc60.id,
+  title: "This video examines neurotransmitter action within the Enteric Nervous System from a scriptural framework. The Other Nervous System",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 175,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc60.id,
+  title: "Connections between ancient Jewish concepts of health and the Enteric Nervous System neuroscience research are examined. Old Testament Gut-Brain Perspective",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 97,
+  index: 4
+})
+Video.create!({
+  course_content_id: cc61.id,
+  title: "This video gives the student an overview of topics that are covered in Section 3: food, weight, stress, and practical application to reduce toxic biological responses. Welcome",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 61,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc61.id,
+  title: "This video presents an in-depth look at how God designed our brain's chemically mediated food-seeking & reward systems. Pre-wired Eating Systems",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 527,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc61.id,
+  title: "This brief segue presents how new health science results has changed researchers' thinking about how fat cells function in our bodies. Toxis Fat Cells",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 40,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc61.id,
+  title: "Toxic biological cascades, mediated by fat cells, cortisol and other neurotransmitters that create serious blood-brain barrier concerns and health issues, is discussed in this video. The Deadly Cycle",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 445,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc62.id,
+  title: "This video reviews chronic stress, biological sabotage, and food addictions that can be reduced when the student applies specific Christian strategies. Break The Chains",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 273,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc62.id,
+  title: "This video offers the student an opportunity to examine a practical plan to implement a behavioral change to improve their physical, mental, and emotional health and deepen their relationship with Christ. Daily Prayer",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 798,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc63.id,
+  title: "This video presents a brief overview of the two components covered in Section 5 that are designed for immediate and personal application by the student. Welcome",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 40,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc63.id,
+  title: "In this video, the student will be challenged to examine their own viewpoints and health goals that may be sabotaging their desire to implement new behaviors for personal health improvement. Goal Setting",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 61,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc63.id,
+  title: "An extensive exploration of how to create and implement a specific Action Plan, with practical examples for direct application, and tailored for the student, is covered in this video. Action Plan",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 745,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc64.id,
+  title: "Summary of the course, and overview of three added bonus experiences is presented in this video. Welcome",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 158,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc64.id,
+  title: "This video presents a revolutionary Christ-centered perspective of this highly-touted secular technique that combines ancient Chinese acupressure with cognitive reprogramming. Tapping (EFT)",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 284,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc64.id,
+  title: "The Christ-centered meditation on this video offers the student an opportunity to reduce their stress and deepen (or initiate) their prayer discipline. 5 Minute Prayer",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 255,
+  index: 2
+})
+
+Video.create!({
+  course_content_id: cc65.id,
+  title: "Welcome to the course",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 79,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc65.id,
+  title: "Making the most of Udemy!",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 23,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc65.id,
+  title: "\"All of you is welcome here...\"",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 155,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc65.id,
+  title: "Map and Misconceptions",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 183,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc65.id,
+  title: "What have you learned so far? 2 ques",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 4
+})
+Video.create!({
+  course_content_id: cc66.id,
+  title: "Misunderstood and unharnessed anger will cost you energy, friends, family, and your freedom. Don't underestimate this cost. Please don't beat yourself up about it, but don't pretend it's not costly either.  This lecture has a quick look at the costs of negative anger just to position us well to continue understanding our anger.  Examine your own anger and it's effect in your life and start to count the cost. This will motivate you to change. Change is difficult so we need all the help we can get. Interview: Cost of Expressing and Suppressing Anger",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 91,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc66.id,
+  title: "What does negative anger cost you? Interview: Defrosted Rage!",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 186,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc66.id,
+  title: "An interview talking about how and why relationships are damaged by misused anger. Interview : The Cost is Relationship",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 52,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc66.id,
+  title: "An invitation to self-discovery. It's time to get personal and take the time to see what's really going on in your life with anger.Get a pen and paper ready. YES, pen and paper...not just somewhere to type. It's better for your brain! :-)          (http://mentalfloss.com/article/33508/4-benefits-writing-hand)Note: Click to the right side of the screen to access downloads, discussions, and make online notes. Awareness is 90% of the Solution!",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 204,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc66.id,
+  title: "This is simply a downloadable xlsx form for you to track:  \twhat you do now \twhat you do that works \twhat doesn't work \twhat you are going to try \twhat you are going to keep! A downloadable resource to track your new strategies!",
+    url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+    duration: 13,
+    index: 4
+  })
+Video.create!({
+  course_content_id: cc67.id,
+  title: "What are your triggers?  What do you do when triggered? Interview: Trigger to do something different.",
+    url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+    duration: 64,
+    index: 0
+  })
+Video.create!({
+  course_content_id: cc67.id,
+  title: "This lecture highlights the first function of anger: to serve as a warning light.  There are several things that anger may be warning you about, but whatever they are - they are to be taken seriously! Healthy thinking lubricates our lives and helps absorb the bits and pieces of life that 'shouldn't' be there. Do you have the healthy thinking that helps with this or is it running low?! A warning light.",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 89,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc67.id,
+  title: "David shares his story of being abused, his angry response, and what he used that energy to do. Interview: Anger = Energy to fuel your career.",
+    url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+    duration: 157,
+    index: 2
+  })
+Video.create!({
+  course_content_id: cc67.id,
+  title: "Anger can and should motivate us to change. Sometimes this change is in society and sometimes in ourselves. It's not the anger that's the problem, it's what we do with it that counts. \tNext time you are triggered and feel angry, stop yourself and think, \"what can I do with this energy?\". \t Neutral emotional energy.",
+    url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+    duration: 62,
+    index: 3
+  })
+Video.create!({
+  course_content_id: cc67.id,
+  title: "Interview: Energy For Change",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 51,
+  index: 4
+})
+Video.create!({
+  course_content_id: cc67.id,
+  title: "Your turn. Take a moment to decide what you are going to use your angry energy for. What am I going to do with my energy?",
+    url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+    duration: 21,
+    index: 5
+  })
+Video.create!({
+  course_content_id: cc67.id,
+  title: "An on site story about surprise pain and it's affect on me! You will learn about how our body reacts to pain, and just as importantly you will learn how powerful our mind is at reinterpreting this data.Survival - Fight or Flight",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 137,
+  index: 6
+})
+Video.create!({
+  course_content_id: cc67.id,
+  title: "You will learn about the importance of how we interpret situations.  Our mind is very powerful. It can create it's own reality - but if this is different from actual reality - there will be pain! \t Caused by our interpretation",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 208,
+  index: 7
+})
+Video.create!({
+  course_content_id: cc67.id,
+  title: "This lecture explains how our mind works through the lens of cognitive behavioural therapy. (C.B.T.) Beliefs -> Thoughts -> Feelings We all have automatic thoughts that are mostly subconscious that are continually interpreting the world around us. Unfortunately, many of these thoughts are the result of deeper beliefs and assumptions formed in our childhood years before we had enough context to be making such assumptions. This means some of our beliefs are wrong!  I can be fairly certain that if we are living in constant emotional pain, it's because of a faulty belief. Begin to pay more attention to what you are thinking.  \t\"What am I telling myself?\"  \t\"Is it the truth?\" Check out this app that I am one of the authors for. It can help you track from your anger down to the limiting belief causing it and find insights to help soothe the anger. http://www.thinkladder.com/Android - https://play.google.com/store/apps/details?id=com.thinkladder.android.thinkladder&hl=enCaused by our thoughts.",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 127,
+  index: 8
+})
+Video.create!({
+  course_content_id: cc67.id,
+  title: "Another touching interview that illustrates how anger can mask deeper feelings. Interview: Angry or Sad? SANGRY!",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 65,
+  index: 9
+})
+Video.create!({
+  course_content_id: cc67.id,
+  title: "Often this is just a learned response from watching our parents, friends, or family deal with emotions. Perhaps we learn that anger is ok to show, but not sad.  \t What would you feel if you were not feeling angry? Often a strategy to be less vulnerable, or avoid an old bruise.",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 253,
+  index: 10
+})
+Video.create!({
+  course_content_id: cc67.id,
+  title: "Anger Is:  1 que",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 11
+})
+Video.create!({
+  course_content_id: cc68.id,
+  title: "Our deepest emotional layer is our needs so it makes sense to see what's going on with those! First though, listen up to hear what it is that I mean by needs as it's not quite as simple as it seems. \tCheck out my resources on this topic on my website or to your right... \twww.newinsight.co.nz/nvc Identify the Need",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 169,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc68.id,
+  title: "We have all been told to 'do' something different. Perhaps to breath, to count to 10, to be patient etc etc, so what I want to talk about is the other strategies for meeting your needs - thinking differently. The beauty of thinking differently is that we have complete control over that arena. The negative is that often we have no idea what's going on in there because we don't spend enough time listening to ourselves. \tTake the time to watch this example and try to explore your own feelings, thoughts and needs with this model. \tUse the pause button if it runs too quickly! \t \t Identify the lie you are telling yourself.",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 87,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc68.id,
+  title: "(*Hit Pause on this lecture at the end if you want to look at it - so it doesn't change on you!) High expectations are a major cause of anger. Expectations of yourself, of others, and of the world around you.Expectations are different from ideals. High ideals are great, but high expectations just leave us disappointed over and over. Resilient minds can adjust expectations on the fly. Flexible expectations act like a car's suspension adapting to variations in the road of life - cheesy but true! Ridged minds buckle and break! To keep your mind supple practice these two things: Banish 'should' and 'must' from your internal and external vocabulary. (I'm not kidding Marshall Rosenberg calls says that should is the most violent word that we use on ourselves and others!) Ask yourself,\"Are my expectations realistic?\" when you find yourself disappointed. The harsh reality is that - if reality turned out different from your expectation then NO, your expectations were not REALISTIC and need to be adjusted. Grieve the difference between your ideal would and reality, then use the energy to help make your world a better place!Adjusting your expectations.",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 40,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc68.id,
+  title: "An interview summarising how breathing, thinking, then responding has helped with anger in relationships. Interview: Breath -> Think -> Respond",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 51,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc68.id,
+  title: "So you have had a look at your thinking and how it may be misleading you. Now you need to learn how to push back on your thoughts. Get a pen and paper and make yourself a list of truths to combat some of your old default stinking thinking. For the big ones - the bigger scary feelings in your life - you will need to have this truth at your fingertips so you can get to them before you get to your anger! What I am teaching here is what I do with people in counselling. For some things, you will be able to do this yourself, but some things you will need a professional to lend a hand. ------If you prefer an app to help you step through - check this out:Check out this app that I am one of the authors for. It can help you track from your anger down to the limiting belief causing it and find insights to help soothe the anger. http://www.thinkladder.com/Android - https://play.google.com/store/apps/details?id=com.thinkladder.android.thinkladder&hl=enTell yourself the truth.",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 150,
+  index: 4
+  })
+Video.create!({
+  course_content_id: cc68.id,
+  title: "Instead of battling in your mind, there is also a time to step back and be less engaged with your mind.  Try this:  Make yourself a list of situations that you find cause you to be angry. Mark beside each thing your new strategy. C for change your thinking, L for let it go. Mindfulness and Letting Go",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 143,
+  index: 5
+})
+Video.create!({
+  course_content_id: cc68.id,
+  title: "To actually become free of our old habits - the big ones at least - we need redefining experiences. Instead of just becoming a little more sophisticated in dealing with issues, try doing the opposite - run straight into the stuff you are scared of! Equip yourself first with some truths, and practice and letting feelings go and pass on by. Redefining Body Experiences",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 100,
+  index: 6
+})
+Video.create!({
+  course_content_id: cc68.id,
+  title: "A short interview with a philosophical guru outlining some of the possible outcomes of suppressed anger, and some positive uses of anger on your communication. Interview: Positive Expression of Anger",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 80,
+  index: 7
+})
+Video.create!({
+  course_content_id: cc68.id,
+  title: "This lecture is an encouragement to assert yourself earlier rather than blow up later. What is it that you wait so long before speaking up? What lie or scary feeling is blocking you sharing your opinion or frustration early in the peace? \t You may find it useful to take those questions and journal on them as explained in the previous lecture with the ice burg. \t This lecture also invites us to take greater ownership of our lives.Assertive people don't need anger as much.",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 240,
+  index: 8
+})
+Video.create!({
+  course_content_id: cc69.id,
+  title: "This is a comprehensive step by step exercise to help you with your anger. Take your learning with you.",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 48,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc69.id,
+  title: "Turn your attitude upside down by practicing daily gratitude. Gratitude - Drop the hatchet, and press the 'like' button.",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 29,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc69.id,
+  title: "This is my first 'real' udemy course, and it's been scary, fun, exciting, and quite vulnerable feeling to create this. I'd love your honest feedback about how you have found this. My plan is to continue fine tuning it, and if you have got in early with an introductory coupon then your feedback (both to me and into the udemy feedback system) is going to be key in my shaping this course and therefor how successful it is. Feel free to message me or email me if you feel the feedback needs to be directly to me and not in the Udemy feedback system. joel@newinsight.co.nz works. It would warm my heart, and meet my need to contribute, to hear stories of how you have applied what you have learnt here - or somewhere else - that has helped you with anger!  Take care, Joel Young P.S. I now have a course on Practical Empathy that compliments this well! Congrats and goodbye for now!",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 95,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc69.id,
+  title: "Bonus! Coupons for my other courses.",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 7,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc69.id,
+  title: "What's blame got to do with anger? Sometimes a lot - and it stops us actually protecting our boundaries.Anger and Blame - A link to Brene Brown!",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 13,
+  index: 4
+})
+
+Video.create!({
+  course_content_id: cc70.id,
+  title: "Introduction",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 193,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc70.id,
+  title: "Part 1 - Comprehensive Anger Management",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 467,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc70.id,
+  title: "Anger Management part 2 of 5",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 600,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc70.id,
+  title: "Anger Management part 3 of 5",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 1004,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc70.id,
+  title: "Anger Management part 4 of 5",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 802,
+  index: 4
+})
+Video.create!({
+  course_content_id: cc70.id,
+  title: "Anger Management part 5 of 5",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 231,
+  index: 5
+})
+Video.create!({
+  course_content_id: cc71.id,
+  title: "Let's Get Started",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 146,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc72.id,
+  title: "Understanding Anger",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 557,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc73.id,
+  title: "The \"Do's and Don'ts\"",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 216,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc74.id,
+  title: "Gaining Control",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 407,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc75.id,
+  title: "Separating the People from the Problem",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 370,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc76.id,
+  title: "Working on the Problem",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 460,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc77.id,
+  title: "Solving the Problem",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 224,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc78.id,
+  title: "Your Personal Plan",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 177,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc79.id,
+  title: "Accept, Avoid, Alter",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 276,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc80.id,
+  title: "Dealing with Angry People",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 666,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc81.id,
+  title: "Pulling it All Together",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 130,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc82.id,
+  title: "Let's Wrap This Up",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 69,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc82.id,
+  title: "Anger Management  20 ques",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 1
+})
+
+Video.create!({
+  course_content_id: cc83.id,
+  title: "Welcome to the course!",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 167,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc83.id,
+  title: "What is copyright?",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 201,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc83.id,
+  title: "Assignment #1  1 que",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc84.id,
+  title: "Introduction to Registering Your Music Properly",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 91,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc84.id,
+  title: "Learn where to get your copyrighted music registered legally. Where to register your copyright.",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 145,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc84.id,
+  title: "**NEW** How to contact the US Copyright Office",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 21,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc84.id,
+  title: "This very important step will save you time and hard ache in the copyright registering process. Before you get started.",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 201,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc84.id,
+  title: "Learn how to create your own official account where you can register all of your copyrighted music for life. Create your own account with the copyright office.",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 232,
+  index: 4
+})
+Video.create!({
+  course_content_id: cc84.id,
+  title: "This is how you start the process. Registering a new claim, starting the process.",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 300,
+  index: 5
+})
+Video.create!({
+  course_content_id: cc84.id,
+  title: "You will be able to select the right type of work needed to be registered. Type of work.",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 164,
+  index: 6
+})
+Video.create!({
+  course_content_id: cc84.id,
+  title: "You will learn the proper way to list your copyrighted music on the new claim. The ins and outs of proper listing the titles of your music.",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 447,
+  index: 7
+})
+Video.create!({
+  course_content_id: cc84.id,
+  title: "In this lecture you will learn how to list your self as either the one who produced the music or wrote the lyrics. Listing the author of the copyright.",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 189,
+  index: 8
+})
+Video.create!({
+  course_content_id: cc84.id,
+  title: "This lecture explains how to limit the claim to you and you alone if other authors have assigned their rights over to you. Limiting your claim.",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 135,
+  index: 9
+})
+Video.create!({
+  course_content_id: cc84.id,
+  title: "Rights and correspondence",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 175,
+  index: 10
+})
+Video.create!({
+  course_content_id: cc84.id,
+  title: "How to edit and pay for your copyright registration",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 155,
+  index: 11
+})
+Video.create!({
+  course_content_id: cc84.id,
+  title: "How to make sure your music is uploaded properly. Uploading your music to the server.",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 147,
+  index: 12
+})
+Video.create!({
+  course_content_id: cc84.id,
+  title: "Thank You.",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 79,
+  index: 13
+})
+Video.create!({
+  course_content_id: cc84.id,
+  title: "Your final assignment is to copyright your music using the info you learned in this course.Assignment #2  1 que",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 14
+})
+Video.create!({
+  course_content_id: cc84.id,
+  title: "Live Call With The US Copyright Office",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 493,
+  index: 15
+})
+Video.create!({
+  course_content_id: cc84.id,
+  title: "*** BONUS ***",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 73,
+  index: 16
+})
+Video.create!({
+  course_content_id: cc85.id,
+  title: "Introduction to the Course",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 125,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc85.id,
+  title: "Download the Course Syllabus",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 13,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc85.id,
+  title: "What is Flutter?",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 472,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc85.id,
+  title: "Why Flutter?",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 731,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc85.id,
+  title: "The Anatomy of a Flutter App",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 327,
+  index: 4
+})
+Video.create!({
+  course_content_id: cc85.id,
+  title: "Course Resources",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 32,
+  index: 5
+})
+Video.create!({
+  course_content_id: cc85.id,
+  title: "How to Get the Most Out of the Course",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 573,
+  index: 6
+})
+Video.create!({
+  course_content_id: cc85.id,
+  title: "Join the Student Community",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 20,
+  index: 7
+})
+Video.create!({
+  course_content_id: cc86.id,
+  title: "Prerequisites for Flutter Development",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 382,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc86.id,
+  title: "Overview of the Process",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 69,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc86.id,
+  title: "Windows Setup Step 1 - Install the Flutter SDK",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 439,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc86.id,
+  title: "Windows Setup Step 2 - Install Android Studio",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 159,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc86.id,
+  title: "Windows Setup Step 3 - Install the Android Emulator",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 344,
+  index: 4
+})
+Video.create!({
+  course_content_id: cc86.id,
+  title: "Windows Installation Troubleshooting",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 116,
+  index: 5
+})
+Video.create!({
+  course_content_id: cc86.id,
+  title: "A Quick Note About macOS Catalina",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 65,
+  index: 6
+})
+Video.create!({
+  course_content_id: cc86.id,
+  title: "Mac Setup Step 1 - Install the Flutter SDK",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 826,
+  index: 7
+})
+Video.create!({
+  course_content_id: cc86.id,
+  title: "Mac Setup Step 2 - Install Android Studio",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 250,
+  index: 8
+})
+Video.create!({
+  course_content_id: cc86.id,
+  title: "Mac Setup Step 3 - Install the Android Emulator",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 234,
+  index: 9
+})
+Video.create!({
+  course_content_id: cc86.id,
+  title: "Mac Setup Step 4 - Install Xcode and Command Line Tools",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 145,
+  index: 10
+})
+Video.create!({
+  course_content_id: cc86.id,
+  title: "Mac Setup Step 5 - Test the iOS Simulator",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 196,
+  index: 11
+})
+Video.create!({
+  course_content_id: cc86.id,
+  title: "Mac Installation Troubleshooting",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 89,
+  index: 12
+})
+Video.create!({
+  course_content_id: cc86.id,
+  title: "[Optional] Configure Android Studio for Flutter Development",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 591,
+  index: 13
+})
+Video.create!({
+  course_content_id: cc86.id,
+  title: "[Optional] Guided Tour of Android Studio for Flutter Development",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 795,
+  index: 14
+})
+Video.create!({
+  course_content_id: cc87.id,
+  title: "Creating a New Flutter Project from Scratch",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 932,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc87.id,
+  title: "A quick note about Hot Reload",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 16,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc87.id,
+  title: "Scaffolding a Flutter App",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 1332,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc87.id,
+  title: "Working with Assets in Flutter & the Pubspec file",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 564,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc87.id,
+  title: "How to Add App Icons to the iOS and Android Apps",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 550,
+  index: 4
+})
+Video.create!({
+  course_content_id: cc88.id,
+  title: "Deploying Your Flutter Apps to a Physical Device",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 17,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc88.id,
+  title: "Deploying Flutter Apps to an Android Phone",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 379,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc88.id,
+  title: "Deploying Flutter Apps to iPhones/iPads",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 983,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc89.id,
+  title: "What are App Challenges?",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 264,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc89.id,
+  title: "The I Am Poor Challenge",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 21,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc89.id,
+  title: "Show Off Your Work!",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 17,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc89.id,
+  title: "Do You Want This?",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 44,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc90.id,
+  title: "MiCard - A Single Screen Personal Business Card App",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 331,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc90.id,
+  title: "Hot Reload and Hot Restart - Flutter Power Tools",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 829,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc90.id,
+  title: "How to Use Container Widgets",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 676,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc90.id,
+  title: "How to use Column & Row Widgets for Layout",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 840,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc90.id,
+  title: "Flutter Layouts Challenge",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 21,
+  index: 4
+})
+Video.create!({
+  course_content_id: cc90.id,
+  title: "Tapping into Widget Properties",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 554,
+  index: 5
+})
+Video.create!({
+  course_content_id: cc90.id,
+  title: "Incorporating Custom Fonts in Your Flutter App",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 659,
+  index: 6
+})
+Video.create!({
+  course_content_id: cc90.id,
+  title: "Adding Material Icons with the Icon Widget",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 755,
+  index: 7
+})
+Video.create!({
+  course_content_id: cc90.id,
+  title: "Flutter Card & ListTile Widgets",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 799,
+  index: 8
+})
+Video.create!({
+  course_content_id: cc90.id,
+  title: "Download the Completed Project",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 22,
+  index: 9
+})
+Video.create!({
+  course_content_id: cc91.id,
+  title: "Dicee - A Stateful Dice App",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 268,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc91.id,
+  title: "Using the Expanded Widget to Create Flexible Layouts",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 720,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc91.id,
+  title: "How to Use Intention Actions",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 510,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc91.id,
+  title: "Adding Gesture Detection with Flutter Button Widges",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 761,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc91.id,
+  title: "[Dart] Functions - Part 1",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 338,
+  index: 4
+})
+Video.create!({
+  course_content_id: cc91.id,
+  title: "Making the Dice Image Change Reactively",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 240,
+  index: 5
+})
+Video.create!({
+  course_content_id: cc91.id,
+  title: "[Dart] Variables",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 444,
+  index: 6
+})
+Video.create!({
+  course_content_id: cc91.id,
+  title: "[Dart] Data Types",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 743,
+  index: 7
+})
+Video.create!({
+  course_content_id: cc91.id,
+  title: "Stateful vs. Stateless Widgets - What's the Difference?",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 898,
+  index: 8
+})
+Video.create!({
+  course_content_id: cc91.id,
+  title: "Randomising the Dice",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 506,
+  index: 9
+})
+Video.create!({
+  course_content_id: cc91.id,
+  title: "Challenge 1 Solution",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 189,
+  index: 10
+})
+Video.create!({
+  course_content_id: cc91.id,
+  title: "Challenge 2 Solution",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 117,
+  index: 11
+})
+Video.create!({
+  course_content_id: cc91.id,
+  title: "Challenge 3 Solution",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 154,
+  index: 12
+})
+Video.create!({
+  course_content_id: cc91.id,
+  title: "Download the Completed Project",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 22,
+  index: 13
+})
+Video.create!({
+  course_content_id: cc92.id,
+  title: "Magic 8 Ball - A Decision Making App",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 56,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc92.id,
+  title: "Step 1 - Set Up The Project",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 11,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc92.id,
+  title: "Step 2 - Create a Stateless Widget",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 21,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc92.id,
+  title: "Step 3 - Create a Stateful Widget",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 17,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc92.id,
+  title: "Step 4 - Make it Interactive",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 13,
+  index: 4
+})
+Video.create!({
+  course_content_id: cc92.id,
+  title: "Step 5 - Randomise it",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 30,
+  index: 5
+})
+Video.create!({
+  course_content_id: cc92.id,
+  title: "Step 6 - Update the State",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 23,
+  index: 6
+})
+Video.create!({
+  course_content_id: cc92.id,
+  title: "Customise It!",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 18,
+  index: 7
+})
+Video.create!({
+  course_content_id: cc93.id,
+  title: "Xylophone - A Simple Musical Instrument App",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 216,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc93.id,
+  title: "What are Flutter & Dart Packages?",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 802,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc93.id,
+  title: "How to Play Sound Across Platforms",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 586,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc93.id,
+  title: "How to Play Multiple Sounds",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 540,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc93.id,
+  title: "[Dart] Functions - Part 2",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 632,
+  index: 4
+})
+Video.create!({
+  course_content_id: cc93.id,
+  title: "Updating the UI of Our App",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 555,
+  index: 5
+})
+Video.create!({
+  course_content_id: cc93.id,
+  title: "[Dart] Functions - Part 3",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 654,
+  index: 6
+})
+Video.create!({
+  course_content_id: cc93.id,
+  title: "[Dart] Functions Challenge",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 412,
+  index: 7
+})
+Video.create!({
+  course_content_id: cc93.id,
+  title: "Refactoring Our App",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 378,
+  index: 8
+})
+Video.create!({
+  course_content_id: cc93.id,
+  title: "[Dart] Arrow Functions",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 387,
+  index: 9
+})
+Video.create!({
+  course_content_id: cc93.id,
+  title: "Customise It!",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 31,
+  index: 10
+})
+Video.create!({
+  course_content_id: cc93.id,
+  title: "Download the Completed Project",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 22,
+  index: 11
+})
+Video.create!({
+  course_content_id: cc94.id,
+  title: "Quizzler - A True/False Quiz App",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 194,
+  index: 0
+})
+Video.create!({
+  course_content_id: cc94.id,
+  title: "Building a Score Keeper",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 728,
+  index: 1
+})
+Video.create!({
+  course_content_id: cc94.id,
+  title: "[Dart] Lists",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 505,
+  index: 2
+})
+Video.create!({
+  course_content_id: cc94.id,
+  title: "Displaying the Questions",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 1024,
+  index: 3
+})
+Video.create!({
+  course_content_id: cc94.id,
+  title: "Checking User Answers",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 388,
+  index: 4
+})
+Video.create!({
+  course_content_id: cc94.id,
+  title: "[Dart] Conditionals - IF/ELSE",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 936,
+  index: 5
+})
+Video.create!({
+  course_content_id: cc94.id,
+  title: "More Dart Programming Challenges",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 26,
+  index: 6
+})
+Video.create!({
+  course_content_id: cc94.id,
+  title: "Creating a Question Class",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 759,
+  index: 7
+})
+Video.create!({
+  course_content_id: cc94.id,
+  title: "[Dart] Classes and Objects",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 924,
+  index: 8
+})
+Video.create!({
+  course_content_id: cc94.id,
+  title: "Abstraction in Action",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 985,
+  index: 9
+})
+Video.create!({
+  course_content_id: cc94.id,
+  title: "Encapsulation in Action",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 890,
+  index: 10
+})
+Video.create!({
+  course_content_id: cc94.id,
+  title: "Inheritance in Action",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 458,
+  index: 11
+})
+Video.create!({
+  course_content_id: cc94.id,
+  title: "Polymorphism in Action",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 511,
+  index: 12
+})
+Video.create!({
+  course_content_id: cc94.id,
+  title: "Adding Back the Score Keeper",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 410,
+  index: 13
+})
+Video.create!({
+  course_content_id: cc94.id,
+  title: "Code Challenge",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 194,
+  index: 14
+})
+Video.create!({
+  course_content_id: cc94.id,
+  title: "[Dart] Class Constructors",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 841,
+  index: 15
+})
+Video.create!({
+  course_content_id: cc94.id,
+  title: "Download the Completed Project",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 22,
+  index: 16
+})
+Video.create!({
+  course_content_id: cc95.id,
+  title: "Destini - A Choose Your Own Adventure Game",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 137,
+  index: 0
+})
 # Review
 Review.create!({
   course_id: c1.id,
@@ -3337,6 +5373,445 @@ Review.create!({
   username: 'Yella Wolf',
   rating: 5,
   body: "This was a lovely informative course, Julian is such a good teacher and explains things thoroughly. Just having trouble finding the green trophy to download certificate."
+})
+
+Review.create!({
+  course_id: c11.id,
+  user_id: u1.id,
+  username: 'Louis Stevens',
+  rating: 5,
+  body: "topics on Slicers not covered"
+})
+Review.create!({
+  course_id: c11.id,
+  user_id: u1.id,
+  username: 'Ren Stevens',
+  rating: 5,
+  body: "Good knowing the shortcuts, tips and troubleshooting which is not quite common for everyone to know."
+})
+Review.create!({
+  course_id: c11.id,
+  user_id: u1.id,
+  username: 'Gwen Stephanie',
+  rating: 4,
+  body: "Really helpful, there were a couple of tricks that I was not aware that we can do in Excel, great material!"
+  })
+Review.create!({
+  course_id: c11.id,
+  user_id: u1.id,
+  username: 'Mr. Rogers',
+  rating: 4,
+  body: "The shortcuts were really helpful to learn!"
+})
+Review.create!({
+  course_id: c11.id,
+  user_id: u1.id,
+  username: 'Kenny Rodgers',
+  rating: 1,
+  body: "So far I am ready to ask for my money back. The free course on excel for beginners was hands on, this is a lecture and not a great learning style on a subject like excel for me."
+})
+Review.create!({
+  course_id: c11.id,
+  user_id: u1.id,
+  username: 'Johnny Knoxville',
+  rating: 4,
+  body: "Lots of good information"
+})
+Review.create!({
+  course_id: c11.id,
+  user_id: u1.id,
+  username: 'Steve-o Patterson',
+  rating: 5,
+  body: "Great introduction! Learned so great things that I will use all the time going forward. Thanks!"
+})
+Review.create!({
+  course_id: c11.id,
+  user_id: u1.id,
+  username: 'Kurt Dunham',
+  rating: 5,
+  body: "Yes till now its good"
+})
+Review.create!({
+  course_id: c11.id,
+  user_id: u1.id,
+  username: 'Bruce Wayne',
+  rating: 4,
+  body: "Great class!"
+})
+Review.create!({
+  course_id: c11.id,
+  user_id: u1.id,
+  username: 'Jay Vindicci',
+  rating: 5,
+  body: "I was learning the basic to have a good undestanding of macro utitility"
+})
+Review.create!({
+  course_id: c11.id,
+  user_id: u1.id,
+  username: 'Bob Walker',
+  rating: 5,
+  body: "Explains well and gives practical situations."
+})
+Review.create!({
+  course_id: c11.id,
+  user_id: u1.id,
+  username: 'Bryce Hob',
+  rating: 4,
+  body: "Thanks for the wonderful learning"
+})
+Review.create!({
+  course_id: c11.id,
+  user_id: u1.id,
+  username: 'Tyler Fonkin',
+  rating: 5,
+  body: "ok"
+})
+Review.create!({
+  course_id: c11.id,
+  user_id: u1.id,
+  username: 'Walker Texas',
+  rating: 5,
+  body: "Hi sir,\n\nThanks the course was excellent"
+})
+Review.create!({
+  course_id: c11.id,
+  user_id: u1.id,
+  username: 'Miss Fortune',
+  rating: 5,
+  body: "It is exactly what I am looking for. Thanks!"
+})
+Review.create!({
+  course_id: c11.id,
+  user_id: u1.id,
+  username: 'Ashe Winterville',
+  rating: 5,
+  body: "OK!"
+})
+Review.create!({
+  course_id: c11.id,
+  user_id: u1.id,
+  username: 'Arya Stark',
+  rating: 4,
+  body: "Yes"
+})
+Review.create!({
+  course_id: c11.id,
+  user_id: u1.id,
+  username: 'Bran Stark',
+  rating: 5,
+  body: "Great learning experience"
+})
+
+Review.create!({
+  course_id: c12.id,
+  user_id: u1.id,
+  username: 'John Henry',
+  rating: 4,
+  body: "I am still exploring"
+})
+Review.create!({
+  course_id: c12.id,
+  user_id: u1.id,
+  username: 'Henry John',
+  rating: 5,
+  body: "Loved this . Very easy to follow , great information and explained well . Thank you ????"
+})
+Review.create!({
+  course_id: c12.id,
+  user_id: u1.id,
+  username: 'Will Casanova',
+  rating: 3,
+  body: "A little slow so far."
+})
+Review.create!({
+  course_id: c12.id,
+  user_id: u1.id,
+  username: 'Chris Henson',
+  rating: 5,
+  body: "i was already familiar with EFT, but I appreciate how thoroughly you explain how each pressure point affects and is connected to specific parts of the body. Clear applications. Gentle leading style."
+})
+Review.create!({
+  course_id: c12.id,
+  user_id: u1.id,
+  username: 'Scott Benson',
+  rating: 4,
+  body: "Although this is information in a new way, it all makes sense so far."
+})
+Review.create!({
+  course_id: c13.id,
+  user_id: u1.id,
+  username: 'Reol Saikaki',
+  rating: 2,
+  body: "MORE TECHNIQUE, LESS BACKGROUND INFO"
+})
+Review.create!({
+  course_id: c13.id,
+  user_id: u1.id,
+  username: 'Shinta Himura',
+  rating: 5,
+  body: "Excellent information, balancing science and faith."
+})
+Review.create!({
+  course_id: c13.id,
+  user_id: u1.id,
+  username: 'Betty Maverick',
+  rating: 5,
+  body: "Without being to long winded I enjoyed this course right from the beginning. The content is unique and Diane takes a different approach to what others are doing. Tons of value here! I am only 50% done with the course, but felt compelled to write this testimonial to share my experience. Thank you Diane!"
+})
+
+Review.create!({
+  course_id: c14.id,
+  user_id: u1.id,
+  username: 'Amir Hussain',
+  rating: 5,
+  body: "This course helped me understand a lot more my feelings, thoughts and needs surrounding the feeling of anger."
+})
+Review.create!({
+  course_id: c14.id,
+  user_id: u1.id,
+  username: 'Sarah Lynn',
+  rating: 5,
+  body: "my anger and other emotions have led to not being able to efectivly communicate or be able to retain important situations with my wife and I hope I can take what I have learned and try to be better, and to do better.i beleive it has helped mesee the light"
+})
+Review.create!({
+  course_id: c14.id,
+  user_id: u1.id,
+  username: 'Sarah McLauchlan',
+  rating: 4,
+  body: "Made me think a lot about the root cause of anger rather then just dealing with the action of anger"
+})
+Review.create!({
+  course_id: c14.id,
+  user_id: u1.id,
+  username: 'Felix Narso',
+  rating: 5,
+  body: "It has helped me reach my goals to being calmer and realize what could be the potential problems I have in my life and helped me move past those things. It also helps me to my day to day life as well, and my relationship with my family and friends."
+})
+Review.create!({
+  course_id: c14.id,
+  user_id: u1.id,
+  username: 'Kevin Bacon',
+  rating: 3,
+  body: "I understand I have an anger issue, I want ways in which to deal with my anger because I have a high stress job."
+})
+Review.create!({
+  course_id: c14.id,
+  user_id: u1.id,
+  username: 'David Beckham',
+  rating: 4,
+  body: "I think so. It's hard to know why your mad sometimes or why you get so angry. I think he did a good job of explaining how you need to identify needs and how you change the way you channel/ choose to use it"
+})
+Review.create!({
+  course_id: c14.id,
+  user_id: u1.id,
+  username: 'Mike Tyson',
+  rating: 5,
+  body: "small thing make a big rage and thats not good for healthy life , anger is the biggest enemy of healthy life."
+})
+Review.create!({
+  course_id: c14.id,
+  user_id: u1.id,
+  username: 'David Nickels',
+  rating: 4,
+  body: "Great material! My only complaint is that it was difficult to hear the people interviewed."
+})
+Review.create!({
+  course_id: c14.id,
+  user_id: u1.id,
+  username: 'Matt Thompson',
+  rating: 5,
+  body: "The instructor was knowledgeable and I liked his style. I was court ordered to take 10 hours of anger management. I would take his course again but now need to find more?"
+})
+Review.create!({
+  course_id: c14.id,
+  user_id: u1.id,
+  username: 'Patrick Martin',
+  rating: 5,
+  body: "Its just made me think alot more about my emotions, giving me some resonance to do so with."
+})
+Review.create!({
+  course_id: c14.id,
+  user_id: u1.id,
+  username: 'Christopher Phillips',
+  rating: 5,
+  body: "Really an eye opening experience"
+})
+Review.create!({
+  course_id: c14.id,
+  user_id: u1.id,
+  username: 'Harold Moss',
+  rating: 4,
+  body: "I am just at the beginning of the course. I do not feel you should be asking me for ratings so soon."
+})
+
+Review.create!({
+  course_id: c15.id,
+  user_id: u1.id,
+  username: 'Sam Winchester',
+  rating: 5,
+  body: "This course helped me understand myself. I have always been just a little lost in all the thoughts that run through my head about the ways to deal with situations. This helps with a process and understanding of emotions. Cause and effects. For yourself and your loved ones. I especially liked the meditation. I finally was able to let go."
+})
+Review.create!({
+  course_id: c15.id,
+  user_id: u1.id,
+  username: 'Dean Winchester',
+  rating: 5,
+  body: "This course was extremely helpful. Tedd Taskey has a kind way about him and provided me essential tools to help me manage my anger. I’ve already seen an improvement in my life since taking this course."
+})
+Review.create!({
+  course_id: c15.id,
+  user_id: u1.id,
+  username: 'Barney Stinson',
+  rating: 5,
+  body: "Clearly describing the parts of the brain, and scientific description of how to choose to respond instead of react, helps understanding how to control anger. Tedd delivers this course in a clear and concise manner. I'm already practicing the techniques with positive results - truly a comprehensive program broken down for easy understanding, and clear steps to improve."
+})
+Review.create!({
+  course_id: c15.id,
+  user_id: u1.id,
+  username: 'Victoria Swanson',
+  rating: 5,
+  body: "This isn’t like other courses that teach temporary strategies to cope that end up pushing the anger down (i.e. breathing), but teaches realistic skills to effectively cope in the long run. His exercises help you get to the CORE of the issue, which made me feel empowered to become the best version of myself. I also liked that this course included hands-on learning. I felt I was building skills through the process as I did the exercises instead of being given a ton of information and then being expected to magically implement it mid-rage.\n\nI especially liked that he was not trying to tell me to get rid of anger and that it is a normal human emotion. Understanding it is normal to feel anger and that I have a CHOICE when it comes to expressing it and how I deal with it internally was incredibly beneficial. And I LOVED the mindfulness exercise to rewire my brain!!"
+})
+Review.create!({
+  course_id: c15.id,
+  user_id: u1.id,
+  username: 'Olivia Gardner',
+  rating: 5,
+  body: "This video laid out in-depth, easy to understand concepts that are easy to remember actions for when anger starts to take hold. More importantly, it helps you see how to stop yourself from even getting to that point in the first place. Many of the Udemy courses are unorganized rambling. This seemed professional and organized....Could have used some different backgrounds and supporting graphics, but that's just because I have ADD and I'm a visual learner. I appreciate courses like this because I'm busy and can't always make it to the counselor's office. Looking forward to future content!"
+})
+Review.create!({
+  course_id: c15.id,
+  user_id: u1.id,
+  username: 'Jasmine Guttierez',
+  rating: 5,
+  body: "Wonderful"
+})
+
+Review.create!({
+  course_id: c16.id,
+  user_id: u1.id,
+  username: 'Ted Mosby',
+  rating: 3,
+  body: "It focused on the basics"
+})
+Review.create!({
+  course_id: c16.id,
+  user_id: u1.id,
+  username: 'Megumi Takani',
+  rating: 5,
+  body: "So far, so good."
+})
+Review.create!({
+  course_id: c17.id,
+  user_id: u1.id,
+  username: 'Kevin Hampton',
+  rating: 4,
+  body: "an awesome course on how to copyright instrumentals, lyrics, and completed songs."
+})
+Review.create!({
+  course_id: c17.id,
+  user_id: u1.id,
+  username: 'Will Greaseman',
+  rating: 5,
+  body: "This is one of the best courses I have had. Great job."
+})
+Review.create!({
+  course_id: c17.id,
+  user_id: u1.id,
+  username: 'Tony Stark',
+  rating: 5,
+  body: "Excellent course for the very beginner.\n\nIf you want to protect your work NOW, this is the course for you."
+})
+Review.create!({
+  course_id: c17.id,
+  user_id: u1.id,
+  username: 'Gary Malibu',
+  rating: 2,
+  body: "This course is a YouTube grade how-to video. Copyrighting your music is pretty much self explanatory on the copyright.gov website itself. I've done it before, on my own, with no problems. When I purchased the course I didn't know that it was a step-by-step tutorial on how to complete a registration on the website. I've purchased courses on publishing where the instructors are entertainment lawyers and dug deeper than my general knowledge of publishing or a how-to register with the performance rights organization I chose. The information in this course is legit, but mostly unnecessary. The one thing I did appreciate was the bonus lecture of the live call with the copyright.gov agent that discussed changes that are being made to the registration process and what option is ideal for producers registering multiple beats in one registry - which happens to be different from the choice selected in the course."
+})
+Review.create!({
+  course_id: c17.id,
+  user_id: u1.id,
+  username: 'Stephen Shu',
+  rating: 5,
+  body: "I enjoy this instructor's courses. His content is high-quality and he's very clear and to-the-point."
+})
+Review.create!({
+  course_id: c17.id,
+  user_id: u1.id,
+  username: 'Chelsea Charan',
+  rating: 4,
+  body: "Not a sexy topic but really important. Best part is to be able to ask questions - even if the instructor's not a lawyer ;-)"
+})
+Review.create!({
+  course_id: c17.id,
+  user_id: u1.id,
+  username: 'Tara Scavarn',
+  rating: 5,
+  body: "A good and in-depth guide on how to protect your music."
+})
+Review.create!({
+  course_id: c17.id,
+  user_id: u1.id,
+  username: 'Garrison Coots',
+  rating: 5,
+  body: "There's nothing fun about copyrighting your work except for the end result, and Joseph helped me get there as quickly and painlessly as possible. Quick, understandable, and to the point. What more could you need for this type of thing? Thanks, Joseph!"
+})
+Review.create!({
+  course_id: c17.id,
+  user_id: u1.id,
+  username: 'Melody Rebora',
+  rating: 5,
+  body: "This isn't the most popular topic but an absolutely necessary one to tackle for all serious music producers and artists.\n\nThe course gets straight to the point with a no non-sense approach. Everything is explained well and is easily understood. Thanks for this course EvaJ!\n\nThis course is highly re-commend for anyone who is looking to copyright their musical works. The \"tutorial documents\" available on copyright.gov seems so complicated compared to Joseph's course. He keeps everything simple and easy to follow.\n\nOne thing I did notice is you forgot to block out/blur your address in lecture 12, you might want to to something about that."
+})
+Review.create!({
+  course_id: c17.id,
+  user_id: u1.id,
+  username: 'Anthony Howell',
+  rating: 4,
+  body: "A needed obstacle to over come. I wish I had took this course 3 years ago to better understand the whole procedure."
+})
+Review.create!({
+  course_id: c17.id,
+  user_id: u1.id,
+  username: 'Frank Greuber',
+  rating: 5,
+  body: "Very detailed and easy to follow instructions on how to copyright songs. The instructor literally walks you through step by step. Happy I got this course. :)"
+})
+Review.create!({
+  course_id: c17.id,
+  user_id: u1.id,
+  username: 'Elon Mask',
+  rating: 5,
+  body: "Helpful legal advise for independent individuals in the music industry."
+})
+Review.create!({
+  course_id: c17.id,
+  user_id: u1.id,
+  username: 'Dean Koontz',
+  rating: 3,
+  body: "How easy it is to register with US Copyright."
+})
+Review.create!({
+  course_id: c17.id,
+  user_id: u1.id,
+  username: 'Eric Graveler',
+  rating: 2,
+  body: "Author just explaining how to use a site for registering music in USA."
+})
+Review.create!({
+  course_id: c17.id,
+  user_id: u1.id,
+  username: 'Pika Chu',
+  rating: 5,
+  body: "This section of the course was very well explained."
+})
+Review.create!({
+  course_id: c17.id,
+  user_id: u1.id,
+  username: 'Teddy Marlin',
+  rating: 5,
+  body: "Very thoroughly explained! Thank you!"
 })
 
 end
