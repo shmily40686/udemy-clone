@@ -15,12 +15,6 @@ CourseContent.destroy_all
 Review.destroy_all
 Video.destroy_all
 
-u918 = User.create!({
-    username:"Xiaowen Ling",
-    email:"shmily40686@gmail.com",
-    password:"09181990"
-})
-
 
 
 u1 = User.create!({
@@ -128,9 +122,34 @@ u18 = User.create!({
   password: '12345768'
 })
 
+u24 = User.create!({
+  username: 'Raghavendra Dixit',
+  email: 'rdixit@gmail.com',
+  password: '12345678'
+})
+
+u25 = User.create!({
+    username:"Xiaowen Ling",
+    email:"shmily40686@gmail.com",
+    password:"09181990"
+})
+
+u26 = User.create!({
+    username:"danny",
+    email:"danny40686@gmail.com",
+    password:"09181990"
+})
+
+u27 = User.create!({
+  username:"Ayden Ling",
+  email:"ayden@gmail.com",
+  password:"09181990"
+})
+
 # Courses
 c1 = Course.create!(
  title: 'Computer Science 101: Master the Theory Behind Programming',
+ type_style: 'computer',
  subtitle: 'Computer Science 101: Learn Computer Science to become a better Programmer and Software Engineer.',
  teacher: 'Kurt Anderson',
  teacher_id: u1.id,
@@ -147,6 +166,7 @@ c1 = Course.create!(
 )
 c2 = Course.create!(
  title: 'OTTOMAN CUISINE, TURKISH COOKING CLASS',
+ type_style: 'cooking',
  subtitle: 'A great variety of mouth watering dishes in Turkish cuisine which is mostly the heritage of Ottoman cuisine.',
  teacher: 'Darma Academy',
  teacher_id: u2.id,
@@ -165,6 +185,7 @@ c2 = Course.create!(
 )
 c3 = Course.create!(
  title: 'chopped dream eaters witch vegetables and eggs:experience...',
+ type_style: 'cooking',
  subtitle: 'chopped dream eaters witch vegetables and eggs:your way to a rich taste and a unique sensation,andexperience in cooking.',
  teacher: 'Mustapha elaallali',
  teacher_id: u3.id,
@@ -181,6 +202,7 @@ c3 = Course.create!(
 )
 c4 = Course.create!(
  title: "Email Marketing Hacks 2020: Build a Huge List of Email IDs",
+ type_style: 'business',
  subtitle: "Boost your Business with the Power of Email Marketing using Advanced Email Marketing Hacks in 2020.",
  teacher: 'Srinidhi Ranganathan',
  teacher_id: u4.id,
@@ -191,12 +213,13 @@ c4 = Course.create!(
  languages: "English",
  learning_goals: "Gain hands-on tactics for generating high-quality leads\nLearn actionable and advanced lead generation tactics that they can apply to their business\nCreate a repeatable, sustainable lead generation process.\nGenerate tons of leads to aid in their email campaign",
  requirements:"There is no prerequisite at all.\nLearn this technique from scratch and implement the same to take any business, product or website to the next level.",
- description: "Is email marketing the answer to everything to promote your business to the maximum? The answer is a resounding yes - if you plan to use the right email marketing tips and you market to the correct audience who will buy your product or service.However, there will always be businesses that don't believe in email marketing's strength. This is mainly because, due to their own shortcomings, they do not see any positive results with their email marketing efforts. These business owners sometimes only need a few email marketing tips to increase their email value. Did you know?Email is one of the most successful web-based marketing media. Research have shown that email marketing tends to produce even more revenue than Facebook and Twitter social media empires, which is why you will want all the advice you can get for email marketing.Email marketing is the process of delivering, typically to a group of people, a promotional message via online. Each email sent to a prospective or existing client could be known as email marketing in its broadest sense. Using Email marketing techniques is one of the most cost-effective ways of promoting your product or service, whether it's about creating your brand or selling more. This super mind-blowing course 'Email Marketing Hacks 2020: Build a Huge List of Email IDs' created by Digital Marketing Legend 'Srinidhi Ranganathan' offers all you need to know in order to make the most of this knowledgable and practical course. Learn how to create a strategy for email marketing, model and check successful communications with basic and advanced lead-generation tricks taught here.Get ready to extract tons of email ids in a day using secretive methods in lead-generation in 2020. Ultimate secrets and hacks that no-one will ever tell you. Finally - an actionable course on Advanced Lead-Generation has been launched here on Udemy.In this course, I will teach you on how to gain hands-on tactics for generating high-quality leads at the top of your sales funnel. You’ll learn actionable advanced lead generation tactics that you can apply to your business and almost any type of business to create a repeatable, sustainable lead generation process.There is no prerequisite at all. You can learn this technique from scratch and implement the same to take your business, product or website to the next level.At first, the email marketing strategies we mentioned may seem quite different, but once incorporated, positive results will be seen instantly. To improve your email marketing, try to take a step-by-step approach. It's not going to happen overnight, but if you take the right measures at the right time, it will get easier. Note, only if you take care of the details that make up the big picture, the email marketing strategies will become lucrative. So, are you ready for Lights? Camera? Action?Then, get set and enroll in 'Email Marketing Hacks: Build a Huge List of Email IDs'. There is no time to waste. Get setting rolling and become an email marketing whiz kid in no time.#Emailmarketing #email #marketing #emailmarketing202",
+ description: "Is email marketing the answer to everything to promote your business to the maximum? The answer is a resounding yes - if you plan to use the right email marketing tips and you market to the correct audience who will buy your product or service.However, there will always be businesses that don't believe in email marketing's strength. This is mainly because, due to their own shortcomings, they do not see any positive results with their email marketing efforts. These business owners sometimes only need a few email marketing tips to increase their email value. Did you know?Email is one of the most successful web-based marketing media. Research have shown that email marketing tends to produce even more revenue than Facebook and Twitter social media empires, which is why you will want all the advice you can get for email marketing.Email marketing is the process of delivering, typically to a group of people, a promotional message via online. Each email sent to a prospective or existing client could be known as email marketing in its broadest sense. Using Email marketing techniques is one of the most cost-effective ways of promoting your product or service, whether it's about creating your brand or selling more. This super mind-blowing course 'Email Marketing Hacks 2020: Build a Huge List of Email IDs' created by Digital Marketing Legend 'Srinidhi Ranganathan' offers all you need to know in order to make the most of this knowledgable and practical course. Learn how to create a strategy for email marketing, model and check successful communications with basic and advanced lead-generation tricks taught here.Get ready to extract tons of email ids in a day using secretive methods in lead-generation in 2020. Ultimate secrets and hacks that no-one will ever tell you. Finally - an actionable course on Advanced Lead-Generation has been launched here on Udemy.In this course, I will teach you on how to gain hands-on tactics for generating high-quality leads at the top of your sales funnel. You’ll learn actionable advanced lead generation tactics that you can apply to your business and almost any type_style of business to create a repeatable, sustainable lead generation process.There is no prerequisite at all. You can learn this technique from scratch and implement the same to take your business, product or website to the next level.At first, the email marketing strategies we mentioned may seem quite different, but once incorporated, positive results will be seen instantly. To improve your email marketing, try to take a step-by-step approach. It's not going to happen overnight, but if you take the right measures at the right time, it will get easier. Note, only if you take care of the details that make up the big picture, the email marketing strategies will become lucrative. So, are you ready for Lights? Camera? Action?Then, get set and enroll in 'Email Marketing Hacks: Build a Huge List of Email IDs'. There is no time to waste. Get setting rolling and become an email marketing whiz kid in no time.#Emailmarketing #email #marketing #emailmarketing202",
  audience:"Marketing Professionals, freelancers or startup company owners looking at e-mail marketing to promote their products.\nAnyone looking at generating e-mail leads either for their product launch or creating awareness about their products through e-mail marketing.",
  picture: "https://i.udemycdn.com/course/240x135/1286352_69db_2.jpg"
 )
 c5 = Course.create!(
  title: '32 Footwork Dance Moves for Parties and Showing Off',
+ type_style: 'art',
  subtitle: 'Shuffling, House Dance, Hip Hop, C Walk and Charleston dance moves for parties',
  teacher: 'Brian Bee',
  teacher_id: u5.id,
@@ -213,6 +236,7 @@ c5 = Course.create!(
 )
 c6 = Course.create!(
   title: "Data Structures and Algorithms - The Complete Masterclass",
+  type_style: 'computer',
   subtitle: "Crack the code interview by getting mastery in data structures & algorithms & Become a data structures & algorithms Ace",
   teacher: 'Vinoth Parthasarathy',
   teacher_id: u6.id,
@@ -230,6 +254,7 @@ c6 = Course.create!(
 
 c7 = Course.create!(
   title:"The Complete Piano & Music Theory Beginners Course",
+  type_style: 'art',
   subtitle:"Learn all piano and music theory basics quickly, and save big on months of initial private lessons!",
   teacher:"Music Inspired",
   teacher_id: u7.id,
@@ -247,6 +272,7 @@ c7 = Course.create!(
 
 c8 = Course.create!(
   title: "How To Cultivate Mindfulness & Mindfulness Meditation",
+  type_style: 'life',
   subtitle: "Certified: Mindfulness Meditation: Mindfulness & Spirituality : Meditation Techniques & Spirituality of Mindfulness",
   teacher: 'Julian Jenkins',
   teacher_id: u9.id,
@@ -265,6 +291,7 @@ c8 = Course.create!(
 
 c9 = Course.create!(
   title: "How To Cultivate Mindfulness & Mindfulness Meditation",
+  type_style: 'life',
   subtitle: "Certified: Mindfulness Meditation: Mindfulness & Spirituality : Meditation Techniques & Spirituality of Mindfulness",
   teacher: 'Julian Jenkins',
   teacher_id: u9.id,
@@ -281,6 +308,7 @@ c9 = Course.create!(
 )
 c10 = Course.create!(
   title: "Robotium (+Recorder) - Android Mobile Application Automation",
+  type_style: 'computer',
   subtitle: "Robotium (& Recorder) – Introduction, Benefits & limitations; Eclipse IDE & Android Studio Plugin Demo",
   teacher: 'e VideoTuition',
   teacher_id: u10.id,
@@ -297,6 +325,7 @@ c10 = Course.create!(
 )
 c11 = Course.create!(
   title: "Intro to Excel Macros Part 1",
+  type_style: 'computer',
   subtitle: "This course explains how Excel's Macro Recorder can automate simple repetitive tasks in your daily work.",
   teacher: 'David Ringstrom',
   teacher_id: u11.id,
@@ -313,6 +342,7 @@ c11 = Course.create!(
 )
 c12 = Course.create!(
   title: "Weight Loss for (2020) ➤Slim Thinking Permanent Weight Loss",
+  type_style: 'life',
   subtitle: "Lose Weight and beat cravings learn to change your relationship to Food and feel great without dieting Weight Loss",
   teacher: 'Alan Kirwan',
   teacher_id: u12.id,
@@ -330,6 +360,7 @@ c12 = Course.create!(
 
 c15 = Course.create!(
   title: "comprehensive anger management",
+  type_style: 'life',
   subtitle: "living a peaceful, productive life",
   price: 19999,
   rating: 4,
@@ -346,6 +377,7 @@ c15 = Course.create!(
 )
 c14 = Course.create!(
   title: "Resolve anger and other strong emotions - Anger Management",
+  type_style: 'life',
   subtitle: "Become free from costly reactive anger and use its energy to make positive changes in your life and relationships.",
   price: 2499,
   rating: 4,
@@ -362,6 +394,7 @@ c14 = Course.create!(
 )
 c13 = Course.create!(
   title: "Christian Weight Loss: Weight Loss Strategies for Believers",
+  type_style: 'life',
   subtitle: "Use Christ-centered Stress Reduction & Weight Loss Techniques. Improve Your Health from a Christ-centered view.",
   price: 1999,
   rating: 4,
@@ -378,6 +411,7 @@ c13 = Course.create!(
 )
 c16 = Course.create!(
   title: "Anger Management",
+  type_style: 'life',
   subtitle: "Everyone experiences Anger. It's how you deal with it, that matters most.",
   price: 3499,
   rating: 4,
@@ -394,6 +428,7 @@ c16 = Course.create!(
 )
 c17 = Course.create!(
   title: "Music Copyright: Protect Your Music",
+  type_style: 'music',
   subtitle: "Learn the in's and out's of music copyright and how to legally protect your music.",
   price: 19999,
   rating: 4,
@@ -402,7 +437,7 @@ c17 = Course.create!(
   languages: "English",
   learning_goals: "Understand the basics of copyright.\nProtect your music under intellectual property laws.\nRegister your copyrighted music with the government.",
   requirements: "No prior experience is needed.",
-  description: "<p><strong><em>If you're worried about releasing your music because you don't understand how to properly copyright and protect your work then please continue reading.</em></strong></p><p>We have all heard of the horror stories of musicians who have&nbsp;had their music stolen and were unfortunately&nbsp;not properly acknowledged nor paid. Don't let that be you!</p><p>In this course you will learn the basics of music copyright, the law,&nbsp;and how to register your music with the US Copyright Office!</p><p><strong><em>This information will help</em></strong></p><ul><li>Give you peace of mind</li><li>Protect your music</li><li>Handle your business like a boss</li><li>Get you properly paid or compensated for your work if its stolen&nbsp;</li></ul><p>Check out what current students are saying</p><p><em>'This section of the course was very well explained.'</em> - David Gakin<br></p><p><em>'There's nothing fun about copyrighting your work except for the end result, and Joseph helped me get there as quickly and painlessly as possible. Quick, understandable, and to the point. What more could you need for this type of thing? Thanks, Joseph!</em>' - Faris Monshi</p><p><em>'This isn't the most popular topic but an absolutely necessary one to tackle for all serious music producers and artists. The course gets straight to the point with a no non-sense approach. Everything is explained well and is easily understood. Thanks for this course EvaJ! This course is highly re-commend for anyone who is looking to copyright their musical works. The 'tutorial documents' available on copyright(.)gov seems so complicated compared to Joseph's course. He keeps everything simple and easy to follow. One thing I did notice is you forgot to block out/blur your address in lecture 12, you might want to to something about that.' -</em> Al Laguna</p><p><strong></strong></p><p><strong>Stop worrying about your music and take the necessary steps to properly cover yourself!</strong><br></p><p><strong>Learn Music Copyright Today!</strong></p><p>Enroll Now</p>",
+  description: "<p><strong><em>If you're worried about releasing your music because you don't understand how to properly copyright and protect your work then please continue reading.</em></strong></p><p>We have all heard of the horror stories of musicians who have&nbsp;had their music stolen and were unfortunately&nbsp;not properly acknowledged nor paid. Don't let that be you!</p><p>In this course you will learn the basics of music copyright, the law,&nbsp;and how to register your music with the US Copyright Office!</p><p><strong><em>This information will help</em></strong></p><ul><li>Give you peace of mind</li><li>Protect your music</li><li>Handle your business like a boss</li><li>Get you properly paid or compensated for your work if its stolen&nbsp;</li></ul><p>Check out what current students are saying</p><p><em>'This section of the course was very well explained.'</em> - David Gakin<br></p><p><em>'There's nothing fun about copyrighting your work except for the end result, and Joseph helped me get there as quickly and painlessly as possible. Quick, understandable, and to the point. What more could you need for this type_style of thing? Thanks, Joseph!</em>' - Faris Monshi</p><p><em>'This isn't the most popular topic but an absolutely necessary one to tackle for all serious music producers and artists. The course gets straight to the point with a no non-sense approach. Everything is explained well and is easily understood. Thanks for this course EvaJ! This course is highly re-commend for anyone who is looking to copyright their musical works. The 'tutorial documents' available on copyright(.)gov seems so complicated compared to Joseph's course. He keeps everything simple and easy to follow. One thing I did notice is you forgot to block out/blur your address in lecture 12, you might want to to something about that.' -</em> Al Laguna</p><p><strong></strong></p><p><strong>Stop worrying about your music and take the necessary steps to properly cover yourself!</strong><br></p><p><strong>Learn Music Copyright Today!</strong></p><p>Enroll Now</p>",
   teacher: 'Joseph Evans',
   teacher_id: u17.id,
   audience: "This course is for anyone looking to protect their music before releasing it to the general public to make a profit.",
@@ -413,6 +448,7 @@ c18 = Course.create!(
   I'm so confident that you'll love this course that&nbsp;we're offering a FULL money back guarantee for&nbsp;30 days! So it's a complete no-brainer, sign up today with ZERO&nbsp;risk and EVERYTHING to gain.</strong></p><p>So what are you waiting for?&nbsp;Click the buy now button and join the world's best Flutter development course.</p>",
   teacher: 'Angela Yu',
   teacher_id: u18.id,
+  type_style: 'computer',
   title: "The Complete 2020 Flutter Development Bootcamp with Dart",
   subtitle: "Officially created in collaboration with the Google Flutter team.",
   price: 19999,
@@ -428,6 +464,7 @@ c18 = Course.create!(
 
 c19 = Course.create!(
  title: 'Computer Science 101: Master the Theory Behind Programming',
+ type_style: 'computer',
  subtitle: 'Computer Science 101: Learn Computer Science to become a better Programmer and Software Engineer.',
  teacher: 'Kurt Anderson',
  teacher_id: u1.id,
@@ -444,6 +481,7 @@ c19 = Course.create!(
 )
 c20 = Course.create!(
  title: 'OTTOMAN CUISINE, TURKISH COOKING CLASS',
+ type_style: 'cooking',
  subtitle: 'A great variety of mouth watering dishes in Turkish cuisine which is mostly the heritage of Ottoman cuisine.',
  teacher: 'Darma Academy',
  teacher_id: u2.id,
@@ -462,6 +500,7 @@ c20 = Course.create!(
 )
 c21 = Course.create!(
  title: 'chopped dream eaters witch vegetables and eggs:experience...',
+ type_style: 'cooking',
  subtitle: 'chopped dream eaters witch vegetables and eggs:your way to a rich taste and a unique sensation,andexperience in cooking.',
  teacher: 'Mustapha elaallali',
  teacher_id: u3.id,
@@ -478,6 +517,7 @@ c21 = Course.create!(
 )
 c22 = Course.create!(
  title: "Email Marketing Hacks 2020: Build a Huge List of Email IDs",
+ type_style: 'busineen',
  subtitle: "Boost your Business with the Power of Email Marketing using Advanced Email Marketing Hacks in 2020.",
  teacher: 'Srinidhi Ranganathan',
  teacher_id: u4.id,
@@ -488,12 +528,13 @@ c22 = Course.create!(
  languages: "English",
  learning_goals: "Gain hands-on tactics for generating high-quality leads\nLearn actionable and advanced lead generation tactics that they can apply to their business\nCreate a repeatable, sustainable lead generation process.\nGenerate tons of leads to aid in their email campaign",
  requirements:"There is no prerequisite at all.\nLearn this technique from scratch and implement the same to take any business, product or website to the next level.",
- description: "Is email marketing the answer to everything to promote your business to the maximum? The answer is a resounding yes - if you plan to use the right email marketing tips and you market to the correct audience who will buy your product or service.However, there will always be businesses that don't believe in email marketing's strength. This is mainly because, due to their own shortcomings, they do not see any positive results with their email marketing efforts. These business owners sometimes only need a few email marketing tips to increase their email value. Did you know?Email is one of the most successful web-based marketing media. Research have shown that email marketing tends to produce even more revenue than Facebook and Twitter social media empires, which is why you will want all the advice you can get for email marketing.Email marketing is the process of delivering, typically to a group of people, a promotional message via online. Each email sent to a prospective or existing client could be known as email marketing in its broadest sense. Using Email marketing techniques is one of the most cost-effective ways of promoting your product or service, whether it's about creating your brand or selling more. This super mind-blowing course 'Email Marketing Hacks 2020: Build a Huge List of Email IDs' created by Digital Marketing Legend 'Srinidhi Ranganathan' offers all you need to know in order to make the most of this knowledgable and practical course. Learn how to create a strategy for email marketing, model and check successful communications with basic and advanced lead-generation tricks taught here.Get ready to extract tons of email ids in a day using secretive methods in lead-generation in 2020. Ultimate secrets and hacks that no-one will ever tell you. Finally - an actionable course on Advanced Lead-Generation has been launched here on Udemy.In this course, I will teach you on how to gain hands-on tactics for generating high-quality leads at the top of your sales funnel. You’ll learn actionable advanced lead generation tactics that you can apply to your business and almost any type of business to create a repeatable, sustainable lead generation process.There is no prerequisite at all. You can learn this technique from scratch and implement the same to take your business, product or website to the next level.At first, the email marketing strategies we mentioned may seem quite different, but once incorporated, positive results will be seen instantly. To improve your email marketing, try to take a step-by-step approach. It's not going to happen overnight, but if you take the right measures at the right time, it will get easier. Note, only if you take care of the details that make up the big picture, the email marketing strategies will become lucrative. So, are you ready for Lights? Camera? Action?Then, get set and enroll in 'Email Marketing Hacks: Build a Huge List of Email IDs'. There is no time to waste. Get setting rolling and become an email marketing whiz kid in no time.#Emailmarketing #email #marketing #emailmarketing202",
+ description: "Is email marketing the answer to everything to promote your business to the maximum? The answer is a resounding yes - if you plan to use the right email marketing tips and you market to the correct audience who will buy your product or service.However, there will always be businesses that don't believe in email marketing's strength. This is mainly because, due to their own shortcomings, they do not see any positive results with their email marketing efforts. These business owners sometimes only need a few email marketing tips to increase their email value. Did you know?Email is one of the most successful web-based marketing media. Research have shown that email marketing tends to produce even more revenue than Facebook and Twitter social media empires, which is why you will want all the advice you can get for email marketing.Email marketing is the process of delivering, typically to a group of people, a promotional message via online. Each email sent to a prospective or existing client could be known as email marketing in its broadest sense. Using Email marketing techniques is one of the most cost-effective ways of promoting your product or service, whether it's about creating your brand or selling more. This super mind-blowing course 'Email Marketing Hacks 2020: Build a Huge List of Email IDs' created by Digital Marketing Legend 'Srinidhi Ranganathan' offers all you need to know in order to make the most of this knowledgable and practical course. Learn how to create a strategy for email marketing, model and check successful communications with basic and advanced lead-generation tricks taught here.Get ready to extract tons of email ids in a day using secretive methods in lead-generation in 2020. Ultimate secrets and hacks that no-one will ever tell you. Finally - an actionable course on Advanced Lead-Generation has been launched here on Udemy.In this course, I will teach you on how to gain hands-on tactics for generating high-quality leads at the top of your sales funnel. You’ll learn actionable advanced lead generation tactics that you can apply to your business and almost any type_style of business to create a repeatable, sustainable lead generation process.There is no prerequisite at all. You can learn this technique from scratch and implement the same to take your business, product or website to the next level.At first, the email marketing strategies we mentioned may seem quite different, but once incorporated, positive results will be seen instantly. To improve your email marketing, try to take a step-by-step approach. It's not going to happen overnight, but if you take the right measures at the right time, it will get easier. Note, only if you take care of the details that make up the big picture, the email marketing strategies will become lucrative. So, are you ready for Lights? Camera? Action?Then, get set and enroll in 'Email Marketing Hacks: Build a Huge List of Email IDs'. There is no time to waste. Get setting rolling and become an email marketing whiz kid in no time.#Emailmarketing #email #marketing #emailmarketing202",
  audience:"Marketing Professionals, freelancers or startup company owners looking at e-mail marketing to promote their products.\nAnyone looking at generating e-mail leads either for their product launch or creating awareness about their products through e-mail marketing.",
  picture: "https://i.udemycdn.com/course/240x135/1286352_69db_2.jpg"
 )
 c23 = Course.create!(
  title: '32 Footwork Dance Moves for Parties and Showing Off',
+ type_style: 'art',
  subtitle: 'Shuffling, House Dance, Hip Hop, C Walk and Charleston dance moves for parties',
  teacher: 'Brian Bee',
  teacher_id: u5.id,
@@ -508,75 +549,80 @@ c23 = Course.create!(
  audience: 'guys that are looking to impress friends and the ladies at the next party',
  picture: "https://i.udemycdn.com/course/240x135/1247064_2f12.jpg"
 )
+
 c24 = Course.create!(
-  title: "Data Structures and Algorithms - The Complete Masterclass",
-  subtitle: "Crack the code interview by getting mastery in data structures & algorithms & Become a data structures & algorithms Ace",
-  teacher: 'Vinoth Parthasarathy',
-  teacher_id: u6.id,
+  title: "Introduction to Data Structures & Algorithms in Java",
+  type_style: 'computer',
+  subtitle: "Designed to help understand the fundamentals of DS & Algorithms really well. A must have for programming interviews.",
+  teacher_id: u24.id,
+  teacher: 'Raghavendra Dixit',
   price: 1099,
   rating: 4,
-  rating_count: 890,
-  student_count: 2842,
+  rating_count: 2422,
+  student_count: 19771,
   languages: "English",
-  learning_goals: "Understand the coding principles and Understand How to write code in efficient way by help of choosing right data structures and efficient algorithms\nHow to choose right data structures for your need\nUnderstand concept behind Arrays, Linked Lists, Hash tables, Trees, Graph, Stacks, Queues, Sort algorithms and Search algorithms\nUnderstand the fundamentals of the Data structures and Algorithms\nUnderstand popular algorithms, and how to use it when you need.\nLearn everything you need to crack difficult coding interviews.\nReason about applicability and usability of Data Structures",
-  requirements:"A strong work ethic, enthusiasm to learn, and plenty of excitement about the awesome new skill you are going to build.\nNo experience with data structures or computer science needed!",
-  description: "Congratulations!  You've found the most popular, most complete, and most up-to-date resource online for learning Data structures and Algorithms. Are you interested in the field of Data structures? Are you interested to play around complex Algorithms?  Then this course is for you!You need to understand algorithms and data structures because I've seen code written by people who didn't understand Data structures and algorithms; and trust me, you don't want to be that guy. The entire course is based around a single goal: Turning you into a professional programmer & capable of writing code as a professional.Are you scared about the coding interview? Join with me in this Adventure, Crack your coding interview by getting mastery in data structures & algorithms.There are lots of free tutorials and videos on YouTube. Why would you want to take this course? The answer is simple: Quality of teaching. So, from the very beginning to the very end, you'll be confident that you'll be in good hands and watching every minute of the course, unlike the reading many free tutorials and videos, do not waste your precious time. Each section is equipped with a balanced mix of theory and Implementation.It's my goal to make clear about Data structures and Algorithms as much as possible and ensure your success. I want everyone to benefit from my courses, that's why we'll dive deeply into Data structures and Algorithms concepts and why I made sure to also share the knowledge that's helpful to programmersWhy it’s the only course you need to learn Data Structures and Algorithms?This course is everything you need from start to end regardless of your experience.It's an interactive course. Instead of explaining the concepts with Powerpoint slides, I will take you to the classroom again.This course is fun and exciting, but at the same time, we dive deep into Data Structures and Algorithms. Specifically, you will learn :· Understanding the core principles of coding.· Understanding code complexity and how to write code the efficiently and various levels of complexity.· Basics of Data Structures and algorithms· Basic data structures (Arrays, linked list, and Hash Table)· Tree data structures· Graph data structures· Algorithms to apply Graph in product implementation· Searching algorithms· Various Sorting algorithmsSee what your fellow students have to say 'Extremely amazing course to get started with data structures and algorithms. It was filled with so much content! Loved it. 'I really enjoyed the time spent in this course. I learn a lot about data structures and I'll put this knowledge into my work. An in-depth explanation of everything and Real-world examples. Thank you for such a wonderful course.'Excellent course. Highly recommended!. Vinoth did an excellent job breaking down a complex topic into an easy piece. The lectures and the whole course are well ordered, each topic is presented in the right place. Ultimately, it was a good experience for me. Looking forward to your next course/topic.'This is my first course on Udemy and I must say it was totally worth it. I enjoyed every single video on this course. And It has great many examples to teach the basics of Data Structures. Not only the experienced but beginners like me in the Data Structures will find the content to be 5-star. The instructors are really great! Thank you Vinoth for the handwork and teaching us in the great and understandable way! 'What if I have questions?As if this course wasn’t complete enough, I offer full support, answering any questions you have 7 days a week.Enroll now and begin your journey towards the most lucrative, adventurous and exciting career path you can imagine! Or, take this course for a free spin using the preview feature, so you know you’re 100% certain this course is for you.100% MONEY-BACK GUARANTEEThis course comes with a 30-day full money-back guarantee. Take the course, go through the lectures, do the exercises, and if you're not happy, ask for a refund within 30 days. All your money back, no questions asked.See you on the inside (hurry, Data structures, and algorithm class is waiting!)",
-  audience:"Anyone who want to take their programming skills to the next level and learn a future-proof programming\nAnyone who want to become intelligent programmer\nAnyone who is Feeling scared about coding interview\nAnyone who wants to strengthen their problem-solving skills",
-  picture:"https://i.udemycdn.com/course/240x135/2165246_3286_6.jpg"
+  learning_goals: "Be able to know and implement various data structures and algorithms\nBe able to write your own algorithms and understand if their running time is good or bad",
+  requirements: "Although any programming language may be used by the student, we use the java programming language to implement algorithms.",
+  description: "<p>This course introduces some basic data structures (arrays, linked lists, stacks, queues, trees and heaps) and algorithms (various sorting algorithms, and algorithms for operations on binary search trees and heaps). We will also cover recursion in this course. Use of graphics and animations makes the lectures very easy to understand and digest. After taking this course, you will loose your fear for data structures and algorithms.</p>",
+  audience: "Anyone who wants to learn data structures and algorithms (introductory)\nAnyone appearing for interviews, can be used to understand from grounds up, or as a quick revision",
+  picture: "https://i.udemycdn.com/course/240x135/81094_d4ff_10.jpg"
 )
 
 c25 = Course.create!(
- title: 'Computer Science 101: Master the Theory Behind Programming',
- subtitle: 'Computer Science 101: Learn Computer Science to become a better Programmer and Software Engineer.',
+ title: 'React - The Complete Guide (incl Hooks, React Router, Redux',
+ type_style: 'computer',
+ subtitle: 'Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!',
  teacher: 'Kurt Anderson',
- teacher_id: u1.id,
- price: 1099,
- rating: 4,
- rating_count: 1577,
- student_count: 8550,
+ teacher_id: u25.id,
+ price: 19899,
+ rating: 5,
+ rating_count: 60423,
+ student_count: 202567,
  languages: 'English',
- learning_goals: 'Understand the Fundamental Theories of Algorithm Analysis\nBe able to Compare Various Algorithms\nUnderstand When to use Different Data Structures and Algorithms\nUnderstand the Fundamentals of Computer Science theory\nUnderstand the Core Sorting Algorithms',
+ learning_goals: "Build powerful, fast, user-friendly and reactive web apps\nProvide amazing user experiences by leveraging the power of JavaScript with ease\nApply for high-paid jobs or work as a freelancer in one the most-demanded sectors you can find in web dev right now\nLearn React Hooks & Class-based ",
  requirements: 'A Willingness to Learn New Topics!\nNo Prior Experience or Knowledge is Needed!',
- description: '<p><strong>Master the Theory to Becoming a Good Programmer!&nbsp;</strong></p><p>If youre looking to learn the theory that makes great programmers,&nbsp;youve come to the right place!&nbsp;This course is perfect for anyone interested in learning the fundamentals to Computer Science Theory.&nbsp;</p><p><strong>No Previous Experience Necessary!&nbsp;</strong></p><p>Computer science and technology are often thought of as things only for "analytical minds". I believe however that technology and its theory are for everyone. So I designed this&nbsp;course to&nbsp;teach each topic in a variety of&nbsp;<strong>easy to digest</strong> ways. Through these multiple reinforcing steps, I believe anyone can follow along and succeed!&nbsp;<br></p><p><strong>Why is the Theory of Programming Important?&nbsp;</strong></p><p>Understanding&nbsp;Computer Science theory is what sets apart&nbsp;<strong>Great programmers&nbsp;</strong>from average ones. Programming theory is something that transcends a single programming language. It gives you skills and techniques you can apply to any programming language you touch. Learning the theory behind programming is just as important, if not more important than learning a singular programming language like Java or C++.</p><p>Programming is all about problem solving. Analyzing a problem, and being able to figure out a way that a computer can help with that problem. Computer Science is the practice of this analysis process. It goes over the techniques and knowledge necessary to design efficient and sustainable code.&nbsp;</p><p>So if you want to begin setting yourself apart from the average programmers, this is the course for you!&nbsp;</p><p><strong>Enroll Now and youll Learn:&nbsp;</strong><br></p><ul><li><p>Binary Number System</p></li><li><p>N Notation</p></li><li><p>Big O Notation</p></li><li><p>How to Analyze a Program</p></li><li><p>Arrays and&nbsp;their Advantages</p></li><li><p>Nodes and their Importance</p></li><li><p>Linked&nbsp;Lists and their Advantages and Implementations</p></li><li><p>Stacks implemented with Arrays and Linked&nbsp;Lists</p></li><li><p>Queues Implemented with Arrays and Linked Lists</p></li><li><p>Various Sorting Algorithms and Their Comparisions</p></li><li><p>Trees and Binary Search Trees</p></li><li><p>And Much Much More!&nbsp;</p></li></ul><p><strong>My&nbsp;Guarantee</strong></p><p>I am so confident you will enjoy this course, I offer a 100%&nbsp;30-day money-back guarantee through Udemy.&nbsp;If you are not happy with your purchase, I have no problem with giving your money back!&nbsp;</p><p><strong>Are You Ready to Get Started?&nbsp;</strong></p><p>I will be waiting for you inside the course!&nbsp;</p><p>Remember, this is an online course, so you can take it at your own pace.&nbsp;<em>Are you busy right now?&nbsp;</em>Thats okay. Enroll today, and take the course at your own pace.</p><p>Thanks so much for your interest in this Computer Science 101 Course!&nbsp;</p><p>See you inside!</p><p>Kurt</p><p><br></p>',
- audience: 'Anyone who wants to become a Good Programmer\nAnyone interested in the Computer Science Discipline\nAnyone who wants to learn how to problem solve like a Computer Scientist',
- picture: 'https://i.udemycdn.com/course/240x135/1395136_3f8a_3.jpg'
+ description: "\nThis course is fully up-to-date with the latest version of React and includes React Hooks! Of course it will be kept up-to-date in the future :-)---What's this course about?Learn React or dive deeper into it. Learn the theory, solve assignments, practice in demo projects and build one big application which is improved throughout the course: The Burger Builder!More details please!JavaScript is the major driver of modern web applications since it's the only programming language which runs in the browser and hence allows you to provide highly reactive apps. You'll be able to achieve mobile-app like user experiences in the web.But using JavaScript can be challenging - it quickly becomes overwhelming to create a nice web app with vanilla JavaScript and jQuery only.React to the rescue! React is all about components - basically custom HTML elements - with which you can quickly build amazing and powerful web apps. Just build a component once, configure it to your needs, dynamically pass data into it (or listen to your own events!) and re-use it as often as needed.Need to display a list of users in your app? It's as simple as creating a \"User\" component and outputting it as often as needed.This course will start at the very basics and explain what exactly React is and how you may use it (and for which kind of apps). Thereafter, we'll go all the way from basic to advanced. We'll not just scratch the surface but dive deeply into React as well as popular libraries like react-router and Redux. By the end of the course, you can build amazing React (single page) applications!A detailed list with the course content can be found below.Who's teaching you in this course?My name is Maximilian Schwarzmüller, I'm a freelance web developer and worked with React in many projects. I'm also a 5-star rated instructor here on Udemy. I cover React's most popular alternatives - Vue and Angular - as well as many other topics. I know what I'm talking about and I know where the pain points can be found.It's my goal to get you started with React as quick as possible and ensure your success. But I don't just focus on students getting started. I want everyone to benefit from my courses, that's why we'll dive deeply into React and why I made sure to also share knowledge that's helpful to advanced React developers. Is this course for you?This course is for you if ......you're just getting started with frontend/ JavaScript development and only got the JS basics set (no prior React or other framework experience is required!)...you're experienced with Angular or Vue but want to dive into React...know the React basics but want to refresh them and/ or dive deeper...already worked quite a bit with React but want to dive deeper and see it all come together in a bigger appWhat should you bring to succeed in that course?HTML + CSS + JavaScript knowledge is required. You don't need to be an expert but the basics need to be setNO advanced JavaScript knowledge is required, though you'll be able to move even quicker through the course if you know next-gen JavaScript features like ES6 Arrow functions. A short refresher about the most important next-gen features is provided in the course though.What's inside the course?The \"What\", \"Why\" and \"How\"React Basics (Base features, syntax and concepts)Managing state with class-based components and React HooksHow to output lists and conditional contentStyling of React componentsA deep dive into the internals of React and advanced component featuresHow to access Http content from within React apps (AJAX)Redux, Redux, Redux ... from basics to advanced!Forms and form validation in React appsAuthenticationAn introduction to unit testingAn introduction to Next.jsReact app deployment instructions...and much more!\n\n",
+ audience:"\nStudents who want to learn how to build reactive and fast web apps\n\nAnyone who's interested in learning an extremely popular technology used by leading tech companies like Netflix\n\nStudents who want to take their web development skills to the next level and learn a future-proof technology\n",
+ picture: 'https://i.udemycdn.com/course/240x135/1362070_b9a1_2.jpg'
 )
 c26 = Course.create!(
- title: 'OTTOMAN CUISINE, TURKISH COOKING CLASS',
- subtitle: 'A great variety of mouth watering dishes in Turkish cuisine which is mostly the heritage of Ottoman cuisine.',
- teacher: 'Darma Academy',
- teacher_id: u2.id,
- price: 1044,
- rating: 1,
- rating_count: 1,
- student_count: 2,
- languages: 'English',
- learning_goals: 'Learn to cook Turkish traditional mezes and dishes in a very simple way\nEngaging with one of the richest cuisine in history\nGain the newest kitchen skills\nA new perspectives on every day food',
- requirements: 'Passion for cooking and engaging new cultures. Everybody from all aspects are welcome to this class.',
- description: 'Turkish cuisine one of the worlds great cuisines. It reflects the long history of this land... A great variety of mouth watering dishes in Turkish cuisine which is mostly the heritage of Ottoman cuisine. It is the mixture and refinement of Central Asian, Middle Eastern and Balkan cuisines. Therefore it is impossible to fit Turkish cuisine into a short list.
- Anatolia is blessed with varied climate which allows the country to get almost everything on its land. Turkey is one of the few countries in the world that has been self sustaining, producing all its own food. Turkish cuisine traditionally is NOT spicy, except in the southeast part of the country, where preparations can reflect a hot Middle Eastern(Arabic) food influence. But now in evertwhere you are able to find restaurants that sell that kind of spicy dishes
- Turks have a big diversity of vegetables and of course this reflects on the dishes. One very important detail about vegetable dishes is whether they have meat in them or not.',
- audience: 'Who likes enjoying cooking, food and culture',
- picture: 'https://i.udemycdn.com/course/480x270/2702904_7dd8.jpg'
+  title:"Cooking with Spices",
+  type_style: "cooking",
+  teacher: 'Mustapha elaallali',
+  teacher_id: u26.id,
+  subtitle:"Learn how to add Bold & Delicious Flavor to Dishes",
+  price:1999,
+  rating:4,
+  rating_count:3,
+  student_count:62,
+  languages:"English",
+  learning_goals:"\nEffectively use cooking techniques to create delicious meals using a variety of spices for future meal planning.\n",
+  requirements:"\nStudents will need to have basic cookware and have most ingredients on hand to execute the recipes.\n",
+  description:"\nWelcome to Cooking with Spices-Learn how to add Bold & Delicious Flavor to Dishes!  In this course, you will learn a variety of cooking techniques, such as \"sauteing\" \"toasting\" and other helpful techniques used to create tasty dishes of various cuisines using spices. Before leaping into the course and so that you understand upcoming cooking lectures, there is helpful background information about spices and the foundation of how they are used in each cuisine which I call \"flavorprints.\" After each lecture its encouraged to try something that is covered in that section.  Some dishes to look forward to making are Arroz con Pollo (Spanish Chicken & Rice) Shrimp & Sausage Gumbo & Jamaican Style Peas & Rice. \n\n",
+  audience:"\nThis course is for home cooks of all levels and who are looking for new ways of creating dishes with spices. This class is not for home cooks with no basic cooking skills.\n",
+  picture:"https://i.udemycdn.com/course/240x135/864136_6d92.jpg"
 )
 c27 = Course.create!(
- title: 'chopped dream eaters witch vegetables and eggs:experience...',
- subtitle: 'chopped dream eaters witch vegetables and eggs:your way to a rich taste and a unique sensation,andexperience in cooking.',
- teacher: 'Mustapha elaallali',
- teacher_id: u3.id,
- price: 1044,
- rating: 1,
- rating_count: 1,
- student_count: 1,
- languages: 'English',
- learning_goals: 'Students will be able to acquire a new kind of experience that will increase the level of their technical abilities\nStudents will be able to acquire a new kind of experience that will increase the level of their technical abilities',
- requirements: 'Success\nSelf Development',
- description: 'In this course, we will persent a recipe of the most delicious of the most useful recipes for human health , in a detailed and smooth manner , and at the same time based on the ingredients widely available in the market,but the most good in the recipe is the wonderful final taste , which does not it can never be resisted, and we have also provided some of the most important tips and expertise in the field of cooking , especially our rich recipe.',
- audience: 'The target student is the talented or interested in the field of graphic arts and design',
- picture: 'https://i.udemycdn.com/course/240x135/1456524_4fac_2.jpg',
+ title:"How to Create illustration painting with vectors",
+ teacher: 'Kurt Anderson',
+ teacher_id: u1.id,
+ type_style:"art",
+ subtitle:"Learn to Make your hand stronger, how to draw and add color with adobe illustartor",
+ price:3999,
+ rating:4,
+ rating_count:15,
+ student_count:1782,
+ languages:"English",
+ learning_goals:"\nAt the end of your course, students will be able to create illustration picture for animation, web, cartoon, etc.\n",
+ requirements:"\nYou should have some basic knowledge about adobe illustrator.\n",
+ description:"\nLearn how to Draw and replace that on digital illustration with coloringYou will learn how to:Take control of your HandHatchingconnect your mind with your handTake your Memory strangSketch & Drawing On paperIllustration line drawingTow illustration coloring techniqueIf you have experience or work on graphic design-game design-cartoons-magazin-app you need to join this course. \n\n",
+ audience:"\nAnyone who want to learn illustration cartoon\n",
+ picture:"https://i.udemycdn.com/course/240x135/1148672_2f6b.jpg"
 )
+
 c28 = Course.create!(
- title: "Email Marketing Hacks 2020: Build a Huge List of Email IDs",
+ title: 'Email Marketing Hacks 2020: Build a Huge List of Email IDs',
+ type_style: 'computer',
  subtitle: "Boost your Business with the Power of Email Marketing using Advanced Email Marketing Hacks in 2020.",
  teacher: 'Srinidhi Ranganathan',
  teacher_id: u4.id,
@@ -587,12 +633,13 @@ c28 = Course.create!(
  languages: "English",
  learning_goals: "Gain hands-on tactics for generating high-quality leads\nLearn actionable and advanced lead generation tactics that they can apply to their business\nCreate a repeatable, sustainable lead generation process.\nGenerate tons of leads to aid in their email campaign",
  requirements:"There is no prerequisite at all.\nLearn this technique from scratch and implement the same to take any business, product or website to the next level.",
- description: "Is email marketing the answer to everything to promote your business to the maximum? The answer is a resounding yes - if you plan to use the right email marketing tips and you market to the correct audience who will buy your product or service.However, there will always be businesses that don't believe in email marketing's strength. This is mainly because, due to their own shortcomings, they do not see any positive results with their email marketing efforts. These business owners sometimes only need a few email marketing tips to increase their email value. Did you know?Email is one of the most successful web-based marketing media. Research have shown that email marketing tends to produce even more revenue than Facebook and Twitter social media empires, which is why you will want all the advice you can get for email marketing.Email marketing is the process of delivering, typically to a group of people, a promotional message via online. Each email sent to a prospective or existing client could be known as email marketing in its broadest sense. Using Email marketing techniques is one of the most cost-effective ways of promoting your product or service, whether it's about creating your brand or selling more. This super mind-blowing course 'Email Marketing Hacks 2020: Build a Huge List of Email IDs' created by Digital Marketing Legend 'Srinidhi Ranganathan' offers all you need to know in order to make the most of this knowledgable and practical course. Learn how to create a strategy for email marketing, model and check successful communications with basic and advanced lead-generation tricks taught here.Get ready to extract tons of email ids in a day using secretive methods in lead-generation in 2020. Ultimate secrets and hacks that no-one will ever tell you. Finally - an actionable course on Advanced Lead-Generation has been launched here on Udemy.In this course, I will teach you on how to gain hands-on tactics for generating high-quality leads at the top of your sales funnel. You’ll learn actionable advanced lead generation tactics that you can apply to your business and almost any type of business to create a repeatable, sustainable lead generation process.There is no prerequisite at all. You can learn this technique from scratch and implement the same to take your business, product or website to the next level.At first, the email marketing strategies we mentioned may seem quite different, but once incorporated, positive results will be seen instantly. To improve your email marketing, try to take a step-by-step approach. It's not going to happen overnight, but if you take the right measures at the right time, it will get easier. Note, only if you take care of the details that make up the big picture, the email marketing strategies will become lucrative. So, are you ready for Lights? Camera? Action?Then, get set and enroll in 'Email Marketing Hacks: Build a Huge List of Email IDs'. There is no time to waste. Get setting rolling and become an email marketing whiz kid in no time.#Emailmarketing #email #marketing #emailmarketing202",
+ description: "Is email marketing the answer to everything to promote your business to the maximum? The answer is a resounding yes - if you plan to use the right email marketing tips and you market to the correct audience who will buy your product or service.However, there will always be businesses that don't believe in email marketing's strength. This is mainly because, due to their own shortcomings, they do not see any positive results with their email marketing efforts. These business owners sometimes only need a few email marketing tips to increase their email value. Did you know?Email is one of the most successful web-based marketing media. Research have shown that email marketing tends to produce even more revenue than Facebook and Twitter social media empires, which is why you will want all the advice you can get for email marketing.Email marketing is the process of delivering, typically to a group of people, a promotional message via online. Each email sent to a prospective or existing client could be known as email marketing in its broadest sense. Using Email marketing techniques is one of the most cost-effective ways of promoting your product or service, whether it's about creating your brand or selling more. This super mind-blowing course 'Email Marketing Hacks 2020: Build a Huge List of Email IDs' created by Digital Marketing Legend 'Srinidhi Ranganathan' offers all you need to know in order to make the most of this knowledgable and practical course. Learn how to create a strategy for email marketing, model and check successful communications with basic and advanced lead-generation tricks taught here.Get ready to extract tons of email ids in a day using secretive methods in lead-generation in 2020. Ultimate secrets and hacks that no-one will ever tell you. Finally - an actionable course on Advanced Lead-Generation has been launched here on Udemy.In this course, I will teach you on how to gain hands-on tactics for generating high-quality leads at the top of your sales funnel. You’ll learn actionable advanced lead generation tactics that you can apply to your business and almost any type_style of business to create a repeatable, sustainable lead generation process.There is no prerequisite at all. You can learn this technique from scratch and implement the same to take your business, product or website to the next level.At first, the email marketing strategies we mentioned may seem quite different, but once incorporated, positive results will be seen instantly. To improve your email marketing, try to take a step-by-step approach. It's not going to happen overnight, but if you take the right measures at the right time, it will get easier. Note, only if you take care of the details that make up the big picture, the email marketing strategies will become lucrative. So, are you ready for Lights? Camera? Action?Then, get set and enroll in 'Email Marketing Hacks: Build a Huge List of Email IDs'. There is no time to waste. Get setting rolling and become an email marketing whiz kid in no time.#Emailmarketing #email #marketing #emailmarketing202",
  audience:"Marketing Professionals, freelancers or startup company owners looking at e-mail marketing to promote their products.\nAnyone looking at generating e-mail leads either for their product launch or creating awareness about their products through e-mail marketing.",
  picture: "https://i.udemycdn.com/course/240x135/1286352_69db_2.jpg"
 )
 c29 = Course.create!(
  title: '32 Footwork Dance Moves for Parties and Showing Off',
+ type_style: 'art',
  subtitle: 'Shuffling, House Dance, Hip Hop, C Walk and Charleston dance moves for parties',
  teacher: 'Brian Bee',
  teacher_id: u5.id,
@@ -609,6 +656,7 @@ c29 = Course.create!(
 )
 c30 = Course.create!(
   title: "Data Structures and Algorithms - The Complete Masterclass",
+  type_style: 'computer',
   subtitle: "Crack the code interview by getting mastery in data structures & algorithms & Become a data structures & algorithms Ace",
   teacher: 'Vinoth Parthasarathy',
   teacher_id: u6.id,
@@ -626,6 +674,7 @@ c30 = Course.create!(
 
 c31 = Course.create!(
  title: 'Computer Science 101: Master the Theory Behind Programming',
+ type_style: 'computer',
  subtitle: 'Computer Science 101: Learn Computer Science to become a better Programmer and Software Engineer.',
  teacher: 'Kurt Anderson',
  teacher_id: u1.id,
@@ -642,6 +691,7 @@ c31 = Course.create!(
 )
 c32 = Course.create!(
  title: 'OTTOMAN CUISINE, TURKISH COOKING CLASS',
+ type_style: 'cooking',
  subtitle: 'A great variety of mouth watering dishes in Turkish cuisine which is mostly the heritage of Ottoman cuisine.',
  teacher: 'Darma Academy',
  teacher_id: u2.id,
@@ -660,6 +710,7 @@ c32 = Course.create!(
 )
 c33 = Course.create!(
  title: 'chopped dream eaters witch vegetables and eggs:experience...',
+ type_style: 'cooking',
  subtitle: 'chopped dream eaters witch vegetables and eggs:your way to a rich taste and a unique sensation,andexperience in cooking.',
  teacher: 'Mustapha elaallali',
  teacher_id: u3.id,
@@ -676,6 +727,7 @@ c33 = Course.create!(
 )
 c34 = Course.create!(
  title: "Email Marketing Hacks 2020: Build a Huge List of Email IDs",
+ type_style: 'computer',
  subtitle: "Boost your Business with the Power of Email Marketing using Advanced Email Marketing Hacks in 2020.",
  teacher: 'Srinidhi Ranganathan',
  teacher_id: u4.id,
@@ -686,12 +738,13 @@ c34 = Course.create!(
  languages: "English",
  learning_goals: "Gain hands-on tactics for generating high-quality leads\nLearn actionable and advanced lead generation tactics that they can apply to their business\nCreate a repeatable, sustainable lead generation process.\nGenerate tons of leads to aid in their email campaign",
  requirements:"There is no prerequisite at all.\nLearn this technique from scratch and implement the same to take any business, product or website to the next level.",
- description: "Is email marketing the answer to everything to promote your business to the maximum? The answer is a resounding yes - if you plan to use the right email marketing tips and you market to the correct audience who will buy your product or service.However, there will always be businesses that don't believe in email marketing's strength. This is mainly because, due to their own shortcomings, they do not see any positive results with their email marketing efforts. These business owners sometimes only need a few email marketing tips to increase their email value. Did you know?Email is one of the most successful web-based marketing media. Research have shown that email marketing tends to produce even more revenue than Facebook and Twitter social media empires, which is why you will want all the advice you can get for email marketing.Email marketing is the process of delivering, typically to a group of people, a promotional message via online. Each email sent to a prospective or existing client could be known as email marketing in its broadest sense. Using Email marketing techniques is one of the most cost-effective ways of promoting your product or service, whether it's about creating your brand or selling more. This super mind-blowing course 'Email Marketing Hacks 2020: Build a Huge List of Email IDs' created by Digital Marketing Legend 'Srinidhi Ranganathan' offers all you need to know in order to make the most of this knowledgable and practical course. Learn how to create a strategy for email marketing, model and check successful communications with basic and advanced lead-generation tricks taught here.Get ready to extract tons of email ids in a day using secretive methods in lead-generation in 2020. Ultimate secrets and hacks that no-one will ever tell you. Finally - an actionable course on Advanced Lead-Generation has been launched here on Udemy.In this course, I will teach you on how to gain hands-on tactics for generating high-quality leads at the top of your sales funnel. You’ll learn actionable advanced lead generation tactics that you can apply to your business and almost any type of business to create a repeatable, sustainable lead generation process.There is no prerequisite at all. You can learn this technique from scratch and implement the same to take your business, product or website to the next level.At first, the email marketing strategies we mentioned may seem quite different, but once incorporated, positive results will be seen instantly. To improve your email marketing, try to take a step-by-step approach. It's not going to happen overnight, but if you take the right measures at the right time, it will get easier. Note, only if you take care of the details that make up the big picture, the email marketing strategies will become lucrative. So, are you ready for Lights? Camera? Action?Then, get set and enroll in 'Email Marketing Hacks: Build a Huge List of Email IDs'. There is no time to waste. Get setting rolling and become an email marketing whiz kid in no time.#Emailmarketing #email #marketing #emailmarketing202",
+ description: "Is email marketing the answer to everything to promote your business to the maximum? The answer is a resounding yes - if you plan to use the right email marketing tips and you market to the correct audience who will buy your product or service.However, there will always be businesses that don't believe in email marketing's strength. This is mainly because, due to their own shortcomings, they do not see any positive results with their email marketing efforts. These business owners sometimes only need a few email marketing tips to increase their email value. Did you know?Email is one of the most successful web-based marketing media. Research have shown that email marketing tends to produce even more revenue than Facebook and Twitter social media empires, which is why you will want all the advice you can get for email marketing.Email marketing is the process of delivering, typically to a group of people, a promotional message via online. Each email sent to a prospective or existing client could be known as email marketing in its broadest sense. Using Email marketing techniques is one of the most cost-effective ways of promoting your product or service, whether it's about creating your brand or selling more. This super mind-blowing course 'Email Marketing Hacks 2020: Build a Huge List of Email IDs' created by Digital Marketing Legend 'Srinidhi Ranganathan' offers all you need to know in order to make the most of this knowledgable and practical course. Learn how to create a strategy for email marketing, model and check successful communications with basic and advanced lead-generation tricks taught here.Get ready to extract tons of email ids in a day using secretive methods in lead-generation in 2020. Ultimate secrets and hacks that no-one will ever tell you. Finally - an actionable course on Advanced Lead-Generation has been launched here on Udemy.In this course, I will teach you on how to gain hands-on tactics for generating high-quality leads at the top of your sales funnel. You’ll learn actionable advanced lead generation tactics that you can apply to your business and almost any type_style of business to create a repeatable, sustainable lead generation process.There is no prerequisite at all. You can learn this technique from scratch and implement the same to take your business, product or website to the next level.At first, the email marketing strategies we mentioned may seem quite different, but once incorporated, positive results will be seen instantly. To improve your email marketing, try to take a step-by-step approach. It's not going to happen overnight, but if you take the right measures at the right time, it will get easier. Note, only if you take care of the details that make up the big picture, the email marketing strategies will become lucrative. So, are you ready for Lights? Camera? Action?Then, get set and enroll in 'Email Marketing Hacks: Build a Huge List of Email IDs'. There is no time to waste. Get setting rolling and become an email marketing whiz kid in no time.#Emailmarketing #email #marketing #emailmarketing202",
  audience:"Marketing Professionals, freelancers or startup company owners looking at e-mail marketing to promote their products.\nAnyone looking at generating e-mail leads either for their product launch or creating awareness about their products through e-mail marketing.",
  picture: "https://i.udemycdn.com/course/240x135/1286352_69db_2.jpg"
 )
 c35 = Course.create!(
  title: '32 Footwork Dance Moves for Parties and Showing Off',
+ type_style: 'art',
  subtitle: 'Shuffling, House Dance, Hip Hop, C Walk and Charleston dance moves for parties',
  teacher: 'Brian Bee',
  teacher_id: u5.id,
@@ -708,6 +761,7 @@ c35 = Course.create!(
 )
 c36 = Course.create!(
   title: "Data Structures and Algorithms - The Complete Masterclass",
+  type_style: 'computer',
   subtitle: "Crack the code interview by getting mastery in data structures & algorithms & Become a data structures & algorithms Ace",
   teacher: 'Vinoth Parthasarathy',
   teacher_id: u6.id,
@@ -1252,6 +1306,156 @@ cc101 = CourseContent.create!({
   index: 16,
   title: "Next Steps"
 })
+
+ccc1 = CourseContent.create!({
+  course_id: c24.id,
+  index: 0,
+  title: "Introduction to Algorithms"
+})
+ccc2 = CourseContent.create!({
+  course_id: c24.id,
+  index: 1,
+  title: "Analysis of Algorithms"
+})
+ccc3 = CourseContent.create!({
+  course_id: c24.id,
+  index: 2,
+  title: "Basic Sorting and Search Algorithms"
+})
+ccc4 = CourseContent.create!({
+  course_id: c24.id,
+  index: 3,
+  title: "Linked Lists"
+})
+ccc5 = CourseContent.create!({
+  course_id: c24.id,
+  index: 4,
+  title: "Stacks and Queues"
+})
+ccc6 = CourseContent.create!({
+  course_id: c24.id,
+  index: 5,
+  title: "Recursion"
+})
+ccc7 = CourseContent.create!({
+  course_id: c24.id,
+  index: 6,
+  title: "Binary Search Trees"
+})
+ccc8 = CourseContent.create!({
+  course_id: c24.id,
+  index: 7,
+  title: "More Sorting Algorithms"
+})
+ccc9 = CourseContent.create!({
+  course_id: c24.id,
+  index: 8,
+  title: "Heaps"
+})
+ccc10 = CourseContent.create!({
+  course_id: c24.id,
+  index: 9,
+  title: "Hashtables"
+})
+
+ccc11 = CourseContent.create!({
+  course_id: c25.id,
+  index:0,
+  title: "Getting Started"
+})
+
+ccc13 = CourseContent.create!({
+  course_id: c25.id,
+  index:1,
+  title:"Refreshing Next Generation JavaScript (Optional)"
+})
+
+ccc14 = CourseContent.create!({
+  course_id: c25.id,
+  index:2,
+  title:"Understanding the Base Features & Syntax"
+})
+
+ccc14 = CourseContent.create!({
+  course_id: c25.id,
+  index:3,
+  title:"Working with Lists and Conditionals"
+})
+
+ccc15 = CourseContent.create!({
+  course_id: c25.id,
+  index:4,
+  title: "Styling React Components & Elements"
+})
+
+ccc16 = CourseContent.create!({
+  course_id: c25.id,
+  index:5,
+  title:"Debugging React Apps"
+})
+
+ccc17 = CourseContent.create!({
+  course_id: c25.id,
+  index:6,
+  title:"Diving Deeper into Components & React Internals"
+})
+
+ccc18 = CourseContent.create!({
+  course_id: c25.id,
+  index:7,
+  title:"A Real App: The Burger Builder (Basic Version)"
+})
+
+ccc19 = CourseContent.create!({
+  course_id: c25.id,
+  index:8,
+  title:"Reaching out to the Web (Http / Ajax)"
+})
+
+ccc20 = CourseContent.create!({
+  course_id: c25.id,
+  index:9,
+  title:"Burger Builder Project: Accessing a Server"
+})
+
+ccc21 = CourseContent.create!({
+  course_id: c25.id,
+  index:10,
+  title:"Multi-Page-Feeling in a Single-Page-App: Routing"
+})
+
+ccc22 = CourseContent.create!({
+  course_id: c25.id,
+  index:11,
+  title:"Adding Routing to our Burger Project"
+})
+
+ccc23 = CourseContent.create!({
+  course_id: c25.id,
+  index:12,
+  title:"Forms and Form Validation"
+})
+
+ccc24 = CourseContent.create!({
+  course_id: c25.id,
+  index:13,
+  title:"Redux"
+})
+
+ccc25 = CourseContent.create!({course_id: c26.id,index:0,title:"Welcome to the World of Spices: How to use Spices in Cooking for Optimal Flavor"})
+ccc26 = CourseContent.create!({course_id: c26.id,index:1,title:"The World of Spices: \"Flavorprints\""})
+ccc27 = CourseContent.create!({course_id: c26.id,index:2,title:"Ground or Whole Spices: The choice is yours!"})
+ccc28 = CourseContent.create!({course_id: c26.id,index:3,title:"Proper Culinary Techniques when using Spices"})
+ccc29 = CourseContent.create!({course_id: c26.id,index:4,title:"Spice Pastes & Spice Rubs. What's the difference?"})
+ccc30 = CourseContent.create!({course_id: c26.id,index:5,title:"Lets Get Cooking! Using spices for Flavor"})
+ccc31 = CourseContent.create!({course_id: c26.id,index:6,title:"Conclusion"})
+
+
+
+ccc32 = CourseContent.create!({course_id: c27.id,index:0,title:"Introduction"})
+ccc33 = CourseContent.create!({course_id: c27.id,index:1,title:"Beginning Of Course"})
+ccc34 = CourseContent.create!({course_id: c27.id,index:2,title:"Drawing"})
+ccc35 = CourseContent.create!({course_id: c27.id,index:3,title:"Computer"})
 # Videos
 Video.create!({
  course_content_id: cc1.id,
@@ -4376,6 +4580,890 @@ Video.create!({
   duration: 137,
   index: 0
 })
+
+Video.create!({
+  course_content_id: ccc1.id,
+  title: "Introduction",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 68,
+  index: 0
+})
+Video.create!({
+  course_content_id: ccc1.id,
+  title: "Euclid's algorithm",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 289,
+  index: 1
+})
+Video.create!({
+  course_content_id: ccc1.id,
+  title: "Bubble Sort algorithm",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 172,
+  index: 2
+})
+Video.create!({
+  course_content_id: ccc1.id,
+  title: "Why study data structures & algorithms",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 190,
+  index: 3
+})
+Video.create!({
+  course_content_id: ccc1.id,
+  title: "Correctness of an algorithm",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 95,
+  index: 4
+})
+Video.create!({
+  course_content_id: ccc1.id,
+  title: "Chapter Quiz 2 ques",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 5
+})
+Video.create!({
+  course_content_id: ccc2.id,
+  title: "Note on this section",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 43,
+  index: 0
+})
+Video.create!({
+  course_content_id: ccc2.id,
+  title: "Introduction",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 200,
+  index: 1
+})
+Video.create!({
+  course_content_id: ccc2.id,
+  title: "How to calculate the time complexity",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 172,
+  index: 2
+})
+Video.create!({
+  course_content_id: ccc2.id,
+  title: "The RAM model of computation",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 127,
+  index: 3
+})
+Video.create!({
+  course_content_id: ccc2.id,
+  title: "Time complexity of Bubble sort algorithm",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 205,
+  index: 4
+})
+Video.create!({
+  course_content_id: ccc2.id,
+  title: "Pseudo code : Bubble sort algorithm",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 182,
+  index: 5
+})
+Video.create!({
+  course_content_id: ccc2.id,
+  title: "The Big O notation",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 206,
+  index: 6
+})
+Video.create!({
+  course_content_id: ccc2.id,
+  title: "Using Big O notation : Examples",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 281,
+  index: 7
+})
+Video.create!({
+  course_content_id: ccc2.id,
+  title: "Comparison of running times",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 242,
+  index: 8
+})
+Video.create!({
+  course_content_id: ccc2.id,
+  title: "Chapter Quiz  7 ques",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 9
+})
+Video.create!({
+  course_content_id: ccc3.id,
+  title: "Selection Sort",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 168,
+  index: 0
+})
+Video.create!({
+  course_content_id: ccc3.id,
+  title: "One of the problems that people face in writing algorithms is how to translate their thoughts into a programming language. Many people cannot even start writing the very first statement of an algorithm. I suggest that if you are having such trouble, don't try to solve the whole problem together, rather break it down into smaller, easier parts. For e.g. try doing the following in writing code for the selection sort algorithm -\n\n\n\tFirst try to write a method, which just finds the minimum number in the data array. Don't think about anything else, just that method.  If you write it in a different method, then you may need to pass the data array as a parameter to that method. Return the index of that minimum element from this method.\n\t Now change the method to find the minimum number STARTING FROM A PARTICULAR INDEX. So you will need to pass this index as a parameter.\n\t  Write another method which can swap items in an array, located at two different indexes. What parameters should be passed to this method?  \n\n\n\t Hopefully, by this time you will have enough clarity on completing the sorting algorithm, if you understood the pseudo code.\nSelection Sort : Pseudocode",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 154,
+  index: 1
+})
+Video.create!({
+  course_content_id: ccc3.id,
+  title: "Introduction to Insertion Sort",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 116,
+  index: 2
+})
+Video.create!({
+  course_content_id: ccc3.id,
+  title: "Applying Insertion Sort algorithm to cue balls",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 128,
+  index: 3
+})
+Video.create!({
+  course_content_id: ccc3.id,
+  title: "Insertion Sort: Pseudocode",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 158,
+  index: 4
+})
+Video.create!({
+  course_content_id: ccc3.id,
+  title: "O(n²) sorting algorithms - Comparison",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 120,
+  index: 5
+})
+Video.create!({
+  course_content_id: ccc3.id,
+  title: "In place sorting",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 54,
+  index: 6
+})
+Video.create!({
+  course_content_id: ccc3.id,
+  title: "Stable Vs Unstable Sorts",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 226,
+  index: 7
+})
+Video.create!({
+  course_content_id: ccc3.id,
+  title: "Searching elements in an un ordered array",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 196,
+  index: 8
+})
+Video.create!({
+  course_content_id: ccc3.id,
+  title: "Searching elements in an ORDERED array",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 153,
+  index: 9
+})
+Video.create!({
+  course_content_id: ccc3.id,
+  title: "Searching elements in an ORDERED array - contd.",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 348,
+  index: 10
+})
+Video.create!({
+  course_content_id: ccc3.id,
+  title: "Inserting and Deleting items in an ORDERED array",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 128,
+  index: 11
+})
+Video.create!({
+  course_content_id: ccc3.id,
+  title: "Try to write generic sort methods, like shown in the InsertionSortWithGenerics.java, for Bubble sort and Selection sort algorithms as an exercise. But if you don't want to get into generics at this point, you may choose to skip this section.\nSorting any type of object",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 93,
+  index: 12
+})
+Video.create!({
+  course_content_id: ccc3.id,
+  title: "Chapter Quiz  6 ques",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 13
+})
+Video.create!({
+  course_content_id: ccc3.id,
+  title: "Assignment",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 46,
+  index: 14
+})
+Video.create!({
+  course_content_id: ccc4.id,
+  title: "What is a Linked List?",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 201,
+  index: 0
+})
+Video.create!({
+  course_content_id: ccc4.id,
+  title: "Implementing a Linked List in Java",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 56,
+  index: 1
+})
+Video.create!({
+  course_content_id: ccc4.id,
+  title: "Inserting a new Node",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 325,
+  index: 2
+})
+Video.create!({
+  course_content_id: ccc4.id,
+  title: "Length of a Linked List",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 131,
+  index: 3
+})
+Video.create!({
+  course_content_id: ccc4.id,
+  title: "Deleting the head node",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 131,
+  index: 4
+})
+Video.create!({
+  course_content_id: ccc4.id,
+  title: "Searching for an Item",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 191,
+  index: 5
+})
+Video.create!({
+  course_content_id: ccc4.id,
+  title: "Using java generics to parameterize the LinkedList",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 81,
+  index: 6
+})
+Video.create!({
+  course_content_id: ccc4.id,
+  title: "Doubly Ended Lists",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 185,
+  index: 7
+})
+Video.create!({
+  course_content_id: ccc4.id,
+  title: "Inserting data in a sorted Linked List",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 278,
+  index: 8
+})
+Video.create!({
+  course_content_id: ccc4.id,
+  title: "Doubly Linked List",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 388,
+  index: 9
+})
+Video.create!({
+  course_content_id: ccc4.id,
+  title: "Insertion Sort revisited",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 632,
+  index: 10
+})
+Video.create!({
+  course_content_id: ccc4.id,
+  title: "Chapter Quiz  4 ques",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 11
+})
+Video.create!({
+  course_content_id: ccc4.id,
+  title: "Assignment",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 45,
+  index: 12
+})
+Video.create!({
+  course_content_id: ccc5.id,
+  title: "Stacks",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 161,
+  index: 0
+})
+Video.create!({
+  course_content_id: ccc5.id,
+  title: "Abstract Data Types",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 37,
+  index: 1
+})
+Video.create!({
+  course_content_id: ccc5.id,
+  title: "Implementing Stacks using Arrays",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 201,
+  index: 2
+})
+Video.create!({
+  course_content_id: ccc5.id,
+  title: "Queues",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 152,
+  index: 3
+})
+Video.create!({
+  course_content_id: ccc5.id,
+  title: "Queues using Arrays",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 329,
+  index: 4
+})
+Video.create!({
+  course_content_id: ccc5.id,
+  title: "Double Ended Queues",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 118,
+  index: 5
+})
+Video.create!({
+  course_content_id: ccc5.id,
+  title: "Double Ended Queues using Arrays",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 260,
+  index: 6
+})
+Video.create!({
+  course_content_id: ccc5.id,
+  title: "Chapter Quiz  7 ques",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 7
+})
+Video.create!({
+  course_content_id: ccc5.id,
+  title: "Assignment",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 49,
+  index: 8
+})
+Video.create!({
+  course_content_id: ccc6.id,
+  title: "Introduction",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 273,
+  index: 0
+})
+Video.create!({
+  course_content_id: ccc6.id,
+  title: "Understanding Recursion",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 184,
+  index: 1
+})
+Video.create!({
+  course_content_id: ccc6.id,
+  title: "Tail recursion",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 168,
+  index: 2
+})
+Video.create!({
+  course_content_id: ccc6.id,
+  title: "Tower of Hanoi",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 505,
+  index: 3
+})
+Video.create!({
+  course_content_id: ccc6.id,
+  title: "Tower of Hanoi - Implementation",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 178,
+  index: 4
+})
+Video.create!({
+  course_content_id: ccc6.id,
+  title: "Merge Sort",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 249,
+  index: 5
+})
+Video.create!({
+  course_content_id: ccc6.id,
+  title: "Merge Sort - Pseudocode",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 264,
+  index: 6
+})
+Video.create!({
+  course_content_id: ccc6.id,
+  title: "Merge Step - Pseudocode",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 272,
+  index: 7
+})
+Video.create!({
+  course_content_id: ccc6.id,
+  title: "Time Complexity of Merge Sort",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 172,
+  index: 8
+})
+Video.create!({
+  course_content_id: ccc6.id,
+  title: "Chapter Quiz  6 ques",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 9
+})
+Video.create!({
+  course_content_id: ccc6.id,
+  title: "Assignment",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 32,
+  index: 10
+})
+Video.create!({
+  course_content_id: ccc7.id,
+  title: "The Tree Data structure",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 221,
+  index: 0
+})
+Video.create!({
+  course_content_id: ccc7.id,
+  title: "Binary Trees",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 214,
+  index: 1
+})
+Video.create!({
+  course_content_id: ccc7.id,
+  title: "Binary Search Trees",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 121,
+  index: 2
+})
+Video.create!({
+  course_content_id: ccc7.id,
+  title: "Finding an item in a Binary Search Tree",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 144,
+  index: 3
+})
+Video.create!({
+  course_content_id: ccc7.id,
+  title: "Implementing the find method",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 182,
+  index: 4
+})
+Video.create!({
+  course_content_id: ccc7.id,
+  title: "Inserting an item in a Binary Search Tree",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 214,
+  index: 5
+})
+Video.create!({
+  course_content_id: ccc7.id,
+  title: "Deleting an Item : Case 1",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 366,
+  index: 6
+})
+Video.create!({
+  course_content_id: ccc7.id,
+  title: "Deleting an Item - Case 2",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 178,
+  index: 7
+})
+Video.create!({
+  course_content_id: ccc7.id,
+  title: "Deleting an Item - Case 3",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 224,
+  index: 8
+})
+Video.create!({
+  course_content_id: ccc7.id,
+  title: "Deleting an Item - Soft Delete",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 100,
+  index: 9
+})
+Video.create!({
+  course_content_id: ccc7.id,
+  title: "Finding smallest & largest values",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 153,
+  index: 10
+})
+Video.create!({
+  course_content_id: ccc7.id,
+  title: "Tree Traversal : In Order",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 199,
+  index: 11
+})
+Video.create!({
+  course_content_id: ccc7.id,
+  title: "Tree Traversal : Pre Order",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 118,
+  index: 12
+})
+Video.create!({
+  course_content_id: ccc7.id,
+  title: "Tree Traversal : Post Order",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 56,
+  index: 13
+})
+Video.create!({
+  course_content_id: ccc7.id,
+  title: "Unbalanced Trees Vs Balanced Trees",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 136,
+  index: 14
+})
+Video.create!({
+  course_content_id: ccc7.id,
+  title: "Height of a Binary Tree",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 94,
+  index: 15
+})
+Video.create!({
+  course_content_id: ccc7.id,
+  title: "Time Complexity of Operations on Binary Search Trees",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 136,
+  index: 16
+})
+Video.create!({
+  course_content_id: ccc7.id,
+  title: "Chapter Quiz  5 ques",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 17
+})
+Video.create!({
+  course_content_id: ccc7.id,
+  title: "Assignment",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 16,
+  index: 18
+})
+Video.create!({
+  course_content_id: ccc8.id,
+  title: "Introduction",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 87,
+  index: 0
+})
+Video.create!({
+  course_content_id: ccc8.id,
+  title: "QuickSort",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 294,
+  index: 1
+})
+Video.create!({
+  course_content_id: ccc8.id,
+  title: "QuickSort: The partition step",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 141,
+  index: 2
+})
+Video.create!({
+  course_content_id: ccc8.id,
+  title: "Shell Sort",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 327,
+  index: 3
+})
+Video.create!({
+  course_content_id: ccc8.id,
+  title: "Shell Sort: Example",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 208,
+  index: 4
+})
+Video.create!({
+  course_content_id: ccc8.id,
+  title: "Counting Sort",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 290,
+  index: 5
+})
+Video.create!({
+  course_content_id: ccc8.id,
+  title: "Radix Sort",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 147,
+  index: 6
+})
+Video.create!({
+  course_content_id: ccc8.id,
+  title: "Bucket Sort",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 192,
+  index: 7
+})
+Video.create!({
+  course_content_id: ccc8.id,
+  title: "Chapter Quiz  3 ques",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 8
+})
+Video.create!({
+  course_content_id: ccc8.id,
+  title: "Assignment",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 7,
+  index: 9
+})
+Video.create!({
+  course_content_id: ccc9.id,
+  title: "Introduction",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 246,
+  index: 0
+})
+Video.create!({
+  course_content_id: ccc9.id,
+  title: "Deleting the root",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 114,
+  index: 1
+})
+Video.create!({
+  course_content_id: ccc9.id,
+  title: "Inserting an item in a heap",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 119,
+  index: 2
+})
+Video.create!({
+  course_content_id: ccc9.id,
+  title: "Heaps as Priority Queues",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 150,
+  index: 3
+})
+Video.create!({
+  course_content_id: ccc9.id,
+  title: "Representing heaps using Arrays",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 115,
+  index: 4
+})
+Video.create!({
+  course_content_id: ccc9.id,
+  title: "Heap Sort",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 150,
+  index: 5
+})
+Video.create!({
+  course_content_id: ccc9.id,
+  title: "Building a heap",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 247,
+  index: 6
+})
+Video.create!({
+  course_content_id: ccc9.id,
+  title: "Chapter Quiz  5 ques",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 7
+})
+Video.create!({
+  course_content_id: ccc9.id,
+  title: "Assignment",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 5,
+  index: 8
+})
+Video.create!({
+  course_content_id: ccc10.id,
+  title: "Introduction",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 161,
+  index: 0
+})
+Video.create!({
+  course_content_id: ccc10.id,
+  title: "Direct Access Tables",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 124,
+  index: 1
+})
+Video.create!({
+  course_content_id: ccc10.id,
+  title: "Hashing",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 97,
+  index: 2
+})
+Video.create!({
+  course_content_id: ccc10.id,
+  title: "Resolving collisions through chaining",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 256,
+  index: 3
+})
+Video.create!({
+  course_content_id: ccc10.id,
+  title: "The Hash function",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 376,
+  index: 4
+})
+Video.create!({
+  course_content_id: ccc10.id,
+  title: "Open Addressing to resolve collisions",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 178,
+  index: 5
+})
+Video.create!({
+  course_content_id: ccc10.id,
+  title: "Strategies for Open Addressing",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 199,
+  index: 6
+})
+Video.create!({
+  course_content_id: ccc10.id,
+  title: "Time Complexity: Open Addressing",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 200,
+  index: 7
+})
+Video.create!({
+  course_content_id: ccc10.id,
+  title: "Chapter Quiz  7 ques",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 8
+})
+Video.create!({
+  course_content_id: ccc10.id,
+  title: "Assignment",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 24,
+  index: 9
+})
+Video.create!({
+  course_content_id: ccc10.id,
+  title: "This last lecture also contains the complete project file (zipped) in the downloadable materials section.\nConclusion",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 59,
+  index: 10
+})
+
+Video.create!({course_content_id: ccc11.id,title:"Introduction",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:109,index:0})
+Video.create!({course_content_id: ccc11.id,title:"What is React?",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:176,index:1})
+Video.create!({course_content_id: ccc11.id,title:"Join our Online Learning Community",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:22,index:2})
+Video.create!({course_content_id: ccc11.id,title:"Real-World SPAs & React Web Apps",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:148,index:3})
+Video.create!({course_content_id: ccc11.id,title:"Writing our First React Code",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:907,index:4})
+Video.create!({course_content_id: ccc11.id,title:"Why Should we Choose React?",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:123,index:5})
+Video.create!({course_content_id: ccc11.id,title:"React Alternatives",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:71,index:6})
+Video.create!({course_content_id: ccc11.id,title:"Understanding Single Page Applications and Multi Page Applications",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:218,index:7})
+Video.create!({course_content_id: ccc11.id,title:"Course Outline",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:448,index:8})
+Video.create!({course_content_id: ccc11.id,title:"How to get the Most out of This Course",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:149,index:9})
+Video.create!({course_content_id: ccc13.id,title:"Useful Resources & Links",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:9,index:10})
+Video.create!({course_content_id: ccc13.id,title:"Let me introduce you to this module and to what you're going to learn in it.Module Introduction",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:95,index:0})
+Video.create!({course_content_id: ccc13.id,title:"One important next-gen feature you're going to see a lot is the usage of \"const\" and \"let\" instead of \"var\". What's up with these keywords? This lecture answers the question.Understanding \"let\" and \"const\"",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:185,index:1})
+Video.create!({course_content_id: ccc13.id,title:"Arrow functions are another key next-gen feature we'll heavily use in this course. Let's dive into how to write them and how to use them in this lecture.Arrow Functions",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:327,index:2})
+Video.create!({course_content_id: ccc13.id,title:"We'll write modular code in this course. That means, that the code will be split up across multiple files. In order to connect these files correctly, we'll need imports and exports. So let's dive into that feature in this lecture.Exports and Imports",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:283,index:3})
+Video.create!({course_content_id: ccc13.id,title:"The \"class\" keyword is another new feature you'll see quite a bit in this course. Learn what it's about in this lecture.Understanding Classes",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:277,index:4})
+Video.create!({course_content_id: ccc14.id,title:"Classes may have properties and methods. There actually are different ways of defining these. Let's dive into the details in this lecture.Classes, Properties and Methods",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:183,index:5})
+Video.create!({course_content_id: ccc14.id,title:"React also makes heavy usage of the \"Spread\" operator. Or React projects do, to be precise. Learn more about that new operator in this lecture.The Spread & Rest Operator",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:390,index:6})
+Video.create!({course_content_id: ccc14.id,title:"Time to destructure! It's a new JavaScript feature and it allows you to ... do what? Let's explore the feature in this lecture.Destructuring",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:193,index:7})
+Video.create!({course_content_id: ccc15.id,title:"Not next-gen but super important: Knowing the difference between reference and primitive types. This lecture will explore both.Reference and Primitive Types Refresher",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:266,index:8})
+Video.create!({course_content_id: ccc15.id,title:"We'll use a lot of array functions in this course. They're not next-gen but you need to feel confident working with them. So let's explore them in this lecture.Refreshing Array Functions",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:165,index:9})
+Video.create!({course_content_id: ccc15.id,title:"Let me wrap this module up and summarize what we learned thus far.Wrap Up",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:52,index:10})
+Video.create!({course_content_id: ccc16.id,title:"Have a look at this lecture to get a good overview over the various next-gen JS features you'll encounter in this course.Next-Gen JavaScript - Summary",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:277,index:11})
+Video.create!({course_content_id: ccc16.id,title:"Here's something we'll also use quite a bit in this course: Some JavaScript array functions.JS Array Functions",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:23,index:12})
+Video.create!({course_content_id: ccc17.id,title:"Let me introduce you to this module and to what you're going to learn in it.Module Introduction",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:38,index:0})
+Video.create!({course_content_id: ccc18.id,title:"When creating React apps, we typically use a lot of modern development features. To use all these features, a modern build workflow is needed, too. Learn more about that in this module.The Build Workflow",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:480,index:1})
+Video.create!({course_content_id: ccc18.id,title:"Fortunately, we don't have to set up a build workflow manually - there's a tool for that! Let me introduce you to create-react-app.Using Create React App",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:369,index:2})
+Video.create!({course_content_id: ccc19.id,title:"create-react-app allows us to easily create React projects. Let me now walk you through the structure of such a project.Understanding the Folder Structure",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:491,index:3})
+Video.create!({course_content_id: ccc19.id,title:"Components are THE core building block of React apps. Time to dive into them and learn more about them.Understanding Component Basics",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:332,index:4})
+Video.create!({course_content_id: ccc20.id,title:"JSX is the meat of a component - every component needs to return some JSX (or the alternative shown in this lecture}). Let's explore it!Understanding JSX",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:338,index:5})
+Video.create!({course_content_id: ccc22.id,title:"When using JSX, we face some restrictions. Let's find out which these are.JSX Restrictions",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:189,index:6})
+Video.create!({course_content_id: ccc22.id,title:"We had a look at components already but now it's time to also create our own component. And for that, we'll use a different way of creating it. Learn more about it (and the WHY}) in this lecture.Creating a Functional Component",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:489,index:7})
+Video.create!({course_content_id: ccc22.id,title:"Time to quickly summarize what components and JSX are about.Components & JSX Cheat Sheet",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:52,index:8})
+Video.create!({course_content_id: ccc22.id,title:"Since we compose our app from components, it's of course also crucial to understand how we work with them and how we make sure that they are re-usable.Working with Components & Re-Using Them",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:107,index:9})
+Video.create!({course_content_id: ccc22.id,title:"Rarely, you only want to output static content. Learn how to easily output dynamic content in this lecture.Outputting Dynamic Content",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:182,index:10})
+Video.create!({course_content_id: ccc23.id,title:"When working with components, you typically also need to pass data around. Props are used for that - learn more about this core concept in this lecture.Working with Props",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:247,index:11})
+Video.create!({course_content_id: ccc23.id,title:"There's a special property we can access on our props - the children property. Learn what's up with it in this lecture.Understanding the Children Property",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:176,index:12})
+Video.create!({course_content_id: ccc23.id,title:"Understanding & Using State",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:437,index:13})
+Video.create!({course_content_id: ccc23.id,title:"Props and state are crucial elements of React - time for a quick comparison and summary.Props & State",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:101,index:14})
+Video.create!({course_content_id: ccc23.id,title:"Obviously, your app is probably also going to involve the user. Handling events is therefore crucial. Learn how to handle events the React way, in this lecture.Handling Events with Methods",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:225,index:15})
+Video.create!({course_content_id: ccc24.id,title:"We saw onClick in the last lecture - but to which other events can you actually listen in React apps?To Which Events Can You Listen?",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:129,index:16})
+Video.create!({course_content_id: ccc24.id,title:"Manipulating the State",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:303,index:17})
+Video.create!({course_content_id: ccc24.id,title:"Function Components Naming",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:31,index:18})
+Video.create!({course_content_id: ccc24.id,title:"Using the useState(}) Hook for State Manipulation",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:831,index:19})
+Video.create!({course_content_id: ccc24.id,title:"Stateless vs Stateful Components",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:188,index:20})
+Video.create!({course_content_id: ccc24.id,title:"What if you want to listen to an event in a child component? Can you still trigger a method in the parent component? Yes, you can - learn more about it in this lecture.Passing Method References Between Components",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:425,index:21})
+Video.create!({course_content_id: ccc24.id,title:"When handling user input, two-way-binding is very useful and actually required to both listen to the user input and also reflect the latest state. Learn how to implement it in this lecture.Adding Two Way Binding",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:411,index:22})
+Video.create!({course_content_id: ccc24.id,title:"Unstyled components don't look that exciting. Time to learn how to add styling!Adding Styling with Stylesheets",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:328,index:23})
+Video.create!({course_content_id: ccc24.id,title:"Using CSS stylesheets is one way of adding styling - a static one though. Learn about a different, more flexible way in this lecture.Working with Inline Styles",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:255,index:24})
+
+
+Video.create!({course_content_id: ccc25.id,title:"Introduction",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:67,index:0})
+Video.create!({course_content_id: ccc25.id,title:"Overview of Course",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:92,index:1})
+Video.create!({course_content_id: ccc25.id,title:"What are spices? An Introduction",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:78,index:2})
+Video.create!({course_content_id: ccc25.id,title:"Flavorprints of Latin American, Indian, Creole (West African influenced) China &",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:32,index:0})
+Video.create!({course_content_id: ccc26.id,title:"Flavorprint: Latin American",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:122,index:1})
+Video.create!({course_content_id: ccc26.id,title:"Flavorprint: India",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:173,index:2})
+Video.create!({course_content_id: ccc26.id,title:"Flavorprint: Jamaica",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:41,index:3})
+Video.create!({course_content_id: ccc26.id,title:"Flavorprint: China",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:40,index:4})
+Video.create!({course_content_id: ccc27.id,title:"Flavorprint-Creole West African",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:60,index:5})
+Video.create!({course_content_id: ccc27.id,title:"(Activity) What are Spices? Create a Recipe of your own",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:105,index:6})
+Video.create!({course_content_id: ccc27.id,title:"Whole Spices",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:339,index:0})
+Video.create!({course_content_id: ccc28.id,title:"Ground Spices",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:63,index:1})
+Video.create!({course_content_id: ccc28.id,title:"Storage of Spices & Tips",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:39,index:2})
+Video.create!({course_content_id: ccc28.id,title:"(Activity) Go to an ethnic grocery store such as an Asian or Indian Supermarket",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:17,index:3})
+Video.create!({course_content_id: ccc29.id,title:"Quick demo on dry pan roasting whole spices.Dry Pan Roasting Whole Spices",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:65,index:0})
+Video.create!({course_content_id: ccc29.id,title:"of Madras curry paste recipe.Sauteeing spice pastes in oil and other aromatics",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:51,index:1})
+Video.create!({course_content_id: ccc29.id,title:"Demonstration of  how to make spicy paste for upcoming recipe with Noodles.Recipe-China-Szechuan Paste",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:546,index:2})
+Video.create!({course_content_id: ccc29.id,title:"Quick video for students to practice a technique.(Activity) Try practicing one of these techniques or both.",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:11,index:3})
+Video.create!({course_content_id: ccc29.id,title:"Description of the difference between spice pastes and spice rubs.Spice Pastes & Spice Rubs",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:114,index:0})
+Video.create!({course_content_id: ccc30.id,title:"Demonstration on how to make curry paste to be used in upcoming recipe of “Beef Madras”Recipe-India-Madras Curry Paste",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:153,index:1})
+Video.create!({course_content_id: ccc30.id,title:"Demonstration on how to make sofrito. Used for upcoming recipe for “Arroz con Pollo”Recipe-Latin American-Sofrito",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:112,index:2})
+Video.create!({course_content_id: ccc30.id,title:"Visually appealing red oil used in upcoming recipe of “Arroz con Pollo”Recipe (Latin American) Annatto Oil",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:163,index:3})
+Video.create!({course_content_id: ccc30.id,title:"Experiment with making one of these spice pastes at home.(Activity)  Make one of the spice pastes listed in this section. S",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:6,index:4})
+Video.create!({course_content_id: ccc30.id,title:"Demonstration of recipe.(Chinese) Recipe -Stir Fried Noodles with Shrimp & Szechuan Paste",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:398,index:0})
+Video.create!({course_content_id: ccc30.id,title:"Demonstration of recipe.Recipe (Creole-origins of West Africa) Shrimp & Sausage Gumbo,",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:517,index:1})
+Video.create!({course_content_id: ccc30.id,title:"Demonstration of recipe.Arroz con Pollo (Latin American)",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:563,index:2})
+Video.create!({course_content_id: ccc30.id,title:"Demonstration of recipe.Beef Madras-(Indian)",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:500,index:3})
+Video.create!({course_content_id: ccc31.id,title:"Demonstration of recipe.Recipe (Jamaica) Jamaican Beef Patties, Peas & Rice, Jerk Rubbed Chicken",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:1168,index:4})
+Video.create!({course_content_id: ccc31.id,title:"Demonstration of recipe.Jamaican Rice & Peas",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:363,index:5})
+Video.create!({course_content_id: ccc31.id,title:"Student should test making recipe at home.(Activity) Test one of these global recipes at home with these techniques",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:7,index:6})
+Video.create!({course_content_id: ccc31.id,title:"This is the section to download recipes used in this course.Additional Resources-Recipes in this Course",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:2,index:0})
+Video.create!({course_content_id: ccc31.id,title:"Thanks for taking this course!Thank you!",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:10,index:1})
+
+Video.create!({course_content_id: ccc32.id,title:"Introduction",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:89,index:0})
+Video.create!({course_content_id: ccc33.id,title:"Hatching Technique",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:600,index:0})
+Video.create!({course_content_id: ccc34.id,title:"Line Technique",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:242,index:1})
+Video.create!({course_content_id: ccc35.id,title:"Character Drawing Sample",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:284,index:0})
+Video.create!({course_content_id: ccc35.id,title:"Digital Drawing",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:681,index:0})
+Video.create!({course_content_id: ccc35.id,title:"Coloring  (Part 1)",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:874,index:1})
+Video.create!({course_content_id: ccc35.id,title:"Coloring (Part 2)",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:907,index:2})
 # Review
 Review.create!({
   course_id: c1.id,
@@ -5812,6 +6900,75 @@ Review.create!({
   username: 'Teddy Marlin',
   rating: 5,
   body: "Very thoroughly explained! Thank you!"
+})
+
+Review.create!({
+  course_id: c24.id,
+  rating: 5,
+  body: "It appears to be well organized. And very clearly presented with practicality as a focus.",
+  username: "Kendall Ball",
+  user_id: u1.id
+})
+Review.create!({
+  course_id: c24.id,
+  rating: 4,
+  body: "really helpful to do revision of key data structures and algorithms.",
+    username: "Vineet Kumar Tripathi",
+    user_id: u1.id
+  })
+Review.create!({
+  course_id: c24.id,
+  rating: 2,
+  body: "I would say this course is more of a refresher course for those who already have been exposed to the material. This course started out very well but then quickly started lacking much detail. I can't even call this an introductory course. If the course contained more examples and or even some applicable scenarios, I would have rated it higher. I would advise to look for a more detailed course if you are practicing for interviews.",
+  username: "Hugo Mayoral",
+  user_id: u1.id
+})
+Review.create!({
+  course_id: c24.id,
+  rating: 4,
+  body: "Very useful course to brush up your data structure concepts.",
+  username: "Japneet Kaur",
+  user_id: u1.id
+})
+Review.create!({
+  course_id: c24.id,
+  rating: 5,
+  body: "Very good animations, very concise presentation. ",
+  username: "Hugo Mayoral",
+  user_id: u1.id
+})
+
+Review.create!({
+  course_id: c25.id,
+  rating: 3,
+  body:"Thank you so much,i have never touched the React before. Now i know a lot about react thanks to Max. Max shows a lot of alternatives. Sometimes i need to google to know deeply about what Max is trying to explain.",
+  username: "Rebecca",
+  user_id: u1.id
+})
+
+Review.create!({
+  course_id: c26.id,
+  rating: 3,
+  body:"At the beginning, I didn't understand the process of the course and thought that the videos skipped over some stuff. I like being told what I'm learning and why and in what order - by video. Overall, I did learn some great recipes and the visuals showed me how it would get done.",
+  username: "Rebecca",
+  user_id: u1.id
+})
+
+Review.create!({
+  course_id: c27.id,
+  user_id: u27.id,
+  username: 'K Thurai',
+  rating: 5,
+  body: 'This course is helpful especially for those who want to get to know the colouring tool and how to add light and shadow effects.'
+})
+
+
+Review.create!({
+  course_id: c27.id,
+  user_id: u27.id,
+  username: 'Alireza Refaei',
+  rating: 3,
+  body: 'thanks for your sharing this course. that was useful a lot for me. good job'
 })
 
 end

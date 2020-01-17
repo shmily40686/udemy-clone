@@ -5,6 +5,7 @@ import CourseHeadingContainer from "./course_heading_container"
 import CourseContentIndexContainer from "./course_content_index_container" 
 import ReviewsIndexContainer from './reviews/reviews_index_container'
 import VideoContainer from './video_container'
+import CourseLikeContainer from "./course_likes_container"
 
 class CourseFeed extends React.Component {
     constructor(props){
@@ -19,6 +20,7 @@ class CourseFeed extends React.Component {
                 <CourseHeadingContainer  /> 
                 <CourseContentIndexContainer />
                 <ReviewsIndexContainer />
+                <CourseLikeContainer />
                 {
                     this.props.player.show ? <VideoContainer /> : null
                 }

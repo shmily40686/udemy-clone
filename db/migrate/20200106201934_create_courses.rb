@@ -15,6 +15,7 @@ class CreateCourses < ActiveRecord::Migration[5.2]
       t.text :audience, null: false
       t.string :picture, null: false
       t.string :teacher, null: false
+      t.string :type_style
 
       t.timestamps
     end

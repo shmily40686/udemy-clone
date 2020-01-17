@@ -829,6 +829,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _course_content_index_container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./course_content_index_container */ "./frontend/components/course_feed/course_content_index_container.js");
 /* harmony import */ var _reviews_reviews_index_container__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./reviews/reviews_index_container */ "./frontend/components/course_feed/reviews/reviews_index_container.js");
 /* harmony import */ var _video_container__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./video_container */ "./frontend/components/course_feed/video_container.js");
+/* harmony import */ var _course_likes_container__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./course_likes_container */ "./frontend/components/course_feed/course_likes_container.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -854,6 +855,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var CourseFeed =
 /*#__PURE__*/
 function (_React$Component) {
@@ -868,7 +870,7 @@ function (_React$Component) {
   _createClass(CourseFeed, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_course_heading_container__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_course_content_index_container__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviews_reviews_index_container__WEBPACK_IMPORTED_MODULE_4__["default"], null), this.props.player.show ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_video_container__WEBPACK_IMPORTED_MODULE_5__["default"], null) : null);
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_course_heading_container__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_course_content_index_container__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviews_reviews_index_container__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_course_likes_container__WEBPACK_IMPORTED_MODULE_6__["default"], null), this.props.player.show ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_video_container__WEBPACK_IMPORTED_MODULE_5__["default"], null) : null);
     }
   }]);
 
@@ -1535,6 +1537,209 @@ function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (CourseInfo);
+
+/***/ }),
+
+/***/ "./frontend/components/course_feed/course_likes.jsx":
+/*!**********************************************************!*\
+  !*** ./frontend/components/course_feed/course_likes.jsx ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/react.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _course_index_course_details__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../course_index/course_details */ "./frontend/components/course_index/course_details.jsx");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+var CourseLike =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(CourseLike, _React$Component);
+
+  function CourseLike(props) {
+    var _this;
+
+    _classCallCheck(this, CourseLike);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(CourseLike).call(this, props));
+    _this.state = {
+      courseLike: [],
+      tag: "",
+      currentTransformation: 0
+    };
+    _this.renderCourseList = _this.renderCourseList.bind(_assertThisInitialized(_this));
+    _this.getNumberOfResultsDisplayed = _this.getNumberOfResultsDisplayed.bind(_assertThisInitialized(_this));
+    _this.leftClick = _this.leftClick.bind(_assertThisInitialized(_this));
+    _this.rightClick = _this.rightClick.bind(_assertThisInitialized(_this));
+    return _this;
+  }
+
+  _createClass(CourseLike, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      this.props.fetchAllCourses().then(function () {
+        _this2.setState({
+          courseLike: _this2.props.courses,
+          courseLikeCount: _this2.props.courses.reduce(function (prev, cur) {
+            if (cur.type_style === _this2.props.course.type_style) {
+              prev++;
+            }
+
+            return prev;
+          }, 0)
+        });
+
+        _this2.props.fetchCourse(_this2.props.match.params.courseId).then(function () {
+          _this2.setState({
+            tag: _this2.props.course.type_style
+          });
+        });
+      });
+    }
+  }, {
+    key: "renderCourseList",
+    value: function renderCourseList() {
+      var _this3 = this;
+
+      var res = this.props.courses.reduce(function (prev, cur, i) {
+        if (cur.type_style === _this3.props.course.type_style) {
+          prev.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "course-tile"
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_course_index_course_details__WEBPACK_IMPORTED_MODULE_1__["default"], {
+            key: i,
+            course: cur
+          })));
+        }
+
+        return prev;
+      }, []);
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "carousel-inner",
+        style: {
+          transform: "translateX(".concat(-1 * this.state.currentTransformation * 232, "px)")
+        }
+      }, res);
+    }
+  }, {
+    key: "getNumberOfResultsDisplayed",
+    value: function getNumberOfResultsDisplayed() {
+      var width = window.innerWidth;
+
+      if (width < 464) {
+        return 1;
+      } else if (width < 696) {
+        return 2;
+      } else if (width < 928) {
+        return 3;
+      } else if (width < 1160) {
+        return 4;
+      } else {
+        return 5;
+      }
+    }
+  }, {
+    key: "leftClick",
+    value: function leftClick() {
+      this.setState({
+        currentTransformation: Math.max(0, this.state.currentTransformation - this.getNumberOfResultsDisplayed())
+      });
+    }
+  }, {
+    key: "rightClick",
+    value: function rightClick() {
+      this.setState({
+        currentTransformation: Math.min(this.state.courseLikeCount - 1, this.state.currentTransformation + this.getNumberOfResultsDisplayed())
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "outer-course-likes"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: {
+          marginBottom: "20px"
+        }
+      }, "Some course you might like"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "carousel-rel-wrapper"
+      }, this.renderCourseList()), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "left arrow",
+        onClick: this.leftClick
+      }, "<"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "right arrow",
+        onClick: this.rightClick
+      }, ">"));
+    }
+  }]);
+
+  return CourseLike;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (CourseLike);
+
+/***/ }),
+
+/***/ "./frontend/components/course_feed/course_likes_container.js":
+/*!*******************************************************************!*\
+  !*** ./frontend/components/course_feed/course_likes_container.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/es/index.js");
+/* harmony import */ var _actions_courses_actions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../actions/courses_actions */ "./frontend/actions/courses_actions.js");
+/* harmony import */ var _course_likes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./course_likes */ "./frontend/components/course_feed/course_likes.jsx");
+
+
+
+
+
+var mapStateToProps = function mapStateToProps(state, ownProps) {
+  return {
+    courses: Object.values(state.courses),
+    course: state.courses[ownProps.match.params.courseId]
+  };
+};
+
+var mapDisPatchToProps = function mapDisPatchToProps(dispatch) {
+  return {
+    fetchAllCourses: function fetchAllCourses() {
+      return dispatch(Object(_actions_courses_actions__WEBPACK_IMPORTED_MODULE_2__["fetchAllCourses"])());
+    },
+    fetchCourse: function fetchCourse(courseId) {
+      return dispatch(Object(_actions_courses_actions__WEBPACK_IMPORTED_MODULE_2__["fetchCourse"])(courseId));
+    }
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_router__WEBPACK_IMPORTED_MODULE_1__["withRouter"])(Object(react_redux__WEBPACK_IMPORTED_MODULE_0__["connect"])(mapStateToProps, mapDisPatchToProps)(_course_likes__WEBPACK_IMPORTED_MODULE_3__["default"])));
 
 /***/ }),
 
@@ -4014,12 +4219,31 @@ function (_React$Component) {
     _classCallCheck(this, SearchCourseFeed);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(SearchCourseFeed).call(this, props));
+    _this.state = {
+      learnBox: "search-learn-box"
+    };
     _this.renderPrice = _this.renderPrice.bind(_assertThisInitialized(_this));
     _this.renderRating = _this.renderRating.bind(_assertThisInitialized(_this));
+    _this.openClassName = _this.openClassName.bind(_assertThisInitialized(_this));
+    _this.closeClassName = _this.closeClassName.bind(_assertThisInitialized(_this));
     return _this;
   }
 
   _createClass(SearchCourseFeed, [{
+    key: "openClassName",
+    value: function openClassName() {
+      this.setState({
+        learnBox: "search-learn-box-open "
+      });
+    }
+  }, {
+    key: "closeClassName",
+    value: function closeClassName() {
+      this.setState({
+        learnBox: "search-learn-box"
+      });
+    }
+  }, {
     key: "renderRating",
     value: function renderRating() {
       if (this.props.course.rating < 1) {
@@ -4321,7 +4545,14 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: {
+          minWidth: "1000px",
+          display: "flex"
+        },
+        onMouseEnter: this.openClassName,
+        onMouseLeave: this.closeClassName
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/courses/".concat(this.props.course.id),
         style: {
           textDecoration: "none"
@@ -4354,7 +4585,15 @@ function (_React$Component) {
         className: "search-rating-count"
       }, this.renderRating())), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "search-rating-count"
-      }, "(", this.props.course.rating_count, " ratings)")));
+      }, "(", this.props.course.rating_count, " ratings)")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: this.state.learnBox
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "What you will learn"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "search-learn-list-box"
+      }, this.props.course.learning_goals.split("\\n").map(function (g, i) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+          key: i
+        }, g);
+      })))));
     }
   }]);
 
@@ -4531,7 +4770,9 @@ function (_React$Component) {
       var indexOfLastCourse = this.state.currentPage * this.state.coursePerPage;
       var indexOfFirstCourse = indexOfLastCourse - this.state.coursePerPage;
       var currentCourse = this.state.filterCourses.slice(indexOfFirstCourse, indexOfLastCourse);
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, currentCourse.map(function (course, i) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "search-box"
+      }, currentCourse.map(function (course, i) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_search_course_feed__WEBPACK_IMPORTED_MODULE_2__["default"], {
           course: course,
           key: i
@@ -4563,9 +4804,7 @@ function (_React$Component) {
           value: "Lowest Ratting"
         }, "Lowest Ratting"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
           value: "Highest Ratting"
-        }, "Highest Ratting"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "search-box"
-        }, this.showComponent()), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        }, "Highest Ratting"))))), this.showComponent(), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "page-switch"
         }, this.renderPageNumbers()));
       } else {
@@ -4584,81 +4823,7 @@ function (_React$Component) {
   return SearchIndex;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["withRouter"])(SearchIndex)); // import React from "react"
-// import { withRouter } from "react-router-dom"
-// import SearchCourseFeed from "./search_course_feed"
-// import { faSearch } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// class SearchIndex extends React.Component {
-//     constructor(props) {
-//         super(props)
-//         this.state = {
-//             filterCourses: [],
-//             order: "Lowest Ratting"
-//         }
-//         this.selectHandle = this.selectHandle.bind(this)
-//         this.selectHandle = this.selectHandle.bind(this)
-//     }
-//     componentDidMount() {
-//         this.props.fetchAllCourses()
-//     }
-//     selectHandle(e) {
-//         console.log(e.target.value)
-//         this.setState({
-//             order: e.target.value
-//         })
-//     }
-//     render() {
-//         let searchString = this.props.match.params.searchString
-//         var newArr = this.props.courses.filter((course) => {
-//             return course.title.toUpperCase().includes(searchString.toUpperCase())
-//         })
-//         if (this.state.order === "Lowest Price") {
-//             newArr = newArr.sort((a, b) => a.price - b.price)
-//         } else if (this.state.order === "Highest Price") {
-//             newArr = newArr.sort((a, b) => b.price - a.price)
-//         } else if (this.state.order === "Lowest Ratting") {
-//             newArr = newArr.sort((a, b) => a.rating - b.rating)
-//         } else if (this.state.order === "Highest Ratting") {
-//             newArr = newArr = newArr.sort((a, b) => b.rating - a.rating)
-//         }
-//         if (newArr.length !== 0) {
-//             return (
-//                 <div>
-//                     <div className="search-header" >
-//                         <div className="search-header-inner">
-//                             <div className="search-header-title">{newArr.length} results for <b>{this.props.match.params.searchString}</b></div>
-//                             <div className="custom-select">
-//                                 <select className="custom-select-select" onChange={this.selectHandle} >
-//                                     <option value="0">Sort By</option>
-//                                     <option value="Lowest Price">Lowest Price</option>
-//                                     <option value="Highest Price">Highest Price</option>
-//                                     <option value="Lowest Ratting">Lowest Ratting</option>
-//                                     <option value="Highest Ratting">Highest Ratting</option>
-//                                 </select>
-//                             </div>
-//                         </div>
-//                     </div>
-//                     <div className="search-box" >
-//                         {
-//                             newArr.map((course, i) => (
-//                                 <SearchCourseFeed course={course} key={i} />
-//                             ))
-//                         }
-//                     </div>
-//                 </div>
-//             )
-//         } else {
-//             return (
-//                 <div className="search-error">
-//                     <div className="search-error-text">Sorry, we couldn't find any results for {this.props.match.params.searchString}</div>
-//                     <FontAwesomeIcon icon={faSearch} className="search-error-icon" />
-//                 </div>
-//             )
-//         }
-//     }
-// }
-// export default withRouter(SearchIndex)
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["withRouter"])(SearchIndex));
 
 /***/ }),
 

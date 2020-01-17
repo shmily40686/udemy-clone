@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 2020_01_06_212751) do
     t.text "audience", null: false
     t.string "picture", null: false
     t.string "teacher", null: false
+    t.string "type_style"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["teacher_id"], name: "index_courses_on_teacher_id"

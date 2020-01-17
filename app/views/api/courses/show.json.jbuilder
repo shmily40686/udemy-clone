@@ -1,1 +1,1 @@
-json.extract! @course, :id, :title, :subtitle, :teacher_id, :price, :rating_count, :student_count, :languages, :learning_goals, :audience, :picture, :updated_at, :rating, :description, :teacher
+json.extract! @course, :id, :title, :subtitle, :teacher_id, :price, :rating_count, :student_count, :languages, :learning_goals, :audience, :picture, :updated_at, :rating, :description, :teacher, :type_style

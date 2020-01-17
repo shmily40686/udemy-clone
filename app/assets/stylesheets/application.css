@@ -978,6 +978,7 @@ body {
     font-weight: 600;
     line-height: 1.43;
     color: #29303b;
+    text-align: center;
  }
 
  .back-home-button {
@@ -1138,6 +1139,7 @@ body {
 
 .search-feed:hover {
    background-color: #f7f8fa;
+   min-width: 600px;
 }
 
 
@@ -1297,6 +1299,125 @@ body {
     margin: 0 1px;
 }
 
+.search-learn-box {
+   display: inline-block;
+   visibility: hidden;
+   width: 400px;
+   height: 165px;
+}
 
+.search-learn-box-open {
+   visibility: visible;
+   border: 1px solid #dedfe0;
+   padding: 20px;
+   width: 400px;
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 1.43;
+   color: #29303b;
+   margin-left: 60px;
+}
 
+.search-learn-list-box {
+   font-size: 13px;
+   color: #686f7a;
+   font-weight: 200;
+}
 
+.outer-course-likes {
+   position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: #29303b;
+    margin: 100px;
+}
+
+.carousel-inner {
+   display: block;
+  -webkit-transition: transform 0.7s; /* Safari prior 6.1 */
+  transition: transform 0.7s;
+}
+
+.left {
+   left: -23.5px;
+}
+
+.right {
+   left: 208.5px;
+}
+
+.arrow {
+  position: absolute;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  box-shadow: 0 2px 8px 2px rgba(20,23,28,.15);
+  color: #007791;
+  font-size: 21px;
+  width: 47px;
+  height: 47px;
+  z-index: 3;
+  cursor: pointer;
+  font-family: inherit;
+  background: white;
+  top: 153px;
+
+}
+
+.carousel-rel-wrapper {
+   position: relative;
+   white-space: nowrap;
+   overflow: hidden;
+   width: 232px;
+}
+
+/* 2 results */
+@media only screen and (min-width: 464px) {
+   .carousel-rel-wrapper {
+      width: 464px;
+   }
+
+   .right {
+      left: 440.5px;
+   }
+}
+
+/* 3 results */
+@media only screen and (min-width: 696px) {
+   .carousel-rel-wrapper {
+      width: 696px;
+   }
+
+   .right {
+      left: 672.5px;
+   }
+}
+
+/* 4 results */
+@media only screen and (min-width: 928px) {
+   .carousel-rel-wrapper {
+      width: 928px;
+   }
+
+   .right {
+      left: 904.5px;
+   }
+}
+
+/* max results */
+@media only screen and (min-width: 1160px) {
+   .carousel-rel-wrapper {
+      width: 1160px;
+   }
+
+   .right {
+      left: 1136.5px;
+   }
+}
+
+.course-tile {
+   display: inline-block;
+}
