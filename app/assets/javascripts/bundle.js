@@ -3259,15 +3259,19 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(CourseIndex).call(this, props));
     _this.state = {
-      startIndex1: 0,
-      startIndex2: 0,
-      startIndex3: 0,
+      currentTransformation1: 0,
+      currentTransformation2: 0,
+      currentTransformation3: 0,
       arr1: [],
       arr2: [],
       arr3: []
     };
-    _this.goLeft = _this.goLeft.bind(_assertThisInitialized(_this));
-    _this.goRight = _this.goRight.bind(_assertThisInitialized(_this));
+    _this.leftClick = _this.leftClick.bind(_assertThisInitialized(_this));
+    _this.rightClick = _this.rightClick.bind(_assertThisInitialized(_this));
+    _this.showLeft = _this.showLeft.bind(_assertThisInitialized(_this));
+    _this.showRight = _this.showRight.bind(_assertThisInitialized(_this));
+    _this.renderList = _this.renderList.bind(_assertThisInitialized(_this));
+    _this.getNumberOfResultsDisplayed = _this.getNumberOfResultsDisplayed.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -3285,25 +3289,35 @@ function (_React$Component) {
       });
     }
   }, {
-    key: "goLeft",
-    value: function goLeft(field) {
-      this.setState(_defineProperty({}, field, this.state[field] + 4));
+    key: "getNumberOfResultsDisplayed",
+    value: function getNumberOfResultsDisplayed() {
+      var width = window.innerWidth;
+
+      if (width < 464) {
+        return 1;
+      } else if (width < 696) {
+        return 2;
+      } else if (width < 928) {
+        return 3;
+      } else if (width < 1160) {
+        return 4;
+      } else {
+        return 5;
+      }
     }
   }, {
     key: "showLeft",
-    value: function showLeft(field) {
+    value: function showLeft(index) {
       var _this3 = this;
 
-      var classNameForButton = "arrow-button-right-hidden";
-
-      if (this.state[field] > 0) {
-        classNameForButton = "arrow-button-right";
+      if (!this.state["currentTransformation".concat(index)] > 0) {
+        return null;
       }
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: classNameForButton,
+        className: "left arrow",
         onClick: function onClick() {
-          return _this3.goRight(field);
+          return _this3.leftClick(index);
         }
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__["FontAwesomeIcon"], {
         style: {
@@ -3313,25 +3327,33 @@ function (_React$Component) {
       }));
     }
   }, {
-    key: "goRight",
-    value: function goRight(field) {
-      this.setState(_defineProperty({}, field, this.state[field] - 4));
+    key: "leftClick",
+    value: function leftClick(index) {
+      var field = "currentTransformation".concat(index);
+      this.setState(_defineProperty({}, field, Math.max(0, this.state[field] - this.getNumberOfResultsDisplayed())));
+    }
+  }, {
+    key: "rightClick",
+    value: function rightClick(index) {
+      var field = "currentTransformation".concat(index);
+      this.setState(_defineProperty({}, field, Math.min(this.state["arr".concat(index)].length - 1, this.state[field] + this.getNumberOfResultsDisplayed())));
     }
   }, {
     key: "showRight",
-    value: function showRight(field) {
+    value: function showRight(index) {
       var _this4 = this;
 
-      var classNameForButton = "arrow-button-left-hidden";
+      var max = this.state["arr".concat(index)].length - 1;
+      var currentValue = this.state["currentTransformation".concat(index)];
 
-      if (this.state[field] < this.props.courses.length / 3 - 4) {
-        classNameForButton = "arrow-button-left";
+      if (max <= currentValue + this.getNumberOfResultsDisplayed()) {
+        return null;
       }
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: classNameForButton,
+        className: "right arrow",
         onClick: function onClick() {
-          return _this4.goLeft(field);
+          return _this4.rightClick(index);
         }
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__["FontAwesomeIcon"], {
         style: {
@@ -3341,31 +3363,42 @@ function (_React$Component) {
       }));
     }
   }, {
+    key: "renderList",
+    value: function renderList(index) {
+      var field = "currentTransformation".concat(index);
+      var arr;
+
+      if (index === 1) {
+        arr = this.state.arr1;
+      } else if (index === 2) {
+        arr = this.state.arr2;
+      } else {
+        arr = this.state.arr3;
+      }
+
+      var res = arr.map(function (x, i) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          key: i,
+          className: "course-tile"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_course_details__WEBPACK_IMPORTED_MODULE_1__["default"], {
+          key: i,
+          course: x
+        }));
+      });
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "carousel-inner",
+        style: {
+          transform: "translateX(".concat(-1 * this.state[field] * 232, "px)")
+        }
+      }, res);
+    }
+  }, {
     key: "render",
     value: function render() {
-      var _this5 = this;
-
-      var displayCourse1 = this.state.arr1.map(function (course, i) {
-        if (i < _this5.state.startIndex1 || i > _this5.state.startIndex1 + 3) return null;
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_course_details__WEBPACK_IMPORTED_MODULE_1__["default"], {
-          key: i,
-          course: course
-        });
-      });
-      var displayCourse2 = this.state.arr2.map(function (course, i) {
-        if (i < _this5.state.startIndex2 || i > _this5.state.startIndex2 + 3) return null;
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_course_details__WEBPACK_IMPORTED_MODULE_1__["default"], {
-          key: i,
-          course: course
-        });
-      });
-      var displayCourse3 = this.state.arr3.map(function (course, i) {
-        if (i < _this5.state.startIndex3 || i > _this5.state.startIndex3 + 3) return null;
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_course_details__WEBPACK_IMPORTED_MODULE_1__["default"], {
-          key: i,
-          course: course
-        });
-      });
+      var displayCourse1 = this.renderList(1);
+      var displayCourse2 = this.renderList(2);
+      var displayCourse3 = this.renderList(3);
+      console.log(this.state);
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "index"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -3374,15 +3407,21 @@ function (_React$Component) {
         className: "index-header"
       }, "Best Seller")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "courses-box"
-      }, this.showLeft("startIndex1"), displayCourse1, this.showRight("startIndex1")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "carousel-rel-wrapper"
+      }, displayCourse1), this.showLeft(1), this.showRight(1)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "index-header"
       }, "Students are viewing"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "courses-box"
-      }, this.showLeft("startIndex2"), displayCourse2, this.showRight("startIndex2")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "carousel-rel-wrapper"
+      }, displayCourse2), this.showLeft(2), this.showRight(2)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "index-header"
       }, "Classes you might like"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "courses-box"
-      }, this.showLeft("startIndex3"), displayCourse3, this.showRight("startIndex3")));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "carousel-rel-wrapper"
+      }, displayCourse3), this.showLeft(3), this.showRight(3)));
     }
   }]);
 

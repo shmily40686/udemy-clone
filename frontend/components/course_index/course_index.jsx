@@ -3,110 +3,160 @@ import CourseDetails from "./course_details"
 
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
- 
+
 class CourseIndex extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props)
         this.state = {
-            startIndex1: 0,
-            startIndex2: 0,
-            startIndex3: 0,
+            currentTransformation1: 0,
+            currentTransformation2: 0,
+            currentTransformation3: 0,
             arr1: [],
             arr2: [],
-            arr3: [] 
+            arr3: []
 
         };
-        this.goLeft = this.goLeft.bind(this)
-        this.goRight = this.goRight.bind(this)
+        this.leftClick = this.leftClick.bind(this);
+        this.rightClick = this.rightClick.bind(this);
+        this.showLeft = this.showLeft.bind(this);
+        this.showRight = this.showRight.bind(this);
+        this.renderList = this.renderList.bind(this);
+        this.getNumberOfResultsDisplayed = this.getNumberOfResultsDisplayed.bind(this);
     }
 
     componentDidMount() {
         this.props.fetchAllCourses()
-        .then(() => {
-            this.setState({
-                arr1: this.props.courses.slice(0, 12),
-                arr2: this.props.courses.slice(12, 24),
-                arr3: this.props.courses.slice(24)
+            .then(() => {
+                this.setState({
+                    arr1: this.props.courses.slice(0, 12),
+                    arr2: this.props.courses.slice(12, 24),
+                    arr3: this.props.courses.slice(24)
+                })
             })
-        })
     }
 
-    goLeft(field) {
-        this.setState({
-            [field]: this.state[field] + 4
-        })
+    getNumberOfResultsDisplayed() {
+        const width = window.innerWidth;
+        if (width < 464) {
+            return 1;
+        } else if (width < 696) {
+            return 2;
+        } else if (width < 928) {
+            return 3
+        } else if (width < 1160) {
+            return 4;
+        } else {
+            return 5;
+        }
     }
 
-    showLeft(field) {
-        let classNameForButton = "arrow-button-right-hidden"
-        if (this.state[field] > 0) {
-            classNameForButton = "arrow-button-right"
+    
+
+    showLeft(index) {
+        if (!this.state[`currentTransformation${index}`] > 0) {
+            return null;
         }
         return (
-            <div className={classNameForButton} onClick={() => this.goRight(field)}>< FontAwesomeIcon style={{ padding: "12px" }} icon={faChevronLeft} /></div>
+            <div className="left arrow" onClick={() => this.leftClick(index)}>
+                < FontAwesomeIcon style={{ padding: "12px" }} icon={faChevronLeft} />
+            </div>
+        );
+    }
+
+    leftClick(index) {
+        const field = `currentTransformation${index}`
+        this.setState({
+            [field]: Math.max(0, this.state[field] - this.getNumberOfResultsDisplayed())
+        });
+    }
+
+    rightClick(index) {
+        const field = `currentTransformation${index}`
+        this.setState({
+            [field]: Math.min(
+                this.state[`arr${index}`].length - 1,
+                this.state[field] + this.getNumberOfResultsDisplayed()
+            )
+        });
+    }
+
+    showRight(index) {
+        let max = this.state[`arr${index}`].length - 1;
+        let currentValue = this.state[`currentTransformation${index}`];
+        
+        if (max <= currentValue + this.getNumberOfResultsDisplayed()) {
+            return null;
+        }
+
+        return (
+            <div className="right arrow" onClick={() => this.rightClick(index)}>
+                < FontAwesomeIcon style={{ padding: "12px" }} icon={faChevronRight} />
+            </div>
         )
     }
 
-    goRight(field) {
-        this.setState({
-            [field]: this.state[field] - 4
-        })
-    }
+    renderList(index) {
+        const field = `currentTransformation${index}`;
+        let arr;
 
-    showRight(field) {
-        let classNameForButton = "arrow-button-left-hidden"
-        if(this.state[field] < (this.props.courses.length / 3) - 4) {
-            classNameForButton = "arrow-button-left" 
+        if (index === 1) {
+            arr = this.state.arr1;
+        } else if (index === 2) {
+            arr = this.state.arr2;
+        } else {
+            arr = this.state.arr3;
         }
+
+
+        const res = arr.map((x, i) => <div key={i} className="course-tile">
+            <CourseDetails key={i} course={x} />
+        </div>);
         return (
-            <div className={classNameForButton} onClick={() => this.goLeft(field)}>< FontAwesomeIcon style={{ padding: "12px" }} icon={faChevronRight} /></div>
+            <div className="carousel-inner" style={{
+                transform: `translateX(${-1 * this.state[field] * 232}px)`
+            }}>
+                {res}
+            </div>
         )
     }
 
     render() {
-        const displayCourse1 = this.state.arr1.map((course,i) => {
-            if (i < this.state.startIndex1 || i > this.state.startIndex1 + 3) return null;
-            return (
-                <CourseDetails key={i} course={course} />
-            )
-        })
-        const displayCourse2 = this.state.arr2.map((course, i) => {
-            if (i < this.state.startIndex2 || i > this.state.startIndex2 + 3) return null;
-            return (
-                <CourseDetails key={i} course={course} />
-            )
-        })
-        const displayCourse3 = this.state.arr3.map((course, i) => {
-            if (i < this.state.startIndex3 || i > this.state.startIndex3 + 3) return null;
-            return (
-                <CourseDetails key={i} course={course} />
-            )
-        })
+        const displayCourse1 = this.renderList(1);
+        const displayCourse2 = this.renderList(2);
+        const displayCourse3 = this.renderList(3);
 
-        return(
-                <div className="index">
+        console.log(this.state);
+
+        return (
+            <div className="index">
                 <div className="index-header-container">
                     <div className="index-header">Best Seller</div>
                 </div>
-                    <div className="courses-box">
-                        {this.showLeft("startIndex1")}
+                <div className="courses-box">
+                    <div className="carousel-rel-wrapper">
                         {displayCourse1}
-                        {this.showRight("startIndex1")}
                     </div>
-                    <div className="index-header">Students are viewing</div>
-                    <div className="courses-box">
-                        {this.showLeft("startIndex2")}
-                        {displayCourse2}
-                        {this.showRight("startIndex2")}
-                    </div>
-                    <div className="index-header">Classes you might like</div>
-                    <div className="courses-box">
-                        {this.showLeft("startIndex3")}
-                        {displayCourse3}
-                        {this.showRight("startIndex3")}
-                     </div>
+                    {this.showLeft(1)}
+                    {this.showRight(1)}
                 </div>
-                
+                <div className="index-header">Students are viewing</div>
+                <div className="courses-box">
+                    <div className="carousel-rel-wrapper">
+                        {displayCourse2}
+                    </div>
+                    {this.showLeft(2)}
+                    {this.showRight(2)}
+                </div>
+                <div className="index-header">Classes you might like</div>
+                <div className="courses-box">
+                    <div className="carousel-rel-wrapper">
+                        {displayCourse3}
+                    </div>
+                    {this.showLeft(3)}
+                    {this.showRight(3)}
+                </div>
+            </div>
+
         )
     }
 }
