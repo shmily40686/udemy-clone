@@ -40,12 +40,17 @@ class CourseContent extends React.Component {
     }
 
     changeDuration(time) {
-        let mins = Math.floor(time / 60);
+        let hours = Math.floor(time / 3600);
+        let mins = Math.floor(time / 60) - (hours * 60);
         let secs = (time % 60).toString();
         if (secs.length === 1) {
             secs = `0${secs}`;
         }
-        return `${mins}:${secs}`;
+        let res = `${mins}:${secs}`;
+        if (hours > 0) {
+            res = `${hours}:${res}`;
+        }
+        return res;
     }
 
     render() {

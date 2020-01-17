@@ -597,14 +597,21 @@ function (_React$Component) {
   }, {
     key: "changeDuration",
     value: function changeDuration(time) {
-      var mins = Math.floor(time / 60);
+      var hours = Math.floor(time / 3600);
+      var mins = Math.floor(time / 60) - hours * 60;
       var secs = (time % 60).toString();
 
       if (secs.length === 1) {
         secs = "0".concat(secs);
       }
 
-      return "".concat(mins, ":").concat(secs);
+      var res = "".concat(mins, ":").concat(secs);
+
+      if (hours > 0) {
+        res = "".concat(hours, ":").concat(res);
+      }
+
+      return res;
     }
   }, {
     key: "render",
