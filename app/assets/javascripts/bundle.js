@@ -743,11 +743,7 @@ function (_React$Component) {
   _createClass(CourseContentIndex, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var _this = this;
-
-      this.props.fetchCourseContents(this.props.match.params.courseId).then(function () {
-        console.log(_this.props.courseContents);
-      });
+      this.props.fetchCourseContents(this.props.match.params.courseId).then(function () {});
     }
   }, {
     key: "render",
@@ -797,10 +793,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var mapStateToProps = function mapStateToProps(state, ownProps) {
   return {
-    courseContents: Object.values(state.courseContents) // .filter(courseContent => {
-    //     return courseContent.course_id === parseInt(ownProps.match.params.courseId)
-    // })
-
+    courseContents: Object.values(state.courseContents)
   };
 };
 
@@ -1313,7 +1306,6 @@ function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      console.log(this.props.course);
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, this.props.course && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "heading_box"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1505,8 +1497,6 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      console.log(this.props.course);
-
       if (this.props.course) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "course-feed-text-box"
@@ -1683,13 +1673,11 @@ function (_React$Component) {
   }, {
     key: "showLeft",
     value: function showLeft() {
-      console.log('l', this.state.currentTransformation > 0);
       return this.state.currentTransformation > 0;
     }
   }, {
     key: "showRight",
     value: function showRight() {
-      console.log('r', this.state.courseLikeCount >= this.state.currentTransformation + this.getNumberOfResultsDisplayed());
       return this.state.courseLikeCount >= this.state.currentTransformation + this.getNumberOfResultsDisplayed();
     }
   }, {
@@ -2396,21 +2384,17 @@ function (_React$Component) {
   }, {
     key: "handleRatingChange",
     value: function handleRatingChange(e) {
-      var _this3 = this;
-
       var review = Object.assign({}, this.state.review, {
         rating: e.target.value * 1
       });
       this.setState({
         review: review
-      }, function () {
-        console.log(_this3.state.review);
       });
     }
   }, {
     key: "render",
     value: function render() {
-      var _this4 = this;
+      var _this3 = this;
 
       var nameArr = this.props.review.username.split(" ");
       var initialName = [];
@@ -2488,7 +2472,7 @@ function (_React$Component) {
           value: "5"
         }), "5"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
           onClick: function onClick() {
-            return _this4.editReviewSubmit(_this4.props.review.id);
+            return _this3.editReviewSubmit(_this3.props.review.id);
           },
           className: "edit-form-button"
         }, "Submit")));
@@ -2723,17 +2707,13 @@ function (_React$Component) {
   _createClass(Video, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var _this = this;
-
       var videoId = this.props.videos[this.props.player.courseContentId][this.props.player.index].id;
-      this.props.fetchVideo(this.props.match.params.courseId, this.props.player.courseContentId, videoId).then(function () {
-        console.log("Video", _this.props.video[videoId]);
-      });
+      this.props.fetchVideo(this.props.match.params.courseId, this.props.player.courseContentId, videoId);
     }
   }, {
     key: "render",
     value: function render() {
-      var _this2 = this;
+      var _this = this;
 
       var videoId = this.props.videos[this.props.player.courseContentId][this.props.player.index].id;
 
@@ -2746,7 +2726,7 @@ function (_React$Component) {
           className: "video-title"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, this.props.video[videoId].title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           onClick: function onClick() {
-            return _this2.props.hidePlayer(_this2.props.video[videoId].index, _this2.props.video[videoId].course_content_id);
+            return _this.props.hidePlayer(_this.props.video[videoId].index, _this.props.video[videoId].course_content_id);
           },
           className: "video-close"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__["FontAwesomeIcon"], {

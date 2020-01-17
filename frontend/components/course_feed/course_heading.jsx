@@ -155,7 +155,6 @@ class CourseHeading extends React.Component {
 
 
     render() {
-        console.log(this.props.course)
         return (
             <div>
                 {this.props.course && 

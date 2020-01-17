@@ -46,7 +46,6 @@ class ReviewFeed extends React.Component {
                 </div>
             )
         }
-
         if (this.props.review.rating > 1 && this.props.review.rating < 2) {
             return (
                 <div>
@@ -58,7 +57,6 @@ class ReviewFeed extends React.Component {
                 </div>
             )
         }
-
         if (this.props.review.rating === 2) {
             return (
                 <div>
@@ -70,7 +68,6 @@ class ReviewFeed extends React.Component {
                 </div>
             )
         }
-
         if (this.props.review.rating > 2 && this.props.review.rating < 3) {
             return (
                 <div>
@@ -93,7 +90,6 @@ class ReviewFeed extends React.Component {
                 </div>
             )
         }
-
         if (this.props.review.rating > 3 && this.props.review.rating < 4) {
             return (
                 <div>
@@ -105,7 +101,6 @@ class ReviewFeed extends React.Component {
                 </div>
             )
         }
-
         if (this.props.review.rating === 4) {
             return (
                 <div>
@@ -117,7 +112,6 @@ class ReviewFeed extends React.Component {
                 </div>
             )
         }
-
         if (this.props.review.rating > 4 && this.props.review.rating < 5) {
             return (
                 <div>
@@ -129,7 +123,6 @@ class ReviewFeed extends React.Component {
                 </div>
             )
         }
-
         if (this.props.review.rating === 5) {
             return (
                 <div>
@@ -141,7 +134,6 @@ class ReviewFeed extends React.Component {
                 </div>
             )
         }
-
     }
 
     editReview() {
@@ -178,9 +170,7 @@ class ReviewFeed extends React.Component {
 
     handleRatingChange(e) {
         const review = Object.assign({}, this.state.review, { rating: e.target.value * 1 });
-        this.setState({ review }, () => {
-            console.log(this.state.review)
-        });
+        this.setState({ review });
     }
 
     render() {

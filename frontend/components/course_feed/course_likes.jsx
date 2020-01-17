@@ -92,12 +92,10 @@ class CourseLike extends React.Component {
     }
 
     showLeft() {
-        console.log('l', this.state.currentTransformation > 0);
         return this.state.currentTransformation > 0;
     }
 
     showRight() {
-        console.log('r', this.state.courseLikeCount >= this.state.currentTransformation + this.getNumberOfResultsDisplayed());
         return this.state.courseLikeCount >= this.state.currentTransformation + this.getNumberOfResultsDisplayed();
     }
 

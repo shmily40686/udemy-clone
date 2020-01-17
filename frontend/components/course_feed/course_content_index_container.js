@@ -5,9 +5,6 @@ import { withRouter } from 'react-router';
 
 const mapStateToProps = (state, ownProps) => ({
     courseContents: Object.values(state.courseContents)
-    // .filter(courseContent => {
-    //     return courseContent.course_id === parseInt(ownProps.match.params.courseId)
-    // })
 })
 
 const mapDispatchToProps = dispatch => ({

@@ -12,10 +12,7 @@ class Video extends React.Component {
 
     componentDidMount(){
         let videoId = this.props.videos[this.props.player.courseContentId][this.props.player.index].id
-        this.props.fetchVideo(this.props.match.params.courseId, this.props.player.courseContentId, videoId)
-        .then(() => {
-            console.log("Video", this.props.video[videoId])
-        })
+        this.props.fetchVideo(this.props.match.params.courseId, this.props.player.courseContentId, videoId);
     }
 
     render(){

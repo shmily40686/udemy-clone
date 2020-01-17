@@ -10,9 +10,7 @@ class CourseContentIndex extends React.Component {
 
     componentDidMount(){
         this.props.fetchCourseContents(this.props.match.params.courseId)
-        .then(() => {
-            console.log(this.props.courseContents)
-        })
+        .then(() => {})
     }
 
     render(){
