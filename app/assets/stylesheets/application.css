@@ -1126,7 +1126,7 @@ body {
 .search-box {
    display: flex;
    flex-direction: column;
-   margin: 30px 200px;
+   margin: 30px 50px;
 
 }
 
@@ -1204,7 +1204,6 @@ body {
    display: flex;
    justify-content: space-between;
    height: 150px;
-   width: 100%;
    background-color: #f7f8fa;
    padding: 0px 80px 0px 200px;
 }
@@ -1300,23 +1299,30 @@ body {
     margin: 0 1px;
 }
 
-.search-learn-box {
-   display: inline-block;
-   visibility: hidden;
-   width: 400px;
-   height: 165px;
+.course-item-wrapper {
+   margin-right: 15px;
+   width: 690px;
 }
 
-.search-learn-box-open {
-   visibility: visible;
+.search-learn-box {
+   display: none;
+   position: absolute;
+   /* width: 400px;
+   height: 165px; */
+}
+
+.test-cont:hover > .search-learn-box {
+   position: absolute;
+   right: 30px;
+   top: 0;
+   display: block;
    border: 1px solid #dedfe0;
    padding: 20px;
-   width: 400px;
+   width: 250px;
    font-size: 16px;
    font-weight: 600;
    line-height: 1.43;
    color: #29303b;
-   margin-left: 60px;
 }
 
 .search-learn-list-box {

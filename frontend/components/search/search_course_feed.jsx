@@ -20,7 +20,7 @@ class SearchCourseFeed extends React.Component {
 
     openClassName() {
         this.setState({
-            learnBox: "search-learn-box-open "
+            learnBox: "search-learn-box-open"
         })
     }
 
@@ -161,8 +161,10 @@ class SearchCourseFeed extends React.Component {
 
     render() {
         return(
-            <div style={{ minWidth: "1000px", display:"flex" }} onMouseEnter={this.openClassName} onMouseLeave={this.closeClassName}>
-                <div >
+            <div className="test-cont" style={{ minWidth: "1000px", display:"flex", position:"relative" }}
+            // onMouseEnter={this.openClassName} onMouseLeave={this.closeClassName}
+            >
+                <div className='course-item-wrapper'>
                     <Link to={`/courses/${this.props.course.id}`} style={{ textDecoration: "none" }} className="search-feed" >
                             <div style={{ flex: 1 }}>
                                 <img src={this.props.course.picture} className="search-img" />

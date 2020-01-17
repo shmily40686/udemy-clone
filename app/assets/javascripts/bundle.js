@@ -4272,7 +4272,7 @@ function (_React$Component) {
     key: "openClassName",
     value: function openClassName() {
       this.setState({
-        learnBox: "search-learn-box-open "
+        learnBox: "search-learn-box-open"
       });
     }
   }, {
@@ -4585,13 +4585,16 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "test-cont",
         style: {
           minWidth: "1000px",
-          display: "flex"
-        },
-        onMouseEnter: this.openClassName,
-        onMouseLeave: this.closeClassName
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+          display: "flex",
+          position: "relative"
+        } // onMouseEnter={this.openClassName} onMouseLeave={this.closeClassName}
+
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "course-item-wrapper"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/courses/".concat(this.props.course.id),
         style: {
           textDecoration: "none"
