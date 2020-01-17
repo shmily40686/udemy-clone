@@ -546,6 +546,7 @@ body {
     flex: 1;
  }
  .courses-box {
+    position: relative;
     display: flex;
     justify-content: space-between;
     z-index: 2;
@@ -1339,6 +1340,7 @@ body {
    display: block;
   -webkit-transition: transform 0.7s; /* Safari prior 6.1 */
   transition: transform 0.7s;
+  transition-timing-function: cubic-bezier(1, 0.3, 0.45, 0.85);
 }
 
 .left {
