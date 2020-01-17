@@ -597,11 +597,14 @@ function (_React$Component) {
   }, {
     key: "changeDuration",
     value: function changeDuration(time) {
-      if (time.length < 3) {
-        return "0:" + time;
-      } else {
-        return time.slice(0, time.length - 2) + ":" + time.slice(time.length - 2);
+      var mins = Math.floor(time / 60);
+      var secs = (time % 60).toString();
+
+      if (secs.length === 1) {
+        secs = "0".concat(secs);
       }
+
+      return "".concat(mins, ":").concat(secs);
     }
   }, {
     key: "render",
@@ -636,7 +639,7 @@ function (_React$Component) {
             style: {
               marginLeft: "11px"
             }
-          }, v.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, _this2.changeDuration(v.duration + ""))));
+          }, v.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, _this2.changeDuration(v.duration))));
         }) : null);
       } else {
         return null;

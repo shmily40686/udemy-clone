@@ -25,7 +25,6 @@ class CourseContent extends React.Component {
         }
     }
 
-
     showOrHidden() {
         if(this.state.dropdown) {
             return "content-show"
@@ -41,11 +40,12 @@ class CourseContent extends React.Component {
     }
 
     changeDuration(time) {
-        if(time.length < 3) {
-            return "0:" + time
-        } else {
-            return time.slice(0, time.length - 2) + ":" +  time.slice(time.length - 2)
+        let mins = Math.floor(time / 60);
+        let secs = (time % 60).toString();
+        if (secs.length === 1) {
+            secs = `0${secs}`;
         }
+        return `${mins}:${secs}`;
     }
 
     render() {
@@ -64,7 +64,7 @@ class CourseContent extends React.Component {
                                         <FontAwesomeIcon icon={faPlayCircle} />
                                         <span style={{marginLeft:"11px"}}>{v.title}</span>
                                     </div>
-                                    <div>{this.changeDuration(v.duration + "")}</div>
+                                    <div>{this.changeDuration(v.duration)}</div>
                                 </div>
                             </div>
                         ))
