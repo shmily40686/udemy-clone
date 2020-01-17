@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router'
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faGithubSquare, faLinkedin } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { connect } from 'react-redux';
 import GreetingContainer from './greeting/greeting_container';
@@ -58,6 +58,8 @@ class NavBar extends React.Component {
                     <input className="search-input" type="text" placeholder="Search for anything" onFocus={this.inputFocus} onBlur={this.inputUnFocus} onKeyUp={this.getSearchInput}/>
                     <FontAwesomeIcon icon={faSearch} className={this.state.iconClassName} onClick={this.searchClickHandle}/>
                 </label>
+                {/* <FontAwesomeIcon icon={faLinkedIn} />
+                <FontAwesomeIcon icon={faGithubSquare} /> */}
                 <GreetingContainer />
             </div>
         )
