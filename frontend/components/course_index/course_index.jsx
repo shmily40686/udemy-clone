@@ -27,9 +27,9 @@ class CourseIndex extends React.Component {
         this.props.fetchAllCourses()
             .then(() => {
                 this.setState({
-                    arr1: this.props.courses.slice(0, 12),
-                    arr2: this.props.courses.slice(12, 24),
-                    arr3: this.props.courses.slice(24)
+                    arr1: this.props.courses.slice(0, 15),
+                    arr2: this.props.courses.slice(15, 30),
+                    arr3: this.props.courses.slice(30)
                 })
             })
     }
@@ -81,7 +81,7 @@ class CourseIndex extends React.Component {
         let max = this.state[`arr${index}`].length - 1;
         let currentValue = this.state[`currentTransformation${index}`];
         
-        if (max > currentValue + this.getNumberOfResultsDisplayed()) {
+        if (max >= currentValue + this.getNumberOfResultsDisplayed()) {
             return (
                 <div className="right arrow" onClick={() => this.rightClick(index)}>
                     < FontAwesomeIcon style={{ padding: "12px" }} icon={faChevronRight} />

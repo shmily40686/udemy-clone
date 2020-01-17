@@ -3296,9 +3296,9 @@ function (_React$Component) {
 
       this.props.fetchAllCourses().then(function () {
         _this2.setState({
-          arr1: _this2.props.courses.slice(0, 12),
-          arr2: _this2.props.courses.slice(12, 24),
-          arr3: _this2.props.courses.slice(24)
+          arr1: _this2.props.courses.slice(0, 15),
+          arr2: _this2.props.courses.slice(15, 30),
+          arr3: _this2.props.courses.slice(30)
         });
       });
     }
@@ -3360,7 +3360,7 @@ function (_React$Component) {
       var max = this.state["arr".concat(index)].length - 1;
       var currentValue = this.state["currentTransformation".concat(index)];
 
-      if (max > currentValue + this.getNumberOfResultsDisplayed()) {
+      if (max >= currentValue + this.getNumberOfResultsDisplayed()) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "right arrow",
           onClick: function onClick() {
