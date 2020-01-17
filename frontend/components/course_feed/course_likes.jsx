@@ -15,6 +15,8 @@ class CourseLike extends React.Component {
         this.getNumberOfResultsDisplayed = this.getNumberOfResultsDisplayed.bind(this);
         this.leftClick = this.leftClick.bind(this);
         this.rightClick = this.rightClick.bind(this);
+        this.showLeft = this.showLeft.bind(this);
+        this.showRight = this.showRight.bind(this);
     }
 
     componentDidMount() {
@@ -89,6 +91,16 @@ class CourseLike extends React.Component {
         });
     }
 
+    showLeft() {
+        console.log('l', this.state.currentTransformation > 0);
+        return this.state.currentTransformation > 0;
+    }
+
+    showRight() {
+        console.log('r', this.state.courseLikeCount >= this.state.currentTransformation + this.getNumberOfResultsDisplayed());
+        return this.state.courseLikeCount >= this.state.currentTransformation + this.getNumberOfResultsDisplayed();
+    }
+
     render() {
         return (
             <div className="outer-course-likes">
@@ -96,12 +108,18 @@ class CourseLike extends React.Component {
                 <div className="carousel-rel-wrapper">
                     {this.renderCourseList()}
                 </div>
-                <div className="left arrow" onClick={this.leftClick}>
-                    {"<"}
-                </div>
-                <div className="right arrow" onClick={this.rightClick}>
-                    {">"}
-                </div>
+                {this.showLeft()
+                    ? <div className="left arrow" onClick={this.leftClick}>
+                        {"<"}
+                    </div>
+                    : null
+                }
+                {this.showRight()
+                    ? <div className="right arrow" onClick={this.rightClick}>
+                        {">"}
+                    </div>
+                    : null
+                }
             </div>
         )
     }

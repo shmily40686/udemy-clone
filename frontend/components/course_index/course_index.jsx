@@ -14,7 +14,6 @@ class CourseIndex extends React.Component {
             arr1: [],
             arr2: [],
             arr3: []
-
         };
         this.leftClick = this.leftClick.bind(this);
         this.rightClick = this.rightClick.bind(this);
@@ -50,8 +49,6 @@ class CourseIndex extends React.Component {
         }
     }
 
-    
-
     showLeft(index) {
         if (!this.state[`currentTransformation${index}`] > 0) {
             return null;
@@ -84,15 +81,14 @@ class CourseIndex extends React.Component {
         let max = this.state[`arr${index}`].length - 1;
         let currentValue = this.state[`currentTransformation${index}`];
         
-        if (max <= currentValue + this.getNumberOfResultsDisplayed()) {
-            return null;
+        if (max > currentValue + this.getNumberOfResultsDisplayed()) {
+            return (
+                <div className="right arrow" onClick={() => this.rightClick(index)}>
+                    < FontAwesomeIcon style={{ padding: "12px" }} icon={faChevronRight} />
+                </div>
+            )
         }
-
-        return (
-            <div className="right arrow" onClick={() => this.rightClick(index)}>
-                < FontAwesomeIcon style={{ padding: "12px" }} icon={faChevronRight} />
-            </div>
-        )
+        return null;
     }
 
     renderList(index) {
@@ -106,7 +102,6 @@ class CourseIndex extends React.Component {
         } else {
             arr = this.state.arr3;
         }
-
 
         const res = arr.map((x, i) => <div key={i} className="course-tile">
             <CourseDetails key={i} course={x} />
@@ -124,9 +119,6 @@ class CourseIndex extends React.Component {
         const displayCourse1 = this.renderList(1);
         const displayCourse2 = this.renderList(2);
         const displayCourse3 = this.renderList(3);
-
-        console.log(this.state);
-
         return (
             <div className="index">
                 <div className="index-header-container">
@@ -156,7 +148,6 @@ class CourseIndex extends React.Component {
                     {this.showRight(3)}
                 </div>
             </div>
-
         )
     }
 }

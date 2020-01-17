@@ -1593,6 +1593,8 @@ function (_React$Component) {
     _this.getNumberOfResultsDisplayed = _this.getNumberOfResultsDisplayed.bind(_assertThisInitialized(_this));
     _this.leftClick = _this.leftClick.bind(_assertThisInitialized(_this));
     _this.rightClick = _this.rightClick.bind(_assertThisInitialized(_this));
+    _this.showLeft = _this.showLeft.bind(_assertThisInitialized(_this));
+    _this.showRight = _this.showRight.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -1676,6 +1678,18 @@ function (_React$Component) {
       });
     }
   }, {
+    key: "showLeft",
+    value: function showLeft() {
+      console.log('l', this.state.currentTransformation > 0);
+      return this.state.currentTransformation > 0;
+    }
+  }, {
+    key: "showRight",
+    value: function showRight() {
+      console.log('r', this.state.courseLikeCount >= this.state.currentTransformation + this.getNumberOfResultsDisplayed());
+      return this.state.courseLikeCount >= this.state.currentTransformation + this.getNumberOfResultsDisplayed();
+    }
+  }, {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1686,13 +1700,13 @@ function (_React$Component) {
         }
       }, "Some course you might like"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "carousel-rel-wrapper"
-      }, this.renderCourseList()), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, this.renderCourseList()), this.showLeft() ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "left arrow",
         onClick: this.leftClick
-      }, "<"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "<") : null, this.showRight() ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "right arrow",
         onClick: this.rightClick
-      }, ">"));
+      }, ">") : null);
     }
   }]);
 
@@ -3346,21 +3360,21 @@ function (_React$Component) {
       var max = this.state["arr".concat(index)].length - 1;
       var currentValue = this.state["currentTransformation".concat(index)];
 
-      if (max <= currentValue + this.getNumberOfResultsDisplayed()) {
-        return null;
+      if (max > currentValue + this.getNumberOfResultsDisplayed()) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "right arrow",
+          onClick: function onClick() {
+            return _this4.rightClick(index);
+          }
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__["FontAwesomeIcon"], {
+          style: {
+            padding: "12px"
+          },
+          icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faChevronRight"]
+        }));
       }
 
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "right arrow",
-        onClick: function onClick() {
-          return _this4.rightClick(index);
-        }
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__["FontAwesomeIcon"], {
-        style: {
-          padding: "12px"
-        },
-        icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faChevronRight"]
-      }));
+      return null;
     }
   }, {
     key: "renderList",
@@ -3398,7 +3412,6 @@ function (_React$Component) {
       var displayCourse1 = this.renderList(1);
       var displayCourse2 = this.renderList(2);
       var displayCourse3 = this.renderList(3);
-      console.log(this.state);
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "index"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4272,7 +4285,7 @@ function (_React$Component) {
     key: "openClassName",
     value: function openClassName() {
       this.setState({
-        learnBox: "search-learn-box-open "
+        learnBox: "search-learn-box-open"
       });
     }
   }, {
@@ -4585,13 +4598,15 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "test-cont",
         style: {
           minWidth: "1000px",
-          display: "flex"
-        },
-        onMouseEnter: this.openClassName,
-        onMouseLeave: this.closeClassName
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+          display: "flex",
+          position: "relative"
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "course-item-wrapper"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/courses/".concat(this.props.course.id),
         style: {
           textDecoration: "none"
