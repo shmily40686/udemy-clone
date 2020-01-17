@@ -1301,14 +1301,15 @@ body {
 
 .course-item-wrapper {
    margin-right: 15px;
-   width: 690px;
+   width: 63%;
+   max-width: 690px;
 }
 
 .search-learn-box {
    display: none;
    position: absolute;
-   /* width: 400px;
-   height: 165px; */
+   width: 25%;
+   max-width: 400px;
 }
 
 .test-cont:hover > .search-learn-box {

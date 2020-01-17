@@ -17,7 +17,6 @@ class SearchCourseFeed extends React.Component {
         this.closeClassName = this.closeClassName.bind(this)
     }
 
-
     openClassName() {
         this.setState({
             learnBox: "search-learn-box-open"
@@ -29,7 +28,6 @@ class SearchCourseFeed extends React.Component {
             learnBox: "search-learn-box"
         })
     }
-
 
     renderRating() {
         if (this.props.course.rating < 1) {
@@ -54,7 +52,6 @@ class SearchCourseFeed extends React.Component {
                 </div>
             )
         }
-
         if (this.props.course.rating > 1 && this.props.course.rating < 2) {
             return (
                 <div>
@@ -66,7 +63,6 @@ class SearchCourseFeed extends React.Component {
                 </div>
             )
         }
-
         if (this.props.course.rating === 2) {
             return (
                 <div>
@@ -78,7 +74,6 @@ class SearchCourseFeed extends React.Component {
                 </div>
             )
         }
-
         if (this.props.course.rating > 2 && this.props.course.rating < 3) {
             return (
                 <div>
@@ -101,7 +96,6 @@ class SearchCourseFeed extends React.Component {
                 </div>
             )
         }
-
         if (this.props.course.rating > 3 && this.props.course.rating < 4) {
             return (
                 <div>
@@ -113,7 +107,6 @@ class SearchCourseFeed extends React.Component {
                 </div>
             )
         }
-
         if (this.props.course.rating === 4) {
             return (
                 <div>
@@ -125,7 +118,6 @@ class SearchCourseFeed extends React.Component {
                 </div>
             )
         }
-
         if (this.props.course.rating > 4 && this.props.course.rating < 5) {
             return (
                 <div>
@@ -137,7 +129,6 @@ class SearchCourseFeed extends React.Component {
                 </div>
             )
         }
-
         if (this.props.course.rating === 5) {
             return (
                 <div>
@@ -149,21 +140,16 @@ class SearchCourseFeed extends React.Component {
                 </div>
             )
         }
-
     }
-
 
     renderPrice() {
         let str = this.props.course.price.toString();
         return str.slice(0, str.length - 2) + "." + str.slice(str.length - 2)
     }
 
-
     render() {
         return(
-            <div className="test-cont" style={{ minWidth: "1000px", display:"flex", position:"relative" }}
-            // onMouseEnter={this.openClassName} onMouseLeave={this.closeClassName}
-            >
+            <div className="test-cont" style={{ minWidth: "1000px", display:"flex", position:"relative" }}>
                 <div className='course-item-wrapper'>
                     <Link to={`/courses/${this.props.course.id}`} style={{ textDecoration: "none" }} className="search-feed" >
                             <div style={{ flex: 1 }}>
