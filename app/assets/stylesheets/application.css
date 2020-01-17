@@ -540,7 +540,7 @@ body {
 /* ----------------------------------------------------------
 ---------------------------------------------------------- */
  .index {
-    margin: 100px 0px;
+    margin: 100px;
     padding: 0 50px;
     border-top:solid 1px #dedfe0; 
     flex: 1;
@@ -1340,7 +1340,7 @@ body {
     font-size: 22px;
     font-weight: 600;
     color: #29303b;
-    margin: 100px;
+    margin: 100px 250px;
 }
 
 .carousel-inner {

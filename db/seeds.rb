@@ -146,6 +146,12 @@ u27 = User.create!({
   password:"09181990"
 })
 
+u32 = User.create!({
+  username: 'JJ Mayo',
+  email: 'jmayo@gmail.com',
+  password: '12345678'
+})
+
 # Courses
 c1 = Course.create!(
  title: 'Computer Science 101: Master the Theory Behind Programming',
@@ -290,21 +296,21 @@ c8 = Course.create!(
 
 
 c9 = Course.create!(
-  title: "How To Cultivate Mindfulness & Mindfulness Meditation",
-  type_style: 'life',
-  subtitle: "Certified: Mindfulness Meditation: Mindfulness & Spirituality : Meditation Techniques & Spirituality of Mindfulness",
+  title:"Business Analysis Fundamentals",
   teacher: 'Julian Jenkins',
   teacher_id: u9.id,
-  price:4299,
+  type_style:"business",
+  subtitle:"Set yourself up for success, learn the key business analysis concepts to thrive in your Business Analyst career",
+  price:19999,
   rating:4,
-  rating_count: 165,
-  student_count: 1212,
-  languages: "English",
-  learning_goals: "✅Mindfulness is a great way to learn how to cope with the stresses and strains of life, this course will give you all the basics you need with a spiritual edge.\n✅Awaken your spirituality - learn to live moment by moment\n✅Understand yourself and connect with your inner feelings\n✅Learn mindful meditation and a number of powerful tools to live a happier healthier life\n✅Connect with natures energy\n✅Develop your spiritual side\n✅Full course support and community access on our Facebook Udemy Group\n✅Understand Mindfulness\n✅Learn meditation\n✅This course is certified and you will receive a personal certificate from my self upon completion and on request",
-  requirements: "An open mind and time",
-  description:"<p>Learn the powerful foundations of <strong>mindfulness and mindfulness meditation</strong> to help with stress management and personal development</p><p>✅Certified: This is a certified course and a personal certificate from myself will be issued at completion on request.</p><p><strong><em>How To Cultivate Mindfulness &amp; Spiritual Meditation&nbsp; </em></strong></p><p>Mindfulness is a powerful tool to help people develop themselves, understand and work with stress, anxiety and life's super highway. We all need to spend some times on ourselves and Mindfulness is a great gift not just to use ourselves but also the course gives you the ability to teach others. This course will give you the foundation to build a stronger connection and relationship with yourself, allowing you to grow psychically and spirituality, but furthermore allowing you to teach others these very powerful tools to cope with everyday life, loss or anxiety or mental issues. As always my courses are un-edited and cut through the complications and the noise of complexity to deliver in a way that will resonate with you.</p><p><strong>Join me on one of the highest rated spiritual courses here is a review from one of my graduates Alicia *****</strong></p><p>'I started training with Julian and suddenly, after 35 years.. everything started to fall into place and make sense! There is no doubt in my mind why I was guided to Julian .... he is truly amazing.. so gifted... so passionate and has this unbelievable gift to make you feel like there is only you and him in the room... it feels like he is directly speaking to you! He works and speaks from the heart! I am so incredibly grateful for Julian and his teaching and guidance! If you are reading this you’ve also been guided to Julian! So take the leap.. I promise, it’s something you wont regret it x'</p><p>#mindfulness #spirituality #mindful #meditation</p>",
-  audience: "This course will help all students form beginners to masters.\nPeople curious about spiritualism\nStudents who want to develop moment to moment living through mindful meditation\nA course for everyone to enjoy x",
-  picture: "https://i.udemycdn.com/course/240x135/2076402_2685_2.jpg"
+  rating_count:15026,
+  student_count:57313,
+  languages:"English",
+  learning_goals:"\nBusiness Analysis basics – learn what a Business Analyst is, what they do, and how they do it\n\nA breakdown of six project methodologies including traditional Waterfall and Agile frameworks\n\nLearn how to properly initiate a project by creating a business case that aligns with the business objectives\n\nUnderstand the basics of project requirements and six of the popular techniques used to elicit those details from your stakeholders\n\nGain an overview of various modeling diagrams to help you recognize and understand project documentation\n\nConduct requirement specification - including categorizing, deriving (breaking apart), prioritizing, and validating\n\nHave the confidence to successfully facilitate requirements approval meetings\n",
+  requirements:"\nThis course covers all of the fundamentals - no prior knowledge is required\n",
+  description:"\nTHE ULTIMATE FOUNDATIONAL COURSE – LEARN THE CORE BUSINESS ANALYSIS KNOWLEDGE YOU CAN BUILD UPON AND START YOUR BUSINESS ANALYST CAREER THE RIGHT WAY.Set yourself up for success and learn the key concepts you’ll need to thrive in your Business Analyst career!With over 10 years working as, hiring, and managing Business Analysts, I’ve gained a lot of valuable experience and knowledge. And today, I want to share that information with you. I’ll help you take the first step in a long and productive career in business analysis.In this course, I have condensed everything I’ve learned in all my years working in the industry into a comprehensive guide to the basic elements that make up the most important tool in any Business Analyst’s career – your foundational knowledge.Building a successful future without a strong foundation is an impossible task…But when you have one in place, it’ll give your career the strongest possible start, and put you in a position to take the fullest advantage of the opportunities and experiences that come your way and achieve the success you’re dreaming of!So, whether you’re an aspiring Business Analyst or one that’s new to the role – let this course be the first step of a lucrative and satisfying career.Course enrollment grants you lifetime access, with no expiration, to all the course lectures, activities, handouts, and quizzes. In addition, you’ll also receive 1-on-1 support for any questions or uncertainties that come up. And this all comes with a money-back guarantee. You have nothing to lose and so much to gain.Just ask the students who’ve already taken this course:★★★★★ \"The pace is perfect for those who are actively engaged, and there is a lot of value in the lectures, activities, and additional resources provided. I wholeheartedly recommend this course.\" – Kenni★★★★★ “The course is just awesome! Tbh [to be honest], I did not expect much from the online course and was really surprised when it turned out to be sooo interesting. The information is well-structured and divided into sections which makes it really easy to understand and grasp the important points. I enjoyed the way Jeremy conducts the lectures and truly hope to enroll into some more of his courses in future! Thanks a ton” - Nataliia★★★★★ “Great quality work. I like how Jeremy breaks everything down, so it's understandable even if you don't have any background in the business analysis. Awesome courses!!!” - OlegWhy be a Business Analyst in the first place?1. Potential Earnings – Let’s be honest it’s the main reason we work in the first place. So, you’ll be happy to hear that a typical Business Analyst (BA) earns over $78,000 per year. And that is only the average. Work hard, continue to increase the value you provide, and just imagine how much you could end up making!2. Market Growth – The Business Analysis job market is expected to grow at a rate of 19% over the next 10 years, so get in now and take advantage of an industry that’s on the rise. In fact, per the US Bureau of Labor Statistics, American employers will need 876,000 business analysis related professionals in 2020. It is a great time to be versed in business analysis!3. Career Springboard – The skills you learn as a Business Analyst are crucial to a host of many other professions, everything from IT to Business. This career path isn’t just a job, it’s an investment in your future.4. Use Existing Industry Knowledge – Similarly, the skills you’ve learned outside of the business analysis world are highly valued in the industry – so rather than starting anew, you can be put your experience to good use.5. It’s Never Boring – With new projects always on the horizon, and different challenges to tackle each day, the role of a Business Analyst never grows stale.So if you’re looking for a challenging and rewarding career, I highly encourage you to take a serious look into business analysis!What exactly is included in this course?- Business Analysis basics – learn what a Business Analyst is, what they do, and how they do it- A breakdown of six project methodologies including traditional Waterfall and Agile frameworks- Learn how to properly initiate a project by learning how to create a business case that aligns with a business’ objectives- Understand the basics of project requirements and six of the popular techniques used to elicit those details from your stakeholders- Gain an overview of various modeling diagrams to help you recognize and understand project documentation- Conduct requirement specification - including categorizing, deriving (breaking apart), prioritizing, and validatingIn addition to all the tools you’ll need to start planning the project, you’ll also get a foot into the field by way of an industry expert…I’m not just the instructor who wrote this course, I will also act as both a resource and a mentor to guide you to a long and rewarding career in Business Analysis!This is what my students had to say about the content of this course:★★★★★ \"The course is awesome, didn't see similar before. Like how Jeremy explains, how he highlight key points and how he provide us by different types of a very useful templates, which we can use in our daily job. Really, excellent course, and will wait with a big impatience for another ones. Highly recommended for everybody who wants to become an experienced business analyst. Jeremy and his courses will definitely help you to achieve your goal!\" - Aykhan★★★★★ “If I had to rate this […] I would give 10 out of five!! this is one of the great lectures I have ever had. Extremely satisfied and learnt a lot!! Thanks Jeremy!!” – Swati★★★★★ “Great inside knowledge from Jeremy, clear and concise. Explains Business Analysis concepts in a way that is easy to understand and gives a solid base of the fundamentals.” - GermanStill Unsure?I understand – you’re a Business Analyst at heart and you like to have all the information at hand before making a decision… so here’s a list of extra bonuses that are included, as part of your enrollment to the course:- Access to a searchable Business Analyst Glossary – Never again will you feel lost in a sea of complex terms and acronyms. This searchable glossary is an essential tool that makes it easy to recall and understand all the “Business Analysis Speak” you come across (on and off the job!)- A Business Requirements Document (BRD) Example Template – so you can utilize your newly learned requirement documentation skills. Documenting requirements into a template like a BRD will play an integral part of your day-to-day as a Business Analyst.- A Business Case Template – Organize your thoughts and sell the value of your project by using our intuitive and easy to follow templateAnd if you’re still not sure – here’s my promise to you:This course comes with a money-back guarantee! That means, if you aren’t completely satisfied with your purchase, I’ll give you a refund – no questions asked!By the end of the course, you’ll have the knowledge and the means to apply that knowledge, to not only become a Business Analyst – but to excel at it.So, if you have any interest at all in making your career as a Business Analyst a successful one, enroll today, and get started learning the fundamentals of the job today!\n\n",
+  audience:"\nAspiring Business Analysts - including recent college graduates and those looking to make a career change.\n\nNew Business Analysts wanting to improve their craft\n\nOther positions that are performing business analysis duties such as administrators, managers, and project leads.\n",
+  picture:"https://i.udemycdn.com/course/240x135/751792_622e_9.jpg"
 )
 c10 = Course.create!(
   title: "Robotium (+Recorder) - Android Mobile Application Automation",
@@ -463,91 +469,90 @@ c18 = Course.create!(
 )
 
 c19 = Course.create!(
- title: 'Computer Science 101: Master the Theory Behind Programming',
- type_style: 'computer',
- subtitle: 'Computer Science 101: Learn Computer Science to become a better Programmer and Software Engineer.',
- teacher: 'Kurt Anderson',
+ type_style: 'music',
+ teacher: 'Erich Andreas',
  teacher_id: u1.id,
- price: 1099,
- rating: 4,
- rating_count: 1577,
- student_count: 8550,
- languages: 'English',
- learning_goals: 'Understand the Fundamental Theories of Algorithm Analysis\nBe able to Compare Various Algorithms\nUnderstand When to use Different Data Structures and Algorithms\nUnderstand the Fundamentals of Computer Science theory\nUnderstand the Core Sorting Algorithms',
- requirements: 'A Willingness to Learn New Topics!\nNo Prior Experience or Knowledge is Needed!',
- description: '<p><strong>Master the Theory to Becoming a Good Programmer!&nbsp;</strong></p><p>If youre looking to learn the theory that makes great programmers,&nbsp;youve come to the right place!&nbsp;This course is perfect for anyone interested in learning the fundamentals to Computer Science Theory.&nbsp;</p><p><strong>No Previous Experience Necessary!&nbsp;</strong></p><p>Computer science and technology are often thought of as things only for "analytical minds". I believe however that technology and its theory are for everyone. So I designed this&nbsp;course to&nbsp;teach each topic in a variety of&nbsp;<strong>easy to digest</strong> ways. Through these multiple reinforcing steps, I believe anyone can follow along and succeed!&nbsp;<br></p><p><strong>Why is the Theory of Programming Important?&nbsp;</strong></p><p>Understanding&nbsp;Computer Science theory is what sets apart&nbsp;<strong>Great programmers&nbsp;</strong>from average ones. Programming theory is something that transcends a single programming language. It gives you skills and techniques you can apply to any programming language you touch. Learning the theory behind programming is just as important, if not more important than learning a singular programming language like Java or C++.</p><p>Programming is all about problem solving. Analyzing a problem, and being able to figure out a way that a computer can help with that problem. Computer Science is the practice of this analysis process. It goes over the techniques and knowledge necessary to design efficient and sustainable code.&nbsp;</p><p>So if you want to begin setting yourself apart from the average programmers, this is the course for you!&nbsp;</p><p><strong>Enroll Now and youll Learn:&nbsp;</strong><br></p><ul><li><p>Binary Number System</p></li><li><p>N Notation</p></li><li><p>Big O Notation</p></li><li><p>How to Analyze a Program</p></li><li><p>Arrays and&nbsp;their Advantages</p></li><li><p>Nodes and their Importance</p></li><li><p>Linked&nbsp;Lists and their Advantages and Implementations</p></li><li><p>Stacks implemented with Arrays and Linked&nbsp;Lists</p></li><li><p>Queues Implemented with Arrays and Linked Lists</p></li><li><p>Various Sorting Algorithms and Their Comparisions</p></li><li><p>Trees and Binary Search Trees</p></li><li><p>And Much Much More!&nbsp;</p></li></ul><p><strong>My&nbsp;Guarantee</strong></p><p>I am so confident you will enjoy this course, I offer a 100%&nbsp;30-day money-back guarantee through Udemy.&nbsp;If you are not happy with your purchase, I have no problem with giving your money back!&nbsp;</p><p><strong>Are You Ready to Get Started?&nbsp;</strong></p><p>I will be waiting for you inside the course!&nbsp;</p><p>Remember, this is an online course, so you can take it at your own pace.&nbsp;<em>Are you busy right now?&nbsp;</em>Thats okay. Enroll today, and take the course at your own pace.</p><p>Thanks so much for your interest in this Computer Science 101 Course!&nbsp;</p><p>See you inside!</p><p>Kurt</p><p><br></p>',
- audience: 'Anyone who wants to become a Good Programmer\nAnyone interested in the Computer Science Discipline\nAnyone who wants to learn how to problem solve like a Computer Scientist',
- picture: 'https://i.udemycdn.com/course/240x135/1395136_3f8a_3.jpg'
+ title:"Complete Guitar System - Beginner to Advanced",
+ subtitle:"All-in-one Guitar Course With a Proven Step-by-step Learning System.",
+ price:19999,
+ rating:4,
+ rating_count:17633,
+ student_count:135750,
+ languages:"English",
+ learning_goals:"\nNew to Guitar? This Will be the Only Course You Will Ever Need to Take\n\nHave You Playing the Guitar in the Shortest Amount of Time While Having the Most Fun\n\nMost Logical Step-by-step Method to Play Songs and Master Chords, Scales and Guitar Theory\n\nExercises That Will Sharpen Your Chord Transitioning, Strumming, Fretting, Picking, and Fingerpicking\n",
+ requirements:"\nNo Special Skills Needed\n\nYou Will Need a Guitar\n\nPractice Can Not Be Avoided\n",
+ description:"\n\n Would You Like to Eliminate Every Struggle That You Are Faced With When Starting to Play Guitar? \n This course is your \"Free Pass\" to playing guitar. It is the most direct and to the point complete online guitar course. \n\n Follow the Videos in the Exact Same Order and You Will See a Huge Positive Change in Your Playing \n 306 Lectures/Videos with PDF Attachments 34 hours of video It's available on a PC or MAC and there is a iPad, iPhone and Android app ready to go!  Keeping track of which videos(lectures) you have already watched is a breeze. Udemy has a great way of keeping track of your completed lessons(lectures). The entire course is organized in step-by-step easy to follow layout \n The more you practice the better you will get. With the Right Practice style you will be able to witness fast results! \n Erich's teachings are different than all of the other online teachers. He has made it super easy to be successful at playing guitar. All you have to do is follow the videos in order and put together some good practice habits. \n\n Here is what Renee Martin had to say about Erich's Course: See reviews at the bottom. \n \"WOW! 0 to 60 in 221 Lessons! \n I have learned soooo much from Erich's lessons! I've had my guitar for less than 5 months and I have such a firm foundation and core understanding of the principles and techniques I need. The sky is the limit, If my fingers can catch up to my brain. It will take a lot of practice, but thanks to this Complete Guitar System, I KNOW WHAT to practice and HOW (and why) to do it CORRECTLY!!! I'm on the continuum to being a great guitar player, and I'm loving it!!! It's been a pleasure and I look forward to revisiting many of the lessons since I get to keep them FOREVER!! Thanks Erich for answering all my questions!! You RAWK!\" \n\n Who is this Guitar Course For? \n If you are a beginner then this course is perfect for YOU! If you have tried to play guitar before and quite.. then this course is perfect for YOU! If you have or do take personal one-on-one guitar lessons with a guitar instructor and feel like you are not getting the results you feel like you deserve than this course is perfect for YOU! \n\n Erich's Guitar Videos, Ebooks, Online Guitar Courses and Books Have Reached Millions of People All Around the World. \n With More Than 52.6 Million Views on Youtube alone (combining my two Youtube Channels) Nearly 30 Years Experience in Teaching and Playing Over 400,000k Youtube Subscribers \n We all know you have to practice to become better at guitar. \n Most teachers don't have a \"plan\" for beginners to follow for them to see actual results. \n This course, and all of Erich's courses on Udemy, are laid out in a \"no fail\" order. So all you have to do is follow the videos in order and put your practice to good use. \n Erich will teach you the correct techniques and exercises to incorporate into your practice so you begin to establish the Right Practice habits. \n From picking up your first guitar to being able to jam out to songs that you have always dreamed about being able to play on the guitar THIS course will get you moving in the right direction. \n\n Beginner to Advanced and EVERYTHING in between! \n 306 Lectures and 34 hours of Video = $7,500.00 Value PDF Attachments for Almost Every Lecture \"fail proof\" if You Practice and Have a Determined Attitude \n\n **Add 5 Bonus Videos** - That Makes it a Total of 311 Video Lectures! \n Two-hand Tapping Technique Series is a 6 part video series over 20 minutes long. These bonus videos will help you quickly learn how to start using the two-hand tapping technique. \n Let's Break This Course Down \n How many one-on-one lessons would this course equal out to be if you wanted to have lessons with Erich? \n This course has 277 lectures which translates into 70 hours of one-on-one lessons. That would be a total of $7,000.00 for 70 hours of 277 lectures, $100/per hour. \n There's no way I could charge you $7,000.00 for this course! There's no way I could charge you $3,500.00 for this course.. or even a tenth of that! \n It's only $145\n And here's my no questions asked money back guarantee. \n There's a 30 Day Money Back Guarantee \n Is this course for you? \n Honestly, I have know idea. And that's why we are offering a 30 day money back guarantee. \n Scroll up and click the \"Take This Course\" button now. \n WARNING: This course is NOT for the person who thinks by purchasing this course it will then magically give them all your guitar skills to you without you having to put the time, effort and practice. It does take practice if you want to see results. :) \n\n Get Started Today \n\n",
+ audience:"\nAll Beginners Including Guitar Players That Feel Lost and Don't Quite Know Where to Begin\n\nAny Intermediate and Advanced Players Finding \"holes\" in Their Playing.\n\nAny Guitarist Wanting to Advance Their Craft\n\nAny Players That Feel Like Their Personal Guitar Instructors Aren't \"cutting it\" For Them\n\nIf You Picked Up the Guitar and Started Learning Years Ago but Feel Like You Want to Get Back In It\n",
+ picture:"https://i.udemycdn.com/course/240x135/42271_886a_7.jpg"
 )
 c20 = Course.create!(
- title: 'OTTOMAN CUISINE, TURKISH COOKING CLASS',
- type_style: 'cooking',
- subtitle: 'A great variety of mouth watering dishes in Turkish cuisine which is mostly the heritage of Ottoman cuisine.',
+ type_style: 'music',
  teacher: 'Darma Academy',
  teacher_id: u2.id,
- price: 1044,
- rating: 1,
- rating_count: 1,
- student_count: 2,
- languages: 'English',
- learning_goals: 'Learn to cook Turkish traditional mezes and dishes in a very simple way\nEngaging with one of the richest cuisine in history\nGain the newest kitchen skills\nA new perspectives on every day food',
- requirements: 'Passion for cooking and engaging new cultures. Everybody from all aspects are welcome to this class.',
- description: 'Turkish cuisine one of the worlds great cuisines. It reflects the long history of this land... A great variety of mouth watering dishes in Turkish cuisine which is mostly the heritage of Ottoman cuisine. It is the mixture and refinement of Central Asian, Middle Eastern and Balkan cuisines. Therefore it is impossible to fit Turkish cuisine into a short list.
- Anatolia is blessed with varied climate which allows the country to get almost everything on its land. Turkey is one of the few countries in the world that has been self sustaining, producing all its own food. Turkish cuisine traditionally is NOT spicy, except in the southeast part of the country, where preparations can reflect a hot Middle Eastern(Arabic) food influence. But now in evertwhere you are able to find restaurants that sell that kind of spicy dishes
- Turks have a big diversity of vegetables and of course this reflects on the dishes. One very important detail about vegetable dishes is whether they have meat in them or not.',
- audience: 'Who likes enjoying cooking, food and culture',
- picture: 'https://i.udemycdn.com/course/480x270/2702904_7dd8.jpg'
+ title:"Music Production I - Learn to be a Music Producer!",
+ subtitle:"Learn how to become a recording/music production engineer with little to no knowledge! Record music like a pro!",
+ price:19999,
+ rating:4,
+ rating_count:1012,
+ student_count:5630,
+ languages:"English",
+ learning_goals:"\nRecord, mix, master and share your music with the world as a Music Production engineer!\n\nYou will be able to automate and edit Audio Plugins and enhance your Music Production workflow.\n\nYou will know how to mic various different instruments in the studio environment.\n\nYou will be able to use a basic Music Production DAW such as Logic Pro X.\n\nYou will be able to use MIDI Controllers and Software Instruments within the Music Production environment.\n\nYou will know how to produce music.\n\nYou will be on your way to having a successful career in the Music Production Industry!\n",
+ requirements:"\nYou do not need any specific software to complete this course, but having a DAW to practice the techniques discussed will dramatically increase your ability to be successful in Music Production.\n\nThere will be a DAW provided for free if you don't currently have access to one.\n",
+ description:"\nThis course is designed for the beginner, who has no previous knowledge in the Music Production field. Although this course will benefit those of you who have little to much knowledge with Music Production as well! In this course, you will learn how to become a music producer and a recording engineer, and how to take the sound production quality of your music production studio to the next level. Although we us a free DAW in this course, you will learn the basic tools you need to be able to start working in the powerhouse DAWs like Logic Pro X and Avid Pro Tools!You will learn things like...equalization compressionmic placementpluginsaudio editingeffects processinghow to import and export your trackshow to record audiohow to produce musichow to record audio on a PChow to record audio on a Machow to use basic functions within any DAW such as Logic Pro X!and much moreEven if you have never worked with audio equipment before, or words like equalization mean nothing to you, by the end of this course you will be well on your way to starting a successful career in the music industry, and taking your talents to the world!  You will learn the best practices for music production, so that \"music making\" can be your career! By taking this course you will learn how to record your masterpiece from scratch starting with what computer you should have all the way up to mastering and releasing your own music. You will learn how to become a recording engineer and how to produce music like a pro! Thanks for checking out my course, Music Production I, and I hope to see you inside!\n\n",
+ audience:"\nArtists who want to produce and record their own music.\n\nAspiring Recording Engineer.\n\nPeople who have had a desire to record a single song.\n\nArtists who want to learn how to use a DAW such as Logic Pro X.\n",
+ picture:"https://i.udemycdn.com/course/240x135/1024722_23e6_6.jpg"
+
 )
 c21 = Course.create!(
- title: 'chopped dream eaters witch vegetables and eggs:experience...',
- type_style: 'cooking',
- subtitle: 'chopped dream eaters witch vegetables and eggs:your way to a rich taste and a unique sensation,andexperience in cooking.',
+ type_style: 'music',
  teacher: 'Mustapha elaallali',
  teacher_id: u3.id,
- price: 1044,
- rating: 1,
- rating_count: 1,
- student_count: 1,
- languages: 'English',
- learning_goals: 'Students will be able to acquire a new kind of experience that will increase the level of their technical abilities\nStudents will be able to acquire a new kind of experience that will increase the level of their technical abilities',
- requirements: 'Success\nSelf Development',
- description: 'In this course, we will persent a recipe of the most delicious of the most useful recipes for human health , in a detailed and smooth manner , and at the same time based on the ingredients widely available in the market,but the most good in the recipe is the wonderful final taste , which does not it can never be resisted, and we have also provided some of the most important tips and expertise in the field of cooking , especially our rich recipe.',
- audience: 'The target student is the talented or interested in the field of graphic arts and design',
- picture: 'https://i.udemycdn.com/course/240x135/1456524_4fac_2.jpg',
+ title:"How To Sing #1: Complete Vocal Warm ups & Voice Physiology",
+ subtitle:"Singing Lessons for Vocal Warm Up Tips & Voice Essentials",
+ price:14999,
+ rating:4,
+ rating_count:2115,
+ student_count:18103,
+ languages:"English",
+ learning_goals:"\nUnderstand voice physiology;\n\nLearn the benefits of correct posture, breathing and resonance\n\nUnderstand breathing anatomy used for singing;\n\nIncrease vocal range without force or pressure whilst improving strength and tone;\n\nPerform vocal warm ups with easy exercises you can do at home;\n",
+ requirements:"\nYou will be required to perform certain exercises throughout the course;\n\nIt would be good if you could practice these in front of a full length mirror (or even a face mirror at best);\n\nHave a glass of water handy to keep well hydrated.\n",
+ description:"\nNew lectures added November 2018.BEAUTIFULLY PRESENTED PDF'S & FULL EBOOK WITH DIAGRAMS AND EXPLANATIONS.Over 18,000 students worldwide -Hundreds of 5 star reviews!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\"Loving the course!! Very grateful for all the information. It really answers everything and anything and clears any confusion you previously had coming into this course. She has a pleasant voice, valuable tips and easy to follow instructions\". Thank you, Roma! Xx Miss Shapiro\"Roma is so GENUINE and I receive such warmth and true desire to be of service to us - her students.Lovely Soul\"! Montana\"This course is very comprehensive and fun. Despite me having a great singing voice, I always had a bad habit of singing \"throaty\" or \"pushed\". This helped me get rid of these bad habits\". Rick\"I have taken at least three online courses to improve my singing. I would like to say that yours are perfect. I really recommend this course to everyone. These exercises really work. Thank you very much for motivation that you give everyone\". Asiye---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- Do you struggle with finding the time to learn how to sing, or maybe you can't afford the cost of weekly lessons?Whether you are a beginner, intermediate or advanced singer - this course can be your complete vocal system to help you be the best singer you can be.In this course, you will:Learn the 3 pillars of the voice - Posture, Breathing and Resonance;Understand voice physiology - how your vocal folds and body work to produce sound, and how to use it the right way (includes pictures/diagrams);Learn how to warm up correctly and efficiently;Improve volume and strength with advanced voice projection exercises;Eliminate jaw and muscle tension that can fatigue the voice;Included:Over 3 hours of live video (Includes presentations, with diagrams);Printable handy pdfs ;A fully produced, complete 25 minute vocal warm up (MP3 Download); A \"How To Sing\" Ebook with all the information that we've included in the presentations (plus much more); Quizzes to test your knowledgeSheet music for all the scalesI am always available to answer questions in the discussion board;BONUS: Send me a sample of your singing for a 5 minute assessment!This is also a great course for church singers, church choirs, vocal groups.For the cost of 2, 1 hour vocal lessons you've got a whole voice training system at your fingertips that you can watch over and over again.Don't hesitate - now is the time - warm up everyday at home with me guiding you every step of the way...I would love to teach you.\n\n",
+ audience:"\nThis course is for those who want to sing well long term and often!\n\nIt is also for those who truly want to understand how their voice and body works to create healthy singing habits;\n\nIt is not for those who do not want to apply themselves - It will require determination and hard work!\n\nIt is for both the beginner and advanced singer.\n",
+ picture:"https://i.udemycdn.com/course/240x135/450918_4af0_3.jpg"
 )
 c22 = Course.create!(
- title: "Email Marketing Hacks 2020: Build a Huge List of Email IDs",
- type_style: 'busineen',
- subtitle: "Boost your Business with the Power of Email Marketing using Advanced Email Marketing Hacks in 2020.",
- teacher: 'Srinidhi Ranganathan',
- teacher_id: u4.id,
- price: 1099,
- rating: 4,
- rating_count: 1027,
- student_count: 37761,
- languages: "English",
- learning_goals: "Gain hands-on tactics for generating high-quality leads\nLearn actionable and advanced lead generation tactics that they can apply to their business\nCreate a repeatable, sustainable lead generation process.\nGenerate tons of leads to aid in their email campaign",
- requirements:"There is no prerequisite at all.\nLearn this technique from scratch and implement the same to take any business, product or website to the next level.",
- description: "Is email marketing the answer to everything to promote your business to the maximum? The answer is a resounding yes - if you plan to use the right email marketing tips and you market to the correct audience who will buy your product or service.However, there will always be businesses that don't believe in email marketing's strength. This is mainly because, due to their own shortcomings, they do not see any positive results with their email marketing efforts. These business owners sometimes only need a few email marketing tips to increase their email value. Did you know?Email is one of the most successful web-based marketing media. Research have shown that email marketing tends to produce even more revenue than Facebook and Twitter social media empires, which is why you will want all the advice you can get for email marketing.Email marketing is the process of delivering, typically to a group of people, a promotional message via online. Each email sent to a prospective or existing client could be known as email marketing in its broadest sense. Using Email marketing techniques is one of the most cost-effective ways of promoting your product or service, whether it's about creating your brand or selling more. This super mind-blowing course 'Email Marketing Hacks 2020: Build a Huge List of Email IDs' created by Digital Marketing Legend 'Srinidhi Ranganathan' offers all you need to know in order to make the most of this knowledgable and practical course. Learn how to create a strategy for email marketing, model and check successful communications with basic and advanced lead-generation tricks taught here.Get ready to extract tons of email ids in a day using secretive methods in lead-generation in 2020. Ultimate secrets and hacks that no-one will ever tell you. Finally - an actionable course on Advanced Lead-Generation has been launched here on Udemy.In this course, I will teach you on how to gain hands-on tactics for generating high-quality leads at the top of your sales funnel. You’ll learn actionable advanced lead generation tactics that you can apply to your business and almost any type_style of business to create a repeatable, sustainable lead generation process.There is no prerequisite at all. You can learn this technique from scratch and implement the same to take your business, product or website to the next level.At first, the email marketing strategies we mentioned may seem quite different, but once incorporated, positive results will be seen instantly. To improve your email marketing, try to take a step-by-step approach. It's not going to happen overnight, but if you take the right measures at the right time, it will get easier. Note, only if you take care of the details that make up the big picture, the email marketing strategies will become lucrative. So, are you ready for Lights? Camera? Action?Then, get set and enroll in 'Email Marketing Hacks: Build a Huge List of Email IDs'. There is no time to waste. Get setting rolling and become an email marketing whiz kid in no time.#Emailmarketing #email #marketing #emailmarketing202",
- audience:"Marketing Professionals, freelancers or startup company owners looking at e-mail marketing to promote their products.\nAnyone looking at generating e-mail leads either for their product launch or creating awareness about their products through e-mail marketing.",
- picture: "https://i.udemycdn.com/course/240x135/1286352_69db_2.jpg"
+ type_style: 'music',
+ teacher: 'Mustapha elaallali',
+ teacher_id: u3.id,
+ title:"How To Sing #2: Increase Vocal Range & Blend Registers",
+ subtitle:"Vocal Workouts To Get You Singing Higher, Louder & Stronger With More Flexibility",
+ price:14999,
+ rating:4,
+ rating_count:466,
+ student_count:8195,
+ languages:"English",
+ learning_goals:"\nIncrease Vocal Range\n\nBlend Vocal Registers\n\nImprove Voice Flexibility\n\nPerform 'Placement Imagery' Exercises to improve voice quality\n\nUnderstand Voice Registers and classification\n\nFind your own vocal range (soprano, mezzo, alto, Tenor, Bass, Baritone\n",
+ requirements:"\nYou will need a computer or phone to be able to watch the videos in this course.\n\nThis course is for those who have a basic knowledge of singing already and want to increase their vocal range and blend their vocal registers.\n",
+ description:"\n\n\"As a backing vocalist for the madden brothers, Im always looking to keep my voice in tiptop shape. I've used Romas teaching and exersises for years as it is simply brilliant. Couldnt reccommend her more highly as a vocal coach\". Judd\n***\n\"I\nreally enjoyed this course, Roma is so engaging, funny, positive and\nvery easy to watch. I love all the valuable information, tips and\ntricks for singers like myself. We never stop learning so I would\nrecommend this to everyone who wants to further their knowledge in\nsinging.\" Corrine\n***\n\"Very\nnice ! Master of her trade, filled with useful knowledge in abundance!\"\n____________________________________________________________________________________________If\nyou want to:\nSing\nhigher, louder and stronger without vocal fatigue or difficult\nexercises;Understand\nthe most common singing terms and become a well educated vocalist;Ask\nquestions and if the answer has not already be provided I will add a\nvideo to the course;Download scales for you to use, in your vocal range....\nThen\nthis is the most important online\ncourse you'll\never purchase! \nHow\nTo Sing #2: Increase Vocal Range & Blend Registers: Vocal\nworkouts to get you singing higher, louder & stronger will\nhelp you increase your vocal range and\nfind\nyour own vocal range (alto/mezzo/soprano/bass/baritone/tenor).\n\nHow\nTo Sing #2: Increase Vocal Range & Blend Registers is\nfor every singer\nwho wants to sing higher (or lower) with more flexibility,  but can't find the right exercises. HERE'S A HUGE PROBLEM YOU MAY BE FACING RIGHT NOW...It's\nthinking\nyou can't increase your vocal range.\nThat you are born with what you've got.But that's not the end of\nyour problems with singing\nhigher, lower, louder and stronger... \nWhat\nmakes this even worse is the fact that without\nthe right training, your vocal ability will not\nimprove!\nWhich means you\nmay be practicing with the wrong exercises and doing damage to your\nvoice rather than helping it improve. \nAnd,\nworst of all, many singers\ncan't\nget past the idea that you\nneed singing lessons to increase your vocal range and\nflexibility. \nAll\nthis can make trying to increase\nyour vocal range really frustrating!\nBut luckily for you, there's now a solution!\n\nHER'ES WHAT WE WILL COVER IN THIS COURSE:\n\nREMARKABLE\nRESULTS!\nVocal\nexercises to blend vocal registers, increase vocal range, improve\nvoice flexibility to sing higher, louder and stronger without vocal\nfatigue or difficult exercises - Fast;\n\nA\nFRESH APPROACH!\nThe\nSinging Dictionary Ebook of Common Singing Terms allows\nyou to understand\nthe most common singing terms and become a well educated vocalist -\n100% Foolproof\n\nDELIVERS!\nQ&A\nvideos of most common voice questions (i.e. Have you ever wondered\nwhat chest voice//head voice really means? What is falsetto?) ..... ask\nquestions and if the answer has not already be provided, I will add a\nvideo to the course.\n\nDEPENDABLE!\nVideos\non voice classification & vocal registers. Delivers\nthe key to find\nyour own vocal range (alto/mezzo/soprano/bass/baritone/tenor) - Easily\n\nEXCITING!\nPlacement\nImagery Exercises which help you to use my simple 'mind/thinking' technique that will help strengthen and\nexpand your vocal range - With\nEase\n\nIf\nyou have some experience with singing technique and would like to\nexpand your skills - this is a 'take you to the next level' course.\n\nDon't\ndelay getting started to sing higher, louder and stronger without\nvocal fatigue or difficult exercises!\n\n\n",
+ audience:"\nThis course is for all levels - but especially for those who have some experience with singing technique and would like to expand their skills further;\n\nThis course is not for people who have no singing experience or not taken any introductory online singing courses/lessons.\n\nThis course is not for people who are not interested in putting in the effort required to see desired results.\n",
+ picture:"https://i.udemycdn.com/course/240x135/780572_4df0.jpg"
 )
 c23 = Course.create!(
- title: '32 Footwork Dance Moves for Parties and Showing Off',
  type_style: 'art',
- subtitle: 'Shuffling, House Dance, Hip Hop, C Walk and Charleston dance moves for parties',
  teacher: 'Brian Bee',
  teacher_id: u5.id,
- price: 1099,
- rating: 4,
- rating_count: 83,
- student_count: 1620,
- languages: 'English',
- learning_goals: '32 footwork based fancy dance moves',
- requirements: 'ability to count beats',
- description: "This course was created for guys that are looking to take their dance skills up a notch; for guys that are looking to jump inside the dance circle at the next party!\nThe dance moves taught in this program are from the dance styles of Hip Hop, House Dancing, Shuffling, Charleston and C-walking. \nEach move is broken down into a step-by-step, easy to follow format so you don't get overwhelmed or confused when learning the dance moves.",
- audience: 'guys that are looking to impress friends and the ladies at the next party',
- picture: "https://i.udemycdn.com/course/240x135/1247064_2f12.jpg"
+ title:"Guitar, Ukulele & Piano for Praise & Worship",
+ subtitle:"Playing for Worship",
+ price:1999,
+ rating:5,
+ rating_count:1,
+ student_count:7,
+ languages:"English",
+ learning_goals:"\nGuitar\n\nUkulele\n\nPiano\n\nMusic Theory\n\nCircle of 5ths\n\nRhythm\n\nPraise & Worship Songs\n",
+ requirements:"\nOwn Instruments\n\nEnglish-speaking\n\nMandarin-speaking (Optional)\n",
+ description:"\nLearn how to play an instrument with beautiful songs of praise and worship!You can choose to learn the Guitar, or the Ukulele, or the Piano, or all at once if you want to! Join me on this journey as I take you through the different families of the music scale, and learn the shapes and playing styles that help you to play along to your favourite praise and worship songs! The skills learnt can also be applied to any other pop/rock song out there!In order:C MajorG MajorD MajorA MajorE MajorB MajorF MajorBb MajorEb MajorAb MajorDb MajorF# or Gb MajorC# & Cb Major (known also as Db & B Major)Future topics include:Rhythm structuresStrumming patterns\n\n",
+ audience:"\nChristians interested in playing for worship\n\nBeginners in Guitar\n\nBeginners in Ukulele\n\nBeginners in Piano\n\nMusic Enthusiasts\n",
+ picture:"https://i.udemycdn.com/course/240x135/2390938_157c_2.jpg"
 )
 
 c24 = Course.create!(
@@ -655,126 +660,124 @@ c29 = Course.create!(
  picture: "https://i.udemycdn.com/course/240x135/1247064_2f12.jpg"
 )
 c30 = Course.create!(
-  title: "Data Structures and Algorithms - The Complete Masterclass",
-  type_style: 'computer',
-  subtitle: "Crack the code interview by getting mastery in data structures & algorithms & Become a data structures & algorithms Ace",
-  teacher: 'Vinoth Parthasarathy',
-  teacher_id: u6.id,
-  price: 1099,
-  rating: 4,
-  rating_count: 890,
-  student_count: 2842,
-  languages: "English",
-  learning_goals: "Understand the coding principles and Understand How to write code in efficient way by help of choosing right data structures and efficient algorithms\nHow to choose right data structures for your need\nUnderstand concept behind Arrays, Linked Lists, Hash tables, Trees, Graph, Stacks, Queues, Sort algorithms and Search algorithms\nUnderstand the fundamentals of the Data structures and Algorithms\nUnderstand popular algorithms, and how to use it when you need.\nLearn everything you need to crack difficult coding interviews.\nReason about applicability and usability of Data Structures",
-  requirements:"A strong work ethic, enthusiasm to learn, and plenty of excitement about the awesome new skill you are going to build.\nNo experience with data structures or computer science needed!",
-  description: "Congratulations!  You've found the most popular, most complete, and most up-to-date resource online for learning Data structures and Algorithms. Are you interested in the field of Data structures? Are you interested to play around complex Algorithms?  Then this course is for you!You need to understand algorithms and data structures because I've seen code written by people who didn't understand Data structures and algorithms; and trust me, you don't want to be that guy. The entire course is based around a single goal: Turning you into a professional programmer & capable of writing code as a professional.Are you scared about the coding interview? Join with me in this Adventure, Crack your coding interview by getting mastery in data structures & algorithms.There are lots of free tutorials and videos on YouTube. Why would you want to take this course? The answer is simple: Quality of teaching. So, from the very beginning to the very end, you'll be confident that you'll be in good hands and watching every minute of the course, unlike the reading many free tutorials and videos, do not waste your precious time. Each section is equipped with a balanced mix of theory and Implementation.It's my goal to make clear about Data structures and Algorithms as much as possible and ensure your success. I want everyone to benefit from my courses, that's why we'll dive deeply into Data structures and Algorithms concepts and why I made sure to also share the knowledge that's helpful to programmersWhy it’s the only course you need to learn Data Structures and Algorithms?This course is everything you need from start to end regardless of your experience.It's an interactive course. Instead of explaining the concepts with Powerpoint slides, I will take you to the classroom again.This course is fun and exciting, but at the same time, we dive deep into Data Structures and Algorithms. Specifically, you will learn :· Understanding the core principles of coding.· Understanding code complexity and how to write code the efficiently and various levels of complexity.· Basics of Data Structures and algorithms· Basic data structures (Arrays, linked list, and Hash Table)· Tree data structures· Graph data structures· Algorithms to apply Graph in product implementation· Searching algorithms· Various Sorting algorithmsSee what your fellow students have to say 'Extremely amazing course to get started with data structures and algorithms. It was filled with so much content! Loved it. 'I really enjoyed the time spent in this course. I learn a lot about data structures and I'll put this knowledge into my work. An in-depth explanation of everything and Real-world examples. Thank you for such a wonderful course.'Excellent course. Highly recommended!. Vinoth did an excellent job breaking down a complex topic into an easy piece. The lectures and the whole course are well ordered, each topic is presented in the right place. Ultimately, it was a good experience for me. Looking forward to your next course/topic.'This is my first course on Udemy and I must say it was totally worth it. I enjoyed every single video on this course. And It has great many examples to teach the basics of Data Structures. Not only the experienced but beginners like me in the Data Structures will find the content to be 5-star. The instructors are really great! Thank you Vinoth for the handwork and teaching us in the great and understandable way! 'What if I have questions?As if this course wasn’t complete enough, I offer full support, answering any questions you have 7 days a week.Enroll now and begin your journey towards the most lucrative, adventurous and exciting career path you can imagine! Or, take this course for a free spin using the preview feature, so you know you’re 100% certain this course is for you.100% MONEY-BACK GUARANTEEThis course comes with a 30-day full money-back guarantee. Take the course, go through the lectures, do the exercises, and if you're not happy, ask for a refund within 30 days. All your money back, no questions asked.See you on the inside (hurry, Data structures, and algorithm class is waiting!)",
-  audience:"Anyone who want to take their programming skills to the next level and learn a future-proof programming\nAnyone who want to become intelligent programmer\nAnyone who is Feeling scared about coding interview\nAnyone who wants to strengthen their problem-solving skills",
-  picture:"https://i.udemycdn.com/course/240x135/2165246_3286_6.jpg"
+  title:"Graphic Design Masterclass - Learn GREAT Design",
+  subtitle:"The Ultimate Graphic Design Course Which Covers Photoshop, Illustrator, InDesign,Design Theory, Branding and Logo Design",
+  price:19499,
+  teacher: 'Brian Bee',
+  teacher_id: u5.id,
+  type_style: "art",
+  rating:4,
+  rating_count:5667,
+  student_count:28856,
+  languages:"English",
+  learning_goals:"\nHave a deep understanding of typography, color theory, photos, layout, blocking and other design theory and skills\n\nUnderstand and learn the essential tools and capabilities of Adobe Photoshop, Illustrator and InDesign\n\nCreate logos and branding packages for potential clients\n\nLearn photo editing and manipulation in Adobe Photoshop\n\nMaster the pen tool, shape builder tool and other essential vector design tools in Adobe Illustrator.\n\nHow to create editorial spreads and magazine layouts using Adobe InDesign\n\nUnderstand solid logo design and ad design principles to create compelling campaigns and logos\n\nWork through the entire package design process\n\nLearn non-destructive editing techniques in Adobe Photoshop\n\nWork through an event flyer design to understand strong type hierarchy, balance and overall design layout\n\nLearn a few of the upcoming design trends for 2019\n\nLearn the history of fonts and typefaces and how to pair fonts\n\nLearn the basics of Affinity Designer and learn the difference between Adobe Illustrator and Affinity Designer\n\nWork through a 7 page vector tracing worksheet and feel confident creating a complex vector illustration by the end of this worksheet\n",
+  requirements:"\nAccess to Adobe Photoshop, Illustrator (Or Affinity Designer as an Alternative) and InDesign. I will be using the Adobe Creative Cloud versions, but those with older version can still get a lot out of this class.\n\nIf you use Adobe products, I highly suggest using versions CS6 or higher to have a more smooth experience with the course, but not a requirement.\n",
+  description:"\nAs you can see, this course is updated frequently with new lessons and projects!Nov 2019 - NEW! - Adobe Illustrator introduction and tools section (vector tracing worksheet)Nov 2019 - NEW! - Photoshop section and Projects (including a new youtube thumbnail and book cover project)Oct 2019 - NEW!  11 page downloadable resource - The Guide to Grids Oct 2019 - NEW!  Color Theory and Color Harmony Lessons + new Downloadable ResourcesJuly 2019 - NEW!  Affinity Designer Section! Learn The Basic Tools and Differences Between Adobe Illustrator And Affinity DesignerMay 2019 - NEW! Downloadable Resources - the Anatomy of Typography poster and the Psychology of Color graphic! April 2019 - NEW Lessons: Finding Your Graphic Design Niche and Focus!Dec 2018 - NEW Lessons: 2019 Design Trends Lessons Graphic Design Master Class - Learn GREAT DesignDo you want to learn all the skills and techniques you need to create incredible designs? Do you want to know the process of creating logos and branding packages? Are you intimidated by learning photoshop, illustrator or InDesign and want to learn through practical real world projects? Than This class will be for you! We will extensively review Typography, color theory, layout and composition, how to use photos in design, photo manipulations and editing and magazine layout design, branding and logo design just to name a few. We also learn the basics of Adobe Photoshop, illustrator and InDesign and do projects with real world applications. Every designer needs to know and master these programs and this course makes sure you know the essential tools to power through amazing projects. In Adobe Photoshop, we will review photo editing and manipulation techniques like how to cut objects out, duotones, changing color on objects, the liquify tool and we will create a compelling YouTube thumbnail with our newly learned photoshop skills as well as an entire book cover design project. In Adobe Illustrator, we will master the pen tool by hand tracing simple and complex shapes. We will explore the power of the shape builder tool and In the end of this section, we will design a complete logo design. There is an entirely new introduction and tools section that has been added where we work through a 7 page vector tracing worksheet and in the end create a complex vector illustration using our newly learned illustrator vector tools. Lastly, we will put together an event flyer to practice our layout skills, and even work through the branding process and create a logo, business card and letterhead for a business. We will will create a magazine layout in InDesign and learn the master pages tool to drastically speed up your design workflow when working with multiple paged layouts. We will talk about branding basics, what makes a good logo? How do you extend your logo or brand to other marketing materials? I designed this extensive course to be gentle enough for new comers to design but detailed enough for everyone to get a TON out of this course.New Mini-Course Added! (April 2019) Discover Your Design Niche! Do you want to find out what design niche you should concentrate on? This is an exploratory mini-class added to the Graphic Design Masterclass course on Udemy (Section 15) that helps you find your next focus and explore many wonderful options for budding and established designers.We are going to review some main core design categories and talk about what types of projects you will do and also what you will need to learn to leap into those design niches. There are always more niches to discover but we will focus on the following in this mini-class:Logo DesignPrint & Editorial DesignPattern Design and IllustrationPackage DesignBranding DesignUX/UI DesignSocial Media/Digital Graphic DesignerBy the end of this class you will have a solid grasp of what each design niche entails. You will have confidence in choosing your top three focal niches to kickstart or enhance your design offerings and know what to learn next.\n\n",
+  audience:"\nAnyone interested in creating compelling and GREAT design.\n\nThose interested in learning Photoshop, Illustrator and InDesign (Affinity Designer Too!)\n\nThose wanting to understand graphic design basics and theory paired with real world projects and applications\n\nThose looking to learn logo design and branding techniques and execution\n\nAnyone wanting to become a graphic designer part-time or full-time, or those who need design skills to elevate their current careers.\n\nThose looking for a solid graphic design foundations course with the depth of an intermediate level course\n\nThose wanting to learn the basics of Affinity Designer and learn the difference between Adobe Illustrator and Affinity Designer\n",
+  picture:"https://i.udemycdn.com/course/240x135/1643044_e281.jpg"
 )
 
 c31 = Course.create!(
- title: 'Computer Science 101: Master the Theory Behind Programming',
- type_style: 'computer',
- subtitle: 'Computer Science 101: Learn Computer Science to become a better Programmer and Software Engineer.',
- teacher: 'Kurt Anderson',
- teacher_id: u1.id,
- price: 1099,
- rating: 4,
- rating_count: 1577,
- student_count: 8550,
- languages: 'English',
- learning_goals: 'Understand the Fundamental Theories of Algorithm Analysis\nBe able to Compare Various Algorithms\nUnderstand When to use Different Data Structures and Algorithms\nUnderstand the Fundamentals of Computer Science theory\nUnderstand the Core Sorting Algorithms',
- requirements: 'A Willingness to Learn New Topics!\nNo Prior Experience or Knowledge is Needed!',
- description: '<p><strong>Master the Theory to Becoming a Good Programmer!&nbsp;</strong></p><p>If youre looking to learn the theory that makes great programmers,&nbsp;youve come to the right place!&nbsp;This course is perfect for anyone interested in learning the fundamentals to Computer Science Theory.&nbsp;</p><p><strong>No Previous Experience Necessary!&nbsp;</strong></p><p>Computer science and technology are often thought of as things only for "analytical minds". I believe however that technology and its theory are for everyone. So I designed this&nbsp;course to&nbsp;teach each topic in a variety of&nbsp;<strong>easy to digest</strong> ways. Through these multiple reinforcing steps, I believe anyone can follow along and succeed!&nbsp;<br></p><p><strong>Why is the Theory of Programming Important?&nbsp;</strong></p><p>Understanding&nbsp;Computer Science theory is what sets apart&nbsp;<strong>Great programmers&nbsp;</strong>from average ones. Programming theory is something that transcends a single programming language. It gives you skills and techniques you can apply to any programming language you touch. Learning the theory behind programming is just as important, if not more important than learning a singular programming language like Java or C++.</p><p>Programming is all about problem solving. Analyzing a problem, and being able to figure out a way that a computer can help with that problem. Computer Science is the practice of this analysis process. It goes over the techniques and knowledge necessary to design efficient and sustainable code.&nbsp;</p><p>So if you want to begin setting yourself apart from the average programmers, this is the course for you!&nbsp;</p><p><strong>Enroll Now and youll Learn:&nbsp;</strong><br></p><ul><li><p>Binary Number System</p></li><li><p>N Notation</p></li><li><p>Big O Notation</p></li><li><p>How to Analyze a Program</p></li><li><p>Arrays and&nbsp;their Advantages</p></li><li><p>Nodes and their Importance</p></li><li><p>Linked&nbsp;Lists and their Advantages and Implementations</p></li><li><p>Stacks implemented with Arrays and Linked&nbsp;Lists</p></li><li><p>Queues Implemented with Arrays and Linked Lists</p></li><li><p>Various Sorting Algorithms and Their Comparisions</p></li><li><p>Trees and Binary Search Trees</p></li><li><p>And Much Much More!&nbsp;</p></li></ul><p><strong>My&nbsp;Guarantee</strong></p><p>I am so confident you will enjoy this course, I offer a 100%&nbsp;30-day money-back guarantee through Udemy.&nbsp;If you are not happy with your purchase, I have no problem with giving your money back!&nbsp;</p><p><strong>Are You Ready to Get Started?&nbsp;</strong></p><p>I will be waiting for you inside the course!&nbsp;</p><p>Remember, this is an online course, so you can take it at your own pace.&nbsp;<em>Are you busy right now?&nbsp;</em>Thats okay. Enroll today, and take the course at your own pace.</p><p>Thanks so much for your interest in this Computer Science 101 Course!&nbsp;</p><p>See you inside!</p><p>Kurt</p><p><br></p>',
- audience: 'Anyone who wants to become a Good Programmer\nAnyone interested in the Computer Science Discipline\nAnyone who wants to learn how to problem solve like a Computer Scientist',
- picture: 'https://i.udemycdn.com/course/240x135/1395136_3f8a_3.jpg'
+  title:"Advanced Forex Trading - Ichimoku Trading Strategy Explained",
+  subtitle:"Ichimoku Trading - A Complete Strategy that You Can Apply to Forex Trading, Stock Trading and other Financial Markets!",
+  price:19999,
+  teacher: 'Brian Bee',
+  teacher_id: u5.id,
+  type_style: "business",
+  rating:4,
+  rating_count:799,
+  student_count:3127,
+  languages:"English",
+  learning_goals:"\nHave a full understanding of a profitable Trading Strategy\n\nDeep understanding of the Ichimoku Indicator\n\nScan trading opportunities with the Ichimoku Indicator\n\nUnderstand the best entry and exit points to maximize your profit\n\nTrade with a solid strategy\n\nChoose the perfect Time Frame for your Trading\n\nImmediately recognize Trading opportunities on the Chart\n\nPlace different orders on the Forex market\n\nAnalyze the opportunities in terms of Risk to Reward Ratio\n\nUnderstand how the variable 1% Money Management works\n\nUnderstand how the 1% of MAX Money Management works\n\nAnalyze the Trend with a Solid Setup\n",
+  requirements:"\nBasic understanding of Forex or Stock Market Trading\n\nA computer or laptop\n\nDesire to learn and achieve your goals!\n",
+  description:"\nCourse updated in May 2019!What do you use to understand Financial Markets? Are you adding indicators over indicators and you end up more confused than before? What if I told you that you can analyze the markets with just one indicator? What if I told you that you can turn one of the most complex indicators into a powerful and easy-to-use weapon to make money trading Financial Markets?Welcome to Advanced Forex Trading - Ichimoku Trading Strategy Explained.My ultimate goal for this course is not to teach you another indicator that you can have on your chart. My goal is to provide you with a logical strategy that you can apply to trade the markets with confidence.To achieve this goal, we first need to have a look at the Ichimoku Indicator. We will start with an introduction in order to familiarize with the complete indicator, then I will dedicate 4 entire Sections and 12 entire lectures to each component of the Ichimoku. You will not find a pre-packed set of rules to apply blindly, you will understand any single component of the Ichimoku, you will learn any single formula and the reasons why we trade it in a certain way. This allows you to understand when and how to use the Ichimoku Indicator, being able to differentiate between different market scenarios, finding the best opportunities to trade and make money trading the Forex Market.Section 8 is entirely dedicated to Forex Market analysis using the whole indicator, so you can start to familiarize with all the techniques and methods that we have studied in the previous sections.After that, we will have another important part of the strategy: Risk Management.If you had the chance to enroll in one of my other courses, you know that I like to keep things real. A strategy that helps only to analyze the market, without having a deep focus on Stop Loss and Take Profit, is not a complete strategy for me. So, my promise is to give you a complete strategy with a whole Section about Entry and Exit points, in order to understand how to open and manage your trades.As usual, when I publish a new course, I also open a new Live Forex Trading Account with real money to publish live trades in the course and update the results with the strategy. In addition, in the live trading section, you will also find info about all the Brokers that I use or have used in the past, so you will have my personal feedback for each one in case you want to create a new account to trade the Forex Market.Almost all the examples provided in the course are about Forex Trading, but I am confident that you will find the material very useful for other Financial Markets, like Stock Trading, Cryptocurrency Trading and many others.What else in this course? You will learn from my 11+ years of experience. You have unlimited lifetime access at no extra costs.You can join our Facebook group and share your opinion with the instructor and thousands of other students. This is a huge opportunity to accelerate your learning curve! New lectures will be added to the course constantly at no extra cost to you!You can always ask for help, my support is well known in Udemy.30-day money back guarantee no questions asked.I like to say to my students that signing up for this course is like signing up for a gym membership. You have all the equipment, all the machines and a personal trainer ready to help you, but if you stay home, eating chips and watching television, you are not going to see any result, right? So, take your first step. Enroll in the course and let's start this journey together.See you at the top :)\n\n",
+  audience:"\nAnyone who wants a step by step strategy to start trading in the Forex market\n\nAnyone who is interested in creating an income with online Forex Trading\n\nTraders who want to enhance their Forex knowledge and skill-set\n\nTraders who are still struggling to recognize the beginning of a new trend\n\nAnyone who is looking for a proof that Forex Trading can give you Financial Freedom\n\nTraders who want to discover how to analyze the market with a logical approach\n",
+  picture:"https://i.udemycdn.com/course/240x135/1867704_4536.jpg"
 )
 c32 = Course.create!(
- title: 'OTTOMAN CUISINE, TURKISH COOKING CLASS',
- type_style: 'cooking',
- subtitle: 'A great variety of mouth watering dishes in Turkish cuisine which is mostly the heritage of Ottoman cuisine.',
- teacher: 'Darma Academy',
- teacher_id: u2.id,
- price: 1044,
- rating: 1,
- rating_count: 1,
- student_count: 2,
- languages: 'English',
- learning_goals: 'Learn to cook Turkish traditional mezes and dishes in a very simple way\nEngaging with one of the richest cuisine in history\nGain the newest kitchen skills\nA new perspectives on every day food',
- requirements: 'Passion for cooking and engaging new cultures. Everybody from all aspects are welcome to this class.',
- description: 'Turkish cuisine one of the worlds great cuisines. It reflects the long history of this land... A great variety of mouth watering dishes in Turkish cuisine which is mostly the heritage of Ottoman cuisine. It is the mixture and refinement of Central Asian, Middle Eastern and Balkan cuisines. Therefore it is impossible to fit Turkish cuisine into a short list.
- Anatolia is blessed with varied climate which allows the country to get almost everything on its land. Turkey is one of the few countries in the world that has been self sustaining, producing all its own food. Turkish cuisine traditionally is NOT spicy, except in the southeast part of the country, where preparations can reflect a hot Middle Eastern(Arabic) food influence. But now in evertwhere you are able to find restaurants that sell that kind of spicy dishes
- Turks have a big diversity of vegetables and of course this reflects on the dishes. One very important detail about vegetable dishes is whether they have meat in them or not.',
- audience: 'Who likes enjoying cooking, food and culture',
- picture: 'https://i.udemycdn.com/course/480x270/2702904_7dd8.jpg'
+  title: "Exercise Physiology",
+  teacher: 'JJ Mayo',
+  type_style: 'life',
+  teacher_id: u32.id,
+  subtitle: "Learn how the body systems work in concert during acute and chronic exercise.",
+  price: 999,
+  rating: 4,
+  rating_count: 102,
+  student_count: 648,
+  languages: "English",
+  learning_goals: "Discuss key exercise training principles.\nExplain the structure and function of skeletal muscle.\nUnderstand the 3 energy systems and how our body converts food to energy.\nUnderstand how the cardiorespiratory system functions and is influenced by exercise training.\nDescribe the importance of daily nutrition in exercise performance.\nExplain what to eat before, during, and after exercise training or competition.\nDiscuss the function of the nervous system in neural control of human movement.\nDiscuss the structure of the respiratory system and it responds to exercise of different intensities.\nDescribe some of the chronic physiological changes in response to exercise.",
+  requirements: "A Exercise Physiology text is helpful but NOT requried.",
+  description: "Ever wonder how your muscles contract to create movement during exercise or how the heart pumps blood to all parts of your body? Do you know how to eat for peak performance or how the body adapts to aerobic or resistance exercise? In this course students learn answers to these questions plus so much more. This course takes a systems approach with emphasis on the muscular, nervous, metabolic, and respiratory systems. Instruction is provided using screen casts along with section quizzes. There are over 40 lessons and 3 + hours of content. This course will benefit those studying for fitness certification exams or general fitness enthusiasts wanting to learn more about how the body works. If you are a student currently taking a university course in Exercise Physiology and can't grasp the material--this course will definitely help.",
+  audience:"Those looking to pass fitness certification exams (ACE, ACSM, NSCA etc..)\nStudents enrolled (or soon to be) in an Exercise Physiology course at a university\nFitness enthusiasts wanting to learn more about the body and how to train optimally",
+  picture: "https://i.udemycdn.com/course/240x135/230066_632a_6.jpg"
 )
 c33 = Course.create!(
- title: 'chopped dream eaters witch vegetables and eggs:experience...',
- type_style: 'cooking',
- subtitle: 'chopped dream eaters witch vegetables and eggs:your way to a rich taste and a unique sensation,andexperience in cooking.',
- teacher: 'Mustapha elaallali',
- teacher_id: u3.id,
- price: 1044,
- rating: 1,
- rating_count: 1,
- student_count: 1,
- languages: 'English',
- learning_goals: 'Students will be able to acquire a new kind of experience that will increase the level of their technical abilities\nStudents will be able to acquire a new kind of experience that will increase the level of their technical abilities',
- requirements: 'Success\nSelf Development',
- description: 'In this course, we will persent a recipe of the most delicious of the most useful recipes for human health , in a detailed and smooth manner , and at the same time based on the ingredients widely available in the market,but the most good in the recipe is the wonderful final taste , which does not it can never be resisted, and we have also provided some of the most important tips and expertise in the field of cooking , especially our rich recipe.',
- audience: 'The target student is the talented or interested in the field of graphic arts and design',
- picture: 'https://i.udemycdn.com/course/240x135/1456524_4fac_2.jpg',
-)
-c34 = Course.create!(
- title: "Email Marketing Hacks 2020: Build a Huge List of Email IDs",
- type_style: 'computer',
- subtitle: "Boost your Business with the Power of Email Marketing using Advanced Email Marketing Hacks in 2020.",
+ title:"Healthy Cooking Fundamentals",
+ subtitle:"A practical course to take your cooking skills from dull to delicious",
+ price:1999,
  teacher: 'Srinidhi Ranganathan',
  teacher_id: u4.id,
- price: 1099,
- rating: 4,
- rating_count: 1027,
- student_count: 37761,
- languages: "English",
- learning_goals: "Gain hands-on tactics for generating high-quality leads\nLearn actionable and advanced lead generation tactics that they can apply to their business\nCreate a repeatable, sustainable lead generation process.\nGenerate tons of leads to aid in their email campaign",
- requirements:"There is no prerequisite at all.\nLearn this technique from scratch and implement the same to take any business, product or website to the next level.",
- description: "Is email marketing the answer to everything to promote your business to the maximum? The answer is a resounding yes - if you plan to use the right email marketing tips and you market to the correct audience who will buy your product or service.However, there will always be businesses that don't believe in email marketing's strength. This is mainly because, due to their own shortcomings, they do not see any positive results with their email marketing efforts. These business owners sometimes only need a few email marketing tips to increase their email value. Did you know?Email is one of the most successful web-based marketing media. Research have shown that email marketing tends to produce even more revenue than Facebook and Twitter social media empires, which is why you will want all the advice you can get for email marketing.Email marketing is the process of delivering, typically to a group of people, a promotional message via online. Each email sent to a prospective or existing client could be known as email marketing in its broadest sense. Using Email marketing techniques is one of the most cost-effective ways of promoting your product or service, whether it's about creating your brand or selling more. This super mind-blowing course 'Email Marketing Hacks 2020: Build a Huge List of Email IDs' created by Digital Marketing Legend 'Srinidhi Ranganathan' offers all you need to know in order to make the most of this knowledgable and practical course. Learn how to create a strategy for email marketing, model and check successful communications with basic and advanced lead-generation tricks taught here.Get ready to extract tons of email ids in a day using secretive methods in lead-generation in 2020. Ultimate secrets and hacks that no-one will ever tell you. Finally - an actionable course on Advanced Lead-Generation has been launched here on Udemy.In this course, I will teach you on how to gain hands-on tactics for generating high-quality leads at the top of your sales funnel. You’ll learn actionable advanced lead generation tactics that you can apply to your business and almost any type_style of business to create a repeatable, sustainable lead generation process.There is no prerequisite at all. You can learn this technique from scratch and implement the same to take your business, product or website to the next level.At first, the email marketing strategies we mentioned may seem quite different, but once incorporated, positive results will be seen instantly. To improve your email marketing, try to take a step-by-step approach. It's not going to happen overnight, but if you take the right measures at the right time, it will get easier. Note, only if you take care of the details that make up the big picture, the email marketing strategies will become lucrative. So, are you ready for Lights? Camera? Action?Then, get set and enroll in 'Email Marketing Hacks: Build a Huge List of Email IDs'. There is no time to waste. Get setting rolling and become an email marketing whiz kid in no time.#Emailmarketing #email #marketing #emailmarketing202",
- audience:"Marketing Professionals, freelancers or startup company owners looking at e-mail marketing to promote their products.\nAnyone looking at generating e-mail leads either for their product launch or creating awareness about their products through e-mail marketing.",
- picture: "https://i.udemycdn.com/course/240x135/1286352_69db_2.jpg"
+ type_style:"business",
+ rating:4,
+ rating_count:1041,
+ student_count:16876,
+ languages:"English",
+ learning_goals:"\nRead a recipe to make your life easier\n\nKeep your food safe from harmful bacteria and disease\n\nSave time and reduce stress by preparing ingredients before you cook\n\nConfidently and safely use a knife and know how to keep it sharp\n\nUse chef skills to build the most flavor in your cooking\n\nStop your food from burning by using deglazing techniques\n\nPlate, garnish and present a meal that looks as delicious as it tastes\n\nApply all of these skills by cooking a simple and tasty curry\n",
+ requirements:"\nBasic knife skills (slicing, chopping, dicing, etc.)\n\nHow to bring a pot of water to a boil.\n\nHave access to basic cooking equipment: Stove top, large saucepan, wooden spoon, chef knife, chopping board\n",
+ description:"\nDo you want to be more confident creating your own healthy meals? Do you want the kitchen to be a source of curious learning rather than a stressful deadline? Join this course to learn culinary skills from Chef Nic DeMuth that will take your cooking ability to the next level. \nThere are a three key skills that most home-cooks don't use that will turbocharge your enjoyment, confidence and ability in the kitchen: Mise en Place, creating a flavor base using salt and oil as tools and building your meal in layers. Your teacher, Chef Nic, a New York-trained health supportive chef and founder of the Up Beet Kitchen, shares these skills and many more, along with liberal splashes of his favorite cooking tips that are guaranteed to elevate your kitchen prowess. \nNic applies these skills though a delicious cashew curry recipe. At the end of the course the final test is for you to create the meal yourself and apply the skills you learned along the way. \nIn just two hours you can complete this course having cooked a delicious dinner or lunch. \nBONUS MATERIAL: We have included an extra mini-series which will help you navigate which tools and equipment you absolutely need in your kitchen and which ones work best. \n\n",
+ audience:"\nThis course is for home cooks looking to improve their cooking abilities.\n\nThis course is not suited for advanced chefs.\n",
+ picture:"https://i.udemycdn.com/course/240x135/863126_a899_5.jpg"
+)
+c34 = Course.create!(
+  title: "JavaScript & LeetCode | The Ultimate Interview Bootcamp",
+  subtitle: "Learn *all* the best practical tricks/techniques to solve those pesky interview problems so you can land that dream job!",
+  price: 999,
+  teacher: 'Srinidhi Ranganathan',
+  teacher_id: u4.id,
+  rating: 4,
+  rating_count: 310,
+  student_count: 32644,
+  languages: "English",
+  type_style: 'computer',
+  learning_goals: "Tricks, Tips, and Skills needed to master your next software engineering technical interview\nPractical application of Algorithms and Data Structures in an interview setting\nOptimal approaches to solving difficult coding questions",
+  requirements:"Basic Code Literacy (any language is OK!)\nEnthusiasm and Willingness to learn",
+  description: "Are you studying for that next coding interview but don’t know where to start? Or are you looking for a concise, easy-to-understand study guide with everything you need to know? Or are you looking for a powerful advantage over the competition to guarantee you that awesome job you’ve always wanted at your dream company?THEN THIS IS THE COURSE FOR YOU!In my LeetCode course, I will walk you through, step-by-step, all the different types of questions that appear during interviews!  I am a self-taught programmer so I know what it feels like to really struggle during those technical interviews.  Let me put it this way: I created the course I wish I had when I was studying for my technical interviews!What is LeetCode?LeetCode is a massive collection (1,050 and counting) of challenging coding problems.  It has just about every problem you can imagine.  In fact, many companies (including the Big 5 tech giants) use interview questions they find on LeetCode!I have some good news for you: spending countless hours studying and solving every single problem is unnecessary.  This course was designed to help you massively optimize your study time and put you on the quickest path to successfully achieving that dream job.Contents and OverviewI know LeetCode questions are meant to be difficult, but do not worry!  I made it a priority to present each problem in the most simplistic and direct way possible.  You will benefit from my painless and easy-to-understand format, as I walk you through each problem, step-by-step.  I cover everything from practical application of algorithms, to data structures, to time and space complexity.By the time you complete this course, you will be an expert in all the tricks, techniques, and patterns needed to solve even the most challenging of interview problems.  Are you ready to supercharge your next technical interview and land that awesome dream job?!We use basic JavaScript in this course, and even if you are new to JavaScript, do not worry!  I have included a bonus crash-course in JavaScript at the start of the course.  No prior JavaScript experience is required!Course material is regularly refreshed to include all of the newest updates and information, and since you are granted lifetime access upon registering, you can rely on this course to keep your technical interviewing skills on the cutting edge.There is no need to waste your time scouring the internet, frantically trying to piece together ways to solve coding challenges the night before a big, important interview.  Invest in yourself, and allow me to show you the easiest ways to ace it!Feel free to take a preview of this course to see if it is a good fit for you.  I am so confident that you will love my course that I even offer a 100% 30-day money-back guarantee.  You have absolutely nothing to lose, so come on in, and let's get started!",
+  audience: "Anyone looking to master their next technical interview\nBeginner, intermediate, and advanced JavaScript developers\nAnyone seeking their dream software engineering job",
+  picture: "https://i.udemycdn.com/course/240x135/2377464_ca3f_7.jpg"
 )
 c35 = Course.create!(
- title: '32 Footwork Dance Moves for Parties and Showing Off',
- type_style: 'art',
- subtitle: 'Shuffling, House Dance, Hip Hop, C Walk and Charleston dance moves for parties',
+ type_style: 'cooking',
  teacher: 'Brian Bee',
  teacher_id: u5.id,
- price: 1099,
- rating: 4,
- rating_count: 83,
- student_count: 1620,
- languages: 'English',
- learning_goals: '32 footwork based fancy dance moves',
- requirements: 'ability to count beats',
- description: "This course was created for guys that are looking to take their dance skills up a notch; for guys that are looking to jump inside the dance circle at the next party!\nThe dance moves taught in this program are from the dance styles of Hip Hop, House Dancing, Shuffling, Charleston and C-walking. \nEach move is broken down into a step-by-step, easy to follow format so you don't get overwhelmed or confused when learning the dance moves.",
- audience: 'guys that are looking to impress friends and the ladies at the next party',
- picture: "https://i.udemycdn.com/course/240x135/1247064_2f12.jpg"
+ title:"Basic Italian Cooking Skills",
+ subtitle:"Learn how to cook like a genuine italian chef",
+ price:14999,
+ rating:4,
+ rating_count:40,
+ student_count:274,
+ languages:"English",
+ learning_goals:"\nAfter my course, student will be able to cook 16 of the most important italian recipes, how to combine flavors and serve tasty meals.\n",
+ requirements:"\nPeople need just to be curious about italian food and how to make it. Know how to use normal cooking tools. No professional skills are required.\n",
+ description:"\nFor lovers of Italian cuisine, Basic Italian Cooking Skills can jump-start a lifelong passion in starters, pasta, main courses and side dishes.This course centered on authenticity and aptitude in Italian Cooking. In 16 lessons, you will cover topics including pasta, vegetables, seafood, meat and fish.More specific, students will learn how to prepare soffritto, and use it for tomato sauce and spaghetti with tomato sauce and basil. Five other lessons are focused on pasta: Carbonara, Pesto sauce, Risotto with saffron, Linguine with fresh clams and Spaghetti with seafood and shell food.Other two lessons are focused about vegetables. You will learn how to prepare Caponata and perfect Roasted and baked potatoes.Fish and meat complete the course focusing about Meatballs with fresh tomato sauce and Milanese steak.Finally you will leant how to cook four fish main courses: Octopus and potatoes, Whole fish in crust salt, Swordfish with veggies and herbs and Filet of fish in foil with potatoes. I will offer my knowledge about Italian cuisine, which I learned during my long experience as a chef and owner of three Italian restaurants. Students will gain an intensive overview of Italian culture and cooking, that are then yours for a lifetime of sharing with family and friends.\n\n",
+ audience:"\nCurious people, beginners and also amatorial advanced cooker.\n",
+ picture:"https://i.udemycdn.com/course/240x135/1998210_92bc_2.jpg"
 )
 c36 = Course.create!(
-  title: "Data Structures and Algorithms - The Complete Masterclass",
-  type_style: 'computer',
-  subtitle: "Crack the code interview by getting mastery in data structures & algorithms & Become a data structures & algorithms Ace",
+  type_style: 'life',
   teacher: 'Vinoth Parthasarathy',
   teacher_id: u6.id,
-  price: 1099,
-  rating: 4,
-  rating_count: 890,
-  student_count: 2842,
-  languages: "English",
-  learning_goals: "Understand the coding principles and Understand How to write code in efficient way by help of choosing right data structures and efficient algorithms\nHow to choose right data structures for your need\nUnderstand concept behind Arrays, Linked Lists, Hash tables, Trees, Graph, Stacks, Queues, Sort algorithms and Search algorithms\nUnderstand the fundamentals of the Data structures and Algorithms\nUnderstand popular algorithms, and how to use it when you need.\nLearn everything you need to crack difficult coding interviews.\nReason about applicability and usability of Data Structures",
-  requirements:"A strong work ethic, enthusiasm to learn, and plenty of excitement about the awesome new skill you are going to build.\nNo experience with data structures or computer science needed!",
-  description: "Congratulations!  You've found the most popular, most complete, and most up-to-date resource online for learning Data structures and Algorithms. Are you interested in the field of Data structures? Are you interested to play around complex Algorithms?  Then this course is for you!You need to understand algorithms and data structures because I've seen code written by people who didn't understand Data structures and algorithms; and trust me, you don't want to be that guy. The entire course is based around a single goal: Turning you into a professional programmer & capable of writing code as a professional.Are you scared about the coding interview? Join with me in this Adventure, Crack your coding interview by getting mastery in data structures & algorithms.There are lots of free tutorials and videos on YouTube. Why would you want to take this course? The answer is simple: Quality of teaching. So, from the very beginning to the very end, you'll be confident that you'll be in good hands and watching every minute of the course, unlike the reading many free tutorials and videos, do not waste your precious time. Each section is equipped with a balanced mix of theory and Implementation.It's my goal to make clear about Data structures and Algorithms as much as possible and ensure your success. I want everyone to benefit from my courses, that's why we'll dive deeply into Data structures and Algorithms concepts and why I made sure to also share the knowledge that's helpful to programmersWhy it’s the only course you need to learn Data Structures and Algorithms?This course is everything you need from start to end regardless of your experience.It's an interactive course. Instead of explaining the concepts with Powerpoint slides, I will take you to the classroom again.This course is fun and exciting, but at the same time, we dive deep into Data Structures and Algorithms. Specifically, you will learn :· Understanding the core principles of coding.· Understanding code complexity and how to write code the efficiently and various levels of complexity.· Basics of Data Structures and algorithms· Basic data structures (Arrays, linked list, and Hash Table)· Tree data structures· Graph data structures· Algorithms to apply Graph in product implementation· Searching algorithms· Various Sorting algorithmsSee what your fellow students have to say 'Extremely amazing course to get started with data structures and algorithms. It was filled with so much content! Loved it. 'I really enjoyed the time spent in this course. I learn a lot about data structures and I'll put this knowledge into my work. An in-depth explanation of everything and Real-world examples. Thank you for such a wonderful course.'Excellent course. Highly recommended!. Vinoth did an excellent job breaking down a complex topic into an easy piece. The lectures and the whole course are well ordered, each topic is presented in the right place. Ultimately, it was a good experience for me. Looking forward to your next course/topic.'This is my first course on Udemy and I must say it was totally worth it. I enjoyed every single video on this course. And It has great many examples to teach the basics of Data Structures. Not only the experienced but beginners like me in the Data Structures will find the content to be 5-star. The instructors are really great! Thank you Vinoth for the handwork and teaching us in the great and understandable way! 'What if I have questions?As if this course wasn’t complete enough, I offer full support, answering any questions you have 7 days a week.Enroll now and begin your journey towards the most lucrative, adventurous and exciting career path you can imagine! Or, take this course for a free spin using the preview feature, so you know you’re 100% certain this course is for you.100% MONEY-BACK GUARANTEEThis course comes with a 30-day full money-back guarantee. Take the course, go through the lectures, do the exercises, and if you're not happy, ask for a refund within 30 days. All your money back, no questions asked.See you on the inside (hurry, Data structures, and algorithm class is waiting!)",
-  audience:"Anyone who want to take their programming skills to the next level and learn a future-proof programming\nAnyone who want to become intelligent programmer\nAnyone who is Feeling scared about coding interview\nAnyone who wants to strengthen their problem-solving skills",
-  picture:"https://i.udemycdn.com/course/240x135/2165246_3286_6.jpg"
+  title:"Professional Life Coach Certification & Guide (Accredited)",
+  subtitle:"Become a certified life coach & grow your life coaching business! Done-for-you forms, tools, processes & best practices",
+  price:19499,
+  rating:4,
+  rating_count:4740,
+  student_count:21909,
+  languages:"English",
+  learning_goals:"\nFeel confident in your ability to get your clients real results.\n\nFeel credible and prepared.\n\nStructure your coaching business, including packages, sessions and your ideal coaching niche.\n\nUtilize proven life coaching best practices including step-by-step processes and powerful tools.\n\nPolish your communication techniques so that you can listen to and question your clients to success.\n\nLearn neuro linguistic programming (NLP) techniques.\n\nKnow how to set expectations, maintain boundaries, and overcome your own fears.\n\nUse professional done-for-you forms and templates that take the guesswork out of coaching.\n\nWork with your clients to set achievable goals and action plans and hold them accountable to follow through.\n\nDevelop your emotional intelligence and a growth mindset.\n\nHelp your clients develop awareness and mindfulness.\n\nHelp your clients empower their thinking and self-talk.\n\nHelp your clients take back their power over negative emotions.\n\nHelp your clients eliminate limiting beliefs and stop holding themselves back.\n\nHelp your clients make hard decisions and take actions they've been putting off.\n\nHelp your clients overcome fear of change, failure and risk.\n\nHelp your clients live a life of passion and purpose.\n\nCreate a thriving life coaching business.\n\nDiscover your ideal life coaching niche and design your life coaching package.\n\nLearn secrets to attracting clients and marketing your life coaching business.\n",
+  requirements:"\nA desire to become a life coach and learn powerful techniques and tools for helping others.\n",
+  description:"\nStudents who complete this course will receive an official life coach CERTIFICATION from Transformation Academy. This course is also accredited by internationally recognized Continuing Professional Development Standards Agency (Provider No: 50134), and 25 CPD or CEU credits are available upon request. Details for how to request the official certification and optional 25 CPD/CEU credits will be provided at the end of the course.+++++++++++++++++++++++++++++++++++++++++++++++We are top Udemy instructors in the personal development category. Our courses have been taken by over 150,000 happy students from 195 countries.We have a thriving community in the course and we are actively involved and answer questions within 24h.The course also has a thriving Facebook networking group. +++++++++++++++++++++++++++++++++++++++++++++++Do you want to make a difference and make money doing it? Have you been dreaming of or considering becoming a life coach? Are you a life coach who wants to add to your toolbox?Become a CERTIFIED PROFESSIONAL LIFE COACH! It’s a great time to become a life coach—life coaching is a $2 billion industry and one of the fastest growing industries in the world! Whether you are new to the life coaching field or you have been practicing for years this course is for you as it will take you from foundation materiel to advance techniques and strategies to help transform your clients life. The best thing about life coaching is that anyone can be a coach! You can coach clients on any topic that you love or any experience that you have, whether it’s to help them improve a skill, achieve their goals, find more meaning and purpose in life, overcome challenges, find true happiness, get healthy, feel more confident, advance their career, start a business, or any other way you feel inspired to help someone transform their lives!\n  This course is designed to teach you everything you need to know to feel confident as a life coach, get your clients real results, and create a thriving life coaching business! You’ll receive:Life coaching industry best practices Professional life coaching skills and techniquesDone-for-you templates, worksheets, and questionnairesYou will develop a strong foundation of understanding of how to be an effective coach, including:Overcoming your own biases as a life coachEstablishing healthy boundaries and expectationsYou’ll develop strong communication skills, including powerful listening skills and vital questioning skills that will allow you to help clients develop a better understanding of themselves.\n  You’ll learn core life coaching tools, including goal setting exercises and accountability tips to help you empower your clients to follow through and achieve their goals.\n  You’ll learn popular activities you can use with your clients, like the wheel of life, journaling, affirmations, as well as popular Neuro Linguistic Programming (NLP) techniques.\n  You’ll develop the mindset of success including developing your emotional intelligence, learning how to establish rapport with your clients, make sure you and your clients are approaching coaching with a growth mindset, and develop true confidence as a life coach.\n\n  And then, you’ll dig deeper with in-depth life coaching processes designed to help you coach your clients to achieve specific outcomes. Processes we will cover include: AwarenessMindfulnessSelf-talkEmotionsBeliefsDecision makingTaking actionOvercoming fearCreating changeFinding passion and purposeRewriting your life storyYou’ll also receive a ton of done-for-you templates, intake forms, worksheet activities, and questionnaires.\n  You’ll have the skills, tools, mindset, and processes to thrive as a life coach and make a difference in people’s lives. But, we want to make sure that your business thrives too! And, so the course also includes strategies for growing your coaching business, including:Naming your offeringStructuring your coachingDetermining your valueSetting your priceIdentifying your nicheCrafting a magnet message (elevator pitch)Creating a life coaching packageOffering group coachingTips for what actually works when marketing your business!\n  So, are you ready to have everything you need to start and grow your coaching business and finally follow your true calling?  If so enroll now, we look forward to seeing you in the course!  Guarantee: We know you will love this course. However, we offer a no-questions-asked 30-day money-back guarantee if the course does not meet your needs for any reason.  \n  So, who are we?\n  We are Joeel & Natalie Rivera, serial entrepreneurs, authors,  speakers, and educators. We have over a decade of experience in the  field of psychology and life coaching and our greatest passion is  empowering others to live life on their terms, fulfill their potential,  and embrace their greater purpose. All of our programs are designed  based on our experience in coaching, social services, psychology, and  education, as well Joeel’s Masters Degree in Counseling and research on  happiness for his dissertation for a PhD in psychology. We have over  125,000 students from 192 countries.   STUDENTS WHO COMPLETE EVERY LESSON IN THIS COURSE WILL RECEIVE AN OFFICIAL LIFE COACH CERTIFICATION FROM TRANSFORMATION SERVICES, INC., AS WELL AS THE CERTIFIED PROFESSIONAL LIFE COACH LOGO TO USE IN HIS/HER MARKETING MATERIAL. SEE THE FINAL LESSON IN THIS COURSE FOR INSTRUCTIONS.   THIS COURSE IS PART OF OUR MASTER COACH CERTIFICATION (ALONG WITH OUR HAPPINESS COACH, GOAL/SUCCESS COACH, AND LIFE PURPOSE COACH CERTIFICATIONS).CHECK OUT OUR OTHER LIFE COACH CERTIFICATION COURSES!\n  \n\n",
+  audience:"\nYou want to become a certified professional life coach.\n\nYou are a life coach and you want to add to your skills and tools.\n\nYou are a counselor, therapist, teacher, speaker, author, or other practitioner who wants to enhance your services by offering life coaching.\n\n• If you want more expertise and a greater understanding of the life coaching industry.\n\n• If you want a step-by-step system and powerful tools with proven results.\n\n• If you want to expand your credibility and build your confidence as a life coach.\n",
+  picture:"https://i.udemycdn.com/course/240x135/789146_6b10_3.jpg"
 )
 c37 = Course.create!(
   title: "Java Programming Essentials: AP Computer Science A",
@@ -1609,7 +1612,103 @@ ccc32 = CourseContent.create!({course_id: c27.id,index:0,title:"Introduction"})
 ccc33 = CourseContent.create!({course_id: c27.id,index:1,title:"Beginning Of Course"})
 ccc34 = CourseContent.create!({course_id: c27.id,index:2,title:"Drawing"})
 ccc35 = CourseContent.create!({course_id: c27.id,index:3,title:"Computer"})
-# Videos
+
+ccc36 = CourseContent.create!({course_id: c9.id,index:0,title:"Welcome to the Course!"})
+ccc37 = CourseContent.create!({course_id: c9.id,index:1,title:"The Basics"})
+ccc38 = CourseContent.create!({course_id: c9.id,index:2,title:"Software Development Lifecycles (SDLC)"})
+ccc39 = CourseContent.create!({course_id: c9.id,index:3,title:"Initiating a Project"})
+ccc40 = CourseContent.create!({course_id: c9.id,index:4,title:"Requirement Basics"})
+ccc41 = CourseContent.create!({course_id: c9.id,index:5,title:"Requirement Elicitation"})
+ccc42 = CourseContent.create!({course_id: c9.id,index:6,title:"Requirement Analysis"})
+ccc43 = CourseContent.create!({course_id: c9.id,index:7,title:"Requirement Specification"})
+ccc44 = CourseContent.create!({course_id: c9.id,index:8,title:"Requirements Approval"})
+ccc45 = CourseContent.create!({course_id: c9.id,index:9,title:"After the Project"})
+ccc46 = CourseContent.create!({course_id: c9.id,index:10,title:"Miscellaneous Other Topics"})
+ccc47 = CourseContent.create!({course_id: c9.id,index:11,title:"Bonus Section"})
+
+
+dd1 = CourseContent.create!({
+  course_id: c32.id,
+  index: 0,
+  title: "Introduction"
+})
+dd2 = CourseContent.create!({
+  course_id: c32.id,
+  index: 1,
+  title: "Skeletal Muscle and Exercise"
+})
+dd3 = CourseContent.create!({
+  course_id: c32.id,
+  index: 2,
+  title: "Nervous System Control of Muscle During Exercise"
+})
+dd4 = CourseContent.create!({
+  course_id: c32.id,
+  index: 3,
+  title: "Exercise Metabolism and Bioenergetics"
+})
+dd5 = CourseContent.create!({
+  course_id: c32.id,
+  index: 4,
+  title: "Cardiovascular Responses to Exercise"
+})
+dd6 = CourseContent.create!({
+  course_id: c32.id,
+  index: 5,
+  title: "Respiration During Exercise"
+})
+dd7 = CourseContent.create!({
+  course_id: c32.id,
+  index: 6,
+  title: "General Training Adaptations to Exercise"
+})
+dd8 = CourseContent.create!({
+  course_id: c32.id,
+  index: 7,
+  title: "Eating for Peak Performance"
+})
+
+dd9 = CourseContent.create!({
+  course_id: c34.id,
+  index: 0,
+  title: "Introduction"
+})
+dd10 = CourseContent.create!({
+  course_id: c34.id,
+  index: 1,
+  title: "Strings"
+})
+dd11 = CourseContent.create!({
+  course_id: c34.id,
+  index: 2,
+  title: "Dynamic Programming"
+})
+dd12 = CourseContent.create!({
+  course_id: c34.id,
+  index: 3,
+  title: "Interval"
+})
+dd13 = CourseContent.create!({
+  course_id: c34.id,
+  index: 4,
+  title: "Linked List"
+})
+dd14 = CourseContent.create!({
+  course_id: c34.id,
+  index: 5,
+  title: "Trees"
+})
+dd15 = CourseContent.create!({
+  course_id: c34.id,
+  index: 6,
+  title: "Arrays"
+})
+dd16 = CourseContent.create!({
+  course_id: c34.id,
+  index: 7,
+  title: "Conclusion"
+})
+# # Videos
 Video.create!({
  course_content_id: cc1.id,
  title: 'Introduction',
@@ -5617,6 +5716,579 @@ Video.create!({course_content_id: ccc35.id,title:"Character Drawing Sample",url:
 Video.create!({course_content_id: ccc35.id,title:"Digital Drawing",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:681,index:0})
 Video.create!({course_content_id: ccc35.id,title:"Coloring  (Part 1)",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:874,index:1})
 Video.create!({course_content_id: ccc35.id,title:"Coloring (Part 2)",url:"https://www.youtube.com/watch?v=EVavVNhG5l8",duration:907,index:2})
+
+
+
+Video.create!({
+  course_content_id: dd1.id,
+  title: "Welcome and Introduction to the Course",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 509,
+  index: 0
+})
+Video.create!({
+  course_content_id: dd1.id,
+  title: "This lecture introduces the different types of muscle and looks at skeletal muscle anatomy. Introduction",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 287,
+  index: 0
+})
+Video.create!({
+  course_content_id: dd1.id,
+  title: "This lecture studies the sarcomere which is the smallest unit of skeletal muscle. The Sarcomere",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 257,
+  index: 1
+})
+Video.create!({
+  course_content_id: dd1.id,
+  title: "Excitation contraction coupling describes how a nerve communicates with skeletal muscle, ultimately leading to shortening of the muscle fiber. Excitation-Contraction Coupling",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 396,
+  index: 2
+})
+Video.create!({
+  course_content_id: dd1.id,
+  title: "This lecture discusses the sliding filament theory of skeletal muscle contraction. The idea is that no length changes occur in actin or myosin myofilaments. The steps of muscle contraction are described in detail. Sliding Filament Theory",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 275,
+  index: 3
+})
+Video.create!({
+  course_content_id: dd1.id,
+  title: "This video explains the different skeletal muscle fiber types and how they are recruited for various activities. Muscle Fiber Type and Recruitment",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 418,
+  index: 4
+})
+Video.create!({
+  course_content_id: dd1.id,
+  title: "In this lecture students learn about the 3 types of muscle contraction and how force is generated. Types of Muscle Contraction and Force Generation",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 310,
+  index: 5
+})
+Video.create!({
+  course_content_id: dd1.id,
+  title: "This 10 question quiz covering Section 1 and 2.\nSection 1 and 2 Quiz  10 ques",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 6
+})
+Video.create!({
+  course_content_id: dd2.id,
+  title: "This video describes the function and basic organization of the nervous system. Introduction",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 176,
+  index: 0
+})
+Video.create!({
+  course_content_id: dd2.id,
+  title: "In this video students gain an understanding of the central and peripheral nervous systems. Components of the Nervous System",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 298,
+  index: 1
+})
+Video.create!({
+  course_content_id: dd2.id,
+  title: "In the last video of section 3 student learn how the nervous system integrates with the muscular system to create movement. Sensory-Motor Integration",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 169,
+  index: 2
+})
+Video.create!({
+  course_content_id: dd3.id,
+  title: "This lecture introduces students to metabolism terms and the energy currency of the cell ATP. Introduction",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 255,
+  index: 0
+})
+Video.create!({
+  course_content_id: dd3.id,
+  title: "In this lecture students get a general overview of the three metabolic systems used for energy production. The Three Energy Systems",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 215,
+  index: 1
+})
+Video.create!({
+  course_content_id: dd3.id,
+  title: "Students gain an understanding of the most immediate energy system--the ATP-PC (phosphogen) system. Examples of activities that use this metabolic process are sprinting, football line play, and heavy weight lifting. Phosphogen System",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 264,
+  index: 2
+})
+Video.create!({
+  course_content_id: dd3.id,
+  title: "In this section students learn about the glycolytic energy system. This is a multi-step process where glucose is converted it to energy. Examples of activities that use this metabolic process are a 400 meter run, one lap in the pool, and light to moderate weight lifting. Glycolytic System",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 256,
+  index: 3
+})
+Video.create!({
+  course_content_id: dd3.id,
+  title: "This section teaches student about aerobic energy production where the three end products are CO2, metabolic water and ATP.Examples of activities that use this metabolic process are distance running, triathlon, and road cycling. Aerobic System",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 316,
+  index: 4
+})
+Video.create!({
+  course_content_id: dd3.id,
+  title: "In this lecture the process of conducting a metabolic needs analysis is discussed. This is an important step to determining the training needs of an athlete. Metabolic Needs Analysis",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 278,
+  index: 5
+})
+Video.create!({
+  course_content_id: dd3.id,
+  title: "In this video students learn the relationship between the 3 energy systems. Depending on exercise intensity, one of the 3 system will be the predominate system used for energy production. Relationship Between Energy Systems",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 183,
+  index: 6
+})
+Video.create!({
+  course_content_id: dd3.id,
+  title: "This is 10 question quiz over the nervous system and metabolism sections.\nSection 3 and 4 Quiz  10 ques",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 7
+})
+Video.create!({
+  course_content_id: dd4.id,
+  title: "This lecture discuss introduces the function as well as the key components of the cardiovascular system. Introduction to the Cardiovascular System",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 208,
+  index: 0
+})
+Video.create!({
+  course_content_id: dd4.id,
+  title: "In this section students learn to trace blood flow through the heart. Blood Flow Through the Heart",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 528,
+  index: 1
+})
+Video.create!({
+  course_content_id: dd4.id,
+  title: "In this lecture students learn important cardiovascular function terms like cardiac output, heart rate, stroke volume, and ejection fraction. Cardiac Function Terms",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 333,
+  index: 2
+})
+Video.create!({
+  course_content_id: dd4.id,
+  title: "In this lecture students learn how heart rate responds to acute and chronic bouts of exercise. Heart Rate",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 245,
+  index: 3
+})
+Video.create!({
+  course_content_id: dd4.id,
+  title: "In this lecture students learn how stroke volume and cardiac output respond to acute and chronic bouts of exercise. Stroke Volume and Cardiac Output",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 217,
+  index: 4
+})
+Video.create!({
+  course_content_id: dd4.id,
+  title: "In this lecture students learn the different types of blood vessels and some of their important characteristics. The Vascular System",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 215,
+  index: 5
+})
+Video.create!({
+  course_content_id: dd4.id,
+  title: "In this lecture blood is discussed with emphasis on important components and the effects of exericise. The Blood",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 237,
+  index: 6
+})
+Video.create!({
+  course_content_id: dd4.id,
+  title: "This lecture explains blood pressure and the acute responses to systolic and diastolic pressure blood pressure during exercise. Blood Pressure",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 225,
+  index: 7
+})
+Video.create!({
+  course_content_id: dd4.id,
+  title: "In this lecture cardiovascular drift is discussed with emphasis on its effect on heart rate. Cardiovascular Drift",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 154,
+  index: 8
+})
+Video.create!({
+  course_content_id: dd4.id,
+  title: "This lecture describes maximal oxygen consumption with emphasis on how this relates to cardiovascular disease and aerobic fitness. The Concept of VO2max",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 186,
+  index: 9
+})
+Video.create!({
+  course_content_id: dd5.id,
+  title: "This lecture provides students with a brief overview of the functions of the respiratory system. Introduction to the Respiratory System",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 180,
+  index: 0
+})
+Video.create!({
+  course_content_id: dd5.id,
+  title: "This lecture explains the structures associated with the upper and lower respiratory tracts. Respiratory Tracts",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 207,
+  index: 1
+})
+Video.create!({
+  course_content_id: dd5.id,
+  title: "This lecture describes how air is moved into and out of the lungs through the process of ventilation. Respiratory Ventilation",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 206,
+  index: 2
+})
+Video.create!({
+  course_content_id: dd5.id,
+  title: "This lecture explains how oxygen and carbon dioxide are exhanged at the tissue and lung levels. Gas Exhange",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 193,
+  index: 3
+})
+Video.create!({
+  course_content_id: dd5.id,
+  title: "This lecture answers the question: \"Does the respiratory system limit exercise performance?\" Exercise Performance",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 225,
+  index: 4
+})
+Video.create!({
+  course_content_id: dd5.id,
+  title: "Section 5 and 6 Quiz  10 ques",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 5
+})
+
+
+Video.create!({
+  course_content_id: dd6.id,
+  title: "This lectures describes important training adaptations following resistance exercise. Resistance Exercise Adaptations",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 246,
+  index: 0
+})
+Video.create!({
+  course_content_id: dd6.id,
+  title: "This lectures describes important training adaptations following endurance training. Aerobic Training Adaptations",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 178,
+  index: 1
+})
+Video.create!({
+  course_content_id: dd7.id,
+  title: "This lecture provides important eating guidelines for athletes as well as breakfast, lunch, and dinner options. The Athlete's Plate",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 312,
+  index: 0
+})
+Video.create!({
+  course_content_id: dd7.id,
+  title: "This lecture explains how a high carbohydrate diet improves performance. Does a High Carbohydrate Diet Work?",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 291,
+  index: 1
+})
+Video.create!({
+  course_content_id: dd7.id,
+  title: "This lecture explains how athletes should approach their pre-workout meals and snacks. Pre-exercise Meals",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 277,
+  index: 2
+})
+Video.create!({
+  course_content_id: dd7.id,
+  title: "This lecture teaches athletes what to eat during exercise. Fueling During Exercise",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 392,
+  index: 3
+})
+Video.create!({
+  course_content_id: dd7.id,
+  title: "This lecture discusses the importance of fueling post-workout. What to Eat Post-Exercise",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 251,
+  index: 4
+})
+Video.create!({
+  course_content_id: dd7.id,
+  title: "This lecture discusses the idea of improving endurance performance using a high fat diet. The High Fat Diet",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 496,
+  index: 5
+})
+Video.create!({
+  course_content_id: dd7.id,
+  title: "This lecture provides tips for eating healthy while on the road. Eating on the Road",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 206,
+  index: 6
+})
+Video.create!({
+  course_content_id: dd8.id,
+  title: "Section 7 and 8 Quiz  10 ques",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 0,
+  index: 0
+})
+Video.create!({
+  course_content_id: dd9.id,
+  title: "Welcome to the Course!",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 66,
+  index: 0
+})
+Video.create!({
+  course_content_id: dd9.id,
+  title: "Optional JavaScript Crash-Course (Skip ahead if you already know JavaScript!)",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 443,
+  index: 1
+})
+Video.create!({
+  course_content_id: dd9.id,
+  title: "Environment Setup - Windows",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 293,
+  index: 2
+})
+Video.create!({
+  course_content_id: dd9.id,
+  title: "Environment Setup - macOS",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 237,
+  index: 3
+})
+Video.create!({
+  course_content_id: dd9.id,
+  title: "Course GitHub Repository and How-To Run Tests",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 264,
+  index: 4
+})
+Video.create!({
+  course_content_id: dd9.id,
+  title: "How to get the most value from this course",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 26,
+  index: 5
+})
+Video.create!({
+  course_content_id: dd10.id,
+  title: "Strings Introduction",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 36,
+  index: 0
+})
+Video.create!({
+  course_content_id: dd10.id,
+  title: "Valid Palindrome (LC #125)",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 445,
+  index: 1
+})
+Video.create!({
+  course_content_id: dd10.id,
+  title: "Longest Palindromic Substring (LC #5)",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 445,
+  index: 2
+})
+Video.create!({
+  course_content_id: dd10.id,
+  title: "Longest Substring Without Repeating Characters - Part 1 (LC #3)",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 307,
+  index: 3
+})
+Video.create!({
+  course_content_id: dd10.id,
+  title: "Longest Substring Without Repeating Characters - Part 2 (LC #3)",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 296,
+  index: 4
+})
+Video.create!({
+  course_content_id: dd11.id,
+  title: "Dynamic Programming Introduction",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 27,
+  index: 0
+})
+Video.create!({
+  course_content_id: dd11.id,
+  title: "Climbing Stairs (LC #70)",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 311,
+  index: 1
+})
+Video.create!({
+  course_content_id: dd11.id,
+  title: "House Robber (LC #198)",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 375,
+  index: 2
+})
+Video.create!({
+  course_content_id: dd11.id,
+  title: "Jump Game - Part 1 (LC #55)",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 201,
+  index: 3
+})
+Video.create!({
+  course_content_id: dd11.id,
+  title: "Jump Game - Part 2 (LC #55)",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 222,
+  index: 4
+})
+Video.create!({
+  course_content_id: dd12.id,
+  title: "Interval Introduction",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 54,
+  index: 0
+})
+Video.create!({
+  course_content_id: dd12.id,
+  title: "Meeting Rooms (LC #252)",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 299,
+  index: 1
+})
+Video.create!({
+  course_content_id: dd12.id,
+  title: "Non-overlapping Intervals (LC #435)",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 414,
+  index: 2
+})
+Video.create!({
+  course_content_id: dd12.id,
+  title: "Merge Intervals (LC #56)",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 355,
+  index: 3
+})
+Video.create!({
+  course_content_id: dd13.id,
+  title: "Linked List Introduction",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 25,
+  index: 0
+})
+Video.create!({
+  course_content_id: dd13.id,
+  title: "Reverse Linked List (LC #206)",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 257,
+  index: 1
+})
+Video.create!({
+  course_content_id: dd13.id,
+  title: "Linked List Cycle (LC #141)",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 252,
+  index: 2
+})
+Video.create!({
+  course_content_id: dd13.id,
+  title: "Remove Nth Node From End of List (LC #19)",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 304,
+  index: 3
+})
+Video.create!({
+  course_content_id: dd14.id,
+  title: "Trees Introduction",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 24,
+  index: 0
+})
+Video.create!({
+  course_content_id: dd14.id,
+  title: "Number of Islands (LC #200)",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 392,
+  index: 1
+})
+Video.create!({
+  course_content_id: dd14.id,
+  title: "Invert Binary Tree (LC #226)",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 207,
+  index: 2
+})
+Video.create!({
+  course_content_id: dd14.id,
+  title: "Maximum Depth of Binary Tree (LC #104)",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 207,
+  index: 3
+})
+Video.create!({
+  course_content_id: dd14.id,
+  title: "Binary Tree Level Order Traversal (LC #102)",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 257,
+  index: 4
+})
+Video.create!({
+  course_content_id: dd15.id,
+  title: "Arrays Introduction",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 30,
+  index: 0
+})
+Video.create!({
+  course_content_id: dd15.id,
+  title: "Contains Duplicate (LC #217)",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 181,
+  index: 1
+})
+Video.create!({
+  course_content_id: dd15.id,
+  title: "Product of Array Except Self (LC #238)",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 364,
+  index: 2
+})
+Video.create!({
+  course_content_id: dd15.id,
+  title: "Container With Most Water (LC #11)",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 378,
+  index: 3
+})
+Video.create!({
+  course_content_id: dd15.id,
+  title: "Best Time to Buy and Sell Stock (LC #121)",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 276,
+  index: 4
+})
+Video.create!({
+  course_content_id: dd16.id,
+  title: "Congratulations!",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 20,
+  index: 0
+})
+Video.create!({
+  course_content_id: dd16.id,
+  title: "Additional Resources & YouTube Channel",
+  url: "https://www.youtube.com/watch?v=EVavVNhG5l8",
+  duration: 16,
+  index: 1
+})
+
 # Review
 Review.create!({
   course_id: c1.id,
@@ -7122,6 +7794,112 @@ Review.create!({
   username: 'Alireza Refaei',
   rating: 3,
   body: 'thanks for your sharing this course. that was useful a lot for me. good job'
+})
+
+Review.create!({
+  course_id: c32.id,
+  user_id: u1.id,
+  rating: 5,
+  body: "Excellent communication.",
+  username: "Jason"
+})
+Review.create!({
+  course_id: c32.id,
+  user_id: u1.id,
+  rating: 5,
+  body: "Great Course!!!",
+  username: "THEODORE P GLASCO"
+})
+Review.create!({
+  course_id: c32.id,
+  user_id: u1.id,
+  rating: 4,
+  body: "Good in-depth content straight to the point . If it offered certificate i would be 5 star",
+  username: "Lubomir Pamukov"
+})
+Review.create!({
+  course_id: c32.id,
+  user_id: u1.id,
+  rating: 4,
+  body: "If the font in the graphics was larger it would lend itself more to smartphones.",
+  username: "Michael Koehler"
+})
+Review.create!({
+  course_id: c32.id,
+  user_id: u1.id,
+  rating: 4,
+  body: "Great course. It helps me to refresh all these knowledges.",
+  username: "Sergio Rodríguez Ramos"
+})
+Review.create!({
+  course_id: c32.id,
+  user_id: u1.id,
+  rating: 5,
+  body: "Technical but understandible",
+  username: "Nora Judd"
+})
+Review.create!({
+  course_id: c32.id,
+  user_id: u1.id,
+  rating: 5,
+  body: "very informative so far",
+  username: "Rachael Carbery"
+})
+Review.create!({
+  course_id: c34.id,
+  user_id: u1.id,
+  rating: 5,
+  body: "Very good course",
+  username: "Alexis Edgar Loza"
+})
+Review.create!({
+  course_id: c34.id,
+  user_id: u1.id,
+  rating: 5,
+  body: "nice course and slide to explain how things work.",
+  username: "MinHan Huang"
+})
+Review.create!({
+  course_id: c34.id,
+  user_id: u1.id,
+  rating: 4,
+  body: "I think it's really informative",
+  username: "Megan Edmonds"
+})
+Review.create!({
+  course_id: c34.id,
+  user_id: u1.id,
+  rating: 5,
+  body: "He is very clear and I like where we are headed.",
+  username: "Gunnar Gabrielson"
+})
+Review.create!({
+  course_id: c34.id,
+  user_id: u1.id,
+  rating: 5,
+  body: "It was really good so far it already helped me a bit with the syntax of Javascript",
+  username: "Rafat Khan"
+})
+Review.create!({
+  course_id: c34.id,
+  user_id: u1.id,
+  rating: 5,
+  body: "very few courses out there go over leetcode problems in javascript. nicely explained",
+  username: "Alfredo Alpizar"
+})
+Review.create!({
+  course_id: c34.id,
+  user_id: u1.id,
+  rating: 5,
+  body: "He is going over items that I know but its a great pace because I'm not starting from scratch.",
+  username: "Rene Ramirez"
+})
+Review.create!({
+  course_id: c34.id,
+  user_id: u1.id,
+  rating: 5,
+  body: "Straight to the point, very easy to follow and understand",
+  username: "Meshari Alharbi"
 })
 
 end
