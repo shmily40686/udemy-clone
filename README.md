@@ -1,3 +1,4 @@
+
 # YOU-DEMY
 
 ## What is YOU-demy?
@@ -7,30 +8,30 @@ YOU-demy is a web application for learning inspired by Udemy. YOU-demy is intend
 ## YOU-demy Features
 
  * Courses
-  * Each course can be individually viewed to see additional data and course information.
-  * After selecting a course to view, a list of suggested similar courses is populated.
-  * Videos can be played while viewing a course.
+   * Each course can be individually viewed to see additional data and course information.
+   * After selecting a course to view, a list of suggested similar courses is populated.
+   * Videos can be played while viewing a course.
   
  * Searching/ Browsing
-  * Users have access to a search feature that allows quick navigation of matching courses.
-  * Courses can additionally be browsed by clicking on arrow buttons in a row of similar courses.
-  * Results of searches can be sorted by multiple factors.
+   * Users have access to a search feature that allows quick navigation of matching courses.
+   * Courses can additionally be browsed by clicking on arrow buttons in a row of similar courses.
+   * Results of searches can be sorted by multiple factors.
   
  * Reviews
-  * Courses have reviews that are written by students of the course.
-  * Users are able to provide text-based reviews as well as a 1-5 rating.
+   * Courses have reviews that are written by students of the course.
+   * Users are able to provide text-based reviews as well as a 1-5 rating.
 
 ## Technologies Used
 
  * Backend
-  * Database: PostgreSQL
-  * Data models, controllers, and routing: Ruby on Rails
-  * Authentication: BCrypt
+   * Database: PostgreSQL
+   * Data models, controllers, and routing: Ruby on Rails
+   * Authentication: BCrypt
   
  * Frontend
-  * Framework: React
-  * State Management: Redux
-  * CSS3
+   * Framework: React
+   * State Management: Redux
+   * CSS3
 
 ## Upcoming Features
 
