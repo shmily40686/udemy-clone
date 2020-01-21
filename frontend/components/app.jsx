@@ -25,7 +25,7 @@ class App extends React.Component {
 
     render() {
         return(
-            <div style={{position:"absolute" ,top:"0px" , left:"0px" , right:"0px"}}>
+            <div className="app-container">
                 <NavBarContainer />
                 <Switch>
                     <Route exact path="/courses/search/" component={Home} />
