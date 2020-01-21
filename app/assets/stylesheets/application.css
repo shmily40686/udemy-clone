@@ -710,7 +710,7 @@ body {
     justify-content: space-around;
     background-color: #505763;
     background: linear-gradient(#29303B,#29303B,#29303B);
-    padding: 100px;
+    padding: 50px 100px;
     color: #fff;
     min-width: 780px;
  }
@@ -725,6 +725,7 @@ body {
     font-weight: 650;
     font-family: inherit;
     font-size: 32px;
+    margin-left: 10px;
  }
 
  .index-card-ratting-feed {
@@ -733,6 +734,7 @@ body {
     font-weight: 600;
     color: #ffffff;
     padding-bottom: 5px;
+    margin-left: -10px;
  }
 
 .course-feed-text-box {
@@ -880,8 +882,7 @@ body {
    display: flex;
    flex-direction: column;
    align-items: center;
-   padding: 0px 130px;
-
+   margin: 0px 130px;
 }
 
 .initial-review {
@@ -903,7 +904,6 @@ body {
     border-top: solid 1px #dedfe0;
     color: #29303b;
     font-size: 15px;
-    margin-bottom: 27px;
     padding: 35px
  }
 
@@ -941,7 +941,7 @@ body {
     font-size: 15px;
     line-height: 1.35135;
     border-radius: 2px;
-    width: 30%;
+    width: max(200px, 30%);
     outline: none;
  }
 
@@ -1268,6 +1268,7 @@ body {
 .see-more-b-box {
    display: flex;
    justify-content: center;
+   margin-top: 30px;
 }
 
 .page-switch {
@@ -1345,7 +1346,6 @@ body {
    font-size: 22px;
    font-weight: 600;
    color: #29303b;
-   margin: 100px 250px;
 }
 
 .carousel-inner {
@@ -1386,6 +1386,13 @@ body {
    overflow: hidden;
    width: 232px;
    margin: 0 auto;
+}
+
+.like-course-title {
+   margin-bottom: 27px;
+   margin-left: 108px;
+   word-break: break-word;
+   max-width: calc(70vw);
 }
 
 /* 2 results */

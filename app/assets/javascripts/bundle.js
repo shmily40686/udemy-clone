@@ -1690,10 +1690,8 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "outer-course-likes"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: {
-          marginBottom: "20px"
-        }
-      }, "Some course you might like"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "like-course-title"
+      }, "Some courses you might like"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "carousel-rel-wrapper"
       }, this.renderCourseList()), this.showLeft() ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "left arrow",
