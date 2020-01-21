@@ -209,7 +209,7 @@ body {
 
 .header-box {
    display: flex;
-   padding: 20px
+   padding: 10px 20px
 }
 
  .search-icon {
@@ -258,6 +258,7 @@ body {
  .udemy-logo {
     flex:1;
     margin-left:  -176px;
+    transform: translate3d(-40px, 7px, 0);
  }
  .search-label {
    flex:1;
@@ -396,6 +397,7 @@ body {
  .carousel-fullscreen-sidebar {
     margin: 0 15px;
     width: 100%;
+    padding: 0 50px;
  }
 
  .notice-streamer__text {
@@ -540,8 +542,7 @@ body {
 /* ----------------------------------------------------------
 ---------------------------------------------------------- */
  .index {
-    margin: 100px;
-    padding: 0 50px;
+    margin: 100px 50px;
     border-top:solid 1px #dedfe0; 
     flex: 1;
  }
@@ -672,7 +673,7 @@ body {
  }
 
  .index-rating-span {
-    margin: 5px;
+    margin: 5px 5px 5px -4px;
  }
 
  .index-header {
@@ -716,6 +717,7 @@ body {
     box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
     border-radius: 4px;
     color: #505763;
+    margin-left: 25px;
     padding: 15px;
     font-weight: 650;
     font-family: inherit;
@@ -731,8 +733,9 @@ body {
  }
 
 .course-feed-text-box {
-   margin: 80px 80px 0px 80px;
+   margin: 40px 80px 0px 80px;
 }
+
 .description-content{
     padding-left: 15px;
     padding-right: 15px;
@@ -754,6 +757,7 @@ body {
     font-size: 22px;
     font-weight: 600;
     margin: 0 0 10px;
+    padding-right: 7px;
     line-height: 1.43;
     color: #29303b;
  }
@@ -829,7 +833,7 @@ body {
 }
 
 .course-contents-index-box {
-  margin: 0px 130px;
+  margin: 0px 90px;
 }
 
 .content-box {
@@ -854,7 +858,7 @@ body {
 }
 
 .title-course {
-   margin: 80px 130px 23px 130px;
+   margin: 80px 90px 23px 90px;
    font-size: 22px;
    font-weight: 600;
    color: #29303b;
@@ -898,7 +902,6 @@ body {
     border-top: solid 1px #dedfe0;
     color: #29303b;
     font-size: 15px;
-    margin-bottom: 27px;
     padding: 35px
  }
 
@@ -972,9 +975,8 @@ body {
  }
 
  .review-header {
-    padding: 70px 130px 0px 130px;
+    padding-top: 50px;
     margin-bottom: 22px;
-    margin-top: 4px;
     font-size: 18px;
     font-weight: 600;
     line-height: 1.43;
@@ -1263,6 +1265,7 @@ body {
 .see-more-b-box {
    display: flex;
    justify-content: center;
+   margin-top: 27px;
 }
 
 .page-switch {
@@ -1309,6 +1312,7 @@ body {
    display: none;
    position: absolute;
    width: 25%;
+   left: 65%;
    max-width: 400px;
 }
 
@@ -1340,7 +1344,7 @@ body {
     font-size: 22px;
     font-weight: 600;
     color: #29303b;
-    margin: 100px 250px;
+    margin: 100px 50px;
 }
 
 .carousel-inner {
@@ -1351,11 +1355,11 @@ body {
 }
 
 .left {
-   left: -23.5px;
+   left: calc(calc(50vw - 97px) - calc(116px - 23.5px));
 }
 
 .right {
-   left: 208.5px;
+   left: calc(50vw - 50px + 116px - 23.5px);
 }
 
 .arrow {
@@ -1389,8 +1393,12 @@ body {
       width: 464px;
    }
 
+   .left {
+      left: calc(calc(50vw - 97px) - calc(232px - 23.5px));
+   }
+
    .right {
-      left: 440.5px;
+      left: calc(50vw - 50px + 232px - 23.5px);
    }
 }
 
@@ -1400,8 +1408,12 @@ body {
       width: 696px;
    }
 
+   .left {
+      left: calc(calc(50vw - 97px) - calc(348px - 23.5px));
+   }
+
    .right {
-      left: 672.5px;
+      left: calc(50vw - 50px + 348px - 23.5px);
    }
 }
 
@@ -1411,8 +1423,12 @@ body {
       width: 928px;
    }
 
+   .left {
+      left: calc(calc(50vw - 97px) - calc(464px - 23.5px));
+   }
+
    .right {
-      left: 904.5px;
+      left: calc(50vw - 50px + 464px - 23.5px);
    }
 }
 
@@ -1422,8 +1438,12 @@ body {
       width: 1160px;
    }
 
+   .left {
+      left: calc(calc(50vw - 97px) - calc(580px - 23.5px));
+   }
+
    .right {
-      left: 1136.5px;
+      left: calc(50vw - 50px + 580px - 23.5px);
    }
 }
 

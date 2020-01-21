@@ -3297,13 +3297,13 @@ function (_React$Component) {
     value: function getNumberOfResultsDisplayed() {
       var width = window.innerWidth;
 
-      if (width < 464) {
+      if (width < 564) {
         return 1;
-      } else if (width < 696) {
+      } else if (width < 796) {
         return 2;
-      } else if (width < 928) {
+      } else if (width < 1028) {
         return 3;
-      } else if (width < 1160) {
+      } else if (width < 1260) {
         return 4;
       } else {
         return 5;
