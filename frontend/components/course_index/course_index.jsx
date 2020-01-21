@@ -80,7 +80,7 @@ class CourseIndex extends React.Component {
     showRight(index) {
         let max = this.state[`arr${index}`].length - 1;
         let currentValue = this.state[`currentTransformation${index}`];
-        
+
         if (max >= currentValue + this.getNumberOfResultsDisplayed()) {
             return (
                 <div className="right arrow" onClick={() => this.rightClick(index)}>

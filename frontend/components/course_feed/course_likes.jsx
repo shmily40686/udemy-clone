@@ -21,23 +21,23 @@ class CourseLike extends React.Component {
 
     componentDidMount() {
         this.props.fetchAllCourses()
-        .then(() => {
-            this.setState ({
-                courseLike: this.props.courses,
-                courseLikeCount: this.props.courses.reduce((prev, cur) => {
-                    if (cur.type_style === this.props.course.type_style) {
-                        prev++;
-                    }
-                    return prev;
-                }, 0)
-            })
-            this.props.fetchCourse(this.props.match.params.courseId)
-                .then(() => {
-                    this.setState({
-                        tag: this.props.course.type_style
-                    })
+            .then(() => {
+                this.setState({
+                    courseLike: this.props.courses,
+                    courseLikeCount: this.props.courses.reduce((prev, cur) => {
+                        if (cur.type_style === this.props.course.type_style) {
+                            prev++;
+                        }
+                        return prev;
+                    }, 0)
                 })
-        })
+                this.props.fetchCourse(this.props.match.params.courseId)
+                    .then(() => {
+                        this.setState({
+                            tag: this.props.course.type_style
+                        })
+                    })
+            })
     }
 
     renderCourseList() {
@@ -52,7 +52,7 @@ class CourseLike extends React.Component {
             return prev;
         }, []);
 
-        return(
+        return (
             <div className="carousel-inner" style={{
                 transform: `translateX(${-1 * this.state.currentTransformation * 232}px)`
             }}>
@@ -102,7 +102,7 @@ class CourseLike extends React.Component {
     render() {
         return (
             <div className="outer-course-likes">
-                <div style={{marginBottom:"20px"}}>Some course you might like</div>
+                <div style={{ marginBottom: "20px" }}>Some course you might like</div>
                 <div className="carousel-rel-wrapper">
                     {this.renderCourseList()}
                 </div>
