@@ -262,7 +262,7 @@ body {
  }
  .udemy-logo {
     flex:1;
-    margin-left:  -176px;
+    margin: 5px 0 0 0;
  }
  .search-label {
    flex:1;
@@ -545,7 +545,7 @@ body {
 /* ----------------------------------------------------------
 ---------------------------------------------------------- */
  .index {
-    margin: 100px auto;
+    margin: 50px auto;
     border-top:solid 1px #dedfe0; 
     flex: 1;
  }
@@ -686,7 +686,7 @@ body {
     color: #505763;
     font-family: inherit;
     margin: 11px;
-    padding-left: 42px;
+    padding-left: max(88px, calc(50vw - 104px));
  }
 
  .img-cover {
@@ -1401,6 +1401,10 @@ body {
    .right {
       left: calc(50vw + 232px);
    }
+
+   .index-header {
+      padding-left: calc(50vw - 222px);
+   }
 }
 
 /* 3 results */
@@ -1415,6 +1419,10 @@ body {
 
    .right {
       left: calc(50vw + 348px);
+   }
+
+   .index-header {
+      padding-left: calc(50vw - 338px);
    }
 }
 
@@ -1431,6 +1439,10 @@ body {
    .right {
       left: calc(50vw + 464px);
    }
+
+   .index-header {
+      padding-left: calc(50vw - 454px);
+   }
 }
 
 /* max results */
@@ -1445,6 +1457,10 @@ body {
 
    .right {
       left: calc(50vw + 580px);
+   }
+
+   .index-header {
+      padding-left: calc(50vw - 570px);
    }
 }
 
