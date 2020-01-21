@@ -114,7 +114,6 @@ class CourseIndex extends React.Component {
             </div>
         )
     }
-
     render() {
         const displayCourse1 = this.renderList(1);
         const displayCourse2 = this.renderList(2);
@@ -151,6 +150,4 @@ class CourseIndex extends React.Component {
         )
     }
 }
-
-
 export default CourseIndex

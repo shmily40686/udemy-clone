@@ -467,12 +467,7 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: {
-          position: "absolute",
-          top: "0px",
-          left: "0px",
-          right: "0px"
-        }
+        className: "app-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_nav_bar__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         exact: true,
         path: "/courses/search/",
@@ -873,7 +868,9 @@ function (_React$Component) {
   _createClass(CourseFeed, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_course_heading_container__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_course_content_index_container__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviews_reviews_index_container__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_course_likes_container__WEBPACK_IMPORTED_MODULE_6__["default"], null), this.props.player.show ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_video_container__WEBPACK_IMPORTED_MODULE_5__["default"], null) : null);
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "app-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_course_heading_container__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_course_content_index_container__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviews_reviews_index_container__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_course_likes_container__WEBPACK_IMPORTED_MODULE_6__["default"], null), this.props.player.show ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_video_container__WEBPACK_IMPORTED_MODULE_5__["default"], null) : null);
     }
   }]);
 

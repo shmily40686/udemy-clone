@@ -12,11 +12,9 @@ class CourseFeed extends React.Component {
         super(props)
     }
 
-
-
-    render(){
+    render() {
         return(
-            <div>
+            <div className="app-container">
                 <CourseHeadingContainer  /> 
                 <CourseContentIndexContainer />
                 <ReviewsIndexContainer />
