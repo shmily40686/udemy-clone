@@ -102,7 +102,7 @@ class CourseLike extends React.Component {
     render() {
         return (
             <div className="outer-course-likes">
-                <div style={{ marginBottom: "20px" }}>Some course you might like</div>
+                <div className="like-course-title">Some courses you might like</div>
                 <div className="carousel-rel-wrapper">
                     {this.renderCourseList()}
                 </div>
