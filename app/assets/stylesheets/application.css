@@ -19,7 +19,6 @@ body {
 }
 
 .app-container {
-   margin: -8px;
    min-width: 420px;
 }
 
@@ -27,10 +26,13 @@ body {
 ------------------------------------------------------
 ------------------------------------------------------ */
 
-
+label > .fa-search {
+   cursor: pointer;
+}
 
  .login-signup{
-    float: right; 
+    float: right;
+    margin-top: 10px;
  }
  .loginHeaderButton{
     /* font-weight: 600; */
@@ -214,7 +216,9 @@ body {
 
 .header-box {
    display: flex;
-   padding: 18px 20px 14px 10px;
+   height: 65px;
+   align-items: center;
+   padding: 0 20px;
 }
 
  .search-icon {
@@ -253,6 +257,7 @@ body {
     border-color: transparent;
     border-bottom-left-radius: 2px;
     border-top-left-radius: 2px;
+    width: 100%;
     font-size: 13px;
     background-color: whitesmoke;
     padding-left: 12px;
@@ -261,13 +266,19 @@ body {
     padding-right: 85px;
  }
  .udemy-logo {
-    flex:1;
-    margin: 5px 0 0 0;
+    margin: 14px 10% 0 15px;
  }
+
+ .udemy-logo > img {
+    cursor: pointer;
+ }
+
  .search-label {
    flex:1;
    display: flex;
    height: 44px;
+   margin: 9px 10% 0 0;
+   width: 100%;
  }
 
 
@@ -389,12 +400,14 @@ body {
     font-size: 18px;
     line-height: 1.61;
     color: #fff;
-    padding: 10px;
+    width: 350px;
+    margin-bottom: 20px;
  }
 
  .notice-streamer__content {
     padding: 10px;
     box-sizing: content-box;
+    min-width: 250px;
     max-width: 350px;
  }
 
@@ -1439,6 +1452,14 @@ body {
 
    .index-header {
       padding-left: calc(50vw - 338px);
+   }
+
+   .notice-streamer__content {
+      max-width: 460px;
+   }
+
+   .notice-streamer__text {
+      width: 460px;
    }
 }
 
