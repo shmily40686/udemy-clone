@@ -4148,13 +4148,14 @@ function (_React$Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "header-box"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "udemy-logo"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "udemy-logo",
         src: "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg",
         width: "110",
         height: "32",
         onClick: this.backToHome
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         className: "search-label"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         className: "search-input",
