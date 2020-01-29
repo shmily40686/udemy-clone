@@ -7,60 +7,60 @@ class Footer extends React.Component {
                 <div>
                     <ul className="links-box ">
                         <li>
-                            <a className="link" href="https://business.udemy.com/?locale=en_US&mx_pg=home-page&ref=footer">
-                                <b>Udemy for Business</b>
+                            <a className="link-disabled" href="" disabled>
+                                <b>YOUdemy for Business</b>
                                 </a>
                         </li>
                         <li>
-                            <a className="link" href="https://www.udemy.com/teaching/?ref=teach_footer">
-                                <b>Teach on Udemy</b>
+                            <a className="link-disabled" href="" disabled>
+                                <b>Teach on YOUdemy</b>
                                 </a>
                         </li>
                         <li>
-                            <a className="link" href="https://www.udemy.com/mobile/">
-                                Udemy app
+                            <a className="link-disabled" href="" disabled>
+                                YOUdemy app
                                 </a>
                         </li>
                         <li>
-                            <a className="link" href="https://about.udemy.com/?locale=en-us">
+                            <a className="link-disabled" href="" disabled>
                                 About us
                                 </a>
                         </li>
                         <li>
-                            <a className="link" href="https://about.udemy.com/careers/?locale=en-us">
+                            <a className="link-disabled" href="" disabled>
                                 Careers
                                 </a>
                         </li>
                         <li>
-                            <a className="link" href="https://about.udemy.com/blog?ref=footer">
+                            <a className="link-disabled" href="" disabled>
                                 Blog
                                 </a>
                         </li>
                         <li>
-                            <a className="link" href="https://support.udemy.com/hc/en-us">
+                            <a className="link-disabled" href="" disabled>
                                 Help and Support
                                 </a>
                         </li>
                         <li>
-                            <a className="link" href="https://www.udemy.com/affiliate/">
+                            <a className="link-disabled" href="" disabled>
                                 Affiliate
                                 </a>
                         </li>
                         <li>
-                            <a className="link" href="https://www.udemy.com/sitemap/">
+                            <a className="link-disabled" href="" disabled>
                                 Sitemap
                                 </a>
                         </li>
                         <li>
-                            <a className="link" href="https://www.udemy.com/popular-courses/">
+                            <a className="link-disabled" href="" disabled>
                                 Featured courses
                                 </a>
                         </li>
                     </ul>
                 </div>
                 <div className="footer-bottom">
-                    <img src="https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg" width="110" height="32" />
-                    <span className="footer-text">Copyright © 2020 Udemy, Inc.</span>
+                    <img src="./youdemy.png" width="110" height="50" onClick={this.backToHome} />
+                    <span className="footer-text">Copyright © 2020 YOUdemy, Inc.</span>
                 </div>
             </div>
         )
