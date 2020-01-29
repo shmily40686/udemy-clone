@@ -3568,7 +3568,7 @@ function (_React$Component) {
       }, "Featured courses")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "footer-bottom"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "./youdemy.png",
+        src: window.youdemy_logo,
         width: "110",
         height: "50",
         onClick: this.backToHome
@@ -4168,7 +4168,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "udemy-logo"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "./youdemy.png",
+        src: window.youdemy_logo,
         width: "110",
         height: "50",
         onClick: this.backToHome

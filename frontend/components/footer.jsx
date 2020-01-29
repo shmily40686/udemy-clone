@@ -59,7 +59,7 @@ class Footer extends React.Component {
                     </ul>
                 </div>
                 <div className="footer-bottom">
-                    <img src="./youdemy.png" width="110" height="50" onClick={this.backToHome} />
+                    <img src={window.youdemy_logo} width="110" height="50" onClick={this.backToHome} />
                     <span className="footer-text">Copyright © 2020 YOUdemy, Inc.</span>
                 </div>
             </div>
