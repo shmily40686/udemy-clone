@@ -1698,7 +1698,7 @@ function (_React$Component) {
       }, "Some courses you might like"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "carousel-rel-wrapper"
       }, this.renderCourseList()), this.showLeft() ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "left arrow left-like",
+        className: "left arrow",
         onClick: this.leftClick
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__["FontAwesomeIcon"], {
         style: {
@@ -1706,7 +1706,7 @@ function (_React$Component) {
         },
         icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faChevronLeft"]
       })) : null, this.showRight() ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "right arrow right-like",
+        className: "right arrow",
         onClick: this.rightClick
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__["FontAwesomeIcon"], {
         style: {
@@ -3526,44 +3526,55 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "links-box "
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "link",
-        href: "https://business.udemy.com/?locale=en_US&mx_pg=home-page&ref=footer"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "Udemy for Business"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "link",
-        href: "https://www.udemy.com/teaching/?ref=teach_footer"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "Teach on Udemy"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "link",
-        href: "https://www.udemy.com/mobile/"
-      }, "Udemy app")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "link",
-        href: "https://about.udemy.com/?locale=en-us"
+        className: "link-disabled",
+        href: "",
+        disabled: true
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "YOUdemy for Business"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        className: "link-disabled",
+        href: "",
+        disabled: true
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "Teach on YOUdemy"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        className: "link-disabled",
+        href: "",
+        disabled: true
+      }, "YOUdemy app")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        className: "link-disabled",
+        href: "",
+        disabled: true
       }, "About us")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "link",
-        href: "https://about.udemy.com/careers/?locale=en-us"
+        className: "link-disabled",
+        href: "",
+        disabled: true
       }, "Careers")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "link",
-        href: "https://about.udemy.com/blog?ref=footer"
+        className: "link-disabled",
+        href: "",
+        disabled: true
       }, "Blog")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "link",
-        href: "https://support.udemy.com/hc/en-us"
+        className: "link-disabled",
+        href: "",
+        disabled: true
       }, "Help and Support")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "link",
-        href: "https://www.udemy.com/affiliate/"
+        className: "link-disabled",
+        href: "",
+        disabled: true
       }, "Affiliate")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "link",
-        href: "https://www.udemy.com/sitemap/"
+        className: "link-disabled",
+        href: "",
+        disabled: true
       }, "Sitemap")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "link",
-        href: "https://www.udemy.com/popular-courses/"
+        className: "link-disabled",
+        href: "",
+        disabled: true
       }, "Featured courses")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "footer-bottom"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg",
+        src: "./youdemy.png",
         width: "110",
-        height: "32"
+        height: "50",
+        onClick: this.backToHome
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "footer-text"
-      }, "Copyright \xA9 2020 Udemy, Inc.")));
+      }, "Copyright \xA9 2020 YOUdemy, Inc.")));
     }
   }]);
 
@@ -3914,19 +3925,25 @@ function (_React$Component) {
         onClick: this.searchClickHandle
       }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "home-search-footer"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
-        style: {
-          fontSize: "18px"
-        }
-      }, "100,000 online courses"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Explore a variety of fresh topics")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
-        style: {
-          fontSize: "18px"
-        }
-      }, "Expert instruction"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Find the right instructor for you")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
-        style: {
-          fontSize: "18px"
-        }
-      }, "Lifetime access"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Learn on your schedule"))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "home-footer-section"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+        className: "home-footer-section-header"
+      }, "100,000 online courses"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "home-footer-section-text"
+      }, "Explore a variety of fresh topics")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "home-footer-section"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+        className: "home-footer-section-header"
+      }, "Expert instruction"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "home-footer-section-text"
+      }, "Find the right instructor for you")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "home-footer-section"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+        className: "home-footer-section-header"
+      }, "Lifetime access"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "home-footer-section-text"
+      }, "Learn on your schedule"))));
     }
   }]);
 
@@ -4151,9 +4168,9 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "udemy-logo"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg",
+        src: "./youdemy.png",
         width: "110",
-        height: "32",
+        height: "50",
         onClick: this.backToHome
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         className: "search-label"

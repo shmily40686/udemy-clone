@@ -468,10 +468,21 @@ label > .fa-search {
     font-size: 15px;
     justify-content: space-around;
     line-height: 1.43;
-    padding: 30px 30px 25px 25px;
+    padding: 20px 30px 20px 25px;
     font-family: inherit;
  }
 
+ .home-footer-section {
+    text-align: center;
+ }
+    
+.home-footer-section-header {
+    font-size: 17px;
+}
+
+.home-footer-section-text {
+   font-weight: 200;
+}
 
 
 
@@ -541,6 +552,21 @@ label > .fa-search {
    color: #003845;
  }
 
+  .link-disabled {
+    color: #007791;
+    background-color: transparent;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: inherit;
+    padding: 10px;
+ }
+
+ .link-disabled:hover {
+   cursor: not-allowed;
+   color: #003845;
+ }
+
  .footer-bottom {
     display: flex;
     justify-content: space-between;
@@ -559,9 +585,10 @@ label > .fa-search {
 /* ----------------------------------------------------------
 ---------------------------------------------------------- */
  .index {
-    margin: 50px auto;
+    margin: 38px auto 50px auto;
     border-top:solid 1px #dedfe0; 
     flex: 1;
+    padding-top: 10px;
  }
  .courses-box {
     position: relative;
@@ -581,6 +608,9 @@ label > .fa-search {
     box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
     opacity: 1;
     margin: 7px;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: .3s;
  }
 
  .course-card:hover {
@@ -699,8 +729,8 @@ label > .fa-search {
     font-weight: 400;
     color: #505763;
     font-family: inherit;
-    margin: 11px;
-    padding-left: max(88px, calc(50vw - 104px));
+    margin: 18px 0 11px;
+    padding-left: max(88px, calc(50vw - 92px));
  }
 
  .img-cover {
@@ -1373,16 +1403,8 @@ label > .fa-search {
    left: max(65px, calc(50vw - 132px));
 }
 
-.left-like {
-   transform: translateX(12px);
-}
-
 .right {
-   left: max(calc(50vw + 116px), 306px);
-}
-
-.right-like {
-   transform: translateX(6px);
+   left: max(calc(50vw + 100px), 306px);
 }
 
 .arrow {
@@ -1390,7 +1412,7 @@ label > .fa-search {
    border-radius: 50%;
    line-height: 50px;
    text-align: center;
-   box-shadow: 0 2px 8px 2px rgba(20,23,28,.15);
+   box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
    color: #007791;
    font-size: 21px;
    width: 47px;
@@ -1400,6 +1422,13 @@ label > .fa-search {
    font-family: inherit;
    background: white;
    top: 153px;
+   transition-property: all;
+   transition-timing-function: ease;
+   transition-duration: .3s;
+}
+
+.arrow:hover {
+   box-shadow: 0 2px 8px 2px rgba(20,23,28,.15);
 }
 
 .carousel-rel-wrapper {
@@ -1428,11 +1457,11 @@ label > .fa-search {
    }
 
    .right {
-      left: calc(50vw + 232px);
+      left: calc(50vw + 218px);
    }
 
    .index-header {
-      padding-left: calc(50vw - 222px);
+      padding-left: calc(50vw - 208px);
    }
 }
 
@@ -1447,11 +1476,11 @@ label > .fa-search {
    }
 
    .right {
-      left: calc(50vw + 348px);
+      left: calc(50vw + 332px);
    }
 
    .index-header {
-      padding-left: calc(50vw - 338px);
+      padding-left: calc(50vw - 322px);
    }
 
    .notice-streamer__content {
@@ -1474,7 +1503,7 @@ label > .fa-search {
    }
 
    .right {
-      left: calc(50vw + 464px);
+      left: calc(50vw + 432px);
    }
 
    .index-header {
@@ -1493,7 +1522,7 @@ label > .fa-search {
    }
 
    .right {
-      left: calc(50vw + 580px);
+      left: calc(50vw + 548px);
    }
 
    .index-header {

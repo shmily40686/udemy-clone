@@ -54,7 +54,7 @@ class NavBar extends React.Component {
         return(
             <div className="header-box">
                 <div className="udemy-logo">
-                    <img src="https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg" width="110" height="32" onClick={this.backToHome}/>
+                    <img src="./youdemy.png" width="110" height="50" onClick={this.backToHome}/>
                 </div>
                 <label className="search-label">
                     <input className="search-input" type="text" placeholder="Search for anything" onFocus={this.inputFocus} onBlur={this.inputUnFocus} onKeyUp={this.getSearchInput}/>

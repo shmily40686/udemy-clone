@@ -109,13 +109,13 @@ class CourseLike extends React.Component {
                     {this.renderCourseList()}
                 </div>
                 {this.showLeft()
-                    ? <div className="left arrow left-like" onClick={this.leftClick}>
+                    ? <div className="left arrow" onClick={this.leftClick}>
                         <FontAwesomeIcon style={{ padding: "12px" }} icon={faChevronLeft} />
                     </div>
                     : null
                 }
                 {this.showRight()
-                    ? <div className="right arrow right-like" onClick={this.rightClick}>
+                    ? <div className="right arrow" onClick={this.rightClick}>
                         <FontAwesomeIcon style={{ padding: "12px" }} icon={faChevronRight} />
                     </div>
                     : null
