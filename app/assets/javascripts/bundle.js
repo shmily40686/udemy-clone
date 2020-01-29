@@ -1698,7 +1698,7 @@ function (_React$Component) {
       }, "Some courses you might like"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "carousel-rel-wrapper"
       }, this.renderCourseList()), this.showLeft() ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "left arrow left-like",
+        className: "left arrow",
         onClick: this.leftClick
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__["FontAwesomeIcon"], {
         style: {
@@ -1706,7 +1706,7 @@ function (_React$Component) {
         },
         icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faChevronLeft"]
       })) : null, this.showRight() ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "right arrow right-like",
+        className: "right arrow",
         onClick: this.rightClick
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__["FontAwesomeIcon"], {
         style: {
@@ -3914,19 +3914,25 @@ function (_React$Component) {
         onClick: this.searchClickHandle
       }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "home-search-footer"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
-        style: {
-          fontSize: "18px"
-        }
-      }, "100,000 online courses"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Explore a variety of fresh topics")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
-        style: {
-          fontSize: "18px"
-        }
-      }, "Expert instruction"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Find the right instructor for you")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
-        style: {
-          fontSize: "18px"
-        }
-      }, "Lifetime access"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Learn on your schedule"))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "home-footer-section"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+        className: "home-footer-section-header"
+      }, "100,000 online courses"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "home-footer-section-text"
+      }, "Explore a variety of fresh topics")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "home-footer-section"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+        className: "home-footer-section-header"
+      }, "Expert instruction"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "home-footer-section-text"
+      }, "Find the right instructor for you")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "home-footer-section"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+        className: "home-footer-section-header"
+      }, "Lifetime access"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "home-footer-section-text"
+      }, "Learn on your schedule"))));
     }
   }]);
 

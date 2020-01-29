@@ -59,21 +59,21 @@ class HomeSearchPanel extends React.Component {
                     </div>
                 </div>
                 <div  className="home-search-footer">
-                    <div>
-                        <b style={{fontSize:"18px"}}>100,000 online courses</b>
-                        <div>
+                    <div className="home-footer-section">
+                        <b className="home-footer-section-header">100,000 online courses</b>
+                        <div className="home-footer-section-text">
                             Explore a variety of fresh topics
                          </div>
                     </div>
-                    <div>
-                        <b style={{ fontSize: "18px" }}>Expert instruction</b>
-                        <div>
+                    <div className="home-footer-section">
+                        <b className="home-footer-section-header">Expert instruction</b>
+                        <div className="home-footer-section-text">
                             Find the right instructor for you
                         </div>
                     </div>  
-                    <div>
-                        <b style={{ fontSize: "18px" }}>Lifetime access</b>
-                        <div>
+                    <div className="home-footer-section">
+                        <b className="home-footer-section-header">Lifetime access</b>
+                        <div className="home-footer-section-text">
                             Learn on your schedule
                         </div>
                     </div>
