@@ -12,6 +12,8 @@ YOU-demy is a web application for learning inspired by Udemy. YOU-demy is intend
    * Each course can be individually viewed to see additional data and course information.
    * After selecting a course to view, a list of suggested similar courses is populated.
    * Videos can be played while viewing a course.
+ 
+ ![](images/arrow_click.gif)
   
  * Searching/ Browsing
    * Users have access to a search feature that allows quick navigation of matching courses.
