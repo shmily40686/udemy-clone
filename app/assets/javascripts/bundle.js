@@ -1365,13 +1365,12 @@ function (_React$Component) {
         style: {
           textAlign: "center"
         }
-      }, "$", this.renderPrice()), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      }, "$", this.renderPrice()), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "back-home-button",
-        value: "Back To Home",
         onClick: function onClick() {
           return _this2.props.history.push("/");
         }
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_course_info__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }, "Back To Home"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_course_info__WEBPACK_IMPORTED_MODULE_2__["default"], {
         course: this.props.course
       })));
     }
@@ -1631,7 +1630,8 @@ function (_React$Component) {
       var res = this.props.courses.reduce(function (prev, cur, i) {
         if (cur.type_style === _this3.props.course.type_style) {
           prev.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-            className: "course-tile"
+            className: "course-tile",
+            key: i
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_course_index_course_details__WEBPACK_IMPORTED_MODULE_1__["default"], {
             key: i,
             course: cur
@@ -1776,6 +1776,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/react.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1793,6 +1795,8 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
 
 
 
@@ -1843,14 +1847,16 @@ function (_React$Component) {
     }
   }, {
     key: "handleRatingChange",
-    value: function handleRatingChange(e) {
+    value: function handleRatingChange(rating) {
       this.setState({
-        rating: e.target.value * 1
+        rating: rating
       });
     }
   }, {
     key: "render",
     value: function render() {
+      var _this3 = this;
+
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "review-form-box"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1861,32 +1867,19 @@ function (_React$Component) {
         onChange: this.getBody
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "review-ratting-box"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        onChange: this.handleRatingChange,
-        type: "radio",
-        name: "rating",
-        value: "1"
-      }), "1", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        onChange: this.handleRatingChange,
-        type: "radio",
-        name: "rating",
-        value: "2"
-      }), "2", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        onChange: this.handleRatingChange,
-        type: "radio",
-        name: "rating",
-        value: "3"
-      }), "3", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        onChange: this.handleRatingChange,
-        type: "radio",
-        name: "rating",
-        value: "4"
-      }), "4", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        onChange: this.handleRatingChange,
-        type: "radio",
-        name: "rating",
-        value: "5"
-      }), "5"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, [1, 2, 3, 4, 5].map(function (num) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__["FontAwesomeIcon"], {
+          style: {
+            padding: "3px",
+            color: _this3.state.rating >= num ? "#f4c150" : "dedfe0"
+          },
+          icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faStar"],
+          key: num,
+          onMouseEnter: function onMouseEnter() {
+            return _this3.handleRatingChange(num);
+          }
+        });
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: this.submitHandle,
         className: "review-form",
         style: {

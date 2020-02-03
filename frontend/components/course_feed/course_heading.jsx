@@ -173,7 +173,7 @@ class CourseHeading extends React.Component {
                                     <div className="play-circle" > <FontAwesomeIcon icon={faPlayCircle} className="play-circle-icon"/></div>
                                 </div>
                                 <div style={{ textAlign: "center" }}>${this.renderPrice()}</div>
-                            <input className="back-home-button"  value="Back To Home" onClick={() => this.props.history.push("/")} />  
+                            <button className="back-home-button" onClick={() => this.props.history.push("/")}>Back To Home</button>  
                             </div>
                         </div>
                         <CourseInfo course={this.props.course}/>
