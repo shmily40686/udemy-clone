@@ -1,6 +1,7 @@
 import React from "react"
-
 import { withRouter } from "react-router-dom"
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 class MakeReview extends React.Component {
@@ -35,9 +36,9 @@ class MakeReview extends React.Component {
         })
     }
 
-    handleRatingChange(e) {
+    handleRatingChange(rating) {
         this.setState({
-            rating: e.target.value * 1,
+            rating: rating,
         });
     }
 
@@ -47,11 +48,13 @@ class MakeReview extends React.Component {
                <div className="make-review-title">Add a Review</div>
                <textarea className="review-textarea"value={this.state.body} onChange={this.getBody} ></textarea>
                <div className="review-ratting-box"> 
-                    <input onChange={this.handleRatingChange} type="radio" name="rating" value="1"/>1
-                    <input onChange={this.handleRatingChange} type="radio" name="rating" value="2" />2
-                    <input onChange={this.handleRatingChange} type="radio" name="rating" value="3" />3
-                    <input onChange={this.handleRatingChange} type="radio" name="rating" value="4" />4
-                    <input onChange={this.handleRatingChange} type="radio" name="rating" value="5" />5
+                    {[1, 2, 3, 4, 5].map(num => (
+                        <FontAwesomeIcon style={{ padding: "3px", color: this.state.rating >= num ? "#f4c150" : "dedfe0"}}
+                            icon={faStar}
+                            key={num}
+                            onMouseEnter={() => this.handleRatingChange(num)}
+                        />
+                    ))}
                </div>
                 <button onClick={this.submitHandle} className="review-form" style={{fontSize:"15px", padding:" 12px 54px"}}>Make Review</button>
            </div>

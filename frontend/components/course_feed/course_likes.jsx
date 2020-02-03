@@ -46,7 +46,7 @@ class CourseLike extends React.Component {
         const res = this.props.courses.reduce((prev, cur, i) => {
             if (cur.type_style === this.props.course.type_style) {
                 prev.push(
-                    <div className="course-tile">
+                    <div className="course-tile" key={i}>
                         <CourseDetails key={i} course={cur} />
                     </div>
                 );
