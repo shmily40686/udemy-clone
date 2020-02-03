@@ -131,14 +131,11 @@ class SessionForm extends React.Component {
         }, intervalSpeed);
     }
 
-
-
     handleDemoSubmit(e) {
         e.preventDefault();
         this.demo(user,e)
     }
 
-  
     renderDemoButton() {
         if(this.props.formType === "Log In") {
             return(
@@ -180,7 +177,6 @@ class SessionForm extends React.Component {
                                 placeholder="Password"
                             />
                         </label>
-                        <br/>
                         <input className="session-submit" type="submit" value={this.props.formType} />
                         {this.renderDemoButton()}
                     </form>
