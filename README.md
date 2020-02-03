@@ -13,13 +13,15 @@ YOU-demy is a web application for learning inspired by Udemy. YOU-demy is intend
    * After selecting a course to view, a list of suggested similar courses is populated.
    * Videos can be played while viewing a course.
  
- ![](images/arrow_click.gif)
+ ![carousel movement](images/arrow_click.gif)
   
  * Searching/ Browsing
    * Users have access to a search feature that allows quick navigation of matching courses.
    * Courses can additionally be browsed by clicking on arrow buttons in a row of similar courses.
    * Results of searches can be sorted by multiple factors.
   
+ ![search results](images/search.png)
+ 
  * Reviews
    * Courses have reviews that are written by students of the course.
    * Users are able to provide text-based reviews as well as a 1-5 rating.
