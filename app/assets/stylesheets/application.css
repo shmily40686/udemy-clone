@@ -1160,6 +1160,13 @@ label > .fa-search {
     border-radius: 4px;
 }
 
+.video-player {
+    max-height: 80%;
+    width: 90%;
+    margin: 0 5%;
+    background: rgba(18, 18, 18, .9);
+}
+
 .video-player:focus {
     outline: none;
 }

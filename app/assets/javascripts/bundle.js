@@ -2701,6 +2701,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+var videos = ['http://techslides.com/demos/sample-videos/small.mp4', 'http://techslides.com/demos/samples/sample.mp4', 'http://clips.vorwaerts-gmbh.de/VfE_html5.mp4', 'http://mirrors.standaloneinstaller.com/video-sample/jellyfish-25-mbps-hd-hevc.mp4', 'http://mirrors.standaloneinstaller.com/video-sample/P6090053.mp4', 'http://mirrors.standaloneinstaller.com/video-sample/lion-sample.mp4', 'http://mirrors.standaloneinstaller.com/video-sample/TRA3106.mp4', 'http://mirrors.standaloneinstaller.com/video-sample/page18-movie-4.mp4', 'http://mirrors.standaloneinstaller.com/video-sample/Panasonic_HDC_TM_700_P_50i.mp4', 'http://mirrors.standaloneinstaller.com/video-sample/grb_2.mp4', 'http://mirrors.standaloneinstaller.com/video-sample/DLP_PART_2_768k.mp4'];
 
 var Video =
 /*#__PURE__*/
@@ -2708,9 +2709,15 @@ function (_React$Component) {
   _inherits(Video, _React$Component);
 
   function Video(props) {
+    var _this;
+
     _classCallCheck(this, Video);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Video).call(this, props));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Video).call(this, props));
+    _this.state = {
+      video: videos[Math.floor(Math.random() * videos.length)]
+    };
+    return _this;
   }
 
   _createClass(Video, [{
@@ -2722,7 +2729,7 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this = this;
+      var _this2 = this;
 
       var videoId = this.props.videos[this.props.player.courseContentId][this.props.player.index].id;
 
@@ -2735,7 +2742,7 @@ function (_React$Component) {
           className: "video-title"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, this.props.video[videoId].title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           onClick: function onClick() {
-            return _this.props.hidePlayer(_this.props.video[videoId].index, _this.props.video[videoId].course_content_id);
+            return _this2.props.hidePlayer(_this2.props.video[videoId].index, _this2.props.video[videoId].course_content_id);
           },
           className: "video-close"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_3__["FontAwesomeIcon"], {
@@ -2746,7 +2753,7 @@ function (_React$Component) {
           className: "video-player",
           controls: true
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("source", {
-          src: "http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"
+          src: this.state.video
         }), "Your browser does not support the video tag.")));
       } else {
         return null;
