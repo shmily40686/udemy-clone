@@ -371,8 +371,13 @@ label > .fa-search {
 }
 
 .header-button:hover {
+    cursor: pointer;
     background-color: whitesmoke;
     color: #007791;
+}
+
+.header-button:focus {
+    outline: none;
 }
 
 
