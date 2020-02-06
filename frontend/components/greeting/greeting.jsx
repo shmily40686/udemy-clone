@@ -50,8 +50,8 @@ class Greeting extends React.Component {
             initialName.push(nameArr[i][0])
         }
         return (
-                <div className="initial-box" onMouseEnter={this.dropdownShow} onMouseLeave={this.dropdownHidden}>
-                    <div className="initial">{initialName.join("").toUpperCase()}</div>
+            <div className="initial-box" onMouseLeave={this.dropdownHidden}>
+                <div className="initial" onMouseEnter={this.dropdownShow}>{initialName.join("").toUpperCase()}</div>
                     <div className={this.state.dropdown} >
                         <div className="initial-user-info-box">
                             <div className="initial-user-info">

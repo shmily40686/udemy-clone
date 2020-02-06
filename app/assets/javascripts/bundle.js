@@ -3687,10 +3687,10 @@ function (_React$Component) {
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "initial-box",
-        onMouseEnter: this.dropdownShow,
         onMouseLeave: this.dropdownHidden
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "initial"
+        className: "initial",
+        onMouseEnter: this.dropdownShow
       }, initialName.join("").toUpperCase()), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: this.state.dropdown
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
