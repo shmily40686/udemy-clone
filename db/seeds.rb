@@ -1886,6 +1886,7 @@ dd16 = CourseContent.create!({
   title: "Conclusion"
 })
 # # Videos
+
 Video.create!({
  course_content_id: cc1.id,
  title: 'Introduction',

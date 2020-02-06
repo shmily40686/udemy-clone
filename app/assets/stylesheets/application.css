@@ -53,7 +53,7 @@ label > .fa-search {
     padding: 11px 12px;
     font-size: 15px;
     line-height: 1.35135;
-    border-radius: 5px;
+    border-radius: 2px;
     margin-right: 4px;
 }
 
@@ -120,7 +120,6 @@ label > .fa-search {
 
 .login-form-box {
      padding: 0 24px 8px 24px;
-     border-bottom: solid 1px #dedfe0;
 }
 
 .login-header {
@@ -149,6 +148,7 @@ label > .fa-search {
     height: auto;
     padding: 11px 45px 12px 40px;
     border: none;
+    font-weight: 200;
 }
 
 .login-input:focus {
@@ -171,8 +171,12 @@ label > .fa-search {
     padding: 11px 12px;
     font-size: 15px;
     line-height: 1.35135;
-    border-radius: 5px; 
+    border-radius: 2px; 
     width: 100%;
+}
+
+.session-submit:focus {
+    outline: none;
 }
 
 .modal-close {
@@ -1000,7 +1004,6 @@ label > .fa-search {
     justify-content: flex-end;
     padding-right: 40px
 }
-
 
 .review-form-box {
     display: flex;

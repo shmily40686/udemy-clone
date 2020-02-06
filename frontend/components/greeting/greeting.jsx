@@ -9,6 +9,7 @@ class Greeting extends React.Component {
         }
         this.dropdownShow = this.dropdownShow.bind(this)
         this.dropdownHidden = this.dropdownHidden.bind(this)
+        this.logout = this.logout.bind(this)
     }
 
     sessionLinks() {
@@ -37,6 +38,10 @@ class Greeting extends React.Component {
         })
     }
 
+    logout() {
+        this.dropdownHidden();
+        this.props.logout();
+    }
 
     personalGreeting() {
         const nameArr = this.props.currentUser.username.split(" ")
@@ -57,7 +62,7 @@ class Greeting extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <button className="header-button" onClick={this.props.logout}>Log Out</button> 
+                        <button className="header-button" onClick={this.logout}>Log Out</button> 
                     </div>
                 </div>
         );

@@ -3634,6 +3634,7 @@ function (_React$Component) {
     };
     _this.dropdownShow = _this.dropdownShow.bind(_assertThisInitialized(_this));
     _this.dropdownHidden = _this.dropdownHidden.bind(_assertThisInitialized(_this));
+    _this.logout = _this.logout.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -3669,6 +3670,12 @@ function (_React$Component) {
       });
     }
   }, {
+    key: "logout",
+    value: function logout() {
+      this.dropdownHidden();
+      this.props.logout();
+    }
+  }, {
     key: "personalGreeting",
     value: function personalGreeting() {
       var nameArr = this.props.currentUser.username.split(" ");
@@ -3702,7 +3709,7 @@ function (_React$Component) {
         }
       }, this.props.currentUser.email)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "header-button",
-        onClick: this.props.logout
+        onClick: this.logout
       }, "Log Out")));
     }
   }, {
