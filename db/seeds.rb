@@ -689,7 +689,7 @@ c24 = Course.create!(
   picture: "https://i.udemycdn.com/course/240x135/81094_d4ff_10.jpg"
 )
 Review.create!({course_id: c24.id,rating: 5,body: "It appears to be well organized. And very clearly presented with practicality as a focus.",username: "Kendall Ball",user_id: u1.id})
-Review.create!({course_id: c24.id,rating: 4,body: "really helpful to do revision of key data structures and algorithms.",username: "Vineet Kumar Tripathi",user_id: u1.i})
+Review.create!({course_id: c24.id,rating: 4,body: "really helpful to do revision of key data structures and algorithms.",username: "Vineet Kumar Tripathi",user_id: u1.id})
 Review.create!({course_id: c24.id,rating: 2,body: "I would say this course is more of a refresher course for those who already have been exposed to the material. This course started out very well but then quickly started lacking much detail. I can't even call this an introductory course. If the course contained more examples and or even some applicable scenarios, I would have rated it higher. I would advise to look for a more detailed course if you are practicing for interviews.",username: "Hugo Mayoral",user_id: u1.id})
 Review.create!({course_id: c24.id,rating: 4,body: "Very useful course to brush up your data structure concepts.",username: "Japneet Kaur",user_id: u1.id})
 Review.create!({course_id: c24.id,rating: 5,body: "Very good animations, very concise presentation. ",username: "Hugo Mayoral",user_id: u1.id})
