@@ -51,20 +51,23 @@ class Greeting extends React.Component {
         }
         return (
             <div className="initial-box" onMouseLeave={this.dropdownHidden}>
-                <div className="initial" onMouseEnter={this.dropdownShow}>{initialName.join("").toUpperCase()}</div>
-                    <div className={this.state.dropdown} >
-                        <div className="initial-user-info-box">
-                            <div className="initial-user-info">
-                                <div className="initial-dropdown-circle" >{initialName.join("").toUpperCase()}</div>
-                                <div className="initial-name">
-                                    <div>{this.props.currentUser.username}</div>
-                                    <div style={{ color: "grey", fontSize: "13px" ,paddingTop:"3px"}}>{this.props.currentUser.email}</div>
-                                </div>
+                <div className="initial" onMouseOver={this.dropdownShow}>{initialName.join("").toUpperCase()}</div>
+                <div className={this.state.dropdown}>
+                    <div className="triangle-up-border">
+                        <div className="triangle-up-center"></div>
+                    </div>
+                    <div className="initial-user-info-box">
+                        <div className="initial-user-info">
+                            <div className="initial-dropdown-circle" >{initialName.join("").toUpperCase()}</div>
+                            <div className="initial-name">
+                                <div>{this.props.currentUser.username}</div>
+                                <div style={{ color: "grey", fontSize: "13px" ,paddingTop:"3px"}}>{this.props.currentUser.email}</div>
                             </div>
                         </div>
-                        <button className="header-button" onClick={this.logout}>Log Out</button> 
                     </div>
+                    <button className="header-button" onClick={this.logout}>Log Out</button> 
                 </div>
+            </div>
         );
     }
 

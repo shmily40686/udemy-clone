@@ -3690,10 +3690,14 @@ function (_React$Component) {
         onMouseLeave: this.dropdownHidden
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "initial",
-        onMouseEnter: this.dropdownShow
+        onMouseOver: this.dropdownShow
       }, initialName.join("").toUpperCase()), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: this.state.dropdown
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "triangle-up-border"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "triangle-up-center"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "initial-user-info-box"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "initial-user-info"
