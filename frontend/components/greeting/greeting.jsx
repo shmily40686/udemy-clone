@@ -9,6 +9,7 @@ class Greeting extends React.Component {
         }
         this.dropdownShow = this.dropdownShow.bind(this)
         this.dropdownHidden = this.dropdownHidden.bind(this)
+        this.logout = this.logout.bind(this)
     }
 
     sessionLinks() {
@@ -37,6 +38,10 @@ class Greeting extends React.Component {
         })
     }
 
+    logout() {
+        this.dropdownHidden();
+        this.props.logout();
+    }
 
     personalGreeting() {
         const nameArr = this.props.currentUser.username.split(" ")
@@ -45,21 +50,24 @@ class Greeting extends React.Component {
             initialName.push(nameArr[i][0])
         }
         return (
-                <div className="initial-box" onMouseEnter={this.dropdownShow} onMouseLeave={this.dropdownHidden}>
-                    <div className="initial">{initialName.join("").toUpperCase()}</div>
-                    <div className={this.state.dropdown} >
-                        <div className="initial-user-info-box">
-                            <div className="initial-user-info">
-                                <div className="initial-dropdown-circle" >{initialName.join("").toUpperCase()}</div>
-                                <div className="initial-name">
-                                    <div>{this.props.currentUser.username}</div>
-                                    <div style={{ color: "grey", fontSize: "13px" ,paddingTop:"3px"}}>{this.props.currentUser.email}</div>
-                                </div>
+            <div className="initial-box" onMouseLeave={this.dropdownHidden}>
+                <div className="initial" onMouseOver={this.dropdownShow}>{initialName.join("").toUpperCase()}</div>
+                <div className={this.state.dropdown}>
+                    <div className="triangle-up-border">
+                        <div className="triangle-up-center"></div>
+                    </div>
+                    <div className="initial-user-info-box">
+                        <div className="initial-user-info">
+                            <div className="initial-dropdown-circle" >{initialName.join("").toUpperCase()}</div>
+                            <div className="initial-name">
+                                <div>{this.props.currentUser.username}</div>
+                                <div style={{ color: "grey", fontSize: "13px" ,paddingTop:"3px"}}>{this.props.currentUser.email}</div>
                             </div>
                         </div>
-                        <button className="header-button" onClick={this.props.logout}>Log Out</button> 
                     </div>
+                    <button className="header-button" onClick={this.logout}>Log Out</button> 
                 </div>
+            </div>
         );
     }
 

@@ -53,7 +53,7 @@ label > .fa-search {
     padding: 11px 12px;
     font-size: 15px;
     line-height: 1.35135;
-    border-radius: 5px;
+    border-radius: 2px;
     margin-right: 4px;
 }
 
@@ -120,7 +120,6 @@ label > .fa-search {
 
 .login-form-box {
      padding: 0 24px 8px 24px;
-     border-bottom: solid 1px #dedfe0;
 }
 
 .login-header {
@@ -149,6 +148,7 @@ label > .fa-search {
     height: auto;
     padding: 11px 45px 12px 40px;
     border: none;
+    font-weight: 200;
 }
 
 .login-input:focus {
@@ -171,8 +171,12 @@ label > .fa-search {
     padding: 11px 12px;
     font-size: 15px;
     line-height: 1.35135;
-    border-radius: 5px; 
+    border-radius: 2px; 
     width: 100%;
+}
+
+.session-submit:focus {
+    outline: none;
 }
 
 .modal-close {
@@ -309,7 +313,8 @@ label > .fa-search {
     font-size: 15px;
     font-weight: 400;
     background-color: white;
-    z-index: 2; 
+    z-index: 2;
+    transform: translateY(12px);
 }
 
 .initial {
@@ -327,7 +332,7 @@ label > .fa-search {
 
 .initial-dropdown-circle {
     background-color: #686f7a; 
-    width: 46px;
+    min-width: 46px;
     height: 46px;
     border-radius: 50%;
     border: 1px solid #fff;
@@ -339,15 +344,15 @@ label > .fa-search {
 
 .initial-user-info-box {
     border-bottom: solid 1px #dedfe0;
-    padding-bottom: 10px;
 }
 
 .initial-user-info {
     display: flex;
-    padding: 15px 22px;
+    padding: 0px 22px;
+    margin: 15px auto;
 }
 
-.initial-user-info:hover {
+.initial-user-info-box:hover {
     background-color: whitesmoke;
 }
 
@@ -1001,7 +1006,6 @@ label > .fa-search {
     padding-right: 40px
 }
 
-
 .review-form-box {
     display: flex;
     flex-direction: column;
@@ -1158,6 +1162,13 @@ label > .fa-search {
     padding: 26px 26px 0px 16px;
     font-family: inherit;
     border-radius: 4px;
+}
+
+.video-player {
+    max-height: 80%;
+    width: 90%;
+    margin: 0 5%;
+    background: rgba(18, 18, 18, .9);
 }
 
 .video-player:focus {
@@ -1534,4 +1545,40 @@ label > .fa-search {
 
 .course-tile {
    display: inline-block;
+}
+
+.arrow-up {
+  float: right;
+    transform: translate3d(-14px, -15px, 0);
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    float: right;
+    transform: translate3d(-14px, -15px, 0);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid red;
+}
+
+.triangle-up-border {
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 20px solid #dedfe0;
+    float: right;
+    transform: translate3d(-6px, -20px, 0);
+}
+
+.triangle-up-center {
+    width: 0;
+    height: 0;
+    position: relative;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid white;
+    top: 0px;
+    left: -15px;
 }
