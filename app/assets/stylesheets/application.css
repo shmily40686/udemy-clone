@@ -865,6 +865,7 @@ label > .fa-search {
     background: linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,0.95),#FFF);
     position: absolute;
     width: 100%;
+    cursor: pointer;
 }
 
 
