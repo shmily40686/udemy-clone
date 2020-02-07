@@ -75,8 +75,8 @@ c2 = Course.create!(
  teacher: 'Darma Academy',
  teacher_id: u1.id,
  price: 1000,
- rating: 1,
- rating_count: 1,
+ rating: 2,
+ rating_count: 3,
  student_count: 2,
  languages: 'English',
  learning_goals: 'Learn to cook Turkish traditional mezes and dishes in a very simple way\nEngaging with one of the richest cuisine in history\nGain the newest kitchen skills\nA new perspectives on every day food',
@@ -86,6 +86,8 @@ c2 = Course.create!(
  picture: 'https://i.udemycdn.com/course/480x270/2702904_7dd8.jpg'
 )
 Review.create!({course_id: c2.id,user_id: u1.id,username: 'Marky Wahlbergson',rating: 1,body: 'It is like they did not even try...'})
+Review.create!({course_id: c2.id,user_id: u1.id,username: 'Juice Wrld',rating: 3,body: 'I have been working really hard to learn everything'})
+Review.create!({course_id: c2.id,user_id: u1.id,username: 'Julie Truong',rating: 1,body: 'I never imagined this would be so great'})
 
 c3 = Course.create!(
  title: 'chopped dream eaters witch vegetables and eggs:experience...',
@@ -96,7 +98,7 @@ c3 = Course.create!(
  price: 699,
  rating: 1,
  rating_count: 4,
- student_count: 1,
+ student_count: 125,
  languages: 'English',
  learning_goals: 'Students will be able to acquire a new kind of experience that will increase the level of their technical abilities\nStudents will be able to acquire a new kind of experience that will increase the level of their technical abilities',
  requirements: 'Success\nSelf Development',
@@ -105,6 +107,9 @@ c3 = Course.create!(
  picture: 'https://i.udemycdn.com/course/240x135/1456524_4fac_2.jpg',
 )
 Review.create!({course_id: c3.id,user_id: u1.id,username: 'Kobe Bryant',rating: 4,body: 'I cant believe this!'})
+Review.create!({course_id: c3.id,user_id: u1.id,username: 'Juice Wrld',rating: 4,body: 'Everyone loves food'})
+Review.create!({course_id: c3.id,user_id: u1.id,username: 'Jesse McGrant',rating: 4,body: 'I learned some great recipes'})
+Review.create!({course_id: c3.id,user_id: u1.id,username: 'Quin Stilepo',rating: 4,body: 'Great'})
 
 c4 = Course.create!(
  title: "Email Marketing Hacks 2020: Build a Huge List of Email IDs",
@@ -351,7 +356,7 @@ c10 = Course.create!(
   teacher_id: u1.id,
   price: 399,
   rating: 5,
-  rating_count: 1,
+  rating_count: 3,
   student_count: 43,
   languages: "English",
   learning_goals: "Have In-depth understanding of Robotium Automation Tool\nAutomate Android Mobile Apps Testing using Robotium Automation Tool\nWrite Android automated test in Eclipse\nProvide low cost Android Apps testing solution to your Project or Organization",
@@ -361,6 +366,8 @@ c10 = Course.create!(
   picture: "https://i.udemycdn.com/course/240x135/616052_9660_5.jpg"
 )
 Review.create!({course_id: c10.id,user_id: u1.id,username: 'Tony Tiger',rating: 5,body: "These lessons were well worth the money! They're grrrrrrrr-eat!!"})
+Review.create!({course_id: c10.id,user_id: u1.id,username: 'Louie Vatong',rating: 5,body: "This class was amazing, definitely worth it"})
+Review.create!({course_id: c10.id,user_id: u1.id,username: 'Count Chocula',rating: 5,body: "I loved this class more than chocolate"})
 
 c11 = Course.create!(
   title: "Intro to Excel Macros Part 1",
@@ -560,7 +567,7 @@ c18 = Course.create!(
   subtitle: "Officially created in collaboration with the Google Flutter team.",
   price: 19999,
   rating: 4,
-  rating_count: 1,
+  rating_count: 3,
   student_count: 31563,
   languages: "English",
   learning_goals: "Build beautiful, fast and native-quality apps with Flutter\nBecome a fully-fledged Flutter developer\nBuild iOS and Android apps with just one codebase\nBuild iOS and Android apps using just one programming language (Dart)\nBuild a portfolio of beautiful Flutter apps to impress any recruiter\nUnderstand all the fundamental concepts of Flutter development\nBecome proficient in one of the fastest growing technologies",
@@ -569,6 +576,8 @@ c18 = Course.create!(
   picture: "https://i.udemycdn.com/course/240x135/2259120_305f_5.jpg"
 )
 Review.create!({course_id: c18.id,user_id: u1.id,username: 'Kyo Grey',rating: 4,body: "I'm loving this!"})
+Review.create!({course_id: c18.id,user_id: u1.id,username: 'Sylvester Stalone',rating: 4,body: "Flutter is super fun"})
+Review.create!({course_id: c18.id,user_id: u1.id,username: 'Tim Westwood',rating: 4,body: "This class is fresher than my clothes with the tags still on"})
 
 c19 = Course.create!(
  type_style: 'music',
@@ -1099,7 +1108,7 @@ c45 = Course.create!(
   teacher_id: u1.id,
   price: 1999,
   rating: 4,
-  rating_count: 1,
+  rating_count: 4,
   student_count: 2081,
   languages: "English",
   learning_goals: "Understand the coding principles and Understand How to write code in efficient way by help of choosing right data structures and efficient algorithms\nHow to choose right data structures for your need\nUnderstand concept behind Arrays, Linked Lists, Hash tables, Trees, Graph, Stacks, Queues, Sort algorithms and Search algorithms\nUnderstand the fundamentals of the Data structures and Algorithms\nUnderstand popular algorithms, and how to use it when you need.\nLearn everything you need to crack difficult coding interviews.\nReason about applicability and usability of Data Structures",
@@ -1109,6 +1118,9 @@ c45 = Course.create!(
   picture:"https://i.udemycdn.com/course/240x135/1765750_de9c_2.jpg"
 )
 Review.create!({course_id: c45.id,user_id: u1.id,username: 'Rachel Moore',rating: 4,body: "Underestimated, but worthwhile"})
+Review.create!({course_id: c45.id,user_id: u1.id,username: 'Juice Wrld',rating: 4,body: "Very fun"})
+Review.create!({course_id: c45.id,user_id: u1.id,username: 'Buddy Goodlove',rating: 4,body: "Only 3 hours if you haven't programmed before"})
+Review.create!({course_id: c45.id,user_id: u1.id,username: 'Rachel Fang',rating: 4,body: "super great, I think I will learn Android next"})
 
 # Course Contents
 cc1 = CourseContent.create!({
