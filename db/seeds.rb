@@ -77,7 +77,7 @@ c2 = Course.create!(
  price: 1000,
  rating: 2,
  rating_count: 3,
- student_count: 2,
+ student_count: 3,
  languages: 'English',
  learning_goals: 'Learn to cook Turkish traditional mezes and dishes in a very simple way\nEngaging with one of the richest cuisine in history\nGain the newest kitchen skills\nA new perspectives on every day food',
  requirements: 'Passion for cooking and engaging new cultures. Everybody from all aspects are welcome to this class.',
@@ -86,8 +86,8 @@ c2 = Course.create!(
  picture: 'https://i.udemycdn.com/course/480x270/2702904_7dd8.jpg'
 )
 Review.create!({course_id: c2.id,user_id: u1.id,username: 'Marky Wahlbergson',rating: 1,body: 'It is like they did not even try...'})
-Review.create!({course_id: c2.id,user_id: u1.id,username: 'Juice Wrld',rating: 3,body: 'I have been working really hard to learn everything'})
-Review.create!({course_id: c2.id,user_id: u1.id,username: 'Julie Truong',rating: 1,body: 'I never imagined this would be so great'})
+Review.create!({course_id: c2.id,user_id: u1.id,username: 'Michael Weston',rating: 3,body: "When you're a spy, turkish cooking is amazing."})
+Review.create!({course_id: c2.id,user_id: u1.id,username: 'Sam Axe',rating: 2,body: 'You know, Turkish cooking is delicious'})
 
 c3 = Course.create!(
  title: 'chopped dream eaters witch vegetables and eggs:experience...',
@@ -98,7 +98,7 @@ c3 = Course.create!(
  price: 699,
  rating: 1,
  rating_count: 4,
- student_count: 125,
+ student_count: 1,
  languages: 'English',
  learning_goals: 'Students will be able to acquire a new kind of experience that will increase the level of their technical abilities\nStudents will be able to acquire a new kind of experience that will increase the level of their technical abilities',
  requirements: 'Success\nSelf Development',
@@ -107,9 +107,6 @@ c3 = Course.create!(
  picture: 'https://i.udemycdn.com/course/240x135/1456524_4fac_2.jpg',
 )
 Review.create!({course_id: c3.id,user_id: u1.id,username: 'Kobe Bryant',rating: 4,body: 'I cant believe this!'})
-Review.create!({course_id: c3.id,user_id: u1.id,username: 'Juice Wrld',rating: 4,body: 'Everyone loves food'})
-Review.create!({course_id: c3.id,user_id: u1.id,username: 'Jesse McGrant',rating: 4,body: 'I learned some great recipes'})
-Review.create!({course_id: c3.id,user_id: u1.id,username: 'Quin Stilepo',rating: 4,body: 'Great'})
 
 c4 = Course.create!(
  title: "Email Marketing Hacks 2020: Build a Huge List of Email IDs",
@@ -366,8 +363,9 @@ c10 = Course.create!(
   picture: "https://i.udemycdn.com/course/240x135/616052_9660_5.jpg"
 )
 Review.create!({course_id: c10.id,user_id: u1.id,username: 'Tony Tiger',rating: 5,body: "These lessons were well worth the money! They're grrrrrrrr-eat!!"})
-Review.create!({course_id: c10.id,user_id: u1.id,username: 'Louie Vatong',rating: 5,body: "This class was amazing, definitely worth it"})
-Review.create!({course_id: c10.id,user_id: u1.id,username: 'Count Chocula',rating: 5,body: "I loved this class more than chocolate"})
+Review.create!({course_id: c10.id,user_id: u1.id,username: 'Count Chocula',rating: 5,body: "This is the best Android class I have ever taken"})
+Review.create!({course_id: c10.id,user_id: u1.id,username: "Cap'n Crunch",rating: 5,body: "You are out of moves. Your only shot is to trust this course. YOu have nothing to lose, everything to gain."})
+
 
 c11 = Course.create!(
   title: "Intro to Excel Macros Part 1",
@@ -567,7 +565,7 @@ c18 = Course.create!(
   subtitle: "Officially created in collaboration with the Google Flutter team.",
   price: 19999,
   rating: 4,
-  rating_count: 3,
+  rating_count: 2,
   student_count: 31563,
   languages: "English",
   learning_goals: "Build beautiful, fast and native-quality apps with Flutter\nBecome a fully-fledged Flutter developer\nBuild iOS and Android apps with just one codebase\nBuild iOS and Android apps using just one programming language (Dart)\nBuild a portfolio of beautiful Flutter apps to impress any recruiter\nUnderstand all the fundamental concepts of Flutter development\nBecome proficient in one of the fastest growing technologies",
@@ -576,8 +574,7 @@ c18 = Course.create!(
   picture: "https://i.udemycdn.com/course/240x135/2259120_305f_5.jpg"
 )
 Review.create!({course_id: c18.id,user_id: u1.id,username: 'Kyo Grey',rating: 4,body: "I'm loving this!"})
-Review.create!({course_id: c18.id,user_id: u1.id,username: 'Sylvester Stalone',rating: 4,body: "Flutter is super fun"})
-Review.create!({course_id: c18.id,user_id: u1.id,username: 'Tim Westwood',rating: 4,body: "This class is fresher than my clothes with the tags still on"})
+Review.create!({course_id: c18.id,user_id: u1.id,username: 'Carla Pardalona',rating: 4,body: "I got a promotion after taking this course!!"})
 
 c19 = Course.create!(
  type_style: 'music',
@@ -698,7 +695,7 @@ c24 = Course.create!(
   picture: "https://i.udemycdn.com/course/240x135/81094_d4ff_10.jpg"
 )
 Review.create!({course_id: c24.id,rating: 5,body: "It appears to be well organized. And very clearly presented with practicality as a focus.",username: "Kendall Ball",user_id: u1.id})
-Review.create!({course_id: c24.id,rating: 4,body: "really helpful to do revision of key data structures and algorithms.",username: "Vineet Kumar Tripathi",user_id: u1.id})
+Review.create!({course_id: c24.id,rating: 4,body: "really helpful to do revision of key data structures and algorithms.",username: "Vineet Kumar Tripathi",user_id: u1.i})
 Review.create!({course_id: c24.id,rating: 2,body: "I would say this course is more of a refresher course for those who already have been exposed to the material. This course started out very well but then quickly started lacking much detail. I can't even call this an introductory course. If the course contained more examples and or even some applicable scenarios, I would have rated it higher. I would advise to look for a more detailed course if you are practicing for interviews.",username: "Hugo Mayoral",user_id: u1.id})
 Review.create!({course_id: c24.id,rating: 4,body: "Very useful course to brush up your data structure concepts.",username: "Japneet Kaur",user_id: u1.id})
 Review.create!({course_id: c24.id,rating: 5,body: "Very good animations, very concise presentation. ",username: "Hugo Mayoral",user_id: u1.id})
@@ -711,7 +708,7 @@ c25 = Course.create!(
  teacher_id: u1.id,
  price: 19899,
  rating: 3,
- rating_count: 1,
+ rating_count: 2,
  student_count: 202567,
  languages: 'English',
  learning_goals: "Build powerful, fast, user-friendly and reactive web apps\nProvide amazing user experiences by leveraging the power of JavaScript with ease\nApply for high-paid jobs or work as a freelancer in one the most-demanded sectors you can find in web dev right now\nLearn React Hooks & Class-based ",
@@ -720,7 +717,8 @@ c25 = Course.create!(
  audience:"Students who want to learn how to build reactive and fast web apps\nAnyone who's interested in learning an extremely popular technology used by leading tech companies like Netflix\nStudents who want to take their web development skills to the next level and learn a future-proof technology",
  picture: 'https://i.udemycdn.com/course/240x135/1362070_b9a1_2.jpg'
 )
-Review.create!({course_id: c25.id,rating: 3,body:"Thank you so much,i have never touched the React before. Now i know a lot about react thanks to Max. Max shows a lot of alternatives. Sometimes i need to google to know deeply about what Max is trying to explain.",username: "Rebecca",user_id: u1.id})
+Review.create!({course_id: c25.id,rating: 3,body:"Thank you so much,i have never touched the React before. Now i know a lot about react thanks to Max. Max shows a lot of alternatives. Sometimes i need to google to know deeply about what Max is trying to explain.",username: "Rebecca Santiago",user_id: u1.id})
+Review.create!({course_id: c25.id,rating: 3,body:"I learned so well, I could run Facebook now.",username: "Samantha Kariaga",user_id: u1.id})
 
 c26 = Course.create!(
   title:"Cooking with Spices",
@@ -769,7 +767,7 @@ c28 = Course.create!(
  teacher_id: u1.id,
  price: 1299,
  rating: 4,
- rating_count: 1,
+ rating_count: 3,
  student_count: 1967,
  languages: "English",
  learning_goals: "Gain hands-on tactics for generating high-quality leads\nLearn actionable and advanced lead generation tactics that they can apply to their business\nCreate a repeatable, sustainable lead generation process.\nGenerate tons of leads to aid in their email campaign",
@@ -779,6 +777,8 @@ c28 = Course.create!(
  picture: "https://i.udemycdn.com/course/240x135/649448_cd46_3.jpg"
 )
 Review.create!({course_id: c28.id,user_id: u1.id,username: 'George Jefferson',rating: 4,body: "With all the tricks I gained from this, I will be getting a promotion within a month!"})
+Review.create!({course_id: c28.id,user_id: u1.id,username: 'Barney Rubble',rating: 4,body: "This class was like Orion's Belt: 3 stars. Hahaha"})
+Review.create!({course_id: c28.id,user_id: u1.id,username: 'Greg Brady',rating: 4,body: "This class is groovy in a far out kind of way!"})
 
 c29 = Course.create!(
  title: 'Dance now',
@@ -956,7 +956,7 @@ c37 = Course.create!(
   teacher_id: u1.id,
   price: 1299,
   rating: 4,
-  rating_count: 1,
+  rating_count: 2,
   student_count: 2392,
   languages: "English",
   learning_goals: "Understand the coding principles and Understand How to write code in efficient way by help of choosing right data structures and efficient algorithms\nHow to choose right data structures for your need\nUnderstand concept behind Arrays, Linked Lists, Hash tables, Trees, Graph, Stacks, Queues, Sort algorithms and Search algorithms\nUnderstand the fundamentals of the Data structures and Algorithms\nUnderstand popular algorithms, and how to use it when you need.\nLearn everything you need to crack difficult coding interviews.\nReason about applicability and usability of Data Structures",
@@ -966,6 +966,7 @@ c37 = Course.create!(
   picture:"https://i.udemycdn.com/course/240x135/648648_4d07_10.jpg"
 )
 Review.create!({course_id: c37.id,user_id: u1.id,username: 'Captain Obvious',rating: 4,body: "I learned the essentials of Java programming"})
+Review.create!({course_id: c37.id,user_id: u1.id,username: 'Victor Morkabinov',rating: 4,body: "I always heard bad talk about Java, but after taking this class I don't see why it got such a bad name. They explained everything so well I couldn't help but want to learn more."})
 
 c38 = Course.create!(
   title: "Introduction to Computer Science by GoLearningBus",
@@ -975,7 +976,7 @@ c38 = Course.create!(
   teacher_id: u1.id,
   price: 2999,
   rating: 3,
-  rating_count: 1,
+  rating_count: 2,
   student_count: 4410,
   languages: "English",
   learning_goals: "Understand the coding principles and Understand How to write code in efficient way by help of choosing right data structures and efficient algorithms\nHow to choose right data structures for your need\nUnderstand concept behind Arrays, Linked Lists, Hash tables, Trees, Graph, Stacks, Queues, Sort algorithms and Search algorithms\nUnderstand the fundamentals of the Data structures and Algorithms\nUnderstand popular algorithms, and how to use it when you need.\nLearn everything you need to crack difficult coding interviews.\nReason about applicability and usability of Data Structures",
@@ -985,6 +986,7 @@ c38 = Course.create!(
   picture:"https://i.udemycdn.com/course/240x135/264036_0182_2.jpg"
 )
 Review.create!({course_id: c38.id,user_id: u1.id,username: 'Regina Rocket',rating: 3,body: "This class was tight"})
+Review.create!({course_id: c38.id,user_id: u1.id,username: 'Madeline Weston',rating: 3,body: "After taking this class, I wanted to go straight to Orlando where the giraffes come right up to your window."})
 
 c39 = Course.create!(
   title: "Computer Science for Kids",
@@ -994,7 +996,7 @@ c39 = Course.create!(
   teacher_id: u1.id,
   price: 999,
   rating: 4,
-  rating_count: 1,
+  rating_count: 2,
   student_count: 1863,
   languages: "English",
   learning_goals: "Understand the coding principles and Understand How to write code in efficient way by help of choosing right data structures and efficient algorithms\nHow to choose right data structures for your need\nUnderstand concept behind Arrays, Linked Lists, Hash tables, Trees, Graph, Stacks, Queues, Sort algorithms and Search algorithms\nUnderstand the fundamentals of the Data structures and Algorithms\nUnderstand popular algorithms, and how to use it when you need.\nLearn everything you need to crack difficult coding interviews.\nReason about applicability and usability of Data Structures",
@@ -1004,6 +1006,7 @@ c39 = Course.create!(
   picture:"https://i.udemycdn.com/course/240x135/86036_3bf9_7.jpg"
 )
 Review.create!({course_id: c39.id,user_id: u1.id,username: 'Jay Markus',rating: 4,body: "This class hit the mad notes"})
+Review.create!({course_id: c39.id,user_id: u1.id,username: 'Tom Brady',rating: 4,body: "My son and I watched these lessons together!"})
 
 c40 = Course.create!(
   title: "Discrete Math for Computer Science",
@@ -1013,7 +1016,7 @@ c40 = Course.create!(
   teacher_id: u1.id,
   price: 1299,
   rating: 3,
-  rating_count: 1,
+  rating_count: 2,
   student_count: 1360,
   languages: "English",
   learning_goals: "Understand the coding principles and Understand How to write code in efficient way by help of choosing right data structures and efficient algorithms\nHow to choose right data structures for your need\nUnderstand concept behind Arrays, Linked Lists, Hash tables, Trees, Graph, Stacks, Queues, Sort algorithms and Search algorithms\nUnderstand the fundamentals of the Data structures and Algorithms\nUnderstand popular algorithms, and how to use it when you need.\nLearn everything you need to crack difficult coding interviews.\nReason about applicability and usability of Data Structures",
@@ -1023,6 +1026,7 @@ c40 = Course.create!(
   picture:"https://i.udemycdn.com/course/240x135/1692910_b7fa_4.jpg"
 )
 Review.create!({course_id: c40.id,user_id: u1.id,username: 'Thomas Janklin',rating: 3,body: "very discrete"})
+Review.create!({course_id: c40.id,user_id: u1.id,username: 'Marshall Mathers',rating: 3,body: "If you had... one shot... to learn discrete math... would you purchase it... or just scroll on down?"})
 
 c41 = Course.create!(
   title: "The Foundation of Computer Design",
@@ -1032,7 +1036,7 @@ c41 = Course.create!(
   teacher_id: u1.id,
   price: 1099,
   rating: 5,
-  rating_count: 1,
+  rating_count: 2,
   student_count: 4871,
   languages: "English",
   learning_goals: "Understand the coding principles and Understand How to write code in efficient way by help of choosing right data structures and efficient algorithms\nHow to choose right data structures for your need\nUnderstand concept behind Arrays, Linked Lists, Hash tables, Trees, Graph, Stacks, Queues, Sort algorithms and Search algorithms\nUnderstand the fundamentals of the Data structures and Algorithms\nUnderstand popular algorithms, and how to use it when you need.\nLearn everything you need to crack difficult coding interviews.\nReason about applicability and usability of Data Structures",
@@ -1042,6 +1046,7 @@ c41 = Course.create!(
   picture:"https://i.udemycdn.com/course/240x135/1164182_d150.jpg"
 )
 Review.create!({course_id: c41.id,user_id: u1.id,username: 'Albert Tesla',rating: 5,body: "Best class on youdemy"})
+Review.create!({course_id: c41.id,user_id: u1.id,username: 'Carla Gugachev',rating: 5,body: "This class made me interested in computers."})
 
 c42 = Course.create!(
   title: "Deep Learning: Convolutional Neural Networks in Python",
@@ -1051,7 +1056,7 @@ c42 = Course.create!(
   teacher_id: u1.id,
   price: 4999,
   rating: 5,
-  rating_count: 1,
+  rating_count: 3,
   student_count: 8375,
   languages: "English",
   learning_goals: "Understand the coding principles and Understand How to write code in efficient way by help of choosing right data structures and efficient algorithms\nHow to choose right data structures for your need\nUnderstand concept behind Arrays, Linked Lists, Hash tables, Trees, Graph, Stacks, Queues, Sort algorithms and Search algorithms\nUnderstand the fundamentals of the Data structures and Algorithms\nUnderstand popular algorithms, and how to use it when you need.\nLearn everything you need to crack difficult coding interviews.\nReason about applicability and usability of Data Structures",
@@ -1061,6 +1066,8 @@ c42 = Course.create!(
   picture:"https://i.udemycdn.com/course/240x135/807904_7108.jpg"
 )
 Review.create!({course_id: c42.id,user_id: u1.id,username: 'Forest Silva',rating: 5,body: "Very easy to understand if you know python"})
+Review.create!({course_id: c42.id,user_id: u1.id,username: 'Plato Socrastotle',rating: 5,body: "Is it not learning that drives us all? Since the ancient times of we, have we not yearned for more knowledge than known?"})
+Review.create!({course_id: c42.id,user_id: u1.id,username: 'Michael Bay',rating: 5,body: "Boom! This class blew expactions! Boom!"})
 
 c43 = Course.create!(
   title: "Web Development w/ Google's Go (golang) Programming Language",
@@ -1070,7 +1077,7 @@ c43 = Course.create!(
   teacher_id: u1.id,
   price: 6499,
   rating: 4,
-  rating_count: 1,
+  rating_count: 3,
   student_count: 5981,
   languages: "English",
   learning_goals: "Understand the coding principles and Understand How to write code in efficient way by help of choosing right data structures and efficient algorithms\nHow to choose right data structures for your need\nUnderstand concept behind Arrays, Linked Lists, Hash tables, Trees, Graph, Stacks, Queues, Sort algorithms and Search algorithms\nUnderstand the fundamentals of the Data structures and Algorithms\nUnderstand popular algorithms, and how to use it when you need.\nLearn everything you need to crack difficult coding interviews.\nReason about applicability and usability of Data Structures",
@@ -1080,6 +1087,8 @@ c43 = Course.create!(
   picture:"https://i.udemycdn.com/course/240x135/1002030_f3e0_5.jpg"
 )
 Review.create!({course_id: c43.id,user_id: u1.id,username: 'Josie Philkins',rating: 4,body: "simply superb"})
+Review.create!({course_id: c43.id,user_id: u1.id,username: 'Tyler Durden',rating: 4,body: "You don't talk about Golang. One goroutine at a time."})
+Review.create!({course_id: c43.id,user_id: u1.id,username: 'Miss Direction',rating: 4,body: "Buying this course at it's price is a double lift!"})
 
 c44 = Course.create!(
   title: "An introduction to algorithms in Python",
@@ -1089,7 +1098,7 @@ c44 = Course.create!(
   teacher_id: u1.id,
   price: 1099,
   rating: 3,
-  rating_count: 1,
+  rating_count: 3,
   student_count: 3028,
   languages: "English",
   learning_goals: "Understand the coding principles and Understand How to write code in efficient way by help of choosing right data structures and efficient algorithms\nHow to choose right data structures for your need\nUnderstand concept behind Arrays, Linked Lists, Hash tables, Trees, Graph, Stacks, Queues, Sort algorithms and Search algorithms\nUnderstand the fundamentals of the Data structures and Algorithms\nUnderstand popular algorithms, and how to use it when you need.\nLearn everything you need to crack difficult coding interviews.\nReason about applicability and usability of Data Structures",
@@ -1099,6 +1108,7 @@ c44 = Course.create!(
   picture:"https://i.udemycdn.com/course/240x135/1021736_b902_2.jpg"
 )
 Review.create!({course_id: c44.id,user_id: u1.id,username: 'Konan Edogawa',rating: 3,body: "Mildly interesting course"})
+Review.create!({course_id: c44.id,user_id: u1.id,username: "Philos A'Raptor",rating: 3,body: "If algorithms are not what we desire, why do we do so many"})
 
 c45 = Course.create!(
   title: "Learn Python in 3 Hours",
@@ -1108,7 +1118,7 @@ c45 = Course.create!(
   teacher_id: u1.id,
   price: 1999,
   rating: 4,
-  rating_count: 4,
+  rating_count: 1,
   student_count: 2081,
   languages: "English",
   learning_goals: "Understand the coding principles and Understand How to write code in efficient way by help of choosing right data structures and efficient algorithms\nHow to choose right data structures for your need\nUnderstand concept behind Arrays, Linked Lists, Hash tables, Trees, Graph, Stacks, Queues, Sort algorithms and Search algorithms\nUnderstand the fundamentals of the Data structures and Algorithms\nUnderstand popular algorithms, and how to use it when you need.\nLearn everything you need to crack difficult coding interviews.\nReason about applicability and usability of Data Structures",
@@ -1118,9 +1128,6 @@ c45 = Course.create!(
   picture:"https://i.udemycdn.com/course/240x135/1765750_de9c_2.jpg"
 )
 Review.create!({course_id: c45.id,user_id: u1.id,username: 'Rachel Moore',rating: 4,body: "Underestimated, but worthwhile"})
-Review.create!({course_id: c45.id,user_id: u1.id,username: 'Juice Wrld',rating: 4,body: "Very fun"})
-Review.create!({course_id: c45.id,user_id: u1.id,username: 'Buddy Goodlove',rating: 4,body: "Only 3 hours if you haven't programmed before"})
-Review.create!({course_id: c45.id,user_id: u1.id,username: 'Rachel Fang',rating: 4,body: "super great, I think I will learn Android next"})
 
 # Course Contents
 cc1 = CourseContent.create!({
@@ -1898,7 +1905,6 @@ dd16 = CourseContent.create!({
   title: "Conclusion"
 })
 # # Videos
-
 Video.create!({
  course_content_id: cc1.id,
  title: 'Introduction',
