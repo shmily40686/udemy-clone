@@ -780,6 +780,9 @@ label > .fa-search {
     font-family: inherit;
     font-size: 32px;
     margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .index-card-ratting-feed {
